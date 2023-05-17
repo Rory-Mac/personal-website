@@ -63,24 +63,24 @@ Just looking at the expansion of these squares gives us the following</p>
 &emsp;1 1 1&emsp;1 0 1 1 0 1 1 1
 </span></p>
 <p>We can visualise the set of all possible inputs in a boolean function as a fractal, much like above, by color-coding 0 as black, 1 as white, and columns as byte-values:</p>
-<p><img src="../assets/images/byte_truth_cases5.png" width="50%" height="50%"></p>
+<p><img src="../Assets/images/byte_truth_cases5.png" width="50%" height="50%"></p>
 
 <p>The rows beneath the body of truth-cases represent an extension of the 16 1-bit output functions in a 2-bit system:</p>
-<p><img src="../assets/images/truth_cases.png" width="50%" height="50%"></p>
+<p><img src="../Assets/images/truth_cases.png" width="50%" height="50%"></p>
 
 <p>Two more useful boolean functions are that of the multiplexor and demultiplexor, with truth tables as follows:</p>
-<p><img src="../assets/images/mux_demux.png" width="50%" height="50%"></p>
+<p><img src="../Assets/images/mux_demux.png" width="50%" height="50%"></p>
 
 <p>The selector bits in the leftmost columns of these respective truth tables select which of the other input bits should be passed to output. They also form a fractal,
 which in our case is akin to scalability, such that we can build large memory modules such as RAM.</p>
 
 <p>In 3D we can visualise binary by assigning each edge of a cubic with a binary coordinate (these are nested cubes of a 3-byte coordinate system)</p>
-<p><img src="../assets/images/3d_binary_wave2.png" width="50%" height="50%"></p>
+<p><img src="../Assets/images/3d_binary_wave2.png" width="50%" height="50%"></p>
 
 <p>3-byte coordinate systems are great at representing additive and subtractive color so we can use opengl and three.js to produce the following:</p>
 <div class="flex-div">
-    <img src="../assets/images/color_cube1.png" width="50%" height="50%">
-    <img src="../assets/images/color_cube2.png" width="50%" height="50%">
+    <img src="../Assets/images/color_cube1.png" width="50%" height="50%">
+    <img src="../Assets/images/color_cube2.png" width="50%" height="50%">
 </div>
 <p>Throughout this document we have been approaching the concept of hamming spaces.
 A hamming space is the set of all words with character length N in the alphabet Q.
@@ -88,16 +88,16 @@ We can visualise hamming spaces as tree structures with nodes representing symbo
 Each instance of branching appends n^b nodes to the hamming space of an alphabet Q, where n is the number of symbols in the alphabet Q and b the length of the word.
 Take for instance the binary alphabet Q with N=4 and the decimal alphabet R with N=3. </p>
 <div class="flex-div">
-<img src="../assets/images/tree_inverted.png" width="50%" height="50%">
-<img src="../assets/images/tree2_inverted3.png" width="50%" height="50%">
+<img src="../Assets/images/tree_inverted.png" width="50%" height="50%">
+<img src="../Assets/images/tree2_inverted3.png" width="50%" height="50%">
 </div>
 
 <p>The set of n symbols in alphabet Q when represented as a set of sets represents a complete graph. The hamming space is thus the set of all N-length paths that
 can be traversed within this graph.</p>
-<p><img src="../assets/images/complete_inverted.png" width="20%" height="20%"></p>
+<p><img src="../Assets/images/complete_inverted.png" width="20%" height="20%"></p>
 
 <p>To simplify consider the below</p>
-<p><img src="../assets/images/refraction_sets.png" width="50%" height="50%"></p>
+<p><img src="../Assets/images/refraction_sets.png" width="50%" height="50%"></p>
 
 <p>A vector in this graph from set A to B reads as 'each element pair (a,b) in the bijection A → B is such that b exists if and only if a exists and the relation R is
 true for all b and true for no a'. This holds true for a relation representing any dimension we might have. In the above diagram we have the set of symbols 0,1 in the 
@@ -106,7 +106,7 @@ not exist if existence didn't exist. Each element in our dimension sets is a vec
 that exists as a finite field, any hamming space over n symbols in an alphabet Q produces an n-dimensional vector space.</p>
 
 <p>Thus we can consider basic arithmetic as movement through this vector field.</p>
-<p><img src="../assets/images/hamming_space_dark.png" width="50%" height="50%"></p>
+<p><img src="../Assets/images/hamming_space_dark.png" width="50%" height="50%"></p>
 
 <p>Any symbol will be connected to all other symbols, and thus any word in the alphabet Q is n substiutions away from that word. The hamming distance between two 
 strings equals the number of substitutions required for one to become equal to the other.</p>
