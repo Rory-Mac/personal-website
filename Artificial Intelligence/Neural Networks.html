@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <title>Neural Networks</title>
+</head>
+<body>
+    <header class="site-header">
+        <div class="wrapper">
+            <a class="site-title hover-animation" href="../index.html">RoryMac.blog </a>
+            <nav class="site-nav">
+                <a class="nav-link hover-animation" href="../index.html">About</a>
+                <a class="nav-link hover-animation" href="../explore.html">Explore</a>
+                <a class="nav-link hover-animation" href="../projects.html">Projects</a>
+                <a class="nav-link hover-animation" href="../blog.html">Blog</a>
+            </nav>
+        </div>
+        <hr>
+    </header>
+    <main class="page-content">
+        <div class="wrapper">
+            <h3>Neural Networks</h3>
+            <p>Artificial neural networks are computing systems inspired by biology, specifically that of neuroscience and the study of the human nervous system.
+            The perceptron, the building block of these networks, developed alongside our understanding of the neuron, and many breakthroughs in the field
+            are layered atop breakthroughs in our understanding of the human nervous system. Thus, we will start not with the perceptron, but with the neuron, which 
+            has an approximate structure as follows:
+            <img src="../Assets/images/neuron.jpg" width="50%" height="50%">
+            The neuron consists of a soma (a cell body) that receives electrochemical signals from a set of dendrites (the branching observed around the soma) 
+            and sends electrochemical signals down its axon (the large protrusion from the soma that is bundled by an insulating layer termed the myelin sheath)
+            to a set of end bulbs (also known as axon terminals or presynaptic terminals).</p>
+            <p>Lets know look at the functionality of the neuron. Based on electrochemical changes in the dendrites, the neuron as a whole will either fire a 
+            signal down the axon, or not. This is called the action potential. To understand the action potential it is first important to understand the synapse.
+            The synapse is the junction between two neurons where electrochemical signals are carried from one to the other. Specifically, an action potential 
+            firing on the sending neuron triggers that neurons presynaptic terminals to secrete neurotransmitters into the synapse via exocytosis. These 
+            neurotransmitters then bind to receptors on the postsynaptic terminals located on the dendrites of the receiving neuron:
+            <a target="_blank" href="https://www.simplypsychology.org/synapse.html"><img src="../Assets/images/synapse.png" width="70%" height="70%"></a>
+            This binding action triggers ion channels to open and close in the postsynaptic membrane, thus changing the membrane potential (the difference 
+            in electrochemical charge between the inside and outside of the cell membrane). If the membrane potential changes from its rest value of approximately -70mv
+            to -55mv, voltage-gated sodium channels open up and an action potential is triggered. There is a summation effect by a region in the soma called the 
+            axon hillock, that sums up the electrochemical inputs of each dendritic branch. Consider that there exists an average of 1 voltage-gated sodium channel 
+            per micrometre on the surface of the soma, but on the axon hillock this value rises to an average of 100-200 voltage-gated sodium channel per micrometre. 
+            Binding of the neurotransmitter to the cell membrane may be excitatory or inhibitory, meaning it depolarises the neuron towards the threshold value, or
+            hyperpolarises the neuron away from the threshold value. Lets now look to the action potential itself...</p>
+            <p><a target="_blank" href="https://www.kenhub.com/en/library/anatomy/action-potential"><img src="../Assets/images/action_potential_curve.jpg" width="70%" height="70%"></a>
+            ...and the chemical changes that underlie it.</p><p>
+            <a target="_blank" href="https://www.allthescience.org/what-is-action-potential.htm"><img src="../Assets/images/electrochemical_change.jpg" width="70%" height="70%"></a></p>
+            <p>The resting potential of a neuron is the electric potential difference (the voltage) between the inside and outside of the neuron's cell membrane when 
+            the neuron is minimally transmitting electrochemical signals. The resting potential is established through the combined action of several factors. One is 
+            that of the presence of the sodium-potassium pump which is constantly using ATP energy to pump potassium ions into the cell and sodium ions out of the cell 
+            in a 3:2 ratio. This establishes an ionic concentration gradient and thus an electrochemical gradient across the membrane. Another is the permeability of 
+            intracellular and extracellular ions across the membrane. At rest, potassium ions have a higher permeability and thus 'leak out' of the intracellular fluid 
+            to a greater degree than sodium ions 'leak in'. This outflow of positive ions gives the intracellular fluid a greater negative value, as does the presence 
+            of other anions and organic compounds.</p>
+            <p>The action potential itself is initiated when the electrochemical changes resulting from postsynaptic binding elevates the resting potential above 
+            the threshold value. This triggers voltage-gated sodium channels to open, to overshoot, and thus for the polarity of the neuron to reverse 
+            (hypopolarization and depolarization). Lagging potassium channels then open up, overshoot, and again cause the polarity of the neuron to reverse 
+            (repolarization and hyperpolarization). The voltage peak of the action potential does not change. It is also important to note that voltage-gated 
+            sodium channels are closed during repolarization, so that only one action potential fires at a time. However, if excitatory electrochemical changes
+            are signficant enough, the neuron may fire repeatedly. It is also important to note that "neurons that fire together wire together", meaning that 
+            across time it takes less electrochemical change for a presynaptic neuron to excite a postsynaptic neuron. The underlying process that causes such 
+            is still largely unkown, but is related to long-term potentiation and long-term depression.</p>
+
+
+
+
+            <p> Let's now look to the structure of a single digital neuron:</p>
+            <p><img src="../Assets/images/digital_neuron2.png" width="100%" height="100%"></p>
+            <p>Each activation in a set of input nodes is weighted, then all activations are summed, a bias is applied to the result and then converted into a boolean
+            value that decides whether the perceptron activates or not. Perceptrons are layered to form a neural network:</p>
+            <p><img src="../Assets/images/digital_neurons.png" width="100%" height="100%"></p>
+            The mathematical expression for determining the activation of a perceptron is as follows:
+                \[ σ\left(\left(\sum_{i=1}^n a_iW_i\right) + b \right) \]
+            This scales to a layer of neurons like so:
+            <p>
+                \[
+                σ\left(
+                \begin{bmatrix} W_{0,0} & W_{1,0} & \dots & W_{n,0} \\ W_{0,1} & W_{1,1} & \dots & W_{n,1} \\ 
+                \vdots & \vdots & \ddots & \vdots \\ W_{0,n} & W_{1,n} & \dots & W_{n,n} \end{bmatrix}
+                \begin{bmatrix} a_0 \\ a_1 \\ \vdots \\ a_n \end{bmatrix} +  
+                \begin{bmatrix} b_0 \\ b_1 \\ \vdots \\ b_n \end{bmatrix}
+                \right) = \begin{bmatrix} o_0 \\ o_1 \\ \vdots \\ o_n \end{bmatrix}
+                \]
+            </p>
+            <p> \( a_1..a_n \> \) represents the activation values of the input neurons. \( o_1..o_n\) represents the activation values of the output neurons. 
+                The activation function (denoted σ above) is a function that scales the range of possible activation in each neuron. The sigmoid function is a
+                mathematical function that performs exactly this: 
+                \[ σ(x) = \frac{1}{1+e^{-x}} \]</p>
+            <p>
+                ReLU (rectified Linear Unit) is a popular alternative that imitates the boolean nature of activation in biological neurons:
+                \[ σ(x) = max(0, x) \]
+            </p>
+            <p> There exist many activation functions including the step function, signum function, linear function, leaky ReLU, 
+                Hyperbolic tangent function and softmax function. These all modify the range of activation a neuron possesses. As a general rule, the more limited
+                the set of possible values the activation function produces, the faster the speed of computation in the neural network.</p>
+            <p> A loss/reward function is a function that maps a set of variables to a variable representing a cost/reward. An optimisation problem is a problem with 
+                the goal of determining the minimum/maximum, minimum in the case of a cost function, maximum in the case of a reward function.  
+                In artificial intelligence, the loss/reward function incentivises the neural network to train towards a given objective.</p>
+                
+        </div>
+    </main>
+</body>
+</html>
