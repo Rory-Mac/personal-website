@@ -84,7 +84,14 @@
             for multi-layer networks, it is more complicated. Consider first that we want to find the cost function's rate of change with respect to a single 
             weight or bias, which can be expressed as a tree-like structure:
             <a target="_blank" href="https://www.3blue1brown.com/"><img src="../Assets/images/backprop_overview.png" width="100%" height="100%"></a>
-            With this set of equations we can find the partial derivative of the cost function with respect to any parameter in the network.
+            With this set of equations we can find the partial derivative of the cost function with respect to every parameter in the network, in order to create 
+            the gradient vector of the cost function that defines how we modify our parameter set. Note that our batch size for running backpropagation is likely 
+            to be significantly larger than a single output node, i.e. all output nodes across a batch of training examples, so we instead use the following
+            formula:
+                \[
+                \frac{\partial C}{\partial w^{(L)}} = \frac{1}{n} \sum_{k=0}^{n-1} \frac{\partial C_k}{\partial w^{(L)}}
+
+                \]
             </p>
         </div>
     </main>
