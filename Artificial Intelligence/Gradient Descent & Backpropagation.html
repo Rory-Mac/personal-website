@@ -88,10 +88,7 @@
             the gradient vector of the cost function that defines how we modify our parameter set. Note that our batch size for running backpropagation is likely 
             to be significantly larger than a single output node, i.e. all output nodes across a batch of training examples, so we instead use the following
             formula:
-                \[
-                \frac{\partial C}{\partial w^{(L)}} = \frac{1}{n} \sum_{k=0}^{n-1} \frac{\partial C_k}{\partial w^{(L)}}
-
-                \]
+                \[\frac{\partial C}{\partial w^{(L)}} = \frac{1}{n} \sum_{k=0}^{n-1} \frac{\partial C_k}{\partial w^{(L)}}\]
             </p>
         </div>
     </main>
