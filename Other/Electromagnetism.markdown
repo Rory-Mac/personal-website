@@ -1,5 +1,6 @@
 ---
-layout: default_dark
+layout: default
+mode: dark
 title: Electromagnetism
 ---
 <h3>Electromagnetism</h3>

@@ -1,5 +1,6 @@
 ---
-layout: default_light
+layout: default
+mode: light
 title: Binary Classifiers
 ---
 <h4>Binary Classifiers</h4>

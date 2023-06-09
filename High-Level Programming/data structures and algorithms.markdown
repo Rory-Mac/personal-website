@@ -1,5 +1,6 @@
 ---
-layout: default_light
+layout: default
+mode: light
 title: Data Structures & Algorithms
 ---
 <h3>Data Structures and Algorithms</h3>

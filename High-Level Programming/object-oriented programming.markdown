@@ -1,5 +1,6 @@
 ---
-layout: default_light
+layout: default
+mode: light
 title: Object-Oriented Programming
 ---
 <h3>Object-Oriented Programming</h3>

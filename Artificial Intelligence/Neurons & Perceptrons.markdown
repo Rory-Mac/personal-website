@@ -1,5 +1,6 @@
 ---
-layout: default_light
+layout: default
+mode: light
 title: Neurons & Perceptrons
 ---
 <h3>Neurons & Perceptrons</h3>

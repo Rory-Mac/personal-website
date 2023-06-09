@@ -1,5 +1,6 @@
 ---
-layout: default_light
+layout: default
+mode: light
 title: Fundamentals of Networking
 ---
 <h4>Fundamentals of Networking</h4>

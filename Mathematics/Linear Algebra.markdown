@@ -1,5 +1,6 @@
 ---
-layout: default_dark
+layout: default
+mode: dark
 title: Linear Algebra
 ---
 <h3>Linear Algebra</h3>

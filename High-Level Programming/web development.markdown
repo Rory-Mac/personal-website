@@ -1,5 +1,6 @@
 ---
-layout: default_dark
+layout: default
+mode: dark
 title: Web Development
 ---
 <h3>Web Development</h3>

@@ -1,5 +1,6 @@
 ---
-layout: default_dark
+layout: default
+mode: dark
 title: Coding Theory
 ---
 <h3>Coding Theory</h3>

@@ -1,5 +1,6 @@
 ---
-layout: default_dark
+layout: default
+mode: dark
 title: Narrative Map
 ---
 <h3>Narrative Map</h3>

@@ -1,5 +1,6 @@
 ---
-layout: default_dark
+layout: default
+mode: dark
 title: Multivariable Calculus
 ---
 <h3>Multivariable Calculus</h3>

@@ -1,5 +1,6 @@
 ---
-layout: default_dark
+layout: default
+mode: dark
 title: A Collective Nervous System
 ---
 <h4>A Collective Nervous System</h4>
