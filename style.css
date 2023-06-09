@@ -4,7 +4,8 @@ body, html {
     margin: 0rem auto 0rem auto;
     font-weight: 400;
     font-size: 1rem;
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-family: 'Source Code Pro', monospace;
+    /*font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";*/
     color: #111;
 }
 

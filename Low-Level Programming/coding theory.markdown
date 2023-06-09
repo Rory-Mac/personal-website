@@ -1,31 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../style.css"/>
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-	<title>Coding Theory</title>
-</head>
-<body>
-    <header class="site-header-dark">
-        <div class="wrapper">
-            <a class="site-title-dark hover-animation" href="../index.html">RoryMac.blog </a>
-            <nav class="site-nav">
-                <a class="nav-link-dark hover-animation" href="../index.html">About</a>
-                <a class="nav-link-dark hover-animation" href="../explore.html">Explore</a>
-                <a class="nav-link-dark hover-animation" href="../projects.html">Projects</a>
-                <a class="nav-link-dark hover-animation" href="../blog.html">Blog</a>
-            </nav>
-        </div>
-        <hr>
-    </header>
-    <main class="page-content-dark">
-    <h3>Coding Theory</h3>
-    <p>
-The binary alphabet is comprised of the beautifully simple character set 0 and 1. It is a very easy language to learn:
+---
+layout: default_dark
+title: Coding Theory
+---
+<h3>Coding Theory</h3>
+<p>The binary alphabet is comprised of the beautifully simple character set 0 and 1. It is a very easy language to learn:
 <br><br>&emsp;1)	write 0 or 1
 <br>&emsp;2)	repeat ad infinitum</p>
 <p>In no dimensions we have the concept of zero and one:</p>
@@ -129,6 +107,3 @@ output alphabet<br>\(Q\) is a set of states<br>\(\delta\) is a set of state-inpu
    Thus we can construct a DFA to determine whether a word (a set of characters in an input stream) is grammatically correct, by determining whether its 
    final state is an acceptor state. 
 <p>This has application in regular expression engines and compilers.</p>
-</main>
-</body>
-</html>

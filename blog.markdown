@@ -1,0 +1,9 @@
+---
+layout: default_dark
+title: Blog
+---
+
+<h4>6/05/23</h4>
+<p>&emsp;&emsp;<a class="light-link hover-animation" href="Blog/A Collective Nervous System.html">The Internet as a Collective Nervous System</a></p>
+<h4>28/04/23</h4>
+<p>&emsp;&emsp;<a class="light-link hover-animation" href="Blog/An approach to Artificial Intelligence.html">An approach to Artificial Intelligence</a></p>
