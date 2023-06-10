@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <!-- Include CSS, scripts, or other common elements -->
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,40 +11,25 @@
         <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
         <title>{{ page.title }}</title>
     </head>
-    <body>
-        <!-- Include navigation menu from _includes folder -->
-        {% if page.mode == "dark" %}
-        <header class="site-header-dark">
-            <div class="wrapper">
-                <a class="site-title-dark hover-animation" href="{{site.baseurl}}/index.html">rorymac.blog </a>
-                <nav class="site-nav">
-                    <a class="nav-link-dark hover-animation" href="{{site.baseurl}}/index.html">projects</a>
-                    <a class="nav-link-dark hover-animation" href="{{site.baseurl}}/explore.html">exploration</a>
-                    <a class="nav-link-dark hover-animation" href="{{site.baseurl}}/blog.html">blog</a>
-                </nav>
-            </div>
-            <hr>
-        </header>
-        
-        <main class="page-content-dark">
-            <div class="wrapper">
-        {% elsif page.mode == "light" %}
+    {% if page.mode == "dark" %}
+    <body class="dark">
+    {% elsif page.mode == "light" %}
+    <body class="light">
+    {% endif %}
         <header class="site-header">
             <div class="wrapper">
-                <a class="site-title hover-animation" href="{{site.baseurl}}/index.html">rorymac.blog </a>
+                <a class="site-title" href="{{site.baseurl}}/index.html">rorymac.blog </a>
                 <nav class="site-nav">
-                    <a class="nav-link hover-animation" href="{{site.baseurl}}/index.html">projects</a>
-                    <a class="nav-link hover-animation" href="{{site.baseurl}}/explore.html">exploration</a>
-                    <a class="nav-link hover-animation" href="{{site.baseurl}}/blog.html">blog</a>
+                    <a class="nav-link" href="{{site.baseurl}}/index.html">projects</a>
+                    <a class="nav-link" href="{{site.baseurl}}/explore.html">exploration</a>
+                    <a class="nav-link" href="{{site.baseurl}}/blog.html">blog</a>
                 </nav>
             </div>
             <hr>
         </header>
         <main class="page-content">
-            <div class="wrapper">
-        {% endif %}
-        <!-- Render the content from the Markdown file -->
-        {{ content }}
+            <div>
+            {{ content }}
             </div>
         </main>
     </body>

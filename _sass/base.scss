@@ -1,27 +1,27 @@
 body, html {
-    background-color: black;
     max-width: 800px;
     margin: 0rem auto 0rem auto;
     font-weight: 400;
     font-size: 1rem;
     font-family: 'Source Code Pro', monospace;
+
+    &.dark {
+        background-color: black;
+        color: #D3D3D3;
+    }
+    
+    &.light {
+        background-color: white;
+        color: black;
+    }
 }
 
 .site-header {
     padding: 1rem 2rem;
     font-weight: bold;
-    background-color: white;
-}
-
-.site-header-dark {
-    padding: 1rem 2rem;
-    font-weight: bold;
-    background-color: black;
 }
 
 .site-title {
-    color: #555;
-    text-decoration: none;
     font-size: 1.625rem;
 }
 
@@ -31,22 +31,10 @@ body, html {
 }
 
 .nav-link {
-    color: #555;
     text-decoration: none;
     margin-right: 1.25rem;
 }
 
-.site-title-dark {
-    color: #D3D3D3;
-    text-decoration: none;
-    font-size: 1.625rem;
-}
-
-.nav-link-dark {
-    color: #D3D3D3;
-    text-decoration: none;
-    margin-right: 1.25rem;
-}
 
 .wrapper {
     padding: 1rem 0;
@@ -54,50 +42,23 @@ body, html {
 
 .page-content {
     padding: 0rem 2rem;
-    background-color: white;
 }
 
-.page-content-dark {
-    padding: 0rem 2rem;
-    background-color: black;
-    color: #D3D3D3;
-}
-
-p {
-    margin-bottom: 2rem;
-    font-weight: 400;
-    margin: 0 0 1rem 0;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    margin: 0 0 1rem 0;
-}
-
-a, strong {
+a {
     font-weight: 400;
     text-decoration: none; 
-}
-
-.light-link {
-    color: #D3D3D3;
-}
-
-.dark-link {
-    color: #696969;
+    color: inherit;
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 img {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 1rem;
+    margin: 1rem auto 1rem auto;
 }
 
 .flex-div {
     display: flex;
     flex-direction: row;
-}
- 
-.hover-animation:hover {
-    text-decoration: underline;
 }
