@@ -1,6 +1,6 @@
 ---
 layout: default
-mode: dark
+mode: light
 title: Blog
 ---
 
