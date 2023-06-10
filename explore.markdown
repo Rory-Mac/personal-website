@@ -23,7 +23,7 @@ title: Explore
     <p>&emsp;&emsp;<a class="dark" href="Low-Level Programming/coding theory.html">Coding Theory</a></p>
     <p>&emsp;&emsp;<a class="dark" href="Low-Level Programming/Concurrency & Operating Systems.html">Concurrency & Operating Systems</a></p>
     <br></p>
-<h4>Math</h4><p>
+<h4>Mathematics</h4><p>
     <p>&emsp;&emsp;<a class="dark" href="Mathematics/Linear Algebra.html">Linear Algebra</a></p>
     <p>&emsp;&emsp;<a class="dark" href="Mathematics/Multivariable Calculus.html">Multivariable Calculus</a></p>
     <p>&emsp;&emsp;<a class="dark" href="Mathematics/Hypercubes.html">Hypercubes</a></p>

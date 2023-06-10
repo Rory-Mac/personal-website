@@ -8,7 +8,7 @@ title: Coding Theory
 <br><br>&emsp;1)	write 0 or 1
 <br>&emsp;2)	repeat ad infinitum</p>
 <p>In no dimensions we have the concept of zero and one:</p>
-<div class="flex-div"><img src="../Assets/images/number_zero_inverted.png" width="10%" height="10%">
+<div class="flex"><img src="../Assets/images/number_zero_inverted.png" width="10%" height="10%">
 <img src="../Assets/images/number_one_inverted.png" width="10%" height="10%"></div>
 
 <p>In one dimension we have a binary number line:</p>
@@ -21,7 +21,7 @@ title: Coding Theory
  that each level in this tower is a two-dimensional square.
 Just looking at the expansion of these squares gives us the following</p>
 
-<div class="flex-div">
+<div class="flex">
 	<img src="../Assets/images/2d_binary_squares_inverted.png" width="20%" height="20%">
 	<img src="../Assets/images/2d_binary_wave_inverted.png" width="20%" height="20%">
 	<img src="../Assets/images/2d_binary_wave2dark.png" width="20%" height="20%">
@@ -58,7 +58,7 @@ which in our case is akin to scalability, such that we can build large memory mo
 <p><img src="../Assets/images/3d_binary_wave2.png" width="50%" height="50%"></p>
 
 <p>3-byte coordinate systems are great at representing additive and subtractive color so we can use opengl and three.js to produce the following:</p>
-<div class="flex-div">
+<div class="flex">
     <img src="../Assets/images/color_cube1.png" width="50%" height="50%">
     <img src="../Assets/images/color_cube2.png" width="50%" height="50%">
 </div>
@@ -67,7 +67,7 @@ A hamming space is the set of all words with character length N in the alphabet 
 We can visualise hamming spaces as tree structures with nodes representing symbols and edges representing symbol selections.
 Each instance of branching appends n^b nodes to the hamming space of an alphabet Q, where n is the number of symbols in the alphabet Q and b the length of the word.
 Take for instance the binary alphabet Q with N=4 and the decimal alphabet R with N=3. </p>
-<div class="flex-div">
+<div class="flex">
 <img src="../Assets/images/tree_inverted.png" width="50%" height="50%">
 <img src="../Assets/images/tree2_inverted3.png" width="50%" height="50%">
 </div>
