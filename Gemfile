@@ -34,3 +34,6 @@ gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 
 # quick fix to known issue https://github.com/jekyll/jekyll/issues/8523
 gem "webrick"
+
+# for sass-compatibility
+gem 'jekyll-sass-converter'
