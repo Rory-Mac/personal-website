@@ -9,6 +9,9 @@ title: Explore
     <p>&emsp;&emsp;<a class="dark" href="Artificial Intelligence/Binary Classifiers.html">Binary Classifiers</a></p>
     <p>&emsp;&emsp;<a class="dark" href="Artificial Intelligence/Gradient Descent & Backpropagation.html">Gradient Descent & Backpropagation</a></p>
 	<br></p>
+<h4>Machine Learning</h4><p>
+    <p>&emsp;&emsp;<a class="dark" href="Machine Learning/linear regression.html">Linear Regression</a></p>
+	<br></p>
 <h4>Information Security</h4><p>
     <p>&emsp;&emsp;<a class="dark" href="Information Security/Fundamentals of Networking.html">Fundamentals of Networking</a></p>
     <p>&emsp;&emsp;<a class="dark" href="Information Security/Fundamentals of Encryption.html">Fundamentals of Encryption</a></p>

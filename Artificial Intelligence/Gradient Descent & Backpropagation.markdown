@@ -4,68 +4,36 @@ mode: dark
 title: Gradient Descent & Backpropagation
 ---
 <h4>Gradient Descent & Backpropagation</h4>
-<p>So far we have looked at the structural and mathematical foundations of neural networks as well as some supervised learning methods in single-layer models. 
-In this document we will look at reinforcement learning in multi-layer models as well as the underlying theory of such (gradient descent and backpropagation).</p>
-<p>Unlike in supervised learning, in reinforcement learning, the most desirable output for a given input is not given as a reference to the model. Instead, 
-a cost or reward value is given to the model, which itself is proportional to how close the output produced was to the maximally desired output:
-    \[ E = \frac{1}{2} \sum_{i=1}^{n} (z_i - t_i)^2 \]
-In this equation \(i\) is the identifier of one of \(n\) output nodes denoted as \(z_i\). Then, \(t_i\) is one of \(n\) comparison nodes that exist in 
-a one-to-one pairing with the output. The difference between the actual output and target output is then squared to weight large differences more heavily
-than small differences. By thinking of \(E\) as a height, we essentially create a cost landscape over our output space, which is most easily visualised
-in two dimensions: 
-<img src="../Assets/images/hill_climbing_dark.png" width="50%" height="50%"></p>
-<p>It seems necessary to undestand linear regression and the least-squares method before approaching the concept of gradient descent. In linear regression 
-we observe the relationship between a set of independent variables and a dependent variable and record our observations as a set of data points. We then 
-attempt to define an equation that best predicts the value of the dependent variable for a given value of the independent variable(s). In relation to neural
-networks, we can think of an independent variable as a neuronal input, a dependent variable as a neuronal output, and the set of data points that map 
-the independent variable to the dependent variable as the the training set. Consider the simplest example of a single independent and dependent variable: \[y_1 = \beta_0 + \beta_1x_1\] Say we have a set of
-input-output pairs \((1,6),(2,5),(3,7),(4,10)\) which produce the following system of linear equations:
-    \[6 = \beta_0 + 1\beta_1\]
-    \[5 = \beta_0 + 2\beta_1\]
-    \[7 = \beta_0 + 3\beta_1\]
-    \[10 = \beta_0 + 4\beta_1\]
-For any reasonably sized training set, it appears that our system will be overdetermined (it will possess more equations than unknowns), and 
-thus unsolvable if any one of the above equations is linearly independent from any other. We can however introduce the concept of residuals, which 
-change our initial equation to the following: \[r_1 = y_1 - (\beta_0 + \beta_1x_1)\] Thus, each input-output mapping has an associated residual, 
-which can be thought of as a cost, because if the difference is great between the output produced and the output observed, the residual is great, 
-and our equation is non-predictive. Similarly, if the difference is minimal, the residual is minimal, and our equation is predictive. It is no 
-use having an equation that perfectly maps only one input to an observed output, so we compute an overall cost as follows:
-    \[S = \sum_{i=0}^{n} r_i^2 \]
-Squaring the residual means that large differences are weighted heavier than small differences. We can now visualise the linear regression like so:
-</p><p><a target="_blank" href="https://web.stanford.edu/class/stats202/notes/Linear-regression/Simple-linear-regression.html">
-<img src="../Assets/images/simple_regression_dark.png" width="100%" height="100%"></a></p>
-<p>Calculating the overall cost as the sum of the residuals squared gives us an expression of the cost function as follows:
-    \[4\beta_1^2 + 30\beta_2^2 + 20\beta_1\beta_2 - 56\beta_1 - 154\beta_2 + 210\]
-To minimise S we set the partial derivatives to zero, and solve for \(\beta_1\) and \(\beta_2\). This give us the optimal solution to predicting the 
-dependent variable from the independent variable. Multiple linear regression is identical to the methods described so far, except that it attempts 
-to predict a dependent variable from a set of independent variables (an n-dimensional input space).</p>
-<p>Lets now look at gradient descent. We should now understand that the cost function can be visualised as an elevated landscape over an abstract space, 
-where each point in the abstract space represents a configuration of parameters. Each parameter can be thought of as a single dimension in our n-dimensional 
-cost landscape, with the partial derivative of the cost function with respect to that parameter being the slope of the cost landscape in that direction. 
-Thus, to modify our parameter set is to move from one point in the cost landscape to another, given that each point represents a parameter set. To 
-ensure that our movement through the cost landscape is directed towards a minimum cost, we can move in the direction of the negative gradient of the cost 
-function which looks as follows: \[ x_{n+1} = x_n - \gamma \nabla F(x_n) \] where \(x_n\) is our initial point, \(x_{n+1}\) is the point we next move to,
-and \(\gamma\) is the learning rate that defines the magnitude of the jump we make from our initial point towards the steepest slope. 
-The gradient function itself returns a vector containing the partial derivatives for each coordinate direction:
-\[
-\nabla F(a_n) = \;\; 
- \begin{bmatrix}
-\frac{\partial F}{\partial \beta_0} \\
-\frac{\partial F}{\partial \beta_1} \\ 
-\vdots \\
-\frac{\partial F}{\partial \beta_n} 
-\end{bmatrix} 
-\]
-</p>
-<p>Now we are ready to look at backpropagation. Backpropagation is simply finding the gradient vector of the cost function so that we can modify each 
-parameter in our neural network to move towards minimisation of the cost function for the batch of training examples. This means finding the partial 
-derivative of the cost function with respect to each individual parameter. In the earlier case of linear regression, we could do this directly, however 
-for multi-layer networks, it is more complicated. Consider first that we want to find the cost function's rate of change with respect to a single 
-weight or bias, which can be expressed as a tree-like structure:
+<p>Backpropagation is a means of finding the gradient vector of a cost function to express the degree to which small changes in each network parameter
+affect the cost associated with a batch of training data. We use the gradient vector to modify our parameter set in the direction of least cost. Let us 
+start off with the following set of relevant equations:
 <a target="_blank" href="https://www.3blue1brown.com/"><img src="../Assets/images/backprop_overview.png" width="100%" height="100%"></a>
-With this set of equations we can find the partial derivative of the cost function with respect to every parameter in the network, in order to create 
-the gradient vector of the cost function that defines how we modify our parameter set. Note that our batch size for running backpropagation is likely 
-to be significantly larger than a single output node, i.e. all output nodes across a batch of training examples, so we instead use the following
-formula:
+The cost function itself is denoted \(C_0\), where \(0\) denotes the index of an output node and \(y\) denotes a comparison node. The same definition
+holds when \(a^{(L)}\) denotes the activation vector for the set of output nodes and \(y\) similarly denotes the activation vector for the set of 
+comparison nodes. The same definition also holds when \(a^{(L)}\) denotes an actual activation matrix and \(y\) an expected activation matrix. In this case,
+each row in the matrices represent the actual or expected activation vector of a given training example, and column length (the number of rows) represents the
+size of the batch of training examples. Subtraction and exponentiation in these cases are element-wise. Note that the cost function is sometimes instead written
+as half its value above which cancels with the exponent when the cost function is derived with respect to \(a^{(L)}\). We wish to find the partial derivative of
+the cost function with respect to each individual parameter (that is, each weight and bias).
     \[\frac{\partial C}{\partial w^{(L)}} = \frac{1}{n} \sum_{k=0}^{n-1} \frac{\partial C_k}{\partial w^{(L)}}\]
+Having found this value, we simply multiply it by the learning rate and add it to the corresponding parameter value. The following is another equation that proves
+useful in backpropagation:
+    \[\delta^{(L)}_j= \frac{\partial C}{\partial a^{(L)}_j} \sigma^{\prime}({z^{(L)}_j})\]
+This is an expression of 'error' and is equivalent to finding the partial derivative of the cost function with respect to the weighted sum of a given node. This
+expression finds the error associated with a single node, but can be extended to find the error associated with an entire layer \(L\) like so:
+    \[\delta^L = \nabla_aC \odot \sigma^{\prime}(z^L)\]
+We can re-express this as follows, and see that despite the complexity of the equations, they can be reduced to vector operations and thus be computed quickly 
+by software libraries optimised for such:
+    \[\delta^L = (a^L - y) \odot \sigma^{\prime}(z^L)\]
+We can re-express this again, instead highlighting the relationship between the error associated with one layer and the error associated with an adjacent layer,
+thus we can 'backpropagate' this error backwards through our network when computing the partials of our cost function with respect to each parameter:
+    \[\delta^l = ((w^{l+1})^{T} \> \delta^{l+1}) \odot \sigma^{\prime}(z^L)\]
+The motivation here stems from the fact that if we can define and evaluate a vector that represents the error associated with a network layer, then we can 
+update each parameter in that layer based on that error value, rather than the error value associated with the output vector, many layers away.
+The use of the tranpose matrix is simply the reverse of the 'feed-forward' approach, except now we are 
+backpropagating the error associated with an output activation back to the set of input activations that generated that error, as scaled by weight. We have thus
+found (through backpropagation) the cost partial with respect to an activation, but since we have defined error as the cost partial with respect to the weighted
+sum, we use the Hadamard product '\(\odot\)' with \(\sigma^{\prime}(z^L)\) (the partial of \(a\) with respect to \(z\)), thus establishing the error of layer 
+\(L\) from the error of layer \(L+1\).
+
 </p>
