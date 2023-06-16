@@ -16,10 +16,10 @@ title: Data Structures & Algorithms
     stacks, heaps, graphs, etc.</p> 
 <p> An array is a primitive data type with a linear ordering (by index). Arrays can be uni-dimensional or multi-dimensional. Arrays can be of fixed or 
     dynamic size. It can be helpful to color-code subsets of an array, and visualise numerical values as heights in a histogram,   
-    <img src="../Assets/images/array1.png" width="100%" height="100%">
+    <img src="/Assets/images/array1.png" width="100%" height="100%">
 </p>
 <p> 
     A linked list is a data structure containing a linear set of data elements. Unlike an array, the ordering of data 
     elements in a linked list does not necessarily correspond to their ordering in physical memory. Linked lists can be singly or doubly linked,
-    <img src="../Assets/images/linked_list.png" width="100%" height="100%"> 
+    <img src="/Assets/images/linked_list.png" width="100%" height="100%"> 
 </p>

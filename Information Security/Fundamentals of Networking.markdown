@@ -25,7 +25,7 @@ router and router firewall at the network edge.
     Internet Exchange Points (IX). They are also connected and provide networking services to regional and local Internet Service Providers (ISPs). 
     No matter how large the network, the network needs to offer connectivity and routing services. Thus we can visualise the hierarchy of internet 
     service providers approximately as follows:
-    <img src="../Assets/images/ISP_NSP_1.png" width="100%" height="100%"></p>
+    <img src="/Assets/images/ISP_NSP_1.png" width="100%" height="100%"></p>
 <p>Before looking further into application-layer protocols, it is important to understand the TCP/IP protocol and the client-server model. The 
 client-server model makes up a significant portion of internet traffic, that is simply, client devices requesting resources from server devices. There 
 does not necessarily exist a distinction between a client and server device, any device may run a client or server program designed to send or retrieve 
@@ -34,7 +34,7 @@ the home router, or as complex as a large server farm. Transmission Control Prot
 communication protocol exists within a stack of communication protocols, unless the communication protocol itself is the base physical layer. Data frames
 from more abstract protocol layers are encapsulated by less abstract protocol layers. Communication of data over an abstract protocol layer requires 
 encapsulation of that data by all other underlying protocols. Consider the following:
-<img src="../Assets/images/encapsulation.png" width="100%" height="100%"></p>  
+<img src="/Assets/images/encapsulation.png" width="100%" height="100%"></p>  
 <p>Lets now look to DNS. DNS (Domain Name System) is a fundamental component of the internet that is responsible for the translation of human-readable 
 domain names (www.example.com) to corresponding IP addresses. ICANN plays a key role in the coordination and oversight of global DNS, including 
 the delegation of such maintenance to individual domain registrars and TLD authorities. Here is an overview of DNS resolution:
@@ -50,4 +50,4 @@ the delegation of such maintenance to individual domain registrars and TLD autho
     <li>A TCP handshake is initiated and if successful, application-layer data is exchanged.</li>
 </ol></p>
 <p>The TCP handshake itself is relatively simple. Having been completed, a client and server can begin exchanging data with principles of reliable data
-transfer (RDT) in mind: <img src="../Assets/images/TCP_Handshake.png" width="100%" height="100%"></p>
+transfer (RDT) in mind: <img src="/Assets/images/TCP_Handshake.png" width="100%" height="100%"></p>

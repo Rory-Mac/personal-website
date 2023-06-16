@@ -17,7 +17,7 @@ in some way, and thus do not nest other block-level elements within themselves. 
 storing empty lines by color-coding them in css. Here we color-code the body as dark green, divs as light green and paragraphs as pale green. This is a very
 simple example of a website with three document divisions each containing two paragraphs.</p>
 
-<img src="../Assets/images/html1.png" width="100%" height="100%">
+<img src="/Assets/images/html1.png" width="100%" height="100%">
 <p>This is not a sophisticated web-layout by any means, but despite its simplicity, it is still pleasing to the eye. This is because the colors conform
 to a color palette based on color theory. These palettes can be found online. Also note that block elements take up the entire width of the element they are
 nested within.</p> 
@@ -27,7 +27,7 @@ surrounding element), border (border of element), and padding (space between an 
 Many unit values are used to quantify these properties. Absolute lengths including px, pt, cm, in and more. Relative lengths inherit their length from another
 value or element; they include em which refers to 'parent element', rem which refers to 'root element', vh and vw which refer to 1% of a viewport's height and
 width respectively, and many more.</p>
-<img src="../Assets/images/html2.png" width="100%" height="100%">
+<img src="/Assets/images/html2.png" width="100%" height="100%">
 
 <p>We can now better visualise how elements are nested and exist spatially in relation to one another. This is, again, a very simple layout, in which we have 
 three nested divisions in our body, each containing two paragraphs storing content.</p>
@@ -35,4 +35,4 @@ three nested divisions in our body, each containing two paragraphs storing conte
 <p>Flexbox is a layout method for arranging elements in rows and columns. Any block-level element attributed with the 'flex' display property in css becomes
 a flex-container (parent element) containing flex-items (child elements). CSS 'Normal Flow' is the flow of the display of block and inline elements in the
 web page, which follows a vertical and horizontal 'flow' layout respectively. Flexbox 'flex-flow' directions are similar:</p>
-<img src="../Assets/images/flex1.png" width="100%" height="100%">
+<img src="/Assets/images/flex1.png" width="100%" height="100%">

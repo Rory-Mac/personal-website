@@ -15,9 +15,9 @@ a one-way mathematical function that is only hard to compute inputs from outputs
 messages to and from Bob, but she has to get the secret to Bob. How does she send the unencrypted secret to Bob without revealing the secret to spys that
 are watching in on their conversation? Thankfully, some very smart people figured this out a long time ago, which Alice discovers by researching the
 Diffie-Hellman key exchange. This method, despite being decades old, remains elegant and easy to follow:   
-<img src="../Assets/images/Diffie_Hellman.png" width="100%" height="100%"></p>
+<img src="/Assets/images/Diffie_Hellman.png" width="100%" height="100%"></p>
 <p>Key exchanges are often thought of in terms of mixing colors, which itself is a one-way mathematical function:
-<img src="../Assets/images/Diffie_Hellman_color.png" width="100%" height="100%"></p>
+<img src="/Assets/images/Diffie_Hellman_color.png" width="100%" height="100%"></p>
 <p>With this methodology in place, even a man-in-the-middle (MITM) tracking the entirety of Alice and Bobs conversation will only attain the values g, n,
 A and B. The MITM will not attain the private values a or b, which are needed to derive the secret. The MITM could try every possible value of a or b 
 from 0 to n, verifying which a or b is used by Alice and Bob based on whether the value produces the output A or B. However, setting a large value n 

@@ -3,7 +3,7 @@ layout: default
 mode: dark
 title: Narrative Map
 ---
-<h3>Narrative Map</h3>
+<h4>Narrative Map</h4>
 <p>A micro-narrative is two perceived environments in succession. A narrative is a set of micro-narratives in succession. To put it less formally, 
 a micro-narrative is "this happened and then this happened" and a narrative is "this happened, and then this happened, and then this happened, and so on".
 Experience is no different, "this happened, and then this happened, and then this happened, and so on". Narratives compress experience. If 
@@ -11,13 +11,13 @@ Experience is no different, "this happened, and then this happened, and then thi
 The narrative filters for information based on the weight of the information (the degree to which it is desirable or undesirable). The narrative
 compresses the strongly weighted-information by merging it with strongly weighted-information in memory of similiarly defining characteristics. I visualise 
 the filtering aspect of narratives with the following heuristics:
-<img src="../Assets/images/gradation.png" width="100%" height="100%">
-<img src="../Assets/images/black_green_gradation.png" width="100%" height="100%"> 
+<img src="/Assets/images/gradation.png" width="100%" height="100%">
+<img src="/Assets/images/black_green_gradation.png" width="100%" height="100%"> 
 A vertical slot represents the information state of a perceiving agent. 
 The white-black gradient corresponds to the weight of the information state (sign-independent) which transforms into a green-black gradient 
 (low-cost/high-reward) and a red-black gradient (high-cost/low-reward) when the information is signed as positive/negative. Narrative compression can then 
 be visualised like so:
-<img src="../Assets/images/narrative_compression.png" width="100%" height="100%"> 
+<img src="/Assets/images/narrative_compression.png" width="100%" height="100%"> 
 I would recommend opening the image in a new tab for greater resolution. Each circle represents a perceving agent. The agent perceives a continual 
 transformation between desirable and undesirable information states. These states are compressed into templates of desirability (green), undesirability (red),
 undesirable-to-desirable transformations (red-green) and desirable-undesirable transformations (green-red). Agents communicate compressions of individual 
@@ -43,8 +43,8 @@ to narrative elements that recur across time and culture.
         <li>All humans experience a relationship between self and man (what masculinity is perceived as being, both externally and in relation to self).</li>
         <li>All humans experience a relationship between self and woman (what femininity is perceived as being, both externally and in relation to self).</li> 
     </ul>
-    <img src="../Assets/images/hypothesis_dark.png" width="100%" height="100%">
+    <img src="/Assets/images/hypothesis_dark.png" width="100%" height="100%">
 We then identify narrative elements that recur across time and culture, and determine how these elements relate to universal experience. If we find 
 a contradiction, that is a narrative that recurs across time and culture but does not fit into our graph, it likely means that the above set of assumptions 
 is wrong or incomplete. It is an iterative process still in progress:
-    <img src="../Assets/images/narrative_overview_dark.png" width="100%" height="100%">
+    <img src="/Assets/images/narrative_overview_dark.png" width="100%" height="100%">

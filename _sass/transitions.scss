@@ -1,11 +1,36 @@
 .zoom {
-    padding: 50px;
     transition: transform .2s;
-    width: 200px;
-    height: 200px;
     margin: 0 auto;
-  }
-  
-  .zoom:hover {
-    transform: scale(1.2);
-  }
+    text-align: center;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    img {
+      padding: 50px;
+      height: 200px;
+    }
+
+    &.small {
+      p {
+        width: 210px;
+      }
+
+      img {
+        padding: 25px;
+        width: 150px;
+        height: 150px;
+      }
+    }
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 0 2rem 0;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: flex-end;
+}
