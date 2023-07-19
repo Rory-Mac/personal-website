@@ -1,9 +1,27 @@
+@font-face {
+    font-family: 'Source Serif Pro';
+    src: url('/Assets/fonts/source-serif-pro.regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url('/Assets/fonts/Merriweather-Regular.ttf') format('truetype'),
+      url('/Assets/fonts/Merriweather-Bold.ttf') format('truetype'),
+      url('/Assets/fonts/Merriweather-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body, html {
     max-width: 800px;
     margin: 0rem auto 0rem auto;
     font-weight: 400;
-    font-size: 1rem;
-    font-family: 'Source Code Pro', monospace;
+    font-size: 1.0625rem;
+    letter-spacing: -0.003rem;
+    line-height: 28px;
+    font-family: 'Source Serif Pro', 'Source Code Pro', monospace;
 
     &.dark {
         background-color: black;

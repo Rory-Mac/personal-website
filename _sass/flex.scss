@@ -1,0 +1,40 @@
+.index-flex-container {
+  margin: 0 0 2rem 0;  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.explore-main-container {
+    margin: 0 0 2rem 0;  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.explore-content-container {
+    margin: 0 0 2rem 0;  
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-end;
+}
+
+.explore-content-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    background-color: white;
+}
+
+.explore-content-image {
+    width: 100%; 
+    height: 100%;
+    background-color: black;
+}
+
+.footer-flex-container {
+  display: flex;
+  justify-content: flex-end;
+}

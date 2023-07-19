@@ -1,6 +1,5 @@
 .zoom {
     transition: transform .2s;
-    margin: 0 auto;
     text-align: center;
 
     &:hover {
@@ -23,14 +22,4 @@
         height: 150px;
       }
     }
-}
-
-.flex {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 0 0 2rem 0;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    align-items: flex-end;
 }
