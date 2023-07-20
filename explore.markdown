@@ -8,7 +8,7 @@ title: Explore
     <div class="explore-content-container zoom small">
         <a href="/Mathematics/Linear Algebra.html">
             <div class="explore-content-image">
-                <img style="background-color: black" src="/Assets/images/4-cube_dark.png">
+                <img style="background-color: black" src="/Assets/images/linear_algebra_portal.png">
             </div>
         </a>
         <div class="explore-content-title">
@@ -18,7 +18,7 @@ title: Explore
     <div class="explore-content-container zoom small">
         <a href="/Mathematics/Multivariable Calculus.html">
         <div class="explore-content-image">
-                <img style="background-color: black" src="/Assets/images/4-cube_dark.png">
+                <img style="background-color: black" src="/Assets/images/multivar_calc_portal.png">
             </div>
         </a>
         <div class="explore-content-title">
@@ -28,7 +28,7 @@ title: Explore
     <div class="explore-content-container zoom small">
         <a href="/Mathematics/Hypercubes.html">
         <div class="explore-content-image">
-                <img style="background-color: black" src="/Assets/images/4-cube_dark.png">
+                <img style="background-color: black" src="/Assets/images/blank_4_cube.png">
             </div>
         </a>
         <div class="explore-content-title">
@@ -42,7 +42,7 @@ title: Explore
     <div class="explore-content-container zoom small">
         <a href="/Artificial%20Intelligence/Neurons%20%26%20Perceptrons.html">
         <div class="explore-content-image">
-                <img style="background-color: black" src="/Assets/images/4-cube_dark.png">
+                <img style="background-color: black" src="/Assets/images/basic_nn_dark.png">
             </div>
         </a>
         <div class="explore-content-title">
@@ -52,7 +52,7 @@ title: Explore
     <div class="explore-content-container zoom small">
         <a href="/Artificial Intelligence/Binary%20Classifiers.html">
         <div class="explore-content-image">
-                <img style="background-color: black" src="/Assets/images/4-cube_dark.png">
+                <img style="background-color: black" src="/Assets/images/binary_classifier_portal.png">
             </div>
         </a>
         <div class="explore-content-title">
@@ -62,7 +62,7 @@ title: Explore
     <div class="explore-content-container zoom small">
         <a href="/Artificial Intelligence/Gradient%20Descent%20%26%20Backpropagation.html">
         <div class="explore-content-image">
-                <img style="background-color: black" src="/Assets/images/4-cube_dark.png">
+                <img style="background-color: black" src="/Assets/images/backprop_portal.png">
             </div>
         </a>
         <div class="explore-content-title">
@@ -72,7 +72,7 @@ title: Explore
     <div class="explore-content-container zoom small">
         <a href="/Machine%20Learning/linear%20regression.html">
         <div class="explore-content-image">
-                <img style="background-color: black" src="/Assets/images/4-cube_dark.png">
+                <img style="background-color: black" src="/Assets/images/linear_regression_portal.png">
             </div>
         </a>
         <div class="explore-content-title">
@@ -121,7 +121,7 @@ title: Explore
     </div>
     <div class="explore-content-container zoom small">
         <a href="/Low-Level Programming/coding theory.html">
-            <div class="explore-content-image"><img style="background-color: black" src="/Assets/images/4-cube_dark.png"></div>
+            <div class="explore-content-image"><img style="background-color: black" src="/Assets/images/coding_theory_portal.png"></div>
         </a>
         <div class="explore-content-title">
             <p>Coding Theory</p>
@@ -133,7 +133,7 @@ title: Explore
 <div class="explore-main-container">
     <div class="explore-content-container zoom small">
         <a href="/High-Level Programming/object-oriented programming.html">
-            <div class="explore-content-image"><img style="background-color: black" src="/Assets/images/4-cube_dark.png"></div>
+            <div class="explore-content-image"><img style="background-color: black" src="/Assets/images/oop_portal.png"></div>
         </a>
         <div class="explore-content-title">
             <p>Object-Oriented</p>
@@ -152,7 +152,7 @@ title: Explore
     <div class="explore-content-container zoom small">
         <a href="/High-Level Programming/web development.html">           
             <div class="explore-content-image">
-                <img style="background-color: black" src="/Assets/images/4-cube_dark.png">
+                <img style="background-color: black" src="/Assets/images/webdev_portal.png">
             </div>
         </a><div class="explore-content-title">
             <p>Web Development</p>
@@ -161,7 +161,7 @@ title: Explore
     <div class="explore-content-container zoom small">
         <a href="/Information Security/Fundamentals of Networking.html">
             <div class="explore-content-image">
-                <img style="background-color: black" src="/Assets/images/4-cube_dark.png">
+                <img style="background-color: black" src="/Assets/images/basic_nets_portal.png">
             </div>
         </a>
         <div class="explore-content-title">
@@ -171,7 +171,7 @@ title: Explore
     <div class="explore-content-container zoom small">
         <a href="/Information Security/Fundamentals of Encryption.html">
             <div class="explore-content-image">
-                <img style="background-color: black" src="/Assets/images/4-cube_dark.png">
+                <img style="background-color: black" src="/Assets/images/basic_encryption_portal.png">
             </div>
         </a>
         <div class="explore-content-title">
@@ -181,7 +181,7 @@ title: Explore
     <div class="explore-content-container zoom small">
         <a href="/Information Security/Wireless Security.html">
             <div class="explore-content-image">
-                <img style="background-color: black" src="/Assets/images/4-cube_dark.png">
+                <img style="background-color: black" src="/Assets/images/wireless_security_portal.png">
             </div>
         </a>
         <div class="explore-content-title">
