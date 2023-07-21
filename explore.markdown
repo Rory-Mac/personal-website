@@ -6,7 +6,7 @@ title: Explore
 <h4>Theory of Computation</h4>
 <div class="explore-main-container">
     <div class="explore-content-container zoom small">
-        <a href="/Mathematics/Linear Algebra.html">
+        <a href="/Theory of Computation/Linear Algebra.html">
             <div class="explore-content-image">
                 <img style="background-color: black" src="/Assets/images/linear_algebra_portal.png">
             </div>
@@ -16,7 +16,7 @@ title: Explore
         </div>
     </div>
     <div class="explore-content-container zoom small">
-        <a href="/Mathematics/Multivariable Calculus.html">
+        <a href="/Theory of Computation/Multivariable Calculus.html">
         <div class="explore-content-image">
                 <img style="background-color: black" src="/Assets/images/multivar_calc_portal.png">
             </div>
@@ -26,7 +26,7 @@ title: Explore
         </div>
     </div>
     <div class="explore-content-container zoom small">
-        <a href="/Mathematics/Hypercubes.html">
+        <a href="/Theory of Computation/Hypercubes.html">
         <div class="explore-content-image">
                 <img style="background-color: black" src="/Assets/images/blank_4_cube.png">
             </div>
@@ -37,10 +37,10 @@ title: Explore
     </div>
 </div>
 <div class="space-div"></div>
-<h4>Artificial Intelligence & machine Learning</h4>
+<h4>Artificial Intelligence & Machine Learning</h4>
 <div class="explore-main-container">
     <div class="explore-content-container zoom small">
-        <a href="/Artificial%20Intelligence/Neurons%20%26%20Perceptrons.html">
+        <a href="/AI&ML/Neurons & Perceptrons.html">
         <div class="explore-content-image">
                 <img style="background-color: black" src="/Assets/images/basic_nn_dark.png">
             </div>
@@ -50,7 +50,7 @@ title: Explore
         </div>
     </div>
     <div class="explore-content-container zoom small">
-        <a href="/Artificial Intelligence/Binary%20Classifiers.html">
+        <a href="/AI&ML/Binary Classifiers.html">
         <div class="explore-content-image">
                 <img style="background-color: black" src="/Assets/images/binary_classifier_portal.png">
             </div>
@@ -60,7 +60,7 @@ title: Explore
         </div>
     </div>
     <div class="explore-content-container zoom small">
-        <a href="/Artificial Intelligence/Gradient%20Descent%20%26%20Backpropagation.html">
+        <a href="/AI&ML/Gradient Descent & Backpropagation.html">
         <div class="explore-content-image">
                 <img style="background-color: black" src="/Assets/images/backprop_portal.png">
             </div>
@@ -70,7 +70,7 @@ title: Explore
         </div>
     </div>
     <div class="explore-content-container zoom small">
-        <a href="/Machine%20Learning/linear%20regression.html">
+        <a href="/AI&ML/linear regression.html">
         <div class="explore-content-image">
                 <img style="background-color: black" src="/Assets/images/linear_regression_portal.png">
             </div>
@@ -80,7 +80,7 @@ title: Explore
         </div>
     </div>
     <div class="explore-content-container zoom small">
-        <a href="explore.html">
+        <a href="/AI&ML/Q-Learning.html">
         <div class="explore-content-image">
                 <img style="background-color: black" src="/Assets/images/4-cube_dark.png">
             </div>
@@ -159,7 +159,7 @@ title: Explore
         </div>
     </div>
     <div class="explore-content-container zoom small">
-        <a href="/Information Security/Fundamentals of Networking.html">
+        <a href="/High-Level Programming/Fundamentals of Networking.html">
             <div class="explore-content-image">
                 <img style="background-color: black" src="/Assets/images/basic_nets_portal.png">
             </div>
@@ -169,7 +169,7 @@ title: Explore
         </div>
     </div>
     <div class="explore-content-container zoom small">
-        <a href="/Information Security/Fundamentals of Encryption.html">
+        <a href="/High-Level Programming/Fundamentals of Encryption.html">
             <div class="explore-content-image">
                 <img style="background-color: black" src="/Assets/images/basic_encryption_portal.png">
             </div>
@@ -179,7 +179,7 @@ title: Explore
         </div>
     </div>
     <div class="explore-content-container zoom small">
-        <a href="/Information Security/Wireless Security.html">
+        <a href="/High-Level Programming/Wireless Security.html">
             <div class="explore-content-image">
                 <img style="background-color: black" src="/Assets/images/wireless_security_portal.png">
             </div>
