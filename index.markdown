@@ -19,7 +19,7 @@ title: Welcome
         <a href="."><img style="background-color: lightseagreen" src="/Assets/images/k12_transparent.png"></a>
     </div>
     <div class="zoom">
-        <p>Generative Spirits</p>
+        <p>Narrative Map</p>
         <a href="Projects/Narrative%20Map.html"><img style="background-color: #F1C40F" src="/Assets/images/k12_transparent.png"></a>
     </div>
 </div>

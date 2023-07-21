@@ -101,7 +101,7 @@ strings equals the number of substitutions required for one to become equal to t
 <p><img src="/Assets/images/dfa1_dark.png" width="100%" height="100%"></p>
 <p>An automaton can be more formally represented as:
         \[ M = \langle \Sigma, \Gamma, Q, \delta, \gamma \rangle \] </p>
-\(\Sigma \) is the finite set of symbols in a given input alphabet<br>\(\Gamma\) is the finite set of symbols in a given 
+<p>\(\Sigma \) is the finite set of symbols in a given input alphabet<br>\(\Gamma\) is the finite set of symbols in a given 
 output alphabet<br>\(Q\) is a set of states<br>\(\delta\) is a set of state-input pairings<br>\(\gamma\) is a set of 
 (state-input)-output pairings</p>
 <p>A run can then be defined as a set of states \(q_0, q_1, \dots, q_n \) where \(q_i \in Q\) and \(q_i = \delta(q_{i-1}, a_i)\).
