@@ -80,19 +80,19 @@ title: Explore
         </div>
     </div>
     <div class="explore-content-container zoom small">
-        <a href="/AI&ML/Q-Learning.html">
+        <a href="/AI&ML/NEAT.html">
         <div class="explore-content-image">
                 <img style="background-color: black" src="/Assets/images/4-cube_dark.png">
             </div>
         </a>
         <div class="explore-content-title">
-            <p>Q-Learning</p>
+            <p>NEAT genetic algorithm</p>
         </div>
     </div>
     <div class="explore-content-container zoom small">
-        <a href="explore.html">
+        <a href="/AI&ML/Markov Decision Process.html">
         <div class="explore-content-image">
-                <img style="background-color: black" src="/Assets/images/4-cube_dark.png">
+                <img style="background-color: black" src="/Assets/images/markov_portal.png">
             </div>
         </a>
         <div class="explore-content-title">
