@@ -53,14 +53,40 @@ Repeat (for each episode):<br>
 &emsp;&emsp;&emsp;&emsp;Repeat (for each step of episode):<br>
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Choose A from S using ε-greedy policy<br>
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Take action A, observe R, S'<br>
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Q(S,A) ← Q(S,A) + 𝛼[R + γ max Q(S', A) - Q(S,A)]<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Q(S,A) ← Q(S,A) + 𝛼[R + γ max_a Q(S', a) - Q(S,A)]<br>
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;S ← S'<br>
 &emsp;&emsp;&emsp;&emsp;until S is terminal-state<br>
 </code></p>
-
-<!--
-    Q-Learning pseudocode and visualisation
-    SARSA pseudocode and visualisation
-    Deep-Q Networks for generalization
-    Bellmann equation
--->
+<p>A nice way to visualise this is with a simple two-dimensional application. The dark gray square bottom-left represents the intelligent agent. The concentric squares 
+top-right represent the goal state. Each square is a state in our state diagram, and each cardinal direction is an action from that state, thus there exist four actions
+for every state. There are exceptions to this: non-corner edge cells have three state-action pairs, whilst corner cells have two. Movement onto a dark-square can be
+thought of as a sink hole, that terminates the current episode and carries a signficantly negative reward. Our agent follows an ε-greedy policy, meaning it will
+take a random action a small percent of the time, and the optimal action a large percent of the time.
+<img src="/Assets/images/q_learning_simple_map.png" width="100%" height="100%"></p>
+<p>All grid cells are initialised to a small negative reward, though in the case of our application, dark cells are initialised to a large negative reward. The goal state 
+has a reward value of zero (the optimal state, greater than all negative rewards in the map). The first decision of our agent is essentially random. If the ε-greedy
+policy dictates a random move the move will be random, else if the ε-greedy policy dictates the greedy move, this will still be essentially random as the Q-values
+associated with our state space have not yet been learnt. Say the agent takes an inital action by moving right, then we immediately observe a reward R and a new state
+S'. In accordance with our pseudocode, we plug these values in to determine what is called the 'temporal difference', that is we find the maximum Q-value for the 
+state-transitions that exist from our new state, discount this value, add our observed reward, subtract the Q-value from our previous state, multiply this difference
+by a learning rate, and finally update the Q-value of the initial state we had just moved from. This process will repeat recursively until the optimal policy is found,
+(the chain of state-transitions that maximises cumulative reward across time, terminating at the goal state).
+<img src="/Assets/images/state_action.png" width="100%" height="100%"></p>
+<p>We have made an assumption that in the above heuristic the maximum Q-value for the new state will not coincide with a state-action pair that returns us to our intial
+state. This is true of the optimal policy, as needless recurrent movement will decrease cumulative reward. In the process of learning however, our agent may
+enter such loops. We could have devised a system where there is no terminal state and instead the agent's goal is to find such a loop that is maximally rewarding. 
+For such situations, the ε-greedy policy helps to avoid local minima.</p>
+<p>A similiar reinforcement learning algorithm named SARSA (State-Action-Reward-State-Action) is near-identical to Q-learning except that the Q-value for the next state
+in our equation is determined from an action sampled from our ε-greedy policy, rather than as a max of Q-values associated with the set of actions that could be taken
+from the new state:
+<p><code style="font-size:1rem;">
+Q(S,A) ← Q(S,A) + 𝛼[R + γ Q(S', A') - Q(S,A)]<br>
+S ← S'; A ← A'<br>
+</code></p>
+<p> This simple difference is what makes Q-learning an 'off-policy' algorithm and SARSA is an 'on-policy' algorithm. Q-learning will evaluate the quality of the next
+state based on a function separate from the learnt optimal-policy. 
+</p>
+<p>There is a limitation to our learning model however, which is the fact that the finitude of the state-action space is necessary for the agent to learn. Deep-Q 
+models use deep neural networks to act as function approximators for the Q-Learning algorithm. The neural network learns to predict the Q-values associated with an 
+element of the state action space based on a simple Mean-Squared-Error (with neural inputs being composed of the current state, next state, transition-reward and termination-factor, i.e. does the transition 
+terminate the current episode). The hope is that the neural network can learn features of the state-action space and generalise to new input samples.</p>
