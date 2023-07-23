@@ -19,7 +19,7 @@ can still be conceptualized as an n-cube for n input nodes with an initial range
 the weight. We can perceive higher-dimensional n-cubes for a neural network of n input parameters by using more sophisticated mathematical projection
 techniques. Let us first consider the 4-cube:</p>
 <p><a target="_blank" href="https://en.wikipedia.org/wiki/Hypercube#/media/File:4-cube_graph.svg"><img src="/Assets/images/4-cube_dark.png" width="50%" height="50%"></a></p>
-Despite the increased complexity, we can still identify two distorted three-dimensional cuboids linked on a fourth-dimensional axis. We could imagine 
+<p>Despite the increased complexity, we can still identify two distorted three-dimensional cuboids linked on a fourth-dimensional axis. We could imagine 
 scaling this fourth dimensional axis to increase the number of of three-dimensional cuboids that exist on that axis. However if we conceptualise such 
 scaling as an increased resolution of the components of our structure (rather than each edge lenght actually increasing) we can see that the structure itself 
 remains constant, no matter the scaling. The scaling of input weights based on a cost function is therefore conceputalised as movement through abstract 

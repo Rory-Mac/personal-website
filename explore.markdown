@@ -82,7 +82,7 @@ title: Explore
     <div class="explore-content-container zoom small">
         <a href="/AI&ML/NEAT.html">
         <div class="explore-content-image">
-                <img style="background-color: black" src="/Assets/images/4-cube_dark.png">
+                <img style="background-color: black" src="/Assets/images/NEAT_portal_dark.png">
             </div>
         </a>
         <div class="explore-content-title">
