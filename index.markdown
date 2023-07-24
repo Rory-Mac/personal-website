@@ -3,23 +3,27 @@ layout: default
 mode: light
 title: Welcome
 ---
-<div class="index-flex-container">
-    <div class="zoom">
-        <p>Scratch NNs</p>
-        <a href="."><img style="background-color: darkslategray" src="/Assets/images/k12_transparent.png"></a>
+<div class="home-page-container">
+    <a href="/Projects/FPGA-2-TCP.html">
+    <img class="home-page-image" src="/Assets/images/narrative_overview.png">
+    <div class="overlay-text">
+        FPGA-2-TCP
     </div>
-    <div class="zoom">
-        <p>Perceptron-to-TCP</p>
-        <a href="."><img style="background-color: lightcoral" src="/Assets/images/k12_transparent.png"></a>
-    </div>
+    </a>
 </div>
-<div class="index-flex-container">
-    <div class="zoom">
-        <p>Game-Playing Agents</p>
-        <a href="."><img style="background-color: lightseagreen" src="/Assets/images/k12_transparent.png"></a>
+<div class="home-page-container">
+    <a href="/Projects/Game-Playing Agents.html">
+    <img class="home-page-image" src="/Assets/images/narrative_overview.png">
+    <div class="overlay-text">
+        Game-Playing Agents
     </div>
-    <div class="zoom">
-        <p>Narrative Map</p>
-        <a href="Projects/Narrative%20Map.html"><img style="background-color: #F1C40F" src="/Assets/images/k12_transparent.png"></a>
+    </a>
+</div>
+<div class="home-page-container">
+    <a href="/Projects/Narrative Map.html">
+    <img class="home-page-image" src="/Assets/images/narrative_overview.png">
+    <div class="overlay-text">
+        Narrative Maps
     </div>
+    </a>
 </div>

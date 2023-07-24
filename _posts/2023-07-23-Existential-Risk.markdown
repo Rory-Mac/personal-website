@@ -30,41 +30,51 @@ probability of nuclear war, a movement towards rather than away from the brink o
 <p>
     <ul>
         <li>
-            <b>5 November 1956</b> During the Suez Crisis, NORAD misinterpreted collated reports of soviet activity as signalling an offensive towards NATO-allied France 
+            <b>5 November 1956</b>&emsp;During the Suez Crisis, NORAD misinterpreted collated reports of soviet activity as signalling an offensive towards NATO-allied France 
             and the United Kingdom, potentially necessitating a nuclear first-strike against the soviet Union. These collated reports were found to be a coincidental
             combination of events, which included a wedge of swans over Turkey being misidentified as fighter jets, a fighter escort for the Syrian President returning 
             from Moscow, scheduled soviet exercises and a British bomber that had been downed due to mechanical failure<sup>7</sup>.
         </li>
-        <li><b> March 11, 1958</b> A member of crew mistakenly pulled the emergency release pin on a nuclear-armed U.S Air Force B-47, dropping the nuclear-armed bomb
+        <br>
+        <li><b> March 11, 1958</b>&emsp;A member of crew mistakenly pulled the emergency release pin on a nuclear-armed U.S Air Force B-47, dropping the nuclear-armed bomb
         into suburban South Carolina. A playhouse in the woods was destroyed from the conventional explosives, injuring two young sisters. Fortunately the fissile core
         was stored elsewhere in the bomber. Had it not been, the nuclear detonation could have been perceived as the beginning of a first-strike<sup>8</sup>.
         </li>
+        <br>
         <li>
-            <b>5 October 1960</b> Radar equipment in Greenland used as an early detection system for NORAD misinterprets moonrise over Norway as a Soviet first-strike.
+            <b>5 October 1960</b>&emsp;Radar equipment in Greenland used as an early detection system for NORAD misinterprets moonrise over Norway as a Soviet first-strike.
             The presence of Khrushchev in New York City as part of a UN delegation raises doubt as to the efficacy of the radar's readings<sup>9</sup>. 
         </li>
-        <li><b>25 October 1962</b> A bear climbing the security fence of Duluth Sector Direction Center was misinterpreted as militiary sabotage from a foreign agent.
+        <br>
+        <li><b>25 October 1962</b>&emsp;A bear climbing the security fence of Duluth Sector Direction Center was misinterpreted as militiary sabotage from a foreign agent.
         A fleet of nuclear-armed F-106A interceptors were dispatched, with pilots (who were told no practice drills would take place) believed that nuclear war had 
         started<sup>10</sup>.
-        </li><b>27 October 1962</b>The all too infamous soviet-patrol submarine B-59 mistook practice depth-charges from the US navy as a real attack, two of three 
+        </li>
+        <br>
+        <li><b>27 October 1962</b>&emsp;The all too infamous soviet-patrol submarine B-59 mistook practice depth-charges from the US navy as a real attack, two of three 
         commanders ordered the use of a nuclear torpedo against the US Navy, though the order had to be unanimous. It was during this crisis that the families of 
-        militiary and political elite were surreptitiously notified that the time to evactuate in fear of the possibility of nuclear war was now.<sup>11</sup> 
-        <li>
-        <li><b>9 November 1965</b> Nuclear Bomb detectors used to distinguish a power outage as the result of mechanical failure from power outage as the result of
+        militiary and political elite were surreptitiously notified that the time to evactuate in fear of the possibility of nuclear war was now<sup>11</sup>. 
+        </li>
+        <br>
+        <li><b>9 November 1965</b>&emsp;Nuclear Bomb detectors used to distinguish a power outage as the result of mechanical failure from power outage as the result of
         nuclear detonation, failed, giving the impression of a nuclear first-strike<sup>12</sup>.
         </li>
-        <li><b>23 May 1967</b> A solar flare misinterpreted by early detection systems as an imminent strike caused the US militiary to come close to ordering 
+        <br>
+        <li><b>23 May 1967</b>&emsp;A solar flare misinterpreted by early detection systems as an imminent strike caused the US militiary to come close to ordering 
         a nuclear-bomb counter-strike against the Soviet Union<sup>13</sup>.
         </li>
-        <li><b>9 November 1979</b> Malfunctioning computer systems in NORAD headquaters across the United States caused alarm and full preparation against a 
+        <br>
+        <li><b>9 November 1979</b>&emsp;Malfunctioning computer systems in NORAD headquaters across the United States caused alarm and full preparation against a 
         non-existent Soviet attack. NORAD briefed the national security advisor who briefed the president who was given three to seven minutes to make a decision.
         At the six to seven minute mark, satellite and radar systems confirmed the falsity of the reports<sup>14</sup>.
         </li>
-        <li><b>7 to 11 November 1983</b>Able Archer, a NATO militiary operation used to simulate a joint response to the escalation of a conventional war into a 
+        <br>
+        <li><b>7 to 11 November 1983</b>&emsp;Able Archer, a NATO militiary operation used to simulate a joint response to the escalation of a conventional war into a 
         nuclear war, was misinterpreted by Soviet officials as a ruse disguising an imminent first-strike. Soviet ICBMS and nuclear-armed aircraft were brought to 
         the ready<sup>15</sup>.
         </li>
-        <li><b>25 January 1995</b> A norwegian scientific research rocket was misinterpreted by russian radar systems as the launch of an ICBM directed at the russian 
+        <br>
+        <li><b>25 January 1995</b>&emsp;A norwegian scientific research rocket was misinterpreted by russian radar systems as the launch of an ICBM directed at the russian 
         state. The russian nuclear briefcase was activated and nuclear submarines were put at the ready for a retaliatory strike<sup>16</sup>.
         </li>
     </ul>
@@ -79,13 +89,13 @@ Washington–Moscow Direct Communications Link, the Beijing–Washington hotline
 Recognition by world leaders of the phrase coined by Reagan and Gorbachev, that a "nuclear was cannot be won and must never be fought" is perhaps an even more important
 diplomatic development, realised by world scientists observing that a nuclear war is likely to end civilisation, along with the lives of five billion people<sup>17</sup>.
  This sentiment has been further affirmed by a joint statement made by The People’s Republic of China, the French
-Republic, the Russian Federation, the United Kingdom of Great Britain and Northern Ireland, and the United States of America, as recent as January 2022<sup>18</sup>. A further note,
-one that is hopefully in the mind of any president awoken to the threat of nuclear holocaust, is the fact that all major nuclear powers have retaliatory strike 
+Republic, the Russian Federation, the United Kingdom of Great Britain and Northern Ireland, and the United States of America, as recent as January 2022<sup>18</sup>.</p>
+<p>One further note, hopefully in the mind of any president awoken to the threat of nuclear holocaust, is the fact that all major nuclear powers have retaliatory strike 
 capabilities. This includes Russia, China, and the United States, all of which implement a Nuclear triad composed of one third Submarine-Launched Ballistic Missiles that 
 are impervious to a preventative first-strike. This means that were the president to make no decisision against an imminent first strike, mutually assured destruction
 would still apply to the sending party of the first-strike.</p>
 <p>In all our discussion thus far, it seems to be the case that the rationality of individuals has been the most signficant preventative measure against nuclear holocaust.
-The problem of cumulative probability remains. No matter how small the chance of nuclear war occurring, the chance becomes inevitable over a long enough time period,
+However, the problem of cumulative probability remains. No matter how small the chance of nuclear war occurring, the chance becomes inevitable over a long enough time period,
 assuming the change of occurrence is not decreasing at an exponential rate. It seems obvious that the change of nuclear holocaust is not exponentially lower today 
 than it was decades past, and thus, this disturbing feature of probability remains.</p>
 <p>Measures that exist to delay such an inevitably include traditional diplomacy, nuclear non-proliferation agreements, transparency and information exchange

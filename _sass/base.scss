@@ -6,10 +6,8 @@
 }
 
 @font-face {
-    font-family: 'Merriweather';
-    src: url('/Assets/fonts/Merriweather-Regular.ttf') format('truetype'),
-      url('/Assets/fonts/Merriweather-Bold.ttf') format('truetype'),
-      url('/Assets/fonts/Merriweather-Italic.ttf') format('truetype');
+    font-family: 'Mona-Sans';
+    src: url('/Assets/fonts/Mona-Sans.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -21,7 +19,7 @@ body, html {
     font-size: 1.0625rem;
     letter-spacing: -0.003rem;
     line-height: 28px;
-    font-family: 'Source Serif Pro', 'Source Code Pro', monospace;
+    font-family: 'Source Serif Pro';
 
     &.dark {
         background-color: black;
@@ -91,3 +89,33 @@ img {
 .reference-list {
     font-size: 1rem;
 }
+
+.home-page-container {
+    margin: 0 0 2rem 0;
+    position: relative;
+    transition: transform .2s;
+    border: 0.1rem solid black;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+//.home-page-container:hover .overlay-text {
+//    display: block;
+//}
+
+.home-page-image {
+    width: 100%;
+}
+
+.overlay-text {
+    //display: none;
+    font-family: 'Mona-Sans';
+    font-weight: 500;
+    position: absolute;
+    font-size: 32px;
+    bottom: 1rem;
+    left: 1rem;
+}
+

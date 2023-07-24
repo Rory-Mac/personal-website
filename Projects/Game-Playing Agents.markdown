@@ -1,7 +1,7 @@
 ---
 layout: default
 mode: light
-title: Generative Spirits
+title: Game-Playing Agents
 ---
 <p>
     Coming Soon
