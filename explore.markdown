@@ -191,3 +191,53 @@ title: Explore
 </div>
 <div class="space-div"></div>
 
+<div>
+<div class="slider">
+    <div class="slider zoom small">
+        <a href="/High-Level Programming/Wireless Security.html">
+            <div class="explore-content-image">
+                <img style="background-color: black" src="/Assets/images/4-cube_dark.png">
+            </div>
+        </a>
+        <div class="explore-content-title">
+            <p>Practice</p>
+        </div>
+    </div>
+    <div class="slider zoom small">
+        <a href="/High-Level Programming/Wireless Security.html">
+            <div class="explore-content-image">
+                <img style="background-color: black" src="/Assets/images/4-cube_dark.png">
+            </div>
+        </a>
+        <div class="explore-content-title">
+            <p>Practice</p>
+        </div>
+    </div>
+    <div class="slider zoom small">
+        <a href="/High-Level Programming/Wireless Security.html">
+            <div class="explore-content-image">
+                <img style="background-color: black" src="/Assets/images/4-cube_dark.png">
+            </div>
+        </a>
+        <div class="explore-content-title">
+            <p>Practice</p>
+        </div>
+    </div>
+    <div class="slider zoom small">
+        <a href="/High-Level Programming/Wireless Security.html">
+            <div class="explore-content-image">
+                <img style="background-color: black" src="/Assets/images/4-cube_dark.png">
+            </div>
+        </a>
+        <div class="explore-content-title">
+            <p>Practice</p>
+        </div>
+    </div>
+</div>
+    <div class="navigation">
+      <button class="prev-btn">&larr;</button>
+      <button class="next-btn">&rarr;</button>
+    </div>
+</div>
+<script src="/Assets/scripts/carousel.js"></script>
+
