@@ -1,30 +1,15 @@
-.explore-main-container {
-    margin: 0 0 2rem 0;  
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.portal-image {
+  width: 100%; 
+  height: 100%;
+  background-color: black;
 }
 
-.explore-content-container {
-    margin: 0 0 2rem 0;  
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    justify-content: flex-end;
-}
-
-.explore-content-title {
+.portal-title {
     display: flex;
     align-items: center;
     justify-content: center;
     border: 2px solid black;
     background-color: white;
-}
-
-.explore-content-image {
-    width: 100%; 
-    height: 100%;
-    background-color: black;
 }
 
 .slider {
@@ -34,8 +19,9 @@
   justify-content: space-between;
 }
 
-.slider div {
-    margin: 0 0 2rem 0;  
+.slider-content {
+    max-width: 213.2px;
+    margin: 0 46.2px 2rem 0;  
     display: flex;
     flex-direction: column;
     align-items: stretch;
