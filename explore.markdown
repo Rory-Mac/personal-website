@@ -177,7 +177,7 @@ title: Explore
         <div class="slider-content zoom small">
             <a href="/High-Level Programming/web development.html">           
                 <div class="portal-image">
-                    <img style="background-color: black" src="/Assets/images/webdev_portal.png">
+                    <img style="background-color: black" src="/Assets/images/webdev_portal_dark.png">
                 </div>
             </a><div class="portal-title">
                 <p>Web Development</p>
