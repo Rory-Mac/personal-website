@@ -5,6 +5,8 @@ title: Explore
 ---
 <h4>Theory of Computation</h4>
 <div class="carousel">
+    <button class="navigate-left">&larr;</button>
+    <div class="slider-container">
     <div class="slider">
         <div class="slider-content zoom small">
             <a href="/Theory of Computation/Linear Algebra.html">
@@ -12,7 +14,7 @@ title: Explore
                     <img style="background-color: black" src="/Assets/images/linear_algebra_portal.png">
                 </div>
             </a>
-            <div class="explore-content-title">
+            <div class="portal-title">
                 <p>Linear Algebra</p>
             </div>
         </div>
@@ -22,7 +24,7 @@ title: Explore
                     <img style="background-color: black" src="/Assets/images/multivar_calc_portal.png">
                 </div>
             </a>
-            <div class="explore-content-title">
+            <div class="portal-title">
                 <p>Multivariable Calculus</p>
             </div>
         </div>
@@ -32,21 +34,31 @@ title: Explore
                     <img style="background-color: black" src="/Assets/images/blank_4_cube.png">
                 </div>
             </a>
-            <div class="explore-content-title">
+            <div class="portal-title">
                 <p>Hypercubes</p>
             </div>
         </div>
+        <div class="slider-content zoom small">
+            <a href="/Theory of Computation/Hypercubes.html">
+            <div class="portal-image">
+                    <img style="background-color: black" src="/Assets/images/4-cube_dark.png">
+                </div>
+            </a>
+            <div class="portal-title">
+                <p>Turing Machines</p>
+            </div>
+        </div>
     </div>
-    <div class="navigation">
-        <button class="prev-btn">&larr;</button>
-        <button class="next-btn">&rarr;</button>
     </div>
+    <button class="navigate-right">&rarr;</button>
 </div>
 
 
 <div class="space-div"></div>
 <h4>Artificial Intelligence & Machine Learning</h4>
 <div class="carousel">
+    <button class="navigate-left">&larr;</button>
+    <div class="slider-container">
     <div class="slider">
         <div class="slider-content zoom small">
             <a href="/AI&ML/Neurons & Perceptrons.html">
@@ -109,52 +121,60 @@ title: Explore
             </div>
         </div>
     </div>
-    <div class="navigation">
-        <button class="prev-btn">&larr;</button>
-        <button class="next-btn">&rarr;</button>
     </div>
+    <button class="navigate-right">&rarr;</button>
 </div>
 
 
 <div class="space-div"></div>
 <h4>Low-Level Programming</h4>
 <div class="carousel">
+    <button class="navigate-left">&larr;</button>
+    <div class="slider-container">
     <div class="slider">
-    <div class="slider-content zoom small">
-        <a href="/Low-Level Programming/Concurrency%20%26%20Operating%20Systems.html">
-            <div class="portal-image"><img class="something" src="/Assets/images/4-cube_dark.png"></div>
-        </a>
-        <div class="portal-title">
-            <p>Concurrency</p>
+        <div class="slider-content zoom small">
+            <a href="/Low-Level Programming/Concurrency%20%26%20Operating%20Systems.html">
+                <div class="portal-image"><img class="something" src="/Assets/images/4-cube_dark.png"></div>
+            </a>
+            <div class="portal-title">
+                <p>Computer Architecture</p>
+            </div>
+        </div>
+        <div class="slider-content zoom small">
+            <a href="/Low-Level Programming/Concurrency%20%26%20Operating%20Systems.html">
+                <div class="portal-image"><img class="something" src="/Assets/images/4-cube_dark.png"></div>
+            </a>
+            <div class="portal-title">
+                <p>Concurrency</p>
+            </div>
+        </div>
+        <div class="slider-content zoom small">
+            <a href="/Low-Level Programming/Concurrency%20%26%20Operating%20Systems.html">
+                <div class="portal-image"><img class="something" src="/Assets/images/4-cube_dark.png"></div>
+            </a>
+            <div class="portal-title">
+                <p>Operating Systems</p>
+            </div>
+        </div>
+        <div class="slider-content zoom small">
+            <a href="/Low-Level Programming/coding theory.html">
+                <div class="portal-image"><img style="background-color: black" src="/Assets/images/coding_theory_portal.png"></div>
+            </a>
+            <div class="portal-title">
+                <p>Coding Theory</p>
+            </div>
         </div>
     </div>
-    <div class="slider-content zoom small">
-        <a href="/Low-Level Programming/Concurrency%20%26%20Operating%20Systems.html">
-            <div class="portal-image"><img class="something" src="/Assets/images/4-cube_dark.png"></div>
-        </a>
-        <div class="portal-title">
-            <p>Operating Systems</p>
-        </div>
     </div>
-    <div class="slider-content zoom small">
-        <a href="/Low-Level Programming/coding theory.html">
-            <div class="portal-image"><img style="background-color: black" src="/Assets/images/coding_theory_portal.png"></div>
-        </a>
-        <div class="portal-title">
-            <p>Coding Theory</p>
-        </div>
-    </div>
-    </div>
-    <div class="navigation">
-      <button class="prev-btn">&larr;</button>
-      <button class="next-btn">&rarr;</button>
-    </div>
+    <button class="navigate-right">&rarr;</button>
 </div>
 
 
 <div class="space-div"></div>
 <h4>High-Level Programming</h4>
 <div class="carousel">
+    <button class="navigate-left">&larr;</button>
+    <div class="slider-container">
     <div class="slider">
         <div class="slider-content zoom small">
             <a href="/High-Level Programming/object-oriented programming.html">
@@ -214,10 +234,8 @@ title: Explore
             </div>
         </div>
     </div>
-    <div class="navigation">
-      <button class="prev-btn">&larr;</button>
-      <button class="next-btn">&rarr;</button>
     </div>
+    <button class="navigate-right">&rarr;</button>
 </div>
 <div class="space-div"></div>
 <script src="/Assets/scripts/carousel.js"></script>

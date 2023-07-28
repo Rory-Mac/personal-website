@@ -96,12 +96,11 @@ are impervious to a preventative first-strike. This means that were the presiden
 would still apply to the sending party of the first-strike.</p>
 <p>In all our discussion thus far, it seems to be the case that the rationality of individuals has been the most signficant preventative measure against nuclear holocaust.
 However, the problem of cumulative probability remains. No matter how small the chance of nuclear war occurring, the chance becomes inevitable over a long enough time period,
-assuming the change of occurrence is not decreasing at an exponential rate. It seems obvious that the change of nuclear holocaust is not exponentially lower today 
+assuming the change of occurrence is not decreasing at an exponential rate. It seems obvious that the chance of nuclear holocaust is not exponentially smaller today 
 than it was decades past, and thus, this disturbing feature of probability remains.</p>
 <p>Measures that exist to delay such an inevitably include traditional diplomacy, nuclear non-proliferation agreements, transparency and information exchange
-between nuclear powers, etc. However, to abolish rather than delay the inevitably of a nuclear exchange, world nuclear stockpiles have to drop below, and be kept below,
-the quantity needed to end civilisation, but kept high enough to ensure deterrance from a nuclear exchange. This number approximates one hundred per nuclear power
-<sup>19</sup>.
+between nuclear powers, etc. To abolish rather than simply delay nuclear existential risk, stockpiles need to drop below the quantity required to end civilisation,
+but remain above the quantity needed to ensure deterrance. This number approximates one hundred per nuclear power <sup>19</sup>.
 The New START agreement, which currently sets the limit on Russia and the United States' nuclear arsenals, is set to expire on the 5<sup>th</sup> February 2026.
 It would be good to understand how bureaucracy prevents the hasty adoption of practices that are clearly in the best interests of humankind. Hopefully in a followup 
 blog post I can explore exactly that.</p>

@@ -1,64 +1,59 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const prevButtons = document.querySelectorAll(".prev-btn");
-    const nextButtons = document.querySelectorAll(".next-btn");
+    const prevButtons = document.querySelectorAll(".navigate-left");
+    const nextButtons = document.querySelectorAll(".navigate-right");
     const sliders = document.querySelectorAll(".slider");
-    const carouselRect = document.querySelector('.carousel').getBoundingClientRect();
     const slidesToShow = 3;
-    const slideWidth = 213.2 + 46.2;
-    let currentIndex = 0;
+    const slideWidth = 213.2 + 29.2;
 
     for (let i = 0; i < sliders.length; i++) {
+      sliders[i].currentIndex = 0;
       prevButtons[i].addEventListener("click", function() {
         slideLeft(sliders[i]);
+        updateButtonOpacity(i);
       });
       nextButtons[i].addEventListener("click", function() {
         slideRight(sliders[i]);
+        updateButtonOpacity(i);
       });
+      prevButtons[i].classList.add("disable-button-cursor");
+      nextButtons[i].style.opacity = 0.5;
     }
 
-    for (let i = 0; i < sliders.length; i++) {
-      const initialPortal = Array.from(sliders[i].children);
-      initialPortal.forEach(element => {
-        const elementRect = element.getBoundingClientRect();
-        if (elementRect.left < carouselRect.left - 1 || elementRect.right > carouselRect.right + 1) {
-          element.style.opacity = 0;
-        } else {
-          element.style.opacity = 1;
-        }
-      });
+    function updateButtonOpacity(i) {
+      const slides = Array.from(sliders[i].children);
+      if (sliders[i].currentIndex == 0) {
+        prevButtons[i].style.opacity = 0;
+        prevButtons[i].classList.add("disable-button-cursor");
+      } else {
+        prevButtons[i].style.opacity = 0.5;
+        prevButtons[i].classList.remove("disable-button-cursor");
+      }      
+      if (sliders[i].currentIndex == slides.length - slidesToShow) {
+        nextButtons[i].style.opacity = 0;
+        nextButtons[i].classList.add("disable-button-cursor");
+      } else {
+        nextButtons[i].style.opacity = 0.5;
+        nextButtons[i].classList.remove("disable-button-cursor");
+      }
     }
   
     function updateSliderPosition(slider) {
-      slider.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+      slider.style.transform = `translateX(-${slider.currentIndex * slideWidth}px)`;
     }
   
     function slideRight(slider) {
       const slides = Array.from(slider.children);
-      if (currentIndex < slides.length - slidesToShow) {
-        currentIndex++;
+      if (slider.currentIndex < slides.length - slidesToShow) {
+        slider.currentIndex++;
         updateSliderPosition(slider);
-        slidePortals(-slideWidth, slider);
       }
     }
   
     function slideLeft(slider) {
-    	if (currentIndex > 0) {
-        currentIndex--;
+    	if (slider.currentIndex > 0) {
+        slider.currentIndex--;
         updateSliderPosition(slider);
-        slidePortals(slideWidth, slider);
       }
-    }
-
-    function slidePortals(distance, slider) {
-      const slides = Array.from(slider.children);
-      slides.forEach(element => {
-          const elementRect = element.getBoundingClientRect();
-          if (elementRect.left + distance < carouselRect.left - 1 || elementRect.right + distance > carouselRect.right + 1) {
-            element.style.opacity = 0;
-          } else {
-            element.style.opacity = 1;
-          }
-      });
     }
   });
   

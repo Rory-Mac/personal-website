@@ -12,29 +12,61 @@
     background-color: white;
 }
 
+.carousel {
+  overflow: hidden;
+  position: relative;
+}
+
+.navigate-left {
+  text-align: center;
+  margin-top: 10px;
+  position: absolute;
+  top: 45%;
+  left: 0%;
+}
+
+.navigate-right {
+  text-align: center;
+  margin-top: 10px;
+  position: absolute;
+  top: 45%;
+  right: 0%;
+}
+
+button {
+  color: white;
+  background-color: black;
+  border-color: black;
+  border-radius: 4px;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 2;
+  opacity: 0;
+}
+
+.disable-button-cursor {
+  cursor: default !important;
+}
+
+.slider-container {
+  overflow: hidden;
+  margin: 0 2rem;
+}
+
 .slider {
   display: flex;
-  transition: transform 0.3s ease-in-out;
-  margin: 0 0 2rem 0;  
+  transition: transform 0.3s ease-in-out;  
   justify-content: space-between;
+  padding: 1rem;
+  z-index: 1;
 }
 
 .slider-content {
     max-width: 213.2px;
-    margin: 0 46.2px 2rem 0;  
+    margin: 0 29.2px 0 0;  
     display: flex;
     flex-direction: column;
     align-items: stretch;
     justify-content: flex-end;
-}
-
-.navigation {
-  text-align: center;
-  margin-top: 10px;
-}
-
-button {
-  font-size: 20px;
-  cursor: pointer;
 }
   
