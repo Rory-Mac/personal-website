@@ -4,6 +4,7 @@ mode: light
 title: Data Structures & Algorithms
 ---
 <h3>Data Structures and Algorithms</h3>
+<h4>(Linked Lists)</h4>
 <p>
     High-level programming languages allow us to abstract away the details of reading and writing binary values to and from registers in system memory.
     They do so via the use of primitive and abstract data types: formats for information storage and retrieval in code. </p>

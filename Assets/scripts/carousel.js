@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
         updateButtonOpacity(i);
       });
       prevButtons[i].classList.add("disable-button-cursor");
-      nextButtons[i].style.opacity = 0.5;
+      nextButtons[i].style.opacity = 1;
     }
 
     function updateButtonOpacity(i) {
@@ -25,14 +25,14 @@ document.addEventListener('DOMContentLoaded', function() {
         prevButtons[i].style.opacity = 0;
         prevButtons[i].classList.add("disable-button-cursor");
       } else {
-        prevButtons[i].style.opacity = 0.5;
+        prevButtons[i].style.opacity = 1;
         prevButtons[i].classList.remove("disable-button-cursor");
       }      
       if (sliders[i].currentIndex == slides.length - slidesToShow) {
         nextButtons[i].style.opacity = 0;
         nextButtons[i].classList.add("disable-button-cursor");
       } else {
-        nextButtons[i].style.opacity = 0.5;
+        nextButtons[i].style.opacity = 1;
         nextButtons[i].classList.remove("disable-button-cursor");
       }
     }

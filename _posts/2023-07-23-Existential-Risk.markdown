@@ -96,11 +96,42 @@ are impervious to a preventative first-strike. This means that were the presiden
 would still apply to the sending party of the first-strike.</p>
 <p>In all our discussion thus far, it seems to be the case that the rationality of individuals has been the most signficant preventative measure against nuclear holocaust.
 However, the problem of cumulative probability remains. No matter how small the chance of nuclear war occurring, the chance becomes inevitable over a long enough time period,
-assuming the change of occurrence is not decreasing at an exponential rate. It seems obvious that the chance of nuclear holocaust is not exponentially smaller today 
-than it was decades past, and thus, this disturbing feature of probability remains.</p>
-<p>Measures that exist to delay such an inevitably include traditional diplomacy, nuclear non-proliferation agreements, transparency and information exchange
-between nuclear powers, etc. To abolish rather than simply delay nuclear existential risk, stockpiles need to drop below the quantity required to end civilisation,
-but remain above the quantity needed to ensure deterrance. This number approximates one hundred per nuclear power <sup>19</sup>.
+assuming the change of occurrence is not decreasing at an exponential rate. This relates to Murphy's Law, "anything that can happen, will happen".
+The chance of nuclear holocaust does not seem to have decreased exponentially since the advent of the nuclear age, and thus, this disturbing feature of probability 
+remains. Consider the cumulative probability of nuclear annihilation, if the annual probability of such an event is set to 1%, 0.1% and 0.01%.</p>
+<p><img class="something" src="/Assets/images/cumulative_probability2.png"></p>
+<p>The chance of such an event not occurring, based on these probabilities:
+<table>
+  <tr>
+    <th></th>
+    <th>10 years</th>
+    <th>30 years</th>
+    <th>100 years</th>
+  </tr>
+  <tr>
+    <th>1%</th>
+    <td>90.44</td>
+    <td>73.97</td>
+    <td>36.60</td>
+  </tr>
+  <tr>
+    <th>0.1%</th>
+    <td>99.00</td>
+    <td>97.04</td>
+    <td>90.48</td>
+  </tr>
+  <tr>
+    <th>0.01%</th>
+    <td>99.90</td>
+    <td>99.70</td>
+    <td>99.00</td>
+  </tr>
+</table>
+</p>
+<p>Diplomacy, nuclear non-proliferation agreements, treaties on arms-control, and information exchange between nuclear powers, are all measures that exist to delay the
+inevitably of nuclear confrontation (ideally far enough into the future so that the existence and fear of the use of such weapons has become a distant memory). To 
+abolish, rather than simply delay nuclear existential risk, stockpiles would need to drop below the quantity required to end civilisation. Stockpiles could be kept above
+zero to ensure deterrance, so long as they do not exceed the quantity required to trigger a nuclear-winter. This number approximates one hundred per nuclear power <sup>19</sup>.
 The New START agreement, which currently sets the limit on Russia and the United States' nuclear arsenals, is set to expire on the 5<sup>th</sup> February 2026.
 It would be good to understand how bureaucracy prevents the hasty adoption of practices that are clearly in the best interests of humankind. Hopefully in a followup 
 blog post I can explore exactly that.</p>

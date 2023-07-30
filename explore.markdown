@@ -39,7 +39,7 @@ title: Explore
             </div>
         </div>
         <div class="slider-content zoom small">
-            <a href="/Theory of Computation/Hypercubes.html">
+            <a href="explore.html">
             <div class="portal-image">
                     <img style="background-color: black" src="/Assets/images/4-cube_dark.png">
                 </div>
@@ -133,7 +133,7 @@ title: Explore
     <div class="slider-container">
     <div class="slider">
         <div class="slider-content zoom small">
-            <a href="/Low-Level Programming/Concurrency%20%26%20Operating%20Systems.html">
+            <a href="kernels of compute.html">
                 <div class="portal-image"><img class="something" src="/Assets/images/4-cube_dark.png"></div>
             </a>
             <div class="portal-title">

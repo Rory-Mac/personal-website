@@ -42,7 +42,7 @@ hr {
 }
 
 .site-footer {
-    padding: 0.5rem 2.5rem;
+    padding: 0.5rem 0rem;
 }
 
 .site-title {
@@ -62,9 +62,6 @@ hr {
 
 .wrapper {
     padding: 1rem 0;
-}
-
-.page-content {
 }
 
 a {
@@ -90,7 +87,7 @@ img {
 }
 
 .home-page-container {
-    margin: 0 0 2rem 0;
+    margin: 0 2rem 2rem 2rem;
     position: relative;
     transition: transform .2s;
     border: 0.1rem solid black;
@@ -118,3 +115,13 @@ img {
     justify-content: flex-end;
   }
 
+td, th {
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+    background-color: #eeeeee;
+}
+
+sup {
+    font-size: 0.7rem;
+}
