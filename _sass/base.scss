@@ -86,30 +86,6 @@ img {
     font-size: 1rem;
 }
 
-.home-page-container {
-    margin: 0 2rem 2rem 2rem;
-    position: relative;
-    transition: transform .2s;
-    border: 0.1rem solid black;
-
-    &:hover {
-        transform: scale(1.1);
-    }
-}
-
-.home-page-image {
-    width: 100%;
-}
-
-.overlay-text {
-    font-family: 'Mona-Sans';
-    font-weight: 500;
-    position: absolute;
-    font-size: 32px;
-    bottom: 1rem;
-    left: 1rem;
-}
-
 .footer-flex-container {
     display: flex;
     justify-content: flex-end;

@@ -5,15 +5,15 @@ title: Welcome
 ---
 <div class="home-page-container">
     <a href="/Projects/FPGA-2-TCP.html">
-    <img class="home-page-image" src="/Assets/images/narrative_overview.png">
+    <img class="home-page-image" src="/Assets/images/blank.png">
     <div class="overlay-text">
         FPGA-2-TCP
     </div>
     </a>
 </div>
-<div class="home-page-container">
+<div class="home-page-container dark">
     <a href="/Projects/Game-Playing Agents.html">
-    <img class="home-page-image" src="/Assets/images/narrative_overview.png">
+    <img class="home-page-image" src="/Assets/images/gpa_portal.png">
     <div class="overlay-text">
         Game-Playing Agents
     </div>
