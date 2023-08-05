@@ -1,6 +1,6 @@
 ---
 layout: default
-mode: light
+mode: narrow
 title: Concurrency & Operating Systems
 ---
 <h3>Concurrency & Operating Systems</h3>

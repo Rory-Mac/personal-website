@@ -12,37 +12,30 @@
         <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
         <title>{{ page.title }}</title>
     </head>
-    {% if page.mode == "dark" %}
-    <body class="dark">
-    {% elsif page.mode == "light" %}
-    <body class="light">
-    {% endif %}
+    <body>
         <header class="site-header">
             <div class="wrapper">
                 <a class="site-title" href="{{site.baseurl}}/index.html">rorymac.blog </a>
                 <nav class="site-nav">
-                    <a class="nav-link" href="{{site.baseurl}}/index.html">projects</a>
+                    <a class="nav-link" href="{{site.baseurl}}/projects.html">projects</a>
                     <a class="nav-link" href="{{site.baseurl}}/explore.html">exploration</a>
                     <a class="nav-link" href="{{site.baseurl}}/blog.html">blog</a>
                 </nav>
             </div>
-            <hr>
         </header>
-        <main class="page-content">
+        {% if page.mode == "narrow" %}
+        <main class="narrow">
+        {% elsif page.mode == "wide" %}
+        <main>
+        {% endif %}
             <div>
             {{ content }}
             </div>
         </main>
         <div class="site-footer">
-            <hr>
             <div class="footer-flex-container">
-            {% if page.mode == "light" %}
                 <a target="_blank" href="https://github.com/Rory-Mac"><img style="max-width: 40px; max-height: 40px; padding: 0.5rem 0.5rem;" src="/Assets/images/git_logo.png"></a>
                 <a target="_blank" href="https://www.linkedin.com/in/rory-maclean-63b792215/"><img style="max-width: 40px; max-height: 40px; padding: 0.5rem 0.5rem;" src="/Assets/images/linkedIn_logo.png"></a>
-            {% elsif page.mode == "dark" %}
-                <a target="_blank" href="https://github.com/Rory-Mac"><img style="max-width: 40px; max-height: 40px; padding: 0.5rem 0.5rem;" src="/Assets/images/git_logo_dark.png"></a>
-                <a target="_blank" href="https://www.linkedin.com/in/rory-maclean-63b792215/"><img style="max-width: 40px; max-height: 40px; padding: 0.5rem 0.5rem;" src="/Assets/images/linkedIn_logo_dark.png"></a>
-            {% endif %}
             </div>
         </div>
     </body>

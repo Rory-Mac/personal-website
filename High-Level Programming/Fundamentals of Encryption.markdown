@@ -1,6 +1,6 @@
 ---
 layout: default
-mode: light
+mode: narrow
 title: Fundamentals of Encryption
 ---
 <h4>Fundamentals of Encryption</h4>

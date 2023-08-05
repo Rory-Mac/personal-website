@@ -1,3 +1,45 @@
+.topic {
+  margin: 0 2rem 2rem 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.topic-title {
+  min-width: 200px;
+  max-width: 200px;
+  padding: 1rem;
+  background-color: white;
+}
+
+.portal-container {
+  overflow-y: hidden;
+  display: flex;
+  transition: transform 0.3s ease-in-out;  
+  justify-content: flex-start;
+  padding: 1rem;
+  z-index: 1;
+}
+
+.portal-container::-webkit-scrollbar {
+  width: auto;
+}
+ 
+.portal-container::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+.portal-container::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
+.portal {
+    margin: 0 2rem 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
 .portal-image {
   width: 100%; 
   height: 100%;
@@ -10,62 +52,5 @@
     justify-content: center;
     border: 2px solid black;
     background-color: white;
-}
-
-.carousel {
-  overflow: hidden;
-  position: relative;
-}
-
-.navigate-left {
-  text-align: center;
-  margin-top: 10px;
-  position: absolute;
-  top: 45%;
-  left: 0%;
-}
-
-.navigate-right {
-  text-align: center;
-  margin-top: 10px;
-  position: absolute;
-  top: 45%;
-  right: 0%;
-}
-
-button {
-  color: white;
-  background-color: black;
-  border-radius: 4px;
-  font-size: 20px;
-  cursor: pointer;
-  z-index: 2;
-  opacity: 0;
-}
-
-.disable-button-cursor {
-  cursor: default !important;
-}
-
-.slider-container {
-  overflow: hidden;
-  margin: 0 2rem;
-}
-
-.slider {
-  display: flex;
-  transition: transform 0.3s ease-in-out;  
-  justify-content: space-between;
-  padding: 1rem;
-  z-index: 1;
-}
-
-.slider-content {
-    max-width: 213.2px;
-    margin: 0 29.2px 0 0;  
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    justify-content: flex-end;
 }
   

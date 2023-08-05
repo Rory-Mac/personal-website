@@ -1,6 +1,6 @@
 ---
 layout: default
-mode: light
+mode: narrow
 title: FPGA-2-TCP
 ---
 <p>

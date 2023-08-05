@@ -1,6 +1,6 @@
 ---
 layout: default
-mode: dark
+mode: narrow
 title: Explore
 ---
 <h4>Kernels of Compute</h4>

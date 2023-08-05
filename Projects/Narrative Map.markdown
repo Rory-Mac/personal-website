@@ -1,6 +1,6 @@
 ---
 layout: default
-mode: dark
+mode: narrow
 title: Narrative Map
 ---
 <h4>Narrative Map</h4>

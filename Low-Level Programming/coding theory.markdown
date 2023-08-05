@@ -1,6 +1,6 @@
 ---
 layout: default
-mode: dark
+mode: narrow
 title: Coding Theory
 ---
 <h3>Coding Theory</h3>

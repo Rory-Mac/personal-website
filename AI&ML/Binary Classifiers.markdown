@@ -1,6 +1,6 @@
 ---
 layout: default
-mode: light
+mode: narrow
 title: Binary Classifiers
 ---
 <h4>Binary Classifiers</h4>
