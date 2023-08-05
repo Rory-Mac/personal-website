@@ -119,7 +119,7 @@ title: Explore
     <div class="topic-title"><h4>Artificial Intelligence & Machine Learning</h4></div>
     <div class="portal-container">
         <div class="portal zoom small">
-            <a href="/Theory of Computation/Linear Algebra.html">
+            <a href="/AI&ML/Linear Algebra.html">
                 <div class="portal-image">
                     <img style="background-color: black" src="/Assets/images/linear_algebra_portal.png">
                 </div>
@@ -129,7 +129,7 @@ title: Explore
             </div>
         </div>
         <div class="portal zoom small">
-            <a href="/Theory of Computation/Multivariable Calculus.html">
+            <a href="/AI&ML/Multivariable Calculus.html">
             <div class="portal-image">
                     <img style="background-color: black" src="/Assets/images/multivar_calc_portal.png">
                 </div>
@@ -139,7 +139,7 @@ title: Explore
             </div>
         </div>
         <div class="portal zoom small">
-            <a href="/Theory of Computation/Multivariable Calculus.html">
+            <a href="/AI&ML/Tensors.html">
             <div class="portal-image">
                     <img style="background-color: black" src="/Assets/images/blank_4_cube.png">
                 </div>
@@ -159,7 +159,7 @@ title: Explore
             </div>
         </div>
         <div class="portal zoom small">
-            <a href="/Theory of Computation/Hypercubes.html">
+            <a href="/AI&ML/Hypercubes.html">
             <div class="portal-image">
                     <img style="background-color: black" src="/Assets/images/blank_4_cube.png">
                 </div>
