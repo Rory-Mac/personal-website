@@ -8,7 +8,7 @@ title: Explore
     <div class="topic-title"><h4>Low-Level Programming</h4></div>
     <div class="portal-container">
         <div class="portal zoom small">
-            <a href="kernels of compute.html">
+            <a href="/Low-Level Programming/Logic Gates.html">
                 <div class="portal-image"><img class="something" src="/Assets/images/4-cube_dark.png"></div>
             </a>
             <div class="portal-title">
