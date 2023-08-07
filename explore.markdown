@@ -1,6 +1,6 @@
 ---
 layout: default
-mode: light
+mode: wide
 title: Explore
 ---
 
@@ -9,10 +9,26 @@ title: Explore
     <div class="portal-container">
         <div class="portal zoom small">
             <a href="/Low-Level Programming/Logic Gates.html">
+                <div class="portal-image"><img class="something" src="/Assets/images/truth_table_dark.png"></div>
+            </a>
+            <div class="portal-title">
+                <p>Gate Logic</p>
+            </div>
+        </div>
+        <div class="portal zoom small">
+            <a href="/Low-Level Programming/TTL Logic.html">
                 <div class="portal-image"><img class="something" src="/Assets/images/4-cube_dark.png"></div>
             </a>
             <div class="portal-title">
-                <p>Logic Gates</p>
+                <p>TTL Logic</p>
+            </div>
+        </div>
+        <div class="portal zoom small">
+            <a href="/Low-Level Programming/Logic Gates.html">
+                <div class="portal-image"><img class="something" src="/Assets/images/4-cube_dark.png"></div>
+            </a>
+            <div class="portal-title">
+                <p>Automata Theory</p>
             </div>
         </div>
         <div class="portal zoom small">
@@ -28,15 +44,7 @@ title: Explore
                 <div class="portal-image"><img class="something" src="/Assets/images/4-cube_dark.png"></div>
             </a>
             <div class="portal-title">
-                <p>Concurrency</p>
-            </div>
-        </div>
-        <div class="portal zoom small">
-            <a href="/Low-Level Programming/Concurrency%20%26%20Operating%20Systems.html">
-                <div class="portal-image"><img class="something" src="/Assets/images/4-cube_dark.png"></div>
-            </a>
-            <div class="portal-title">
-                <p>Operating Systems</p>
+                <p>OS & Concurrency</p>
             </div>
         </div>
         <div class="portal zoom small">
