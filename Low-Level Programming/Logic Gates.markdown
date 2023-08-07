@@ -89,12 +89,55 @@ In our visualisation we can observe that our defined logical connectives are a p
 diagram. This helps visualise logical equivalencies within the system: 
 <img src="/Assets/images/logic_connectives.png" width="100%" height="100%"></p>
 <p>Thus, if we encode our propositions in electric signals, and our logical connectives in silicon to transform said electric 
-signals, then we can build a computer to evaluate any statement in propositional logic.</p>
-
-<!--
-Simulate gates in propositional Logic
-First order logic (+ logic gates)
-Second order logic (+ logic gates)
-ZFC (+ logic gates)
-Turing machine (to compute any algorithm)
--->
+signals, then we can build a computer to evaluate any statement in propositional logic. Note that we can evolve the logical connectives
+in this structure from binary operators to ternary, quaternary or even \(n\)-ary operators, by extending the two-dimensional truth-tables
+represented by the existence/non-existence of an entity, into \(n\) to represent the \(n\)-terms being operated on. Despite this 
+extensibility, the computer would not yet be able to evaluate basic arithmetic, which is instead formalised through predicate logic, an 
+extension of propositional logic. Predicate logic introduces existential quantifiers, universal quantifiers, variables, functions, and
+predicates, in addition to the logical connectives of propositional logic. An example of a formula formulated in the language of predicate logic:
+\[ \forall x \forall y (P(f(x)) \rightarrow \neg (P(x) \rightarrow Q(f(y), x, z))) \]</p>
+<p>Functions and variables are terms in this language. Variables are denoted by variable symbols such as \(x\), \(y\),
+ \(z\), etc, and can be thought of as observations of the existence or non-existence of an entity, just as they were in propositional logic.
+Functions are denoted by function symbols with parenthesis containing a set of terms, such as \(f(x, y, z)\), where \(x,y,z\) represent
+terms rather than variable symbols, that themselves could be functions or variable symbols, creating a recurrence that terminates at the
+observed existence or non-existence of each variable. Formulas in the language of predicate logic are defined by the following rule set:
+<ul>
+  <li>Predicate symbols: \(P(t_1, ..., t_n)\) is a formula if \(P\) is an n-ary predicate and \(t_1, ..., t_n\)
+  are terms.</li>
+  <li>Negation: if \(\varphi\) is a formula, then \(\neg \varphi\) is a formula.</li>
+  <li>Logical connectives: if \(\varphi\) and \(\psi\) are formulas then \((\varphi \; ? \; \psi)\) is a formula for some logical connective \(?\).</li>
+  <li>Quantifiers: if \(\varphi\) is a formula, then \(\forall x \varphi\) and \(\exists x \varphi\) are formulas.</li>
+</ul>
+Predicates and quantifiers are the only terms in the language that extend upon our previously formalised structure. Assuming a finite 
+number of observations for which a universal quantifier refers to, we can use a simple n-ary 'and' connective to determine if the predicate
+for all observations evaluates to true. An n-ary 'or' would similarly determine the truth of an existential quantifier.</p>
+<p>We can define a new truth table for a half-adder, where the truth of an input doesn't represent the observed existence/non-existence of 
+an entity but rather the observed existence/non-existence of a group of entities of size \(2^n-1\) for \(n\) binary inputs:
+\[
+  \begin{array}{| c | c | c | c }
+  p & q & s & c \\
+  \hline
+  T & T & F & T \\
+  T & F & T & F \\
+  F & T & T & F \\
+  F & F & F & F \\
+  \end{array}
+\]
+We can then define the truth-table of a full-adder to include the input-bit carried from the previous sum: 
+\[
+  \begin{array}{| c | c | c | c | c }
+  c_{in} & p & q & s & c_{out} \\
+  \hline
+  T & T & T & T & T \\
+  T & T & F & F & T \\
+  T & F & T & F & T \\
+  T & F & F & T & F \\
+  F & T & T & F & T \\
+  F & T & F & T & F \\
+  F & F & T & T & F \\
+  F & F & F & F & F \\
+  \end{array}
+\]
+</p>
+<p>This hypothetical computer, although useful, lacks a form of memory. Upon introducing memory, we depart from the forms of logic dicussed
+thus far, and move towards automata theory.</p>
