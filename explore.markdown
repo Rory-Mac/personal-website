@@ -3,7 +3,6 @@ layout: default
 mode: wide
 title: Explore
 ---
-
 <div class="topic">
     <div class="topic-title"><h4>Low-Level Programming</h4></div>
     <div class="portal-container">
@@ -17,14 +16,14 @@ title: Explore
         </div>
         <div class="portal zoom small">
             <a href="/Low-Level Programming/TTL Logic.html">
-                <div class="portal-image"><img class="something" src="/Assets/images/4-cube_dark.png"></div>
+                <div class="portal-image"><img class="something" src="/Assets/images/ttl_logic_portal_dark.png"></div>
             </a>
             <div class="portal-title">
                 <p>TTL Logic</p>
             </div>
         </div>
         <div class="portal zoom small">
-            <a href="/Low-Level Programming/Logic Gates.html">
+            <a href="/Low-Level Programming/Automata Theory.html">
                 <div class="portal-image"><img class="something" src="/Assets/images/4-cube_dark.png"></div>
             </a>
             <div class="portal-title">
