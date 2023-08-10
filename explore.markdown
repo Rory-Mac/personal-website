@@ -46,14 +46,6 @@ title: Explore
                 <p>OS & Concurrency</p>
             </div>
         </div>
-        <div class="portal zoom small">
-            <a href="/Low-Level Programming/coding theory.html">
-                <div class="portal-image"><img style="background-color: black" src="/Assets/images/coding_theory_portal.png"></div>
-            </a>
-            <div class="portal-title">
-                <p>Coding Theory</p>
-            </div>
-        </div>
     </div>
 </div>
 

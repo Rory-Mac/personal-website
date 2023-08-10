@@ -123,7 +123,7 @@ an entity but rather the observed existence/non-existence of a group of entities
   F & F & F & F \\
   \end{array}
 \]
-We can then define the truth-table of a full-adder to include the input-bit carried from the previous sum: 
+We can then define the truth-table of a full adder to include the input-bit carried from the previous sum: 
 \[
   \begin{array}{| c | c | c | c | c }
   c_{in} & p & q & s & c_{out} \\
