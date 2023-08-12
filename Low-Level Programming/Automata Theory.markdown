@@ -52,14 +52,15 @@ finite state machine evaluating the grammar of a given language, then that input
 language. To evaluate the input string, we can consider information states as memory and state-transitions as instructions, and the 'run'
 on the state machine as defined by the validated input, the program. This sequence of instructions also needs to be stored in memory, thus
 there exists data memory and instruction memory. The limitation of the DFA model of computation is that it can only read and evaluate 
-regular languages. 
-
-
-</p>
+regular languages.</p>
+<p>A formal language is a language constructed from symbols belonging to an alphabet combined to form terms according to a set of defined
+rules. A regular language is a formal language defined by a regular expression. A regular expression is a sequence of characters defining 
+a subset of a set of possible sequences of characcters, which can be thought more intuitively as an expression that defines which 
+expressions are equivalent to itself, that is which expressions match.</p>
 
 <!--
-    Regular languages (DFA)
-    Context-free languages (Pushdown automata)
+    Regular expressions and finite state automatons, Kleene's algorithm
+    Context-free languages, Pushdown automata, and the obligations of parentheses 
     Context-sensitive languages (Turing Machines)
-    Recusrively-enumerable languages (Universal Turing Machines)
+    Recursively-enumerable languages (Universal Turing Machines)
 -->

@@ -22,10 +22,113 @@ one bit of information, 'on' or 'off'.
 <img src="/Assets/images/ttl_logic.png" width="100%" height="100%"></p>
 <p>We can use these logic gates to create basic arithmetic units called adders. The left logic gate diagram shows that of a half-adder, whilst
 the right logic diagram shows a full adder (includes a carry bit):
-<img src="/Assets/images/adders.png" width="100%" height="100%"></p>
-<p>Our logic gates have thus far operated on either one or two bits, with the exception of the full adder and its 3-bit input. The logic of
-these gates can easily be extended to larger bit-inputs. Consider the 8-bit extensions of some of the logic gates we have thus far covered:
-<img src="/Assets/images/basic_8bit_gates.png" width="100%" height="100%"></p>
-<p>
+<img src="/Assets/images/adders.png" width="100%" height="100%">
+<img src="/Assets/images/subtractors_with_twos_complement.png" width="100%" height="100%">
+\[
+  \begin{array}{| c | c | c | c}
+  A & B & S & C \\
+  \hline
+  T & T & F & T \\
+  T & F & T & F \\
+  F & T & T & F \\
+  F & F & F & F \\
+  \end{array}
 
-</p>
+  \quad
+  
+  \begin{array}{| c | c | c | c}
+  A & B & C_{in} & S & C_{out} \\
+  \hline
+  T & T & T & T & T\\
+  T & T & F & F & T\\
+  T & F & T & F & T\\
+  T & F & F & T & F\\
+  F & T & T & F & T\\
+  F & T & F & T & F\\
+  F & F & T & T & F\\
+  F & F & F & F & F\\
+  \end{array}
+
+  \quad 
+
+  \begin{array}{| c | c | c | c}
+  P & Q & D & B \\
+  \hline
+  T & T & F & F \\
+  T & F & T & F \\
+  F & T & T & T \\
+  F & F & F & F \\
+  \end{array}
+
+  \quad
+  
+  \begin{array}{| c | c | c | c}
+  P & Q & B_{in} & D & B \\
+  \hline
+  T & T & T & T & T\\
+  T & T & F & F & F\\
+  T & F & T & F & F\\
+  T & F & F & T & F\\
+  F & T & T & F & T\\
+  F & T & F & T & T\\
+  F & F & T & T & T\\
+  F & F & F & F & F\\
+  \end{array}
+\]<br></p>
+<p>By introducing the concept of subtraction beyond zero, and thus the set of negative numbers, we need a way to convert between positive 
+and negative binary numbers. This is done by inverting the binary string (one's complement) and adding one (two's complement), visualised 
+in the somewhat out-of-place arch diagram above. It should also be noted that the logic gates discussed thus far have operated only on either
+one or two bits, with the exception of the full adder and its 3-bit input. However, the logic of these gates can easily be easily extended
+to larger binary inputs. Here are the 8-bit equivalents of some of the logic gates we have covered:
+<img src="/Assets/images/basic_8bit_gates.png" width="100%" height="100%"></p>
+<p>So far we have only circuits implementing combinational logic. By introducing memory units, we introduce the concept of finite state 
+machines, that have the ability to read and evaluate instructions written in formal languages. The foundational circuit of any memory 
+unit, is the electronic flip-flop, which stores one bit of information. Lets have a look at SR, JK and D flip-flop designs:
+<img src="/Assets/images/digital_flip_flops.png" width="100%" height="100%">
+\[
+  \begin{array}{| c | c | c | c}
+  S & R & Q_{t+1} & \overline{Q_{t+1}} \\
+  \hline
+  T & T & ? & ? \\
+  T & F & T & F \\
+  F & T & F & T \\
+  F & F & Q_t & \overline{Q_t}\\
+  \end{array}
+
+  \quad
+  
+  \begin{array}{| c | c | c | c | c | c}
+  CLK & J & K & Q_{t+1} & \overline{Q_{t+1}} \\
+  \hline
+  T & T & T & \overline{Q_t} & Q_t \\
+  T & T & F & T & F \\
+  T & F & T & F & T \\
+  T & F & F & Q_t & \overline{Q_t}\\
+  F & T & T & Q_t & \overline{Q_t}\\
+  F & T & F & Q_t & \overline{Q_t}\\
+  F & F & T & Q_t & \overline{Q_t}\\
+  F & F & F & Q_t & \overline{Q_t}\\
+  \end{array}
+
+  \quad
+
+  \begin{array}{| c | c | c | c}
+  CLK & D & Q_{t+1} & \overline{Q_{t+1}} \\
+  \hline
+  T & T & T & F \\
+  T & F & F & T \\
+  F & T & Q_t & \overline{Q_t} \\
+  F & F & Q_t & \overline{Q_t}\\
+  \end{array}
+\]
+Wrapping the Data Flip-Flop (DFF) in a simple 2-bit multiplexor gives us a singular one-bit register, for which input values can be loaded
+for storage.
+<img src="/Assets/images/dff.png" width="100%" height="100%"></p>
+The multiplexor can be extended for any n-bit architecture. An arbirtraily large demultiplexor can be used to route the input value to one
+of an arbitrarily large set of registers. This is performed via an address bus to store the load value.
+
+<!--
+    binary multiplier, binary divider
+    diagram for basic FPGA circuit
+    program counter, shift registers and shift operations
+-->
