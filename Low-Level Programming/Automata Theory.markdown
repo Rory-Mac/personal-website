@@ -57,10 +57,3 @@ regular languages.</p>
 rules. A regular language is a formal language defined by a regular expression. A regular expression is a sequence of characters defining 
 a subset of a set of possible sequences of characcters, which can be thought more intuitively as an expression that defines which 
 expressions are equivalent to itself, that is which expressions match.</p>
-
-<!--
-    Regular expressions and finite state automatons, Kleene's algorithm
-    Context-free languages, Pushdown automata, and the obligations of parentheses 
-    Context-sensitive languages (Turing Machines)
-    Recursively-enumerable languages (Universal Turing Machines)
--->

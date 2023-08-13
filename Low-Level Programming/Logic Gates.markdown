@@ -4,140 +4,139 @@ mode: narrow
 title: Logic Gates
 ---
 <h4>Logic Gates</h4>
-<p>Logic gates are the building blocks of digital circuits designed to compute: to take an input, and provide an output. As the most fundamental building blocks of
-computers, logic gates enact the most fundamental forms of computation. Lets start with set theory, grounded in the observation that entities exist and can be grouped.
-There doesn't seem to be an observation more axiomatic than that. Perhaps the most axiomatic observation is observation of the identity law, which can be formalised like
-so, \[ \exists x(x = x). \]</p>
-<p>Let's call this a proposition, namely the proposition that there exists \(x\) equal to itself. We can then infer from our observation 
-of the existence or non-existence of \(x\), that
+<p>The transistor allows for the control of the flow of current and voltage through a semiconductor. A semiconductor is a material with 
+relatively moderate conductance, less than that of conductors, more than that of insulators. Electrical conductance is the reciprocal
+of resistance, the more commonly used metric. The resistance of a material is defined as the ratio of the voltage across the material to 
+the current passing through the material, \(R=\frac{V}{I}\).</p>
+<p>Silicon is a semiconductor. A silicion atom has fourteen electrons, four of which are valent electrons, each of which form covalent bonds
+with the valent electrons of other silicon atoms to create a stable lattice structure. The silicon lattice can be p-doped with a material 
+with a lesser amount of valent electrons or n-doped with a material with a greater amount of valence electrons. In either case, doping 
+increases the conductance of the semiconductive material.
+<img src="/Assets/images/silicon.png" width="100%" height="100%">
+Create a sandwich of n-doped and p-doped terminals will form depletion layers betwen each connected terminal, as the positive and negative 
+charges neutralise. A small positive voltage can be applied to the insulated gate, essentially breaking the depletion layer and allowing
+for the flow of current across the transistor. Thus, we can apply a voltage to change the information state of the transistor, which encodes
+one bit of information, 'on' or 'off'.
+<img src="/Assets/images/transistor.png" width="50%" height="50%"></p>
+<p>We can use transistors with basic circuit elements to create logic gates. The circuit designs for AND, OR, XOR, and NOT are as follows:  
+<img src="/Assets/images/ttl_logic.png" width="100%" height="100%"></p>
+<p>We can use these logic gates to create basic arithmetic units called adders. The left logic gate diagram shows that of a half-adder, whilst
+the right logic diagram shows a full adder (includes a carry bit):
+<img src="/Assets/images/adders.png" width="100%" height="100%">
+<img src="/Assets/images/subtractors_with_twos_complement.png" width="100%" height="100%">
 \[
-    \begin{align*}
-    &P \rightarrow Q, P \quad \\
-    \therefore\ &Q \quad
-    \end{align*}
-\]
-
-For our simple example, \(P\) represents the initial observation of the existence of \(x\) and \(Q\) represents the secondary observation
-of the existence of \(x\). Our 'if-then' inference will be considered true until we perceive the initial existence of \(x\) and we dont 
-perceive the secondary existence of \(x\). Each observation can be considered a 'world' expressed as a row in a binary truth table:
-\[
-  \begin{array}{|c c|c|}
-  p & q & p \rightarrow q\\
-  \hline
-  T & T & T\\
-  T & F & F\\
-  F & T & T\\
-  F & F & T\\
-  \end{array}
-\]
-
-If we have just one proposition and one conclusion, we have just one unary operator, the negation operator, so that if the existence of \(x\)
-was observed, then the non-existence of \(x\) was not observed, and if the non-existence of \(x\) was observed, the existence of \(x\) was 
-not observed:
-\[
-  \begin{array}{|c | c|}
-  p & \neg p\\
-  \hline
-  T & F\\
-  F & T\\
-  \end{array}
-\]
-If we have two propositions and one conclusion, we have 16 possible operators:
-\[
-  \begin{array}{| c | c | c | c | c | c | c | c | c | c | c | c | c | c | c | c }
-  p & q & 1 & \lor & \leftarrow & p & \rightarrow & q & ↔ & \land & ↑ & ⊕ & \neg q & ↛  & \neg p & ↚  & ↓ & 0\\
-  \hline
-  T & T & T & T & T & T & T & T & T & T & F & F & F & F & F & F & F & F\\
-  T & F & T & T & T & T & F & F & F & F & T & T & T & T & F & F & F & F\\
-  F & T & T & T & F & F & T & T & F & F & T & T & F & F & T & T & F & F\\
-  F & F & T & F & T & F & T & F & T & F & T & F & T & F & T & F & T & F\\
-  \end{array}
-\]
-These operators are (from left to right), identity, or, converse implication, premise one, implication, premise two, if and only if, and, nand, 
-xor, premise two negation, non-implication, premise one negation, converse non-implication, nor, and null. We can visualise these
-operators as groupings of worlds:
-<img src="/Assets/images/gate_logic.png" width="100%" height="100%">
-If we have \(n\) propositions and one conclusion there exist \(2^{2^n}\) operators we could possibly define. The most useful, as visualised
-above, include logical unary operators, logical binary operators, and the unique logic of the multiplexor, which introduces a 
-selector bit to select an input value as output,
-\[
-  \begin{array}{| c | c | c | c | c }
-  s & p & q \\
-  \hline
-  T & T & T & T\\
-  T & T & F & F\\
-  T & F & T & T\\
-  T & F & F & F\\
-  F & T & T & T\\
-  F & T & F & T\\
-  F & F & T & F\\
-  F & F & F & F\\
-  \end{array}
-\]
-Similarly, there exists the demultiplexor, which uses a selector bit to direct the input-bit to one of a set of output-bits,
-\[
-  \begin{array}{| c | c | c | c }
-  s & p \\
-  \hline
-  T & T & FT \\
-  T & F & FF \\
-  F & T & TF \\
-  F & F & FF \\
-  \end{array}
-\]
-In our visualisation we can observe that our defined logical connectives are a partially ordered finite set, and so we can create a Hasse
-diagram. This helps visualise logical equivalencies within the system: 
-<img src="/Assets/images/logic_connectives.png" width="100%" height="100%"></p>
-<p>Thus, if we encode our propositions in electric signals, and our logical connectives in silicon to transform said electric 
-signals, then we can build a computer to evaluate any statement in propositional logic. Note that we can evolve the logical connectives
-in this structure from binary operators to ternary, quaternary or even \(n\)-ary operators, by extending the two-dimensional truth-tables
-represented by the existence/non-existence of an entity, into \(n\) to represent the \(n\)-terms being operated on. Despite this 
-extensibility, the computer would not yet be able to evaluate basic arithmetic, which is instead formalised through predicate logic, an 
-extension of propositional logic. Predicate logic introduces existential quantifiers, universal quantifiers, variables, functions, and
-predicates, in addition to the logical connectives of propositional logic. An example of a formula formulated in the language of predicate logic:
-\[ \forall x \forall y (P(f(x)) \rightarrow \neg (P(x) \rightarrow Q(f(y), x, z))) \]</p>
-<p>Functions and variables are terms in this language. Variables are denoted by variable symbols such as \(x\), \(y\),
- \(z\), etc, and can be thought of as observations of the existence or non-existence of an entity, just as they were in propositional logic.
-Functions are denoted by function symbols with parenthesis containing a set of terms, such as \(f(x, y, z)\), where \(x,y,z\) represent
-terms rather than variable symbols, that themselves could be functions or variable symbols, creating a recurrence that terminates at the
-observed existence or non-existence of each variable. Formulas in the language of predicate logic are defined by the following rule set:
-<ul>
-  <li>Predicate symbols: \(P(t_1, ..., t_n)\) is a formula if \(P\) is an n-ary predicate and \(t_1, ..., t_n\)
-  are terms.</li>
-  <li>Negation: if \(\varphi\) is a formula, then \(\neg \varphi\) is a formula.</li>
-  <li>Logical connectives: if \(\varphi\) and \(\psi\) are formulas then \((\varphi \; ? \; \psi)\) is a formula for some logical connective \(?\).</li>
-  <li>Quantifiers: if \(\varphi\) is a formula, then \(\forall x \varphi\) and \(\exists x \varphi\) are formulas.</li>
-</ul>
-Predicates and quantifiers are the only terms in the language that extend upon our previously formalised structure. Assuming a finite 
-number of observations for which a universal quantifier refers to, we can use a simple n-ary 'and' connective to determine if the predicate
-for all observations evaluates to true. An n-ary 'or' would similarly determine the truth of an existential quantifier.</p>
-<p>We can define a new truth table for a half-adder, where the truth of an input doesn't represent the observed existence/non-existence of 
-an entity but rather the observed existence/non-existence of a group of entities of size \(2^n-1\) for \(n\) binary inputs:
-\[
-  \begin{array}{| c | c | c | c }
-  p & q & s & c \\
+  \begin{array}{| c | c | c | c}
+  A & B & S & C \\
   \hline
   T & T & F & T \\
   T & F & T & F \\
   F & T & T & F \\
   F & F & F & F \\
   \end{array}
-\]
-We can then define the truth-table of a full adder to include the input-bit carried from the previous sum: 
-\[
-  \begin{array}{| c | c | c | c | c }
-  c_{in} & p & q & s & c_{out} \\
+
+  \quad
+  
+  \begin{array}{| c | c | c | c}
+  A & B & C_{in} & S & C_{out} \\
   \hline
-  T & T & T & T & T \\
-  T & T & F & F & T \\
+  T & T & T & T & T\\
+  T & T & F & F & T\\
+  T & F & T & F & T\\
+  T & F & F & T & F\\
+  F & T & T & F & T\\
+  F & T & F & T & F\\
+  F & F & T & T & F\\
+  F & F & F & F & F\\
+  \end{array}
+
+  \quad 
+
+  \begin{array}{| c | c | c | c}
+  P & Q & D & B \\
+  \hline
+  T & T & F & F \\
+  T & F & T & F \\
+  F & T & T & T \\
+  F & F & F & F \\
+  \end{array}
+
+  \quad
+  
+  \begin{array}{| c | c | c | c}
+  P & Q & B_{in} & D & B \\
+  \hline
+  T & T & T & T & T\\
+  T & T & F & F & F\\
+  T & F & T & F & F\\
+  T & F & F & T & F\\
+  F & T & T & F & T\\
+  F & T & F & T & T\\
+  F & F & T & T & T\\
+  F & F & F & F & F\\
+  \end{array}
+\]<br></p>
+<p>By introducing the concept of subtraction beyond zero, and thus the set of negative numbers, we need a way to convert between positive 
+and negative binary numbers. This is done by inverting the binary string (one's complement) and adding one (two's complement), visualised 
+in the somewhat out-of-place arch diagram above. It should also be noted that the logic gates discussed thus far have operated only on either
+one or two bits, with the exception of the full adder and its 3-bit input. However, the logic of these gates can easily be easily extended
+to larger binary inputs. Here are the 8-bit equivalents of some of the logic gates we have covered:
+<img src="/Assets/images/basic_8bit_gates.png" width="100%" height="100%"></p>
+<p>Lets now look to binary multiplication and division, both of which are reasonably more complex than addition and subtraction. The truth
+table for two-bit binary multiplication is simply AND, as the output is one if and only if both inputs are one, otherwise the presence of a 
+zero ensures that the output is zero. We find each bit of one operand multiplied by each bit of the other operand, making for \(n^2\)
+partial products that are shifted left by a number of bits proportional to the magnitude of the operand to create a parallelogram. We 
+then repeatedly sum the partials (visualised by dot groupings) until we arrive at the final number, which will require two n-bit registers
+to store for the operands of size \(n\). Note that the left and bottom edge of said parallelogram can be negated for compatibility with 
+two's complement (and thus multiplication of signed integers).
+<img src="/Assets/images/binary_multiplication.png" width="100%" height="100%"></p>
+<p>Like multiplication, which can be achieved through iterative addition, division can be achieved through iterative subtraction. 'Fast'
+division attempts to be more computationally efficient by approximating and then converging towards the correct quotient. The Goldschmidt
+algorithm is an example of a fast division algorithm.
+
+
+</p>
+<p>So far we have only circuits implementing combinational logic. By introducing memory units, we introduce the concept of finite state 
+machines, that have the ability to read and evaluate instructions written in formal languages. The foundational circuit of any memory 
+unit, is the electronic flip-flop, which stores one bit of information. Lets have a look at SR, JK and D flip-flop designs:
+<img src="/Assets/images/digital_flip_flops.png" width="100%" height="100%">
+\[
+  \begin{array}{| c | c | c | c}
+  S & R & Q_{t+1} & \overline{Q_{t+1}} \\
+  \hline
+  T & T & ? & ? \\
+  T & F & T & F \\
+  F & T & F & T \\
+  F & F & Q_t & \overline{Q_t}\\
+  \end{array}
+
+  \quad
+  
+  \begin{array}{| c | c | c | c | c | c}
+  CLK & J & K & Q_{t+1} & \overline{Q_{t+1}} \\
+  \hline
+  T & T & T & \overline{Q_t} & Q_t \\
+  T & T & F & T & F \\
   T & F & T & F & T \\
-  T & F & F & T & F \\
-  F & T & T & F & T \\
-  F & T & F & T & F \\
-  F & F & T & T & F \\
-  F & F & F & F & F \\
+  T & F & F & Q_t & \overline{Q_t}\\
+  F & T & T & Q_t & \overline{Q_t}\\
+  F & T & F & Q_t & \overline{Q_t}\\
+  F & F & T & Q_t & \overline{Q_t}\\
+  F & F & F & Q_t & \overline{Q_t}\\
+  \end{array}
+
+  \quad
+
+  \begin{array}{| c | c | c | c}
+  CLK & D & Q_{t+1} & \overline{Q_{t+1}} \\
+  \hline
+  T & T & T & F \\
+  T & F & F & T \\
+  F & T & Q_t & \overline{Q_t} \\
+  F & F & Q_t & \overline{Q_t}\\
   \end{array}
 \]
-</p>
-<p>This hypothetical computer, although useful, lacks a form of memory. Upon introducing memory, we depart from the forms of logic dicussed
-thus far, and move towards automata theory.</p>
+Wrapping the Data Flip-Flop (DFF) in a simple 2-bit multiplexor gives us a singular one-bit register, for which input values can be loaded
+for storage.
+<img src="/Assets/images/dff.png" width="100%" height="100%">
+The multiplexor can be extended for any n-bit architecture. An arbirtraily large demultiplexor can be used to route the input value to one
+of an arbitrarily large set of registers. This is performed via an address bus to store the load value.</p>
