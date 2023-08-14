@@ -23,19 +23,19 @@ title: Explore
             </div>
         </div>
         <div class="portal zoom small">
-            <a href="/Low-Level Programming/Automata Theory.html">
-                <div class="portal-image"><img class="something" src="/Assets/images/simple_dfa_dark.png"></div>
-            </a>
-            <div class="portal-title">
-                <p>Automata Theory</p>
-            </div>
-        </div>
-        <div class="portal zoom small">
             <a href="/Low-Level Programming/Computer Architecture.html">
                 <div class="portal-image"><img class="something" src="/Assets/images/4-cube_dark.png"></div>
             </a>
             <div class="portal-title">
                 <p>Computer Architecture</p>
+            </div>
+        </div>
+        <div class="portal zoom small">
+            <a href="/Low-Level Programming/Automata Theory.html">
+                <div class="portal-image"><img class="something" src="/Assets/images/simple_dfa_dark.png"></div>
+            </a>
+            <div class="portal-title">
+                <p>Automata Theory</p>
             </div>
         </div>
         <div class="portal zoom small">
