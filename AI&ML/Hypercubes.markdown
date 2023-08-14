@@ -1,6 +1,6 @@
 ---
 layout: default
-mode: dark
+mode: narrow
 title: Hypercubes
 ---
 <h4>Hypercubes</h4>

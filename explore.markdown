@@ -24,7 +24,7 @@ title: Explore
         </div>
         <div class="portal zoom small">
             <a href="/Low-Level Programming/Computer Architecture.html">
-                <div class="portal-image"><img class="something" src="/Assets/images/4-cube_dark.png"></div>
+                <div class="portal-image"><img class="something" src="/Assets/images/computer_architecture_portal.png"></div>
             </a>
             <div class="portal-title">
                 <p>Computer Architecture</p>
@@ -32,18 +32,26 @@ title: Explore
         </div>
         <div class="portal zoom small">
             <a href="/Low-Level Programming/Automata Theory.html">
-                <div class="portal-image"><img class="something" src="/Assets/images/simple_dfa_dark.png"></div>
+                <div class="portal-image"><img class="something" src="/Assets/images/dfa_dark.png"></div>
             </a>
             <div class="portal-title">
                 <p>Automata Theory</p>
             </div>
         </div>
         <div class="portal zoom small">
-            <a href="/Low-Level Programming/Concurrency%20%26%20Operating%20Systems.html">
+            <a href="/Low-Level Programming/Operating%20Systems.html">
                 <div class="portal-image"><img class="something" src="/Assets/images/4-cube_dark.png"></div>
             </a>
             <div class="portal-title">
-                <p>OS & Concurrency</p>
+                <p>Operating Systems</p>
+            </div>
+        </div>
+        <div class="portal zoom small">
+            <a href="/Low-Level Programming/Concurrency.html">
+                <div class="portal-image"><img class="something" src="/Assets/images/4-cube_dark.png"></div>
+            </a>
+            <div class="portal-title">
+                <p>Concurrency</p>
             </div>
         </div>
     </div>
@@ -148,13 +156,13 @@ title: Explore
             </div>
         </div>
         <div class="portal zoom small">
-            <a href="/AI&ML/Neurons & Perceptrons.html">
+            <a href="/AI&ML/Perceptrons.html">
             <div class="portal-image">
                     <img style="background-color: black" src="/Assets/images/basic_nn_dark.png">
                 </div>
             </a>
             <div class="portal-title">
-                <p>Neurons & Perceptrons</p>
+                <p>Perceptrons</p>
             </div>
         </div>
         <div class="portal zoom small">

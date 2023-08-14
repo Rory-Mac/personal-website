@@ -1,9 +1,9 @@
 ---
 layout: default
 mode: narrow
-title: Concurrency & Operating Systems
+title: Concurrency
 ---
-<h3>Concurrency & Operating Systems</h3>
+<h3>Concurrency</h3>
 <p>Random Access Memory (RAM) exists a stack of registers (individual memory units) with read and write access. From an n-bit register we can read
 an n-bit value or write an n-bit value. Registers may contain raw data or an instruction. Instructions instruct a processor to read data from a set of registers, run a computation 
 on that data, and write that computed data to a register. A processor executes one instruction at a time, thus creating a thread of execution. Context 

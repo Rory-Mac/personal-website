@@ -1,6 +1,6 @@
 ---
 layout: default
-mode: dark
+mode: narrow
 title: Multivariable Calculus
 ---
 <h3>Multivariable Calculus</h3>
