@@ -176,16 +176,6 @@ title: Explore
             </div>
         </div>
         <div class="portal zoom small">
-            <a href="/AI&ML/Binary Classifiers.html">
-            <div class="portal-image">
-                    <img style="background-color: black" src="/Assets/images/binary_classifier_portal.png">
-                </div>
-            </a>
-            <div class="portal-title">
-                <p>Binary Classifiers</p>
-            </div>
-        </div>
-        <div class="portal zoom small">
             <a href="/AI&ML/Gradient Descent & Backpropagation.html">
             <div class="portal-image">
                     <img style="background-color: black" src="/Assets/images/backprop_portal.png">
