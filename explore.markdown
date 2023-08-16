@@ -148,7 +148,7 @@ title: Explore
         <div class="portal zoom small">
             <a href="/AI&ML/Tensors.html">
             <div class="portal-image">
-                    <img style="background-color: black" src="/Assets/images/blank_4_cube.png">
+                    <img style="background-color: black" src="/Assets/images/4-cube_dark.png">
                 </div>
             </a>
             <div class="portal-title">
@@ -163,16 +163,6 @@ title: Explore
             </a>
             <div class="portal-title">
                 <p>Perceptrons</p>
-            </div>
-        </div>
-        <div class="portal zoom small">
-            <a href="/AI&ML/Hypercubes.html">
-            <div class="portal-image">
-                    <img style="background-color: black" src="/Assets/images/blank_4_cube.png">
-                </div>
-            </a>
-            <div class="portal-title">
-                <p>Hypercubes</p>
             </div>
         </div>
         <div class="portal zoom small">
