@@ -1,12 +1,10 @@
 ---
 layout: default
 mode: narrow
-title: Multivariable Calculus
+title: Calculus
 ---
-<h3>Multivariable Calculus</h3>
-<p>Calculus begins with the Riemann sum. Consider the following image taken straight from wikipedia,  </p>
-<p><img src="/Assets/images/riemann_sum.png"></p>
-<p>We can segment any function \(f(x) \) into a set of rectangles of width \( dx \) with area \(dA\) and height equal to the value
+<h4>Calculus</h4>
+<p>Calculus begins with the Riemann sum. We can segment any function \(f(x) \) into a set of rectangles of width \( dx \) with area \(dA\) and height equal to the value
     of the rightmost, lowermost, uppermost or leftmost intercept, respectively illustrated above.
 </p>
 <p> \[ \frac{dA}{dx} \approx f(x), \>\> dx \longrightarrow 0 \]</p>
@@ -24,12 +22,12 @@ title: Multivariable Calculus
 </p>
 <p> \[ \frac{d(x^n)}{dx} = nx^{n-1} \]
     This expression is called the power rule. It has the following geometric analog scaled from two to n dimensions:
-    <img src="/Assets/images/geometric_power_rule_dark.png" width="100%" height="100%"></p>
+    <img src="/Assets/images/geometric_power_rule.png" width="100%" height="100%"></p>
 <p>We can think of incrementing our exponent from \(n\) to \(n+1\), as a nudge of length \(dx\) in a new dimension. For inputs of the form \(x^n\) we can
     re-express our theorem of calculus like so,
     \[ \frac{x^n + a_1x^{n-1}dx + a_2x^{n-2}dx^2 + \dots + a_ndx^n - x^n}{dx}, \>\> x \longrightarrow 0 \] 
 for some coefficients \(a_1 \dots a_n \). We can think of our binomial expansion like branches in a tree each representing paths of multiplication:
-<img src="/Assets/images/binomial_theorem_dark.png" width="100%" height="100%">
+<img src="/Assets/images/binomial_theorem.png" width="100%" height="100%">
 This can be expressed more formally as,
     \[ (x+y)^n = \sum_{k=0}^{n} {n \choose k} x^{n-k} y^k \]
 There exist a set of paths with one movement in the \(x\) direction, a set of paths with 2 movements in the \(x\) direction, etc. The cardinality 

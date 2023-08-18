@@ -136,13 +136,13 @@ title: Explore
             </div>
         </div>
         <div class="portal zoom small">
-            <a href="/AI&ML/Multivariable Calculus.html">
+            <a href="/AI&ML/Calculus.html">
             <div class="portal-image">
                     <img style="background-color: black" src="/Assets/images/multivar_calc_portal.png">
                 </div>
             </a>
             <div class="portal-title">
-                <p>Multivariable Calculus</p>
+                <p>Calculus</p>
             </div>
         </div>
         <div class="portal zoom small">

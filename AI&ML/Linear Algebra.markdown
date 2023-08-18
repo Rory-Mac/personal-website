@@ -3,17 +3,17 @@ layout: default
 mode: narrow
 title: Linear Algebra
 ---
-<h3>Linear Algebra</h3>
+<h4>Linear Algebra</h4>
 <p>A vector can best be thought of as movement through space. We can perceive the unit vector in one dimensional space
     \( \>\> \hat{i}  = \begin{bmatrix} 1 \end{bmatrix} \>\> \); as a movement from zero to one.</p>
-<p><img src="/Assets/images/vector_space_1d_dark.png" width="75%" height="75%"></p>
+<p><img src="/Assets/images/vector_space_1d.png" width="75%" height="75%"></p>
 <p> The set of all possible vectors created by the addition/subtraction of this unit vector is simply the number line in one dimensional space:
     \[ \{ \> \begin{bmatrix} x \end{bmatrix} \> \mid \> \begin{bmatrix} x \end{bmatrix} = a \cdot \hat{i},\>\> a \in (-\infty, \infty) \> \}
     \>\>\>\> = \>\>\>\> \{ \> \begin{bmatrix} x \end{bmatrix} \> \mid \> x \in (-\infty, \infty) \} \> \]
 </p>
 <p> With two non-parallel unit vectors \( \>\> \hat{i}  = \begin{bmatrix} 1 \\ 0 \end{bmatrix} \>\> \) and \( \>\> \hat{j} = \begin{bmatrix} 0 \\ 1 \end{bmatrix} \>\> \) 
     we have the following:</p>
-<p><img src="/Assets/images/vector_space_2d_dark.png" width="75%" height="75%"></p>
+<p><img src="/Assets/images/vector_space_2d.png" width="75%" height="75%"></p>
 <p>This pattern extends to any \(n\)-dimensional space: the span of \(n\) non-parallel vectors produces an \(n\)-dimensional lattice structure. 
     Two vectors are parallel if, when sharing the same origin, one is a scalar multiple of the other. A linear combination of two vectors is the sum of
     those two vectors scaled, \( \>\> a \vec{v} + b \vec{w} \). The span of a set of non-parallel vectors is the set of all linear combinations they produce.</p>
@@ -45,5 +45,5 @@ title: Linear Algebra
     number of base vectors 'flipped' in terms of orientation. By treating the borders of a complex structure in our vector space as the integrals of 
     a set  
     Note that the change in volume of a more complex structure can be determined by the
-    determinant by treating the borders of the structure down into unit volumes  
+    determinant by treating the borders of the structure down into unit volumes.
 </p>
