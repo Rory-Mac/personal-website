@@ -1,6 +1,6 @@
 ---
 layout: default
-mode: light
+mode: narrow
 title: An approach to Artificial Intelligence
 ---
 <h3>An approach to Artificial Intelligence</h3>

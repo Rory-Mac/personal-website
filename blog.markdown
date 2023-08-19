@@ -1,6 +1,6 @@
 ---
 layout: default
-mode: wide
+mode: narrow
 title: Blog
 ---
 <div style="padding: 0 2rem">

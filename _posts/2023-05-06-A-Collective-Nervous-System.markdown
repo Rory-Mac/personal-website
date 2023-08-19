@@ -1,6 +1,6 @@
 ---
 layout: default
-mode: dark
+mode: narrow
 title: A Collective Nervous System
 ---
 <h4>A Collective Nervous System</h4>
