@@ -137,24 +137,54 @@ uneasy if they are within close proximity to a lion, a snake, a coming earthquak
 motivated by the desire for physical security will exist in tandem with the actions motivated by the desire for homeostasis. There does seem to be a distinction between
 the human predator and the snake, because we can negotiate with the human more so than we can the snake. As social animals our actions are motivated by the desire for
 social interaction. We will learn to speak, to appease, to encourage and to predict the patterns and behaviours of our cohort. This desire seems a bit harder to
-pin-point, as social interaction has numerous undertones, from warmth and intimacy, to courting and reproduction, to esteem and social approval. 
-
-
-</p>
-
-<p>We know the individual will take the action they consciously or unconsciously predict will maximise that which is desired, by definition. 
-
- Across individuals there seems to be commonality between that which is desired.
-Different actions and different justifications for actions, certainly, but the primary desires themselves seem to remain roughly consistent. 
-</p>
-<!--
-Choosing to place reproduction elsewhere
-Ripple from Local Environment
-Graham's Hierarchy
--->
-
-
-<h5>References</h5>
+pin-point, as social interaction has numerous undertones: warmth and intimacy, courting and reproduction, esteem and social approval, etc. Our set seems close to 
+complete but two more observations introduce two more reward functions that keep things interesting. The first is that of exploration, which comes from the observation
+that even if we were to give our hypothetical individual all that he/she may want, food, water, sex, shelter, unconditional warmth and approval, it seems likely that 
+they would long for novelty, assuming the food, although perfectly sustaining, was identical across time, as was the room they inhabited, as were the assurances the
+individual's companions' voiced. Maslow's Hierarchy<sup>27</sup> devised by Abraham Maslow in his near-identical contemplations, believed in self-actualisation as a possible 
+\(n\)th reward function, that would come to the forefront to motivate an individual if and only if all other needs were met. This would express the desire to become a
+master of one's craft or to travel the world, or to overcome an adversity no human has overcome before. Finally, we can visualise a structure to represent our 
+contemplations thus far.</p>
+<p><img src="/Assets/images/maslow_visualisation.png" height="100%" width="100%"></p>
+<p>This is by no means an exact heuristic, but it seems helpful nonetheless. Take the set of nodes or a subset of the set of nodes and identify a path in the graph
+that connects them all such nodes with minimal amount of edges, with all edges in the path being above or below the set of nodes but not both. Interestingly, this 
+arch diagram is equivalent to a flattened out complete graph, so essentially what we are saying is pick an \(n\)-gon in the graph for that connects \(n\) nodes. The
+reason we have an arch diagram is to create two distinct path sets, one above representing reward, and one below, representing punishment. I like to think of these
+paths/shapes we can identify as narratives. Consider that an individual having applied for and now being offered a very promising job. The reward/punishment functions
+that guide the individual's perception of such a job offer could be broken down into individual functions of reward and punishment. The financial security entailed by
+the job offer sustains one's desire for homeostasis and physical security across time, by means of enabling the individual to buy groceries, pay rent on time, maybe some
+nicer clothes etc. With this comes the reward associated with esteem, with being able to provide for one's family, and perhaps a little professional jealosy from 
+acquaintances and colleagues. The job itself may present a worthy dose of adversity in working in a new environment with new challenges, thus satiating the individual's
+desire for exploration, etc. For this reason, we can identify these paths as narratives, the narrative the individual perceives for some environmental stimulus (the job
+offer) that translates unconsciously into a finite set of reward functions.</p>
+<p>Another point to consider comes from that of prospect theory<sup>28</sup>, which suggests that humans are loss-averse creatures and weight perceived loss greater
+than perceived gain. It also suggests that perceived loss and gain are relative against some perceived baseline rather than an absolute value derived from all past 
+experience. It is also the case that we might have multiple narratives motivating actions to satiate the same base desires simultaneously. Perhaps our hypothetical
+individual is looking to go on a road trip with friends, for which there exist two signficiantly different but equally exciting routes that could be taken.
+We can visualise this as a tunnel of equivalent narratives, narratives formulated to satiate the same set of base desires</p>
+<p><img src="/Assets/images/maslow_shapes.png" height="100%" width="100%"></p>
+<p>This raises the question of what determines the depth of the narrative in the tunnelled grouping and what would the depth itself represent? To me it seems that 
+the depth represents the sequential nature of the set of narratives in the grouping. For instance, a young student might wish to perform well on an academic test, as
+a proxy for an upcoming university admissions test, as a precursor to an undergraduate degree, to a a job, to financial security. These sequential narratives, stack atop
+one another and are all formulated as a course of action predicted by the student to maximally satiate the student's desire for physical security, for esteem, for
+homeostasis, etc, over a given time horizon.</p>
+<p>Existential risk can be thought of as an adversarial narrative perceived by the human collective, or a portion of the human collective. If an individual is 
+perturbed by one such narrative, they are likely to broadcast that narrative to their peers, just as a monkey might howl upon seeing a snake, of course our language
+is a little more complex, and a little more sophisticated, but the intent remains the same. Unfortunately, it takes time for broadcast narrative to diffuse across 
+the human collective, and even longer for an agreed upon course of action to take hold and be implemented. It is in this lag-time that the individual might feel a great
+sense of despair, in the inability to confront or contend with an existential risk perceived at the forefront of their consciousness. However, actions the individual 
+takes also diffuse through the collective in small perhaps imperceptible ways. Using the example of existential nuclear risk, if we conclude that rationality and 
+diplomacy are key measures against such an existential risk, then we can act as an existence proof for their benefit, and try to be more diplomatic and rational in our
+own worlds, which will inevitably be observed by others, influence the actions of others in small and imperceptible ways, and such an effect will propagate slowly but 
+surely from the local environment of approximately 150 individuals<sup>29</sup> to the global environment of approximately eight billion individuals.</p>
+<p>A simple but powerful example of an action we can take as individuals to influence the global environment, is to speak with Graham's Hierarchy in mind whenever talking
+seriously about a matter. Graham's Hierarchy is a relatively straightforward hierarchical classification of arguments. The better the form of argument the higher its
+elevation in the heuristic.</p>
+<p><img src="/Assets/images/Graham&apos;s_Hierarchy.png" height="100%" width="100%"></p>
+<p>If every individual did so, the world would be a far more predictable and productive place to live in. Of course not everyone will instantaneously do so, but
+as an individual it is a good principle to practice, a good standard to hold oneself to, a good example to set. The imperceptible effects that propagate from the actions
+of just one individual through the human collective will change the world for better or worse, and that individual in all likelihood, is you.</p>
+<h4>References</h4>
 <p><ol class="reference-list">
     <li><a target="_blank" href="https://www.carbonbrief.org/mapped-how-climate-change-affects-extreme-weather-around-the-world/">Frequency/Severity of Extreme Weather Events</a></li>
     <li><a target="_blank" href="https://www.washingtonpost.com/world/2022/09/21/russia-referendums-ukraine-occupied-nuclear/">Nuclear Threat - American Major News Outlet</a></li>
@@ -183,5 +213,7 @@ Graham's Hierarchy
     <li><a target="_blank" href="https://www.nature.com/articles/s43016-022-00573-0">Implications of large-scale nuclear war</a></li>
     <li><a target="_blank" href="https://www.whitehouse.gov/briefing-room/statements-releases/2022/01/03/p5-statement-on-preventing-nuclear-war-and-avoiding-arms-races/#:~:text=We%20affirm%20that%20a%20nuclear,deter%20aggression%2C%20and%20prevent%20war.">Joint statement from nuclear powers</a></li>
     <li><a target="_blank" href="https://www.academia.edu/36835898/A_National_Pragmatic_Safety_Limit_for_Nuclear_Weapon_Quantities">Threshold for nuclear winter</a></li>
+    <li><a target="_blank" href="https://www.jstor.org/stable/10.5406/amerjpsyc.126.2.0155">Maslow's Hierarchy</a></li>
+    <li><a target="_blank" href="https://www.jstor.org/stable/10.5406/amerjpsyc.126.2.0155">Dunbar's Number</a></li>
     </ol>
 </p>
