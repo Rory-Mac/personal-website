@@ -1,10 +1,10 @@
 ---
 layout: default
 mode: narrow
-title: Narrative Map
+title: Narrative Structure
 ---
-<h4>Narrative Map</h4>
-<p>Narrative Map is a project that emerged from the attempt to identify patterns in human narrative. Profound narratives are powerful in their ability to shape our
+<h4>Narrative Structure</h4>
+<p>This post documents my attempt to identify some patterns underlying human narrative. Profound narratives are powerful in their ability to shape our
 perception of the world around us, the actions we take therein, and the actions we hope to take thereafter. Patterns in narratives might speak to an underlying 
 structure from which profound narratives emerge. The thought of such a structure excites me very much. As with all technical projects, I think the inspiration is 
 important to keep close in mind. It begets all else in the project, not the other way around.</p>
@@ -25,4 +25,3 @@ templates form from recurring features of experience that build upon these funda
 template in the tree corresponds to its compression ratio for the lived experience it follows from. Before attempting to identify the structure of the tree itself,
 let us first identify the foundational templates. The first perceptual template emerges the moment an agent perceives its environment: predictability 
 (known), unpredictability (unknown) and the set of transitions between the two.</p>
-<p>(documentation TBD)</p>

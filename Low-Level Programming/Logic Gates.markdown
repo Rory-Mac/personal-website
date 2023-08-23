@@ -140,3 +140,13 @@ for storage.
 <img src="/Assets/images/dff.png" width="100%" height="100%">
 The multiplexor can be extended for any n-bit architecture. An arbirtraily large demultiplexor can be used to route the input value to one
 of an arbitrarily large set of registers. This is performed via an address bus to store the load value.</p>
+<p><img src="/Assets/images/fpga_1.png" width="100%" height="100%">
+
+</p>
+
+<!--
+Input-Output Blocks
+Control Logic Blocks
+CLB (LUT, FFs, Muxes/Demuxes)
+SRAM versus DRAM
+-->

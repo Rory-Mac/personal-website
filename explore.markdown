@@ -8,7 +8,7 @@ title: Explore
     <div class="portal-container">
         <div class="portal zoom small">
             <a href="/Low-Level Programming/Digital Logic.html">
-                <div class="portal-image"><img class="something" src="/Assets/images/truth_table_dark.png"></div>
+                <div class="portal-image"><img src="/Assets/images/truth_table_dark.png"></div>
             </a>
             <div class="portal-title">
                 <p>Digital Logic</p>
@@ -16,7 +16,7 @@ title: Explore
         </div>
         <div class="portal zoom small">
             <a href="/Low-Level Programming/Logic Gates.html">
-                <div class="portal-image"><img class="something" src="/Assets/images/ttl_logic_portal_dark.png"></div>
+                <div class="portal-image"><img src="/Assets/images/ttl_logic_portal_dark.png"></div>
             </a>
             <div class="portal-title">
                 <p>Logic Gates</p>
@@ -24,7 +24,7 @@ title: Explore
         </div>
         <div class="portal zoom small">
             <a href="/Low-Level Programming/Computer Architecture.html">
-                <div class="portal-image"><img class="something" src="/Assets/images/computer_architecture_portal.png"></div>
+                <div class="portal-image"><img src="/Assets/images/computer_architecture_portal.png"></div>
             </a>
             <div class="portal-title">
                 <p>Computer Architecture</p>
@@ -32,7 +32,7 @@ title: Explore
         </div>
         <div class="portal zoom small">
             <a href="/Low-Level Programming/Automata Theory.html">
-                <div class="portal-image"><img class="something" src="/Assets/images/dfa_dark.png"></div>
+                <div class="portal-image"><img src="/Assets/images/dfa_dark.png"></div>
             </a>
             <div class="portal-title">
                 <p>Automata Theory</p>
@@ -40,7 +40,7 @@ title: Explore
         </div>
         <div class="portal zoom small">
             <a href="/Low-Level Programming/Operating%20Systems.html">
-                <div class="portal-image"><img class="something" src="/Assets/images/4-cube_dark.png"></div>
+                <div class="portal-image"><img src="/Assets/images/4-cube_dark.png"></div>
             </a>
             <div class="portal-title">
                 <p>Operating Systems</p>
@@ -48,7 +48,7 @@ title: Explore
         </div>
         <div class="portal zoom small">
             <a href="/Low-Level Programming/Concurrency.html">
-                <div class="portal-image"><img class="something" src="/Assets/images/4-cube_dark.png"></div>
+                <div class="portal-image"><img src="/Assets/images/4-cube_dark.png"></div>
             </a>
             <div class="portal-title">
                 <p>Concurrency</p>
