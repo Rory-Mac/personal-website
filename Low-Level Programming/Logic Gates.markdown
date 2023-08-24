@@ -136,17 +136,15 @@ unit, is the electronic flip-flop, which stores one bit of information. Lets hav
   \end{array}
 \]
 Wrapping the Data Flip-Flop (DFF) in a simple 2-bit multiplexor gives us a singular one-bit register, for which input values can be loaded
-for storage.
-<img src="/Assets/images/dff.png" width="100%" height="100%">
-The multiplexor can be extended for any n-bit architecture. An arbirtraily large demultiplexor can be used to route the input value to one
-of an arbitrarily large set of registers. This is performed via an address bus to store the load value.</p>
-<p><img src="/Assets/images/fpga_1.png" width="100%" height="100%">
-
-</p>
-
-<!--
-Input-Output Blocks
-Control Logic Blocks
-CLB (LUT, FFs, Muxes/Demuxes)
-SRAM versus DRAM
--->
+for storage. The multiplexor can be extended for any n-bit architecture. An arbirtraily large demultiplexor can be used to route the input
+value to one of an arbitrarily large set of registers. This is performed via an address bus to store the load value.
+<img src="/Assets/images/dff.png" width="100%" height="100%"></p>
+<p>We can now look to implementing our digital circuits in hardware. We could send our chip designs to a manufacturing plant for fabrication,
+but this will prove very costly and time-consuming. Thankfully, Field-Programmable-Gate-Arrays (FPGAs) exist to help us out. FPGAs are comprised
+of Look-Up-Tables (LUTs) to replace simple combinational units. We can pre-compute the truth-table we want our hardware to implement and simply
+store it in the SRAM of the LUT. Determining the output for a given input involves demuxing the SRAM outputs with a given input as the load address.
+Because this look-up-table exists as SRAM, the functionality the LUT implements can be changed at will, from OR, to AND, to XOR, to NAND, etc. SRAM is 
+Static-RAM, RAM that despite being volatile does not need memory refresh to maintain state, unlike DRAM (which is used instead for its low transistor
+count).<img src="/Assets/images/fpga_1.png" width="100%" height="100%"></p>
+<p>The FPGA is comprised of a large set of Input-Output Blocks (IOBs) and Control Logic Blocks (CLBs). The CLBs are themselves comprised of flip-flops,
+multiplexors, demultiplexors, and Look-Up-Tables.</p>
