@@ -22,7 +22,7 @@ memory structures form from internal narratives derived from the agent's percept
 from the perception of the set of all narratives being transmitted within the collective.</p>
 
 <!--
-universal experiences maps to universal narratives
+universal experiences map to universal narratives
 thus we can approximate the root of this structure, representing collective experience beforing it branches into the obscurity of individual experience
 finite state diagram
 predictabilitiy, unpredictability, transitions between the two
