@@ -1,6 +1,5 @@
 ---
 layout: default
-mode: wide
 title: Explore
 ---
 <div class="topic">

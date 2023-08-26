@@ -1,6 +1,5 @@
 ---
-layout: default
-mode: narrow
+layout: narrow
 title: Linear Regression
 ---
 <h4>Linear Regression</h4>

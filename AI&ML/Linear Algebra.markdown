@@ -1,6 +1,5 @@
 ---
-layout: default
-mode: narrow
+layout: narrow
 title: Linear Algebra
 ---
 <h4>Linear Algebra</h4>

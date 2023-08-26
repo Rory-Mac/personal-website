@@ -1,6 +1,5 @@
 ---
-layout: default
-mode: narrow
+layout: narrow
 title: Digital Logic
 ---
 <h4>Digital Logic</h4>

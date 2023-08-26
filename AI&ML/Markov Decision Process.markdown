@@ -1,6 +1,5 @@
 ---
-layout: default
-mode: narrow
+layout: narrow
 title: Markov Decision Process
 ---
 <h4>Markov Decision Process</h4>

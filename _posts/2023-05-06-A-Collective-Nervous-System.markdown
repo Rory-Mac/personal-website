@@ -1,12 +1,9 @@
 ---
-layout: default
-mode: narrow
+layout: narrow
 title: A Collective Nervous System
 ---
 <h4>A Collective Nervous System</h4>
-<p>This blog post is a short one. I wanted to list some of the online tools that help me visualise the internet as 
-    a collective nervous system. The first three are my current favourites.
-</p>
+<p>This is less of a blog post and more of a reminder of tools that have helped me conceptualise the internet as a global nervous system.</p>
 <p><ul>
     <li><a target="_blank" class="dark" href="http://internet-map.net/">The Internet Map</a></li>
     <li><a target="_blank" class="dark" href="http://listen.hatnote.com/">Listen to Wikipedia</a></li>

@@ -1,6 +1,5 @@
 ---
-layout: default
-mode: narrow
+layout: narrow
 title: Concurrency
 ---
 <h3>Concurrency</h3>

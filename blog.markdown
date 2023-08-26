@@ -1,6 +1,5 @@
 ---
-layout: default
-mode: narrow
+layout: narrow
 title: Blog
 ---
 <div style="padding: 0 2rem">
@@ -9,4 +8,4 @@ title: Blog
   <p><a href="{{ post.url }}">{{ post.title }}</a></p>
 {% endfor %}
 </div>
-<br><br><br><br><br><br><br><br>
+<br>

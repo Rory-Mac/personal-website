@@ -1,6 +1,5 @@
 ---
-layout: default
-mode: narrow
+layout: narrow
 title: Automata Theory
 ---
 <h4>Automata Theory</h4>

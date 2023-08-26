@@ -1,6 +1,5 @@
 ---
-layout: default
-mode: narrow
+layout: narrow
 title: Web Development
 ---
 <h3>Web Development</h3>

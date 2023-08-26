@@ -1,6 +1,5 @@
 ---
-layout: default
-mode: narrow
+layout: narrow
 title: Data Structures & Algorithms
 ---
 <h3>Data Structures and Algorithms</h3>

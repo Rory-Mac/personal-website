@@ -47,16 +47,12 @@ main {
 .site-header {
     padding: 1rem 1rem;
     font-weight: bold;
-    position: sticky;
-    top: 0;
     z-index: 2;
     background-color: white;
     border-bottom: 1px solid silver;
 }
 
 .site-footer {
-    position: sticky;
-    bottom: 0;
     padding: 0.5rem 1rem;
     background-color: white;
     z-index: 2;
@@ -99,6 +95,8 @@ a {
 img {
     display: block;
     margin: 0 auto;
+    width: 100%;
+    height: 100%;
 }
 
 .reference-list {

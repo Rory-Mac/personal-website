@@ -1,6 +1,5 @@
 ---
-layout: default
-mode: narrow
+layout: narrow
 title: Limbic Resonance
 ---
 <h4>Limbic Resonance</h4>

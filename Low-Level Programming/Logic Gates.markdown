@@ -1,6 +1,5 @@
 ---
-layout: default
-mode: narrow
+layout: narrow
 title: Logic Gates
 ---
 <h4>Logic Gates</h4>

@@ -1,6 +1,5 @@
 ---
-layout: default
-mode: narrow
+layout: narrow
 title: Object-Oriented Programming
 ---
 <h3>Object-Oriented Programming</h3>

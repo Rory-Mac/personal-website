@@ -1,7 +1,6 @@
 ---
 layout: default
-mode: wide
-title: Welcome
+title: Home - RoryMac Blog
 ---
 <div>
 <p>Add theme here.</p>

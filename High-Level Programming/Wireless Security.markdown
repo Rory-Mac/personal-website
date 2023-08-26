@@ -1,6 +1,5 @@
 ---
-layout: default
-mode: narrow
+layout: narrow
 title: Wireless Security
 ---
 <h4>Wireless Security</h4>

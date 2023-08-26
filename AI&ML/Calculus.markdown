@@ -1,6 +1,5 @@
 ---
-layout: default
-mode: narrow
+layout: narrow
 title: Calculus
 ---
 <h4>Calculus</h4>

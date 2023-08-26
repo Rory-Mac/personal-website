@@ -1,6 +1,5 @@
 ---
-layout: default
-mode: narrow
+layout: narrow
 title: Gradient Descent & Backpropagation
 ---
 <h4>Gradient Descent & Backpropagation</h4>

@@ -1,6 +1,5 @@
 ---
-layout: default
-mode: narrow
+layout: narrow
 title: Operating Systems
 ---
 <h3>Operating Systems</h3>

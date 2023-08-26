@@ -1,6 +1,5 @@
 ---
-layout: default
-mode: narrow
+layout: narrow
 title: Perceptrons
 ---
 <h3>Perceptrons</h3>

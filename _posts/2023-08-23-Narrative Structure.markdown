@@ -1,6 +1,5 @@
 ---
-layout: default
-mode: narrow
+layout: narrow
 title: Narrative Structure
 ---
 <h4>Narrative Structure</h4>

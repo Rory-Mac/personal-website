@@ -1,6 +1,5 @@
 ---
-layout: default
-mode: narrow
+layout: narrow
 title: Tensors
 ---
 <h4>Tensors</h4>

@@ -1,6 +1,5 @@
 ---
-layout: default
-mode: narrow
+layout: narrow
 title: NEAT
 ---
 <h4>Neuroevolution of Augmenting Topologies</h4>

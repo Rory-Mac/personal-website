@@ -1,6 +1,5 @@
 ---
-layout: default
-mode: narrow
+layout: narrow
 title: Computer Architecture
 ---
 <h4>Computer Architecture</h4>

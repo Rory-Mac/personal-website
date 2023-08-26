@@ -1,6 +1,5 @@
 ---
-layout: default
-mode: narrow
+layout: narrow
 title: Existential Risk
 ---
 <h4>Existential Risk</h4>

@@ -1,6 +1,5 @@
 ---
-layout: default
-mode: narrow
+layout: narrow
 title: Game-Playing Agents
 ---
 <h4>Game-Playing Agents</h4>

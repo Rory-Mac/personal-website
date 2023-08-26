@@ -1,6 +1,5 @@
 ---
-layout: default
-mode: narrow
+layout: narrow
 title: An approach to Artificial Intelligence
 ---
 <h4>An approach to Artificial Intelligence</h4>
