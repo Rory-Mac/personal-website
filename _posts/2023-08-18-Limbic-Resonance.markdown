@@ -55,22 +55,29 @@ separation. A companion AI RLHF'd directly onto a human user would be one degree
 limbic system. A mechanical neural network used to dynamically improve the structural integrity of a bridge in response to changing environmental conditions,
 which has greater longevity than its traditional counterpart, which increases the annual savings pocketed by the agency that built it, which
 allows for reinvestment into the employees that made such a step forward possible, which better enables them to not only buy the goods and
-services they need for themselves and their loved ones, but the goods and services they want, to extend themselves and their careers, would
-exist about four degrees of separation away from the satiated limbic systems. These causal pathways trace all technologies back to the
-desires that motivated their design. There is an exception to this rule however, which is the fact that the limbic system wants for novel stimuli,
-thus technologists will build technologies with no motivation beyond curiosity and no goal in mind other than exploration of the technology itself,
-although financial incentives will limit this somewhat.</p>
-<p>Based on our contemplation thus far, it seems AI development will follow the creation of 
-super-intelligent specialised substructures of the human nervous system. This results from our collective attempt to reverse-engineer the 
+services they need for themselves and their loved ones, but the goods and services they want, would
+exist about four degrees of separation away from the satiated limbic systems. These causal pathways trace technologies back to the
+desires that motivated their design. There is an exception to this rule however, which is the fact that the limbic system wants for novel stimuli.
+This means that technologists will build technologies with no motivation beyond curiosity and no goal in mind other than exploration of the technology itself.
+It seems AI development will follow the creation of super-intelligent specialised substructures of the human nervous system. This results from our collective attempt to reverse-engineer the 
 brain, to discover the specialised neural structures that satiate our base desire, and replicate and extend these structures in digital
 technology to create a digital overlay that targets not individuals, but the human collective. AI development will then be motivated to 
 succesfully interconnect these components, as they are in the human nervous system. The ideal future is one in which the super-intelligent
 nervous overlay that results from such development, exists symbiotically with the human collective.
-Symbiosis requires bandwidth. We are like monkeys with nuclear weapons, the only thing keeping our world from annihilation is the ability to
-context-switch into critical thinking in high-stakes environments that require such. Imagine an extreme bottleneck, where our primtive 
-monkey-like limbic systems are essentially divorced from the executive functions. The monkey wants to throw a rock at a rival monkey, it
-expresses its dissatisfaction, the executive function kicks in, hands him a nuclear weapon and a big red button. The monkey launches the 
-warhead and revels in delight, watching the enormous metal-sheathed warhead fall from the sky right above the head of his foe, before
-the entire forest is vaporised. When the stakes are high, the executive function should predominate, and when the stakes are low, the
-limbic system should predominate. This is only possible if both systems can relinquish control to one other at the appropriate time, which
-itself is only possible if there exists a high enough bandwidth between them such that they exist in symbiosis.</p>
+But symbiosis requires bandwidth.</p>
+<p>We are like monkeys with nuclear weapons. Our ability to context-switch to critical thought prevents our annihilation. Imagine an extreme bottleneck, where our primtive 
+monkey-like limbic systems are divorced entirely from our executive functions. Say the monkey wants to throw a rock at its rival, and 
+poses the unconscious question, "How can I guarantee maximum harm to my enemy", the executive function responds "well we could construct a
+nuclear bomb to fulfill your wish, however..."; the monkey, thinking only in the short-term and not capable of contemplating the more 
+complex causal pathways that concerns the cortex, overrides them, and revels in momentary delight before being vaporised. The healthier 
+dynamic is one in which both systems can relinquish control to one another
+at the appropriate time. Consider an engineer in a trance-like state of contemplation, visualising how components within a system slot
+together and effect one another. The engineer's cortices are abuzz, auditory, visual, motor, etc, giving a visual sense of the system,
+an auditory sense of componets buzzing, clicking and snapping together, and a proprioceptive sense of moving the components into different
+configurations in space. The limbic system is essentially dormant until some environmental trigger reactivates it, although it does still 
+encode the abstract contemplation into episodic memory for later retrieval. The reactivating trigger could be the engineer's hunger
+at lunchbreak, exhaustion after the day's work, distraction when a colleague they fancy enters the room, etc.</p>
+<p>We would want for a similar relationship to exist between our limbic system, our cortex, and our collective neural overlay. We do not want
+to sit and wait while the overlay computes, we want to be along for the ride. Symbiosis can be achieved through high-bandwidth interfaces. 
+Neuralink is the effort I'm most inspired by in this domain. The proof-of-concept of just one commercial BMI is enough. From there, economic 
+and personal incentives for symbiosis will explode.</p>
