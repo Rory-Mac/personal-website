@@ -52,8 +52,8 @@ main {
     padding: 1rem 1rem;
     font-weight: bold;
     z-index: 2;
-    background-color: white;
-    border-bottom: 1px solid silver;
+    background-color: #2C3E50;
+    color: white;
 }
 
 .site-footer {
@@ -62,14 +62,17 @@ main {
         position: sticky;
     }
     padding: 0.5rem 1rem;
-    background-color: white;
+    background-color: #2C3E50;
     z-index: 2;
-    border-top: 1px solid silver;
 }
 
 .footer-flex-container {
     display: flex;
     justify-content: flex-end;
+}
+
+.footer-logos {
+    padding: 0.5rem 0;
 }
 
 .site-title {

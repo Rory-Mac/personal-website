@@ -4,6 +4,11 @@
     padding: 1rem 0;
 }
 
+.page-container {
+    max-width: 950px;
+    margin: 0 auto;
+}
+
 .project-tag {
     color: rgb(0, 120, 212);
 }
@@ -11,40 +16,37 @@
 .project-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    max-height: 200px;
-    margin-bottom: 6rem;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 2rem;
+    padding: 2rem 0;
 }
 
-.page-container {
-    max-width: 950px;
-    margin: 0 auto;
-}
-
-.grid-portal {
-    &.left {
-        grid-column-start: 1;
-        grid-column-end: 3;
-    }
-    &.right {
-        grid-column-start: 2;
-        grid-column-end: 4;
-    }
+.portal-A {
+    grid-column-start: 1;
+    grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
-    justify-self: stretch;
 }
 
-.grid-text {
-    &.left {
-        grid-column-start: 1;
-        grid-column-end: 2;
-    }
-    &.right {
-        grid-column-start: 3;
-        grid-column-end: 4;
-    }
+.description-A {
+    grid-column-start: 3;
+    grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 2;
+    padding-left: 1rem;
+}
+
+.portal-B {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.description-B {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
     padding-left: 1rem;
 }

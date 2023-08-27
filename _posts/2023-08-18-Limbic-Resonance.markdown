@@ -12,7 +12,7 @@ limbic system is comprised of the hippocampus, responsible for episodic memory, 
 feelings of pleasure, fear, anxiety, and anger. Humans decide which tools to create and maintain across time, acting as a selective pressure.
 Limbic resonance exists as the trait we select for. We will expend energy to construct and maintain the tools that maximally satiate our base
 desires. As a simple example, the hammer and the nail, which we can use to transform wooden slats and planks into complex dwelling spaces,
-indirectly enables us to feel safe rather than unsafe and cozy rather than vulnerable. Hence, it has survived across time. Tools will
+indirectly enables us to feel safe rather than unsafe and cozy rather than vulnerable. This is why it has survived across time. Tools will
 be outcompeted by other tools since we humans select not just for the tools that successfully satiate our base desires, but for the tools that
 maximally satiate our base desires. We can reason that a tool is of use if we can follow a causal chain from the tool back to our own 
 personal satisfaction. Consider a bear in the forest, walking about in search of shelter until it stumbles across a nice looking cave. The
@@ -21,8 +21,8 @@ causal chains requires computation. Executive functions in the brain, such as ab
 the prefrontal cortex, allow for the visualisation and enaction of these more complex causal pathways. These executive functions exist to 
 maximise satiation in the long-term, and thus exist in eternal conflict with the limbic system, which instead wants to maximise
 satiation in the short-term.</p>
-<p>We can imagine that the exeutive functions of the brain themselves are nervous extensions of the limbic system: tools built by evolution
-to satiate it across time. We can consider tools themselves as nervous extensions 
+<p>We can imagine that the executive functions of the brain are themselves nervous extensions of the limbic system: tools built by evolution
+to satiate it in the long-term. We can consider tools themselves as nervous extensions 
 with bandwidth proportional to their limbic resonance. We build high bandwidth interfaces between ourselves and our tools, our cars, our laptops,
 our phones, etc. A person who has lost their phone or has to go a weekend without Wi-Fi might behave as though they have Phantom Limb Syndrome.
 The reliance of modern civilisation on digital computers, and the frequency with which we as individuals use them, is a consequence of their 

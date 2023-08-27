@@ -11,13 +11,13 @@ news stories the ones most likely to survive and proliferate<sup>[5]</sup>.</p>
 of people living in extreme poverty, defined by the World Bank as living on less than $2.15 USD per day as of September 2022<sup>[7]</sup>, has decreased steadily from 75.65% 
 to 10.01% (1800-2018)<sup>[8]</sup>. Global life expectancy has steadily risen from 28.4 years of age to 71.0 years of age (1770-2021)<sup>[9]</sup>. Global
 literacy has inverted from 12.05% literacy and 87.95% illiteracy to 13.75% illiteracy and 86.25% literacy (1800-2016)<sup>[10]</sup>. The positive rates of change
-these trends exhibit have not plateaued and are still in effect today. Even more suprising is the fact that child mortality rates across historical cultures 
-averages to 48% prior to the 18th century, and has declined steadily towards today's global average of 4.3%<sup>[11]</sup>.</p>
+these trends exhibit have not plateaued and are still in effect today. Even more suprising is the fact that child mortality rates as a historical average
+were as high as 48% prior to the 18th century, which has declined steadily towards today's global average of 4.3%<sup>[11]</sup>.</p>
 <p>Technological innovation seems primarily responsible for these trends, motivating the evolution of agricultural practices, the invention of the printing press,
 the steam engine, electricity, telecommunication networks, the internet, and the personal computer. All such technologies enable the individual to work closely with the 
 knowledge of the human collective, to attain that which they desire. What is desired first and foremost, is sustenance and security for one's self and loved ones.</p>
-<p>Unfortunately, no matter how far we advance as humans, an existential risk is an existential risk, meaning the risk bears with it the potential to bring us back to
-square one. Risks considered existential include nuclear holocaust, climate change, artificial intelligence and biological warfare. Existential in
+<p>Unfortunately, no matter how far we advance as humans, an existential risk is an existential risk, meaning it bears with it the potential to bring us back to
+square one. Risks considered existential include nuclear war, climate change, artificial intelligence and biological warfare. Existential in
 this sense does not mean the extinction of the human species, as even in these worst-case scenarios the existence of a small percentage of survivors seems probable.
 Instead it means the death of modern civilization, and with it the knowledge, technology, and culture that has developed across centuries.
 <p>Let us first ponder the likelihood of, and preventative measures against, nuclear existential risk, a risk that has come to the forefront of our cultural imagination as of
@@ -30,7 +30,7 @@ first-strike, thus negating any advantage that a first-strike would otherwise ho
 The second possible catalyst for nuclear holocaust is through false retaliation, where malfunctioning early detection systems give one nuclear power the false impression
 that another has launched a first-strike against it. By the same principle of Mutually Assured Destruction along with second-strike capabilities, it seems improbable 
 that such an event would motivate a misguided retaliation. It is in the best interest of the state to wait and confirm such an attack, and retaliate with second-strike
-capabilities if necessary. Of course this assumes that the individuals responsible for making these decisions are rational actors, which may not hold true. A simple 
+capabilities if necessary. Of course, this is assuming that the individuals responsible for making these decisions are rational actors, which may not hold true. A simple 
 preventative measure against the irrationality of state actors is to ensure that the responsiblity of such decisions fall to a collection of elected officials rather than 
 any one individual. Let us look to nuclear close-calls across history, where cooler heads have thus far prevailed, to verify these assumptions.</p>
 <p>
@@ -84,9 +84,9 @@ any one individual. Let us look to nuclear close-calls across history, where coo
 </p>
 <p>These historical close-calls suggest that of fundamental importance to the prevention of nuclear war is rationality and diplomacy, to act in opposition to the delusion
 required to launch a first or retaliatory strike, and to recall that second-strike capabilities ensure that decision-makers can delay decisions without cost,
-even in moments of high-pressure. More reliable detection systems help decrease the chance of such decisions ahving to be made. Modern systems such as SBIRS, 
+even in moments of high-pressure. More reliable detection systems help decrease the chance of such decisions having to be made. Modern systems such as SBIRS, 
 a constellation of infrared satellites deployed for the detection of missile launches, help complement other ground-based radar networks and nuclear detonation detection
-systems to decrease the impact of false readings. The development of the Washington–Moscow Direct Communications Link, the Beijing–Washington hotline, the US Nuclear Risk Reduction Center, and the Russian
+systems to decrease the likelihood of false readings. The development of the Washington–Moscow Direct Communications Link, the Beijing–Washington hotline, the US Nuclear Risk Reduction Center, and the Russian
 National Nuclear Risk Reduction Center, also align with these principles and are of mutual benefit to all parties involved. On the diplomatic front, recognition and 
 reinforcement of the phrase coined by Reagan and Gorbachev, that a "nuclear war cannot be won and must never be fought" is of great importance. This sentiment has been 
 affirmed by a joint statement made by The People’s Republic of China, the French Republic, the Russian Federation, the United Kingdom of Great Britain and Northern Ireland, 
@@ -126,14 +126,14 @@ year time horizon.
 </table></p>
 <p>It seems that to abolish rather than simply delay the existential risk associated with nuclear weapons, stockpiles would need to drop below the quantity required
 to trigger the civilization-ending phenomenon of nuclear winter<sup>28</sup>. They could remain non-zero to enforce the principle of Mutually Assured Destruction, whilst
-still abolishing their associative existential risk.
+still abolishing the existential risk they pose.
 Of course in the duration of this blog post I have focused solely on nuclear existential risk, and completely ignored prospects of artificial intelligence, climate
-change, and biological warfare, based on morbid curiosity alone. Something else I haven't yet addressed is that it doesn't seem to be of any importance for a civilian to
+change, and biological warfare, based on morbid curiosity alone. Something else I failed to address is the fact it doesn't seem to be of any importance for a civilian to
 be capable of answering the question "how can the human collective resolve the existential risk imposed by \(x\)" where \(x\) is one such existential risk, if that civilian cannot determine how to convince
 or motivate the human collective to do so. In these scenarios, how is the individual to act?</p>
 <p>Its important to note that this hypothetical individual will act, with or without an existential-risk-derived policy, to maximise perceived reward as motivated by 
-some reward function. Although the set of actions that could be taken seems near-infinite, the reward functions that motivate these actions seems finite and relatively small.
-Homeostasis and physical safety first come to mind. All individuals act to keep their physiology healthy and intact, both autonomically via hormonal regulation and
+some reward function. Although the set of actions that could be taken seems near-infinite, the reward functions that motivate these actions seem finite and relatively small.
+Homeostasis and physical safety is first and foremost. All individuals act to keep their physiology healthy and intact, both autonomically via hormonal regulation and
 through a self-preservation instinct. These unconscious motivations ensure that we as humans can regulate our temperature, our blood pressure, our sleep cycle, respond quickly
 to accidentally touching a red-hot stove or move from a striking viper, and understand why throwing oneself off a cliff or into an ocean without knowing how to swim
 is a bad strategy for long-term survival. Individuals that survive and reproduce also engage in social interaction based on some learnt strategy. This involves learning
@@ -159,7 +159,7 @@ an undergraduate degree, as a precursor to a job, to give a sense of financial s
 narratives are sequential and stack atop one another. Returning to our initial consideration of existential risk, we can imagine such as a punishing 
 narrative that requires collective rather than individual action to overcome. The individual can broadcast their concern
 through the peer-to-peer network that is the human collective, assuming the majority of people share or are receptive to the same concern. The individual may feel a 
-sense of despair watching these broadcasts propagate, simmer and die. Its necessary for the individual to act as an existence proof, to not only broadcast (which is 
+sense of despair watching these broadcasts propagate, simmer and die. It is necessary for the individual to act as an existence proof, to not only broadcast (which is 
 also of benefit) but to take the set of actions that minimise the threat they perceive, in any small way they can. If we conclude that rationality and diplomacy are key
 measures against nuclear existential risk, then we can strive to be diplomatic and rational in our own worlds and in our own relationships, to influence the social 
 fabric in small, imperceptible ways that will propagate slowly but surely through from the local environment of approximately 150 individuals<sup>31</sup> to the global
