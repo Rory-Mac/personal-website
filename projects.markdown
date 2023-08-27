@@ -9,8 +9,8 @@ title: Projects
     </div>
     <div class="description-A">
         <a href="/Projects/FPGA-2-TCP.html"><h4 class="project-tag">FPGA-2-TCP</h4></a>
-        <p>In this project, I used an FPGA to create a 32-bit virtual computer from scratch, which I then used to implement a variety of 
-        high-performance programs including an AI-snake, an options pricing model, and a financial transaction system.</p>
+        <p>In this project I built a 32-bit virtual computer atop a custom hardware design running on an FPGA. I then used my 
+        virtual computer to implement various high-performance programs including an AI-snake, and a financial transaction system.</p>
         <a class="project-tag" href="/Projects/FPGA-2-TCP.html">See More ></a>
     </div>
     <div class="portal-B">
@@ -18,7 +18,8 @@ title: Projects
     </div>
     <div class="description-B">
         <a href="/Projects/Game-Playing Agents.html"><h4 class="project-tag">Game Playing Agents</h4></a>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id sagittis dolor, quis varius eros.</p>
+        <p>In this project I explored various techniques in the making of robust game-playing agents, as my first introduction
+        into the world of neural networks and artificial intelligence.</p>
         <a class="project-tag" href="/Projects/Game-Playing Agents.html">See More ></a>
     </div>
 </div>
