@@ -1,7 +1,7 @@
 ---
-layout: default
+layout: sticky
 title: Home - RoryMac Blog
 ---
-<div>
-<p>Add theme here.</p>
-</div>
+<canvas id="spaceCanvas"></canvas>
+<script src="/Assets/scripts/SpaceTravel.js"></script>
+<script> new SpaceTravel(); </script>

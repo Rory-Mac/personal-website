@@ -45,6 +45,10 @@ main {
 }
 
 .site-header {
+    &.sticky {
+        top: 0;
+        position: sticky;
+    }
     padding: 1rem 1rem;
     font-weight: bold;
     z-index: 2;
@@ -53,6 +57,10 @@ main {
 }
 
 .site-footer {
+    &.sticky {
+        bottom: 0;
+        position: sticky;
+    }
     padding: 0.5rem 1rem;
     background-color: white;
     z-index: 2;
