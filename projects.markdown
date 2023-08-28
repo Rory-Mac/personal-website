@@ -5,7 +5,7 @@ title: Projects
 <div class="page-container">
 <div class="project-container">
     <div class="portal-A">
-        <a href="/Projects/FPGA-2-TCP.html"><img src="/Assets/images/narrative_overview.png"></a>
+        <a href="/Projects/FPGA-2-TCP.html"><img src="/Assets/images/narrative_overview.png" width="100%" height="100%"></a>
     </div>
     <div class="description-A">
         <a href="/Projects/FPGA-2-TCP.html"><h4 class="project-tag">FPGA-2-TCP</h4></a>
@@ -14,7 +14,7 @@ title: Projects
         <a class="project-tag" href="/Projects/FPGA-2-TCP.html">See More ></a>
     </div>
     <div class="portal-B">
-        <a href="/Projects/Game-Playing Agents.html"><img class="grid-portal" src="/Assets/images/gpa_portal.png"></a>
+        <a href="/Projects/Game-Playing Agents.html"><img src="/Assets/images/gpa_portal.png" width="100%" height="100%"></a>
     </div>
     <div class="description-B">
         <a href="/Projects/Game-Playing Agents.html"><h4 class="project-tag">Game Playing Agents</h4></a>
