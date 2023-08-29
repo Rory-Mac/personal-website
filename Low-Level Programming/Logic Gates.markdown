@@ -88,9 +88,7 @@ We precompute each carry bit using AND and OR gates in accordance with the above
 propagation delay and hardware complexity. The hardware cost becomes unacceptable when adding signficantly larger bit-strings, such as 
 2048-bit SSL encryption. The design is extensible to larger bit strings, for instance we could replace each full adder in our 8-bit 
 ripple-carry adder design with a 4-bit carry lookahead adder design, making a 32-bit adder that combines both designs.</p>
-<p>ALU shortcuts
-
-
+<p><img src="/Assets/images/alu_logical_reductions.png" width="100%" height="100%">
 
 </p>
 
