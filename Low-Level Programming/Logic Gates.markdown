@@ -12,15 +12,16 @@ with the valent electrons of other silicon atoms to create a stable lattice stru
 with a lesser amount of valent electrons or n-doped with a material with a greater amount of valence electrons. In either case, doping 
 increases the conductance of the semiconductive material.
 <img src="/Assets/images/silicon.png" width="100%" height="100%">
-Create a sandwich of n-doped and p-doped terminals will form depletion layers betwen each connected terminal, as the positive and negative 
+A sandwich of n-doped and p-doped terminals in a transistor will form depletion layers betwen each connected terminal, as the positive and negative 
 charges neutralise. A small positive voltage can be applied to the insulated gate, essentially breaking the depletion layer and allowing
 for the flow of current across the transistor. Thus, we can apply a voltage to change the information state of the transistor, which encodes
-one bit of information, 'on' or 'off'.
+one bit of information, on or off.
 <img src="/Assets/images/transistor.png" width="50%" height="50%"></p>
 <p>We can use transistors with basic circuit elements to create logic gates. The circuit designs for AND, OR, XOR, and NOT are as follows:  
 <img src="/Assets/images/ttl_logic.png" width="100%" height="100%"></p>
-<p>We can use these logic gates to create basic arithmetic units called adders. The left logic gate diagram shows that of a half-adder, whilst
-the right logic diagram shows a full adder (includes a carry bit):
+<p>We can use these logic gates to create basic arithmetic units called adders and subtractors. The left logic gate diagrams show that of the
+half-adder and half-subtractor, whilst the right logic gate diagrams show that of the full adder (includes a carry bit) and full subtractor (includes a borrow
+bit):
 <img src="/Assets/images/adders.png" width="100%" height="100%">
 <img src="/Assets/images/subtractors_with_twos_complement.png" width="100%" height="100%">
 \[
@@ -74,12 +75,25 @@ the right logic diagram shows a full adder (includes a carry bit):
   F & F & F & F & F\\
   \end{array}
 \]<br></p>
-<p>By introducing the concept of subtraction beyond zero, and thus the set of negative numbers, we need a way to convert between positive 
-and negative binary numbers. This is done by inverting the binary string (one's complement) and adding one (two's complement), visualised 
-in the somewhat out-of-place arch diagram above. It should also be noted that the logic gates discussed thus far have operated only on either
-one or two bits, with the exception of the full adder and its 3-bit input. However, the logic of these gates can easily be easily extended
-to larger binary inputs. Here are the 8-bit equivalents of some of the logic gates we have covered:
+<p>By introducing the concept of subtraction beyond zero, and thus the set of negative numbers, we need a way of converting positive 
+and negative numbers. We can do this by negating the binary string (one's complement) and adding one (two's complement), visualised 
+in the arch diagram above. The logic gates discussed thus far can easily be extended for larger bit inputs. Here are the 8-bit equivalents
+of some of the logic gates we have covered:
 <img src="/Assets/images/basic_8bit_gates.png" width="100%" height="100%"></p>
+<p>Our \(n\)-bit adders and subtractors operate in \(O(n)\) time, since the carry bit has to propagate through \(n\) individual components.
+These designs are referred to as the ripple-carry adder or ripple-borrow subtractor. For faster addition and subtraction in \(O(\log(n))\) 
+time we can use a look-ahead hardware design.</p>
+<p><img src="/Assets/images/carry_lookahead.png" width="100%" height="100%">
+We precompute each carry bit using AND and OR gates in accordance with the above mathematical logic. The trade-off here is between 
+propagation delay and hardware complexity. The hardware cost becomes unacceptable when adding signficantly larger bit-strings, such as 
+2048-bit SSL encryption. The design is extensible to larger bit strings, for instance we could replace each full adder in our 8-bit 
+ripple-carry adder design with a 4-bit carry lookahead adder design, making a 32-bit adder that combines both designs.</p>
+<p>ALU shortcuts
+
+
+
+</p>
+
 <p>Lets now look to binary multiplication and division, both of which are reasonably more complex than addition and subtraction. The truth
 table for two-bit binary multiplication is simply AND, as the output is one if and only if both inputs are one, otherwise the presence of a 
 zero ensures that the output is zero. We find each bit of one operand multiplied by each bit of the other operand, making for \(n^2\)
@@ -90,10 +104,7 @@ two's complement (and thus multiplication of signed integers).
 <img src="/Assets/images/binary_multiplication.png" width="100%" height="100%"></p>
 <p>Like multiplication, which can be achieved through iterative addition, division can be achieved through iterative subtraction. 'Fast'
 division attempts to be more computationally efficient by approximating and then converging towards the correct quotient. The Goldschmidt
-algorithm is an example of a fast division algorithm.
-
-
-</p>
+algorithm is an example of a fast division algorithm.</p>
 <p>So far we have only circuits implementing combinational logic. By introducing memory units, we introduce the concept of finite state 
 machines, that have the ability to read and evaluate instructions written in formal languages. The foundational circuit of any memory 
 unit, is the electronic flip-flop, which stores one bit of information. Lets have a look at SR, JK and D flip-flop designs:
