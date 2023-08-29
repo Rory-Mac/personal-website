@@ -81,17 +81,19 @@ in the arch diagram above. The logic gates discussed thus far can easily be exte
 of some of the logic gates we have covered:
 <img src="/Assets/images/basic_8bit_gates.png" width="100%" height="100%"></p>
 <p>Our \(n\)-bit adders and subtractors operate in \(O(n)\) time, since the carry bit has to propagate through \(n\) individual components.
-These designs are referred to as the ripple-carry adder or ripple-borrow subtractor. For faster addition and subtraction in \(O(\log(n))\) 
-time we can use a look-ahead hardware design.</p>
+We refer to these designs as the ripple-carry adder and the ripple-borrow subtractor. We can use a look-ahead design to achieve \(O(\log(n))\)
+addition and subtraction.</p>
 <p><img src="/Assets/images/carry_lookahead.png" width="100%" height="100%">
 We precompute each carry bit using AND and OR gates in accordance with the above mathematical logic. The trade-off here is between 
 propagation delay and hardware complexity. The hardware cost becomes unacceptable when adding signficantly larger bit-strings, such as 
 2048-bit SSL encryption. The design is extensible to larger bit strings, for instance we could replace each full adder in our 8-bit 
 ripple-carry adder design with a 4-bit carry lookahead adder design, making a 32-bit adder that combines both designs.</p>
-<p><img src="/Assets/images/alu_logical_reductions.png" width="100%" height="100%">
-
-</p>
-
+<p>Rather than creating a near-identical design for a borrow lookahead subtractor, we can instead realise that \(x - y\) is equivalent 
+to \(\neg(\neg x + y)\) and thus implement our subtraction functionality with negation and addition, which we have already implemented.
+We can think of this with regards to a computer's Arithmetic and Logic Unit, which operates on two input operands \(x, y\). In the naive
+approach, there exist one dedicated combinational chip for each operator. As we have seen with the example of subtraction,
+there exist ways to derive the functionality of multiple operators from a smaller set of operators.</p>
+<p><img src="/Assets/images/alu_logical_reductions.png" width="100%" height="100%"></p>
 <p>Lets now look to binary multiplication and division, both of which are reasonably more complex than addition and subtraction. The truth
 table for two-bit binary multiplication is simply AND, as the output is one if and only if both inputs are one, otherwise the presence of a 
 zero ensures that the output is zero. We find each bit of one operand multiplied by each bit of the other operand, making for \(n^2\)
