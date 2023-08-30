@@ -104,13 +104,13 @@ two's complement (and thus multiplication of signed integers).
 <img src="/Assets/images/binary_multiplication.png" width="100%" height="100%"></p>
 <p>Like multiplication, which can be achieved through iterative addition, division can be achieved through iterative subtraction. 'Fast'
 division attempts to be more computationally efficient by approximating and then converging towards the correct quotient. The Goldschmidt
-algorithm is an example of a fast division algorithm.</p>
-<p>So far we have only circuits implementing combinational logic. By introducing memory units, we introduce the concept of finite state 
+algorithm uses this approach.</p>
+<p>So far we have only covered circuits implementing combinational logic. By introducing memory units, we introduce the concept of finite state 
 machines, that have the ability to read and evaluate instructions written in formal languages. The foundational circuit of any memory 
 unit, is the electronic flip-flop, which stores one bit of information. Lets have a look at SR, JK and D flip-flop designs:
 <img src="/Assets/images/digital_flip_flops.png" width="100%" height="100%">
 \[
-  \begin{array}{| c | c | c | c}
+  \begin{array}{| c | c | c | c |}
   S & R & Q_{t+1} & \overline{Q_{t+1}} \\
   \hline
   T & T & ? & ? \\
@@ -121,7 +121,7 @@ unit, is the electronic flip-flop, which stores one bit of information. Lets hav
 
   \quad
   
-  \begin{array}{| c | c | c | c | c | c}
+  \begin{array}{| c | c | c | c | c | c |}
   CLK & J & K & Q_{t+1} & \overline{Q_{t+1}} \\
   \hline
   T & T & T & \overline{Q_t} & Q_t \\
@@ -136,7 +136,7 @@ unit, is the electronic flip-flop, which stores one bit of information. Lets hav
 
   \quad
 
-  \begin{array}{| c | c | c | c}
+  \begin{array}{| c | c | c | c |}
   CLK & D & Q_{t+1} & \overline{Q_{t+1}} \\
   \hline
   T & T & T & F \\
@@ -149,12 +149,37 @@ Wrapping the Data Flip-Flop (DFF) in a simple 2-bit multiplexor gives us a singu
 for storage. The multiplexor can be extended for any n-bit architecture. An arbirtraily large demultiplexor can be used to route the input
 value to one of an arbitrarily large set of registers. This is performed via an address bus to store the load value.
 <img src="/Assets/images/dff.png" width="100%" height="100%"></p>
-<p>We can now look to implementing our digital circuits in hardware. We could send our chip designs to a manufacturing plant for fabrication,
-but this will prove very costly and time-consuming. Thankfully, Field-Programmable-Gate-Arrays (FPGAs) exist to help us out. FPGAs are comprised
-of Look-Up-Tables (LUTs) to replace simple combinational units. We can pre-compute the truth-table we want our hardware to implement and simply
-store it in the SRAM of the LUT. Determining the output for a given input involves demuxing the SRAM outputs with a given input as the load address.
-Because this look-up-table exists as SRAM, the functionality the LUT implements can be changed at will, from OR, to AND, to XOR, to NAND, etc. SRAM is 
-Static-RAM, RAM that despite being volatile does not need memory refresh to maintain state, unlike DRAM (which is used instead for its low transistor
-count).<img src="/Assets/images/fpga_1.png" width="100%" height="100%"></p>
+<p>
+\[
+  \begin{array}{| c | c | c | c |}
+  P & S & y_1 & y_2 \\
+  \hline
+  T & T & F & T \\
+  T & F & T & F \\
+  F & T & F & F \\
+  F & F & F & F \\
+  \end{array}
+
+  \quad
+  
+  \begin{array}{| c | c | c | c |}
+  S & P & Q & y \\
+  \hline
+  T & T & T & T \\
+  T & T & F & F \\
+  T & F & T & T \\
+  T & F & F & F \\
+  F & T & T & T \\
+  F & T & F & T \\
+  F & F & T & F \\
+  F & F & F & F \\
+  \end{array}
+\]</p>
+<p>We can use Field-Programmable-Gate-Arrays (FPGAs) to implement our digital circuits in hardware in a non-permanent fashion. FPGAs are comprised
+of Look-Up-Tables (LUTs) that replace combinational units. These LUTs contain SRAM bits which store the values of a given combinational unit's truth-table.
+Determining the output for a given input thus involves multiplexing the SRAM outputs with a given input as the load address.
+Because this look-up-table exists as SRAM, the functionality the LUT implements can be changed dynamically by using demux to load a new truth-table,
+from OR, to AND, to XOR, to NAND, etc. SRAM is Static-RAM, RAM that despite being volatile does not need memory refresh to maintain state, unlike DRAM
+(which is used instead for its low transistor count).<img src="/Assets/images/fpga_1.png" width="100%" height="100%"></p>
 <p>The FPGA is comprised of a large set of Input-Output Blocks (IOBs) and Control Logic Blocks (CLBs). The CLBs are themselves comprised of flip-flops,
 multiplexors, demultiplexors, and Look-Up-Tables.</p>
