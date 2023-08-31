@@ -175,6 +175,23 @@ value to one of an arbitrarily large set of registers. This is performed via an 
   F & F & F & F \\
   \end{array}
 \]</p>
+<p>Another operation that is useful to realise in hardware is that of the logic shift. This is where we shift the bit-string a register
+contains, left or right. This shift can be zero-filled (the new bit is zero), sign-extended (the new bit is zero if left-shifted and
+equal to the MSB if right-shifted), or rotated (the new bit is equal to the discarded bit). This is very easily realised in hardware, where
+simple rewiring will suffice.</p>
+<p><img src="/Assets/images/logical_shifts.png" width="100%" height="100%">
+To avoid looping our one-bit shifts to achieve \(n\)-bit shifts, we can use the more computationally efficient barrel-shift hardware design.</p>
+<p><img src="/Assets/images/barrel_shift_designs.png" width="100%" height="100%"></p>
+<p>The idea behind the barrel-shift design is that we can express any \(n\)-bit binary number as the sum of powers of two. We need 3-bits to
+express 8 possible shift, 4-bits to express 16 possible shifts, 5-bits to express 32 possible shifts, and so on. These shift values range
+from 0 to \(n-1\) for an \(n\)-bit architecture, since an \(n\)-bit shift is unnecessary (either resulting in zero, one or the same input
+value, for zero-filled, sign-extended and rotational shifts, respectively). We can therefore implement the wiring of \(k\) shifts where 
+\(n = 2^k\) and then using multiplexors to essentially sum shift values, achieving any shift value we desire.</p>
+<!--
+  fix d latch
+  mention shift registers
+-->
+
 <p>We can use Field-Programmable-Gate-Arrays (FPGAs) to implement our digital circuits in hardware in a non-permanent fashion. FPGAs are comprised
 of Look-Up-Tables (LUTs) that replace combinational units. These LUTs contain SRAM bits which store the values of a given combinational unit's truth-table.
 Determining the output for a given input thus involves multiplexing the SRAM outputs with a given input as the load address.
