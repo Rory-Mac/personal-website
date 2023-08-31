@@ -182,16 +182,12 @@ simple rewiring will suffice.</p>
 <p><img src="/Assets/images/logical_shifts.png" width="100%" height="100%">
 To avoid looping our one-bit shifts to achieve \(n\)-bit shifts, we can use the more computationally efficient barrel-shift hardware design.</p>
 <p><img src="/Assets/images/barrel_shift_designs.png" width="100%" height="100%"></p>
-<p>The idea behind the barrel-shift design is that we can express any \(n\)-bit binary number as the sum of powers of two. We need 3-bits to
-express 8 possible shift, 4-bits to express 16 possible shifts, 5-bits to express 32 possible shifts, and so on. These shift values range
-from 0 to \(n-1\) for an \(n\)-bit architecture, since an \(n\)-bit shift is unnecessary (either resulting in zero, one or the same input
-value, for zero-filled, sign-extended and rotational shifts, respectively). We can therefore implement the wiring of \(k\) shifts where 
-\(n = 2^k\) and then using multiplexors to essentially sum shift values, achieving any shift value we desire.</p>
-<!--
-  fix d latch
-  mention shift registers
--->
-
+<p>The idea behind the barrel-shift design is that we can express any \(n\)-bit binary number as the sum of powers of two. Three bits
+express 8 possible shifts, four bits express 16 possible shifts, five bits express 32 possible shifts, and so on. These shift values range
+from 0 to \(n-1\) for an \(n\)-bit architecture, excluding an \(n\)-bit shift which is acceptable since an \(n\)-bit shift will output 
+one, zero or the input with no change. We can implement the wiring of \(k\) shifts where \(n = 2^k\), and then use multiplexors to decide
+which of these \(k\) shifts we want to apply. Shift registers can also be implemented, that is a register that undergoes a shift operation 
+automatically every clock cycle. These registers find application in encryption and pseudo-random number generation.</p>
 <p>We can use Field-Programmable-Gate-Arrays (FPGAs) to implement our digital circuits in hardware in a non-permanent fashion. FPGAs are comprised
 of Look-Up-Tables (LUTs) that replace combinational units. These LUTs contain SRAM bits which store the values of a given combinational unit's truth-table.
 Determining the output for a given input thus involves multiplexing the SRAM outputs with a given input as the load address.
