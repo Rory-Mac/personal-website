@@ -18,21 +18,6 @@ the ground up, where standards and protocols exist to match any level of abstrac
 to host machines that allows for hot-swapping (the host does not require reboot if a new USB-peripheral device is swapped for an old one)
 and plug-n-play (host can identify and interpret a new USB-peripheral device with appropriate device driver spontaneously). The Type-A USB,
 which consumers are likely most familiar with at present, has four pins, VCC, GND, D- and D+. VCC is the voltage of the power supply, GND
-is a return path for electric current to dissipate, D- and D+ exist as a differential pair. Differential pairs are complementary electric
+is a return path for electric current to dissipate, and D- and D+ exist as a differential pair. Differential pairs are complementary electric
 signals, where one is the inversion of the other, equal in magnitude but opposite in polarity. A receiver subtracts the differential pairs
-to give the output, expressed as the following \(V = V_1 - V_2 = 2V_2\), since \(V_2 = -V_1\) and \(V\) is the output signal.
-
-
-
-
-
-
-</p>
-
-<!--
-USB communication protocol
-compatibility (baud rate, etc)
-UART microchips
-FIDI microchips
-PMOD as alternative
--->
+to give the output, expressed as the following \(V = V_1 - V_2 = 2V_1\), since \(V_2 = -V_1\) and \(V\) is the output signal.</p>
