@@ -30,6 +30,14 @@ title: Explore
             </div>
         </div>
         <div class="portal zoom small">
+            <a href="/Low-Level Programming/IO.html">
+                <div class="portal-image"><img src="/Assets/images/computer_architecture_portal.png"></div>
+            </a>
+            <div class="portal-title">
+                <p>I/O</p>
+            </div>
+        </div>
+        <div class="portal zoom small">
             <a href="/Low-Level Programming/Automata Theory.html">
                 <div class="portal-image"><img src="/Assets/images/dfa_dark.png"></div>
             </a>
