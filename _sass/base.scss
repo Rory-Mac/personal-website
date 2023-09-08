@@ -38,9 +38,12 @@ body {
 }
 
 main {
+    min-height: 80vh;
+
     &.narrow {
         max-width: 800px;
         margin: 0 auto;
+        padding: 2rem 0;
     }
 }
 

@@ -2,7 +2,7 @@
 layout: narrow
 title: Perceptrons
 ---
-<h3>Perceptrons</h3>
+<h4>Perceptrons</h4>
 <p>Perceptrons are digital analogs to biological neurons in nervous systems. Perceptrons are layered, just as neurons are, to create artificial neural networks.
 <img src="/Assets/images/nn_introduction.png" width="100%" height="100%">
 Each input activation is scaled by a corresponding weight, summed with a bias, and then scaled by an activation function. We express the output

@@ -31,7 +31,7 @@ title: Explore
         </div>
         <div class="portal zoom small">
             <a href="/Low-Level Programming/IO.html">
-                <div class="portal-image"><img src="/Assets/images/computer_architecture_portal.png"></div>
+                <div class="portal-image"><img src="/Assets/images/TBD.jpg"></div>
             </a>
             <div class="portal-title">
                 <p>I/O</p>
@@ -47,7 +47,7 @@ title: Explore
         </div>
         <div class="portal zoom small">
             <a href="/Low-Level Programming/Operating%20Systems.html">
-                <div class="portal-image"><img src="/Assets/images/4-cube_dark.png"></div>
+                <div class="portal-image"><img src="/Assets/images/TBD.jpg"></div>
             </a>
             <div class="portal-title">
                 <p>Operating Systems</p>
@@ -55,7 +55,7 @@ title: Explore
         </div>
         <div class="portal zoom small">
             <a href="/Low-Level Programming/Concurrency.html">
-                <div class="portal-image"><img src="/Assets/images/4-cube_dark.png"></div>
+                <div class="portal-image"><img src="/Assets/images/TBD.jpg"></div>
             </a>
             <div class="portal-title">
                 <p>Concurrency</p>
@@ -71,7 +71,7 @@ title: Explore
         <div class="portal zoom small">
             <a href="/High-Level Programming/data structures and algorithms.html">
                 <div class="portal-image">
-                    <img style="background-color: black" src="/Assets/images/4-cube_dark.png">
+                    <img style="background-color: black" src="/Assets/images/TBD.jpg">
                 </div>
             </a>
             <div class="portal-title">
@@ -102,7 +102,7 @@ title: Explore
                 </div>
             </a>
             <div class="portal-title">
-                <p>Basic Networking</p>
+                <p>Networking</p>
             </div>
         </div>
         <div class="portal zoom small">
@@ -112,7 +112,17 @@ title: Explore
                 </div>
             </a>
             <div class="portal-title">
-                <p>Basic Encryption</p>
+                <p>Encryption</p>
+            </div>
+        </div>
+        <div class="portal zoom small">
+            <a href="/High-Level Programming/Distributed Systems.html">
+                <div class="portal-image">
+                    <img style="background-color: black" src="/Assets/images/TBD.jpg">
+                </div>
+            </a>
+            <div class="portal-title">
+                <p>Distributed Systems</p>
             </div>
         </div>
         <div class="portal zoom small">
@@ -155,7 +165,7 @@ title: Explore
         <div class="portal zoom small">
             <a href="/AI&ML/Tensors.html">
             <div class="portal-image">
-                    <img style="background-color: black" src="/Assets/images/4-cube_dark.png">
+                    <img style="background-color: black" src="/Assets/images/TBD.jpg">
                 </div>
             </a>
             <div class="portal-title">

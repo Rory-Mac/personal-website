@@ -21,16 +21,4 @@ which consumers are likely most familiar with at present, has four pins, VCC, GN
 is a return path for electric current to dissipate, and D- and D+ exist as a differential pair. Differential pairs are complementary electric
 signals, where one is the inversion of the other, equal in magnitude but opposite in polarity. A receiver subtracts the differential pairs
 to give the output, expressed as the following \(V = V_1 - V_2 = 2V_1\), since \(V_2 = -V_1\) and \(V\) is the output signal.
-
-
 </p>
-
-<!--
-https://www.youtube.com/watch?v=HbQ6q3skZgw
-https://www.beyondlogic.org/usbnutshell/usb1.shtml
-compatibility (baud rate, etc)
-UART microchips
-FIDI microchips
-PMOD as alternative
-Ethernet
--->

@@ -5,12 +5,11 @@ title: Projects
 <div class="page-container">
 <div class="project-container">
     <div class="portal-A">
-        <a href="/Projects/FPGA-2-TCP.html"><img src="/Assets/images/narrative_overview.png" width="100%" height="100%"></a>
+        <a href="/Projects/LiM-Virtual-Platform.html"><img src="/Assets/images/narrative_overview.png" width="100%" height="100%"></a>
     </div>
     <div class="description-A">
-        <a href="/Projects/FPGA-2-TCP.html"><h4 class="project-tag">FPGA-2-TCP</h4></a>
-        <p>In this project I built a 32-bit virtual computer atop a custom hardware design running on an FPGA. I then used my 
-        virtual computer to implement various high-performance programs including an AI-snake, and a financial transaction system.</p>
+        <a href="/Projects/LiM-Virtual-Platform.html"><h4 class="project-tag">LiM Virtual Platform</h4></a>
+        <p>This project involved prototyping a RISC-V compliant virtual machine with VHDL and Verilog on an FPGA. With it, I programmed a CLI, a text-editor, and an AI-driven game of Snake.</p>
         <a class="project-tag" href="/Projects/FPGA-2-TCP.html">See More ></a>
     </div>
     <div class="portal-B">
