@@ -38,7 +38,7 @@ body {
 }
 
 main {
-    min-height: 80vh;
+    min-height: 90vh;
 
     &.narrow {
         max-width: 800px;
@@ -103,6 +103,12 @@ a {
     color: inherit;
     &:hover {
         text-decoration: underline;
+    }
+
+    &.no-underline {
+        &:hover {
+            text-decoration: none;
+        }   
     }
 }
 

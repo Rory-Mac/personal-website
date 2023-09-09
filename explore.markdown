@@ -5,62 +5,57 @@ title: Explore - RoryMac Blog
 <div class="topic">
     <div class="topic-title"><h4>Low-Level Programming</h4></div>
     <div class="portal-container">
+        <a class="no-underline" href="/Low-Level Programming/Digital Logic.html">
         <div class="portal zoom small">
-            <a href="/Low-Level Programming/Digital Logic.html">
                 <div class="portal-image"><img src="/Assets/images/truth_table_dark.png"></div>
-            </a>
             <div class="portal-title">
                 <p>Digital Logic</p>
             </div>
-        </div>
+        </div></a>
+        <a class="no-underline" href="/Low-Level Programming/Logic Gates.html">
         <div class="portal zoom small">
-            <a href="/Low-Level Programming/Logic Gates.html">
                 <div class="portal-image"><img src="/Assets/images/ttl_logic_portal_dark.png"></div>
-            </a>
             <div class="portal-title">
                 <p>Logic Gates</p>
             </div>
-        </div>
+        </div></a>
+        <a class="no-underline" href="/Low-Level Programming/Computer Architecture.html">
         <div class="portal zoom small">
-            <a href="/Low-Level Programming/Computer Architecture.html">
                 <div class="portal-image"><img src="/Assets/images/computer_architecture_portal.png"></div>
-            </a>
             <div class="portal-title">
                 <p>Computer Architecture</p>
             </div>
-        </div>
+        </div></a>
+        <a class="no-underline" href="/Low-Level Programming/IO.html">
         <div class="portal zoom small">
-            <a href="/Low-Level Programming/IO.html">
                 <div class="portal-image"><img src="/Assets/images/TBD.jpg"></div>
-            </a>
             <div class="portal-title">
                 <p>I/O</p>
             </div>
-        </div>
+        </div></a>
+        <a class="no-underline" href="/Low-Level Programming/Automata Theory.html">
         <div class="portal zoom small">
-            <a href="/Low-Level Programming/Automata Theory.html">
                 <div class="portal-image"><img src="/Assets/images/dfa_dark.png"></div>
-            </a>
             <div class="portal-title">
                 <p>Automata Theory</p>
             </div>
-        </div>
+        </div></a>
+        <a class="no-underline" href="/Low-Level Programming/Operating%20Systems.html">
         <div class="portal zoom small">
-            <a href="/Low-Level Programming/Operating%20Systems.html">
                 <div class="portal-image"><img src="/Assets/images/TBD.jpg"></div>
-            </a>
             <div class="portal-title">
                 <p>Operating Systems</p>
             </div>
-        </div>
+        </div></a>
+        <a class="no-underline" href="/Low-Level Programming/Concurrency.html">
         <div class="portal zoom small">
-            <a href="/Low-Level Programming/Concurrency.html">
-                <div class="portal-image"><img src="/Assets/images/TBD.jpg"></div>
-            </a>
+            <div class="portal-image">
+                <img src="/Assets/images/TBD.jpg">
+            </div>
             <div class="portal-title">
                 <p>Concurrency</p>
             </div>
-        </div>
+        </div></a>
     </div>
 </div>
 
@@ -68,73 +63,69 @@ title: Explore - RoryMac Blog
 <div class="topic">
     <div class="topic-title"><h4>High-Level Programming</h4></div>
     <div class="portal-container">
+        <a class="no-underline" href="/High-Level Programming/data structures and algorithms.html">
         <div class="portal zoom small">
-            <a href="/High-Level Programming/data structures and algorithms.html">
-                <div class="portal-image">
-                    <img style="background-color: black" src="/Assets/images/TBD.jpg">
-                </div>
-            </a>
+            <div class="portal-image">
+                <img style="background-color: black" src="/Assets/images/TBD.jpg">
+            </div>
             <div class="portal-title">
                 <p>Data Structures</p>
             </div>
-        </div>
+        </div></a>
+        <a class="no-underline" href="/High-Level Programming/object-oriented programming.html">
         <div class="portal zoom small">
-            <a href="/High-Level Programming/object-oriented programming.html">
-                <div class="portal-image"><img style="background-color: black" src="/Assets/images/oop_portal.png"></div>
-            </a>
+            <div class="portal-image">
+                <img style="background-color: black" src="/Assets/images/oop_portal.png">
+            </div>
             <div class="portal-title">
                 <p>Object-Oriented</p>
             </div>
-        </div>
+        </div></a>
+        <a class="no-underline" href="/High-Level Programming/web development.html">           
         <div class="portal zoom small">
-            <a href="/High-Level Programming/web development.html">           
-                <div class="portal-image">
-                    <img style="background-color: black" src="/Assets/images/webdev_portal_dark.png">
-                </div>
-            </a><div class="portal-title">
+            <div class="portal-image">
+                <img style="background-color: black" src="/Assets/images/webdev_portal_dark.png">
+            </div>
+            <div class="portal-title">
                 <p>Web Development</p>
             </div>
-        </div>
+        </div></a>
+        <a class="no-underline" href="/High-Level Programming/Fundamentals of Networking.html">
         <div class="portal zoom small">
-            <a href="/High-Level Programming/Fundamentals of Networking.html">
                 <div class="portal-image">
                     <img style="background-color: black" src="/Assets/images/basic_nets_portal.png">
                 </div>
-            </a>
             <div class="portal-title">
                 <p>Networking</p>
             </div>
-        </div>
+        </div></a>
+        <a class="no-underline" href="/High-Level Programming/Fundamentals of Encryption.html">
         <div class="portal zoom small">
-            <a href="/High-Level Programming/Fundamentals of Encryption.html">
                 <div class="portal-image">
                     <img style="background-color: black" src="/Assets/images/basic_encryption_portal.png">
                 </div>
-            </a>
             <div class="portal-title">
                 <p>Encryption</p>
             </div>
-        </div>
+        </div></a>
+        <a class="no-underline" href="/High-Level Programming/Distributed Systems.html">
         <div class="portal zoom small">
-            <a href="/High-Level Programming/Distributed Systems.html">
                 <div class="portal-image">
                     <img style="background-color: black" src="/Assets/images/TBD.jpg">
                 </div>
-            </a>
             <div class="portal-title">
                 <p>Distributed Systems</p>
             </div>
-        </div>
+        </div></a>
+        <a class="no-underline" href="/High-Level Programming/Wireless Security.html">
         <div class="portal zoom small">
-            <a href="/High-Level Programming/Wireless Security.html">
                 <div class="portal-image">
                     <img style="background-color: black" src="/Assets/images/wireless_security_portal.png">
                 </div>
-            </a>
             <div class="portal-title">
                 <p>Wireless Security</p>
             </div>
-        </div>
+        </div></a>
     </div>
 </div>
 
@@ -142,85 +133,77 @@ title: Explore - RoryMac Blog
 <div class="topic">
     <div class="topic-title"><h4>Artificial Intelligence & Machine Learning</h4></div>
     <div class="portal-container">
+        <a class="no-underline" href="/AI&ML/Linear Algebra.html">
         <div class="portal zoom small">
-            <a href="/AI&ML/Linear Algebra.html">
                 <div class="portal-image">
                     <img style="background-color: black" src="/Assets/images/linear_algebra_portal.png">
                 </div>
-            </a>
             <div class="portal-title">
                 <p>Linear Algebra</p>
             </div>
-        </div>
+        </div></a>
+        <a class="no-underline" href="/AI&ML/Calculus.html">
         <div class="portal zoom small">
-            <a href="/AI&ML/Calculus.html">
             <div class="portal-image">
                     <img style="background-color: black" src="/Assets/images/multivar_calc_portal.png">
                 </div>
-            </a>
             <div class="portal-title">
                 <p>Calculus</p>
             </div>
-        </div>
+        </div></a>
+        <a class="no-underline" href="/AI&ML/Tensors.html">
         <div class="portal zoom small">
-            <a href="/AI&ML/Tensors.html">
             <div class="portal-image">
                     <img style="background-color: black" src="/Assets/images/TBD.jpg">
                 </div>
-            </a>
             <div class="portal-title">
                 <p>Tensors</p>
             </div>
-        </div>
+        </div></a>
+        <a class="no-underline" href="/AI&ML/Perceptrons.html">
         <div class="portal zoom small">
-            <a href="/AI&ML/Perceptrons.html">
             <div class="portal-image">
                     <img style="background-color: black" src="/Assets/images/basic_nn_dark.png">
                 </div>
-            </a>
             <div class="portal-title">
                 <p>Perceptrons</p>
             </div>
-        </div>
+        </div></a>
+        <a class="no-underline" href="/AI&ML/Gradient Descent & Backpropagation.html">
         <div class="portal zoom small">
-            <a href="/AI&ML/Gradient Descent & Backpropagation.html">
             <div class="portal-image">
                     <img style="background-color: black" src="/Assets/images/backprop_portal.png">
                 </div>
-            </a>
             <div class="portal-title">
                 <p>Backpropagation</p>
             </div>
-        </div>
+        </div></a>
+        <a class="no-underline" href="/AI&ML/linear regression.html">
         <div class="portal zoom small">
-            <a href="/AI&ML/linear regression.html">
             <div class="portal-image">
                     <img style="background-color: black" src="/Assets/images/linear_regression_portal.png">
                 </div>
-            </a>
             <div class="portal-title">
                 <p>Linear Regression</p>
             </div>
-        </div>
+        </div></a>
+        <a class="no-underline" href="/AI&ML/NEAT.html">
         <div class="portal zoom small">
-            <a href="/AI&ML/NEAT.html">
             <div class="portal-image">
-                    <img style="background-color: black" src="/Assets/images/NEAT_portal_dark.png">
-                </div>
-            </a>
+                <img style="background-color: black" src="/Assets/images/NEAT_portal_dark.png">
+            </div>
             <div class="portal-title">
                 <p>NEAT genetic algorithm</p>
             </div>
-        </div>
+        </div></a>
+        <a class="no-underline" href="/AI&ML/Markov Decision Process.html">
         <div class="portal zoom small">
-            <a href="/AI&ML/Markov Decision Process.html">
             <div class="portal-image">
                     <img style="background-color: black" src="/Assets/images/markov_portal.png">
                 </div>
-            </a>
             <div class="portal-title">
                 <p>Markov Decision Process</p>
             </div>
-        </div>
+        </div></a>
     </div>
 </div>
