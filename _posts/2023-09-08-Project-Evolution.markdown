@@ -3,31 +3,30 @@ layout: narrow
 title: Project Evolution
 ---
 <h4>Project Evolution</h4>
-<p>This post documents a simple but useful heuristic that I try to remind myself of when working on personal projects. When trying to 
-engineer a system, we first perceive a current state, that is the absence of system components, and a goal state, the beautifully 
-engineered system we hope to realise through the efforts of the project. The process of creating and linking subcomponents towards the
-goal state requires an understanding of the playing field, that is, the rules that constrain the evolution of the system.</p>
-<p><img src="/Assets/images/requirements" width="100%" height="100%"></p>
-<p>The first step is to understand these requirements in detail, these constraints that define how the system can and cannot evolve. Here 
-we can think in the limit, assuming an infinite amount of resources and engineering talent to manage said resources, what do we think
-could and could not be done? The resolution of these constraints can grow as we take into account the actual resources at hand.</p>
-<p><img src="/Assets/images/deletion" width="100%" height="100%"></p>
-<p>The next step is to be biased towards deletion. To move towards our goal system that fulfills some desirable function, we have to add
-subcomponents based on our best hypotheses as to what such subcomponents should be. We can either add system components for all
-conceivable cases where they might prove useful, and remember that the best design exists as some refined form of the current nest of
-system components. Alternatively, we can bias ourselves towards deletion of system components that are not obviously necessary, and
-reintroduce them when they become obviously necessary. It seems that we often favor the former approach when we should be favoring the latter
-approach. Because we are risk-averse creatures, having to add back a component we had deleted feels far greater a loss than the gain of
-deleting system components that we discover we don't need after the fact. However, keeping our system design lean helps make clear our
-current hypothesis, and progress at a more rapid rate. Imagine there are ten cardinal components that separate our current design from a 
-working solution, then deleting one component for every two added would converge at about ten design iterations, as would adding 10 and 
-deleting 9, however in the latter case we would have needed to perform ten times the work to converge at the same time.</p>
-<p><img src="/Assets/images/optimisation" width="100%" height="100%"></p>
-<p>The third step is to optimise the subcomponents, assuming enough thought has been given to steps one and two. Although is not ideal to
-construct a system component that will soon be deleted, it is even worse to optomise a system component that will soon be deleted. We want
-to have justified confidence that the component we are optomising is well-defined and a necessary subcomponent of the goal system. Of course
-there still exist components that haven't been realised, so our refined hypothesis design, once optomised, exists as a kind of core for the 
-next iteration. It is here that we can look to accelerating the iterative cycle whilst maintaining the above standards.</p>
-<p>This is where personal motives come into play. The iterative cycle will be accelerated if the individual engineer's working on it have a 
-great sense of curiosity and desire for the realisation of the goal system, the kind of passion that allows for an extreme work ethic without
-causing burnout. The last step is that of automation, which can be thought of as an extension to acceleration of the iterative design cycle.</p>
+<p>This post documents a simple but useful heuristic that I try to remind myself of when working on personal projects. Before the project 
+comes the inspiration, a vision of a system that would fulfill some desirable function. Then comes consideration for the plausibility of 
+the existence of such a system. To determine such, we have to articulate what we require of the system, and understand the constraints that
+will limit its evolution. We consider the constraints that apply to all systems (the laws of physics, for instance) and the constraints that
+uniquely apply to the goal system (e.g., the effect of radiation when developing satellite technology, what is and is not 
+computable when developing new digital algorithms, etc). It can be helpful to think in the limit, a hypothetical in which we possess an infinite supply of
+engineering talent and resources, and then introduce more realistic constraints from there.</p>
+<p><img src="/Assets/images/requirements.png" width="100%" height="100%"></p>
+<p>The next step is to be biased towards deletion. Deletion is an inevitability. We cannot wait to be perfectly confident in our design 
+decisions before making them, which means some design decisions will prove wrong and some developed system components will prove useless
+later on. One approach is to develop components for all conceivable cases, and identify the most necessary ones after the fact. The other
+is to hypothesise which components are necessary, and to create and delete components with respect to that hypothesis. As risk-averse 
+creatures, we are inclined to favor the former, because re-adding a deleted system component seems far greater a cost than having a 
+system component that is of no use. The problem is that if components only exist 'in-case' they serve some present or future function, 
+then there is no real hypothesis, just a brute-force approach. If we instead bias deletion, then the system evolves with our proven and
+disproven hypotheses, converging to the goal system at a much faster rate.</p>
+<p><img src="/Assets/images/deletion.png" width="100%" height="100%"></p>
+<p>The third step is to optimise. It is pointless to optimise a system component that will soon prove irrelevant to the overall
+design. This is why we want to have developed confidence in the necessity of our system components through iterations of hypotheses as
+previously discussed. Only then can we begin to optimise the system components that really matter. Optimisation introduces a new level
+of abstraction, and so it is important that it apply only to the core components of our evolving design, the 
+components that have been most impervious to design changes for the most amount of time.</p>
+<p><img src="/Assets/images/optimisation.png" width="100%" height="100%"></p>
+<p>Finally, we can look at accelerating the design cycle. More personal motives and narratives come into play here. The design cycle will
+inevitably be accelerated if the engineer has a great sense of curiosity and desire for the realisation of the desired system. Even better
+is if the engineer associates such a realisation with a narrative of struggle and discovery, as this can motivate a more extreme work ethic
+that maintains itself and avoids burnout. Automation can exist as a further extension to this acceleration.</p>
