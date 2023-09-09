@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Projects
+title: Projects - RoryMac Blog
 ---
 <div class="page-container">
 <div class="project-container">

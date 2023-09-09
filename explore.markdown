@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Explore
+title: Explore - RoryMac Blog
 ---
 <div class="topic">
     <div class="topic-title"><h4>Low-Level Programming</h4></div>

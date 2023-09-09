@@ -1,12 +1,10 @@
 ---
 layout: narrow
-title: Blog
+title: Blog - RoryMac Blog
 ---
-<br>
-<div style="padding: 0 2rem">
+<div style="padding-left: 4rem;">
 {% for post in site.posts %}
   <h4>{{ post.date | date: "%B %-d, %Y" }}</h4>
   <p><a href="{{ post.url }}">{{ post.title }}</a></p>
 {% endfor %}
 </div>
-<br><br><br>

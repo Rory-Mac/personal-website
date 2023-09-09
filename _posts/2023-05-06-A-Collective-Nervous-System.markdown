@@ -3,7 +3,7 @@ layout: narrow
 title: A Collective Nervous System
 ---
 <h4>A Collective Nervous System</h4>
-<p>This is less of a blog post and more of a reminder of tools that have helped me conceptualise the internet as a global nervous system.</p>
+<p>This post lists some sites that have helped me conceptualise the internet as a collective nervous system.</p>
 <p><ul>
     <li><a target="_blank" class="dark" href="http://internet-map.net/">The Internet Map</a></li>
     <li><a target="_blank" class="dark" href="http://listen.hatnote.com/">Listen to Wikipedia</a></li>
@@ -16,5 +16,7 @@ title: A Collective Nervous System
     <li><a target="_blank" class="dark" href="https://www.shodan.io/">Shodan</a></li>
     <li><a target="_blank" class="dark" href="https://torflow.uncharted.software/">Tor Flow</a></li>
     <li><a target="_blank" class="dark" href="https://www.wigle.net/">WiGLE</a></li>
-    <br><br><br>
 </ul></p>
+<p>The geometric rise of artificially intelligent systems, as they become more and more embedded within the networked collective, will likely
+effect the human collective in ways we can hardly fathom today. This is both exciting and daunting. In any case, I'm glad to be along for the
+ride.</p>
