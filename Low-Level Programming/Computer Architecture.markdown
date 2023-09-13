@@ -24,6 +24,8 @@ the CPUs fetch-execute cycle. The simplest and most intuitive example is that of
 <p>The question then raised, is how does the fetch-execute cycle actually work? To create a control unit responsible for this execution 
 cycle, we require a program counter and an instruction register. The program counter, also known as the instruction pointer, stores the 
 address of the instruction to be decoded in the current clock cycle, this instruction is read from memory and written to the instruction 
-register, to be decoded. This instruction defines the next step in the run on our state machine.
-
-</p>
+register, to be decoded. This instruction defines the next step in the run on our state machine. Instructions available typically include
+arithmetic and logical operators (add, sub, mul, div, or, not, xor), memory read/writes (sw, lw, li, mv), conditional branching (beq, bne, 
+bgt, blt) and unconditional jumps (j, jr, jal). These instruction types can be extended to include computation on other data formats such as
+floating-point numbers and arithmetic. As an example, the RISC-V specification defines four data formats as follows:</p>
+<p><img src="/Assets/images/instruction_formats.png" width="100%" height="100%"></p>
