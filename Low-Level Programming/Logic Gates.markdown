@@ -191,8 +191,22 @@ automatically every clock cycle. These registers find application in encryption 
 <p>We can use Field-Programmable-Gate-Arrays (FPGAs) to implement our digital circuits in hardware in a non-permanent fashion. FPGAs are comprised
 of Look-Up-Tables (LUTs) that replace combinational units. These LUTs contain SRAM bits which store the values of a given combinational unit's truth-table.
 Determining the output for a given input thus involves multiplexing the SRAM outputs with a given input as the load address.
-Because this look-up-table exists as SRAM, the functionality the LUT implements can be changed dynamically by using demux to load a new truth-table,
-from OR, to AND, to XOR, to NAND, etc. SRAM is Static-RAM, RAM that despite being volatile does not need memory refresh to maintain state, unlike DRAM
-(which is used instead for its low transistor count).<img src="/Assets/images/fpga_1.png" width="100%" height="100%"></p>
+Because this look-up-table exists as SRAM, the functionality the LUT implements can be changed dynamically by loading new truth-tables to 
+the SRAM. SRAM is RAM that despite being volatile does not need memory refresh to maintain state, unlike DRAM
+(still used for its lower transistor count).<img src="/Assets/images/fpga_1.png" width="100%" height="100%"></p>
 <p>The FPGA is comprised of a large set of Input-Output Blocks (IOBs) and Control Logic Blocks (CLBs). The CLBs are themselves comprised of flip-flops,
-multiplexors, demultiplexors, and Look-Up-Tables.</p>
+multiplexors, demultiplexors, and Look-Up-Tables. The FPGA needs to be able to optimise any hardware description we throw at it. It does this
+by finding the minimum-cost expression from an expression in CNF form that describes the functionality of our hardware. This can be 
+manually performed through use of the combing and uniting properties of boolean algebra which are \(\;xy + x\bar{y} = 0\;\) and \(\;(x + y)(x + \bar{y}) = x\;\) respectively. 
+Let us consider these properties and the logical reduction they
+allow for with an example.
+\[
+  \displaylines{ 
+  f(x_1, x_2, x_3) = \bar{x}_1\bar{x}_2\bar{x}_3 + \bar{x}_1x_2\bar{x}_3 + x_1\bar{x}_2\bar{x}_3 + x_1\bar{x}_2x_3 + x_1x_2\bar{x}_3 \\
+  = \bar{x}_1\bar{x}_3 + x_1\bar{x}_3 + x_1\bar{x}_2 \\
+  = \bar{x}_3 + x_1\bar{x}_2
+  }
+\]
+More efficient methods than manual logic reduction and Karnaugh mapping exist and are used in FPGA synthesis. These include the Quine-McCluskey
+and the ESPRESSO algorithm.
+</p>
