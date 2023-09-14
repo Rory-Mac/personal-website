@@ -4,11 +4,10 @@ title: Digital Logic
 ---
 <h4>Digital Logic</h4>
 <p>Digital computation imitates biological computation. Computation is perception of the world, description of the perception, and evaluation of the description.
-Let's attempt to perform the simplest computation by perceiving the simplest world. In this simplest world we perceive something, or nothing, i.e. \(\exists x(x=x)\) 
-or \(\nexists x(x=x)\). We describe our perception
-with a proposition, i.e. we propose that we perceive something, or that we perceive nothing, and denote this proposition \(P\). We evaluate our description to be true or false. The
-truth table represents a set of evaluations for a set of possible propositions.
-creating a state diagram.
+Let's attempt to perform the simplest computation by perceiving the simplest world. In this simplest world we perceive either something or nothing,
+i.e. \(\exists x(x=x)\) or \(\nexists x(x=x)\). We describe our perception with a proposition, and denote this proposition \(P\), either
+we propose the existence of something, or the non-existence of something. We evaluate our proposition, and express our evaluation as a 
+truth table.
 \[
   \begin{array}{c | c | c}
   P & & \neg \\
@@ -17,8 +16,8 @@ creating a state diagram.
   F & F & T\\
   \end{array}
 \]
-We can create a state diagram where nodes represent propositions and edges represent logical connectives (evaluations). Thus, a run on the state diagram represents
-either the formulation or the evaluation of an expression.
+We can create a state diagram where nodes represent propositions and edges represent logical connectives (evaluations). A run on this state
+diagram represents either the formulation or the evaluation of an expression in our simplified language of propositional logic.
 <img src="/Assets/images/simplest_language_closeup.png" width="40%" height="100%">
 If we are to observe that \(\exists y(y = y, y \neq x)\) then the propositions \(P\), \(Q\) follow for the existence of \(x\), \(y\) respectively.
 Our truth table extends itself to a new set of possible propositions and evaluations.
@@ -36,12 +35,13 @@ Our state diagram has evolved substantially. There now exist sixteen possible in
 and \(Q\). There exist 17 edges between each node and itself for each binary connective plus the identity unary connective. There exist 17 edges between each node and
 each other node for each binary connective plus negation. Again, a run through the state diagram represents formulation or evaluation of an expression.
 <img src="/Assets/images/propositional_logic.png" width="100%" height="100%"></p>
-<p>In terms of computation, few functions are necessary to define beyond those covered so far, since any \(n\)-ary logic connective can be broken down into a sequence of binary logic connectives,
-and Conjunctive Normal Form means that the logic of any boolean function can be implemented through AND, OR and NOT logic alone. One exception is that of the multiplexor
-and demultiplexor, which use selector bits to route one input to a set of outputs, or one output from a set of inputs, respectively.
+<p>Conjunctive Normal Form is the observation that any truth table can be expressed as a sum of products or product of sums which, using
+AND, OR, and NOT connectives only. Also note that any \(n\)-ary logic connective can be expressed as a sequence of binary logic connectives.
+Another truth-table that proves fundamental in computation is that of the multiplexor and demultiplexor, which route many inputs to one
+output, or one input to many outputs, respectively.
 \[
   \begin{array}{| c | c | c | c | c }
-  s & P & Q \\
+  S & P & Q \\
   \hline
   T & T & T & T\\
   T & T & F & F\\
@@ -56,19 +56,18 @@ and demultiplexor, which use selector bits to route one input to a set of output
   \qquad
 
   \begin{array}{| c | c | c | c }
-  s & P \\
+  S & P \\
   \hline
-  T & T & FT \\
-  T & F & FF \\
-  F & T & TF \\
-  F & F & FF \\
+  T & T & F \; T \\
+  T & F & F \; F \\
+  F & T & T \; F \\
+  F & F & F \; F \\
   \end{array}
 \]
-<p>Our contemplation so far covers propositional logic. This means that by encoding the the truth/falsity of our propositions with electric signals, and using 
-configurations of silicon to implement the logic of our logic connectives, we can build a computer that can formulate and evaluate any expression in propositional
-logic. To allow our computer to perform basic arithmetic, we need only implement the logic of two more truth-table, that of the half-adder and full-adder. This nicely
-follows from the blue groupings highlighted above. The truth or falsity of a proposition in the case of arithmetic does not represent the existence/non-existence of
-an entity, but rather the existence/non-existence of a group of entities of size \(2^{n-1}\) for the \(n^{th}\) binary input:
+<p>By encoding our propositions as electric signals, and implementing the logical connectives that evaluate them in silicon, we can 
+create a digital computer to formulate and evaluate any expression in propositional logic. To add basic arithmetic we need only introduce
+the truth-tables of the half-adder and full-adder. In these truth-tables the truth or falsity of a proposition does not represents the
+existence or non-existence of the observation of a group of things. This follows nicely from the blue-highlighted groupings we made above. 
 \[
   \begin{array}{| c | c | c | c }
   P & Q & s & c \\
