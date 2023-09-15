@@ -24,8 +24,17 @@ the CPUs fetch-execute cycle. The simplest and most intuitive example is that of
 <p>The question then raised, is how does the fetch-execute cycle actually work? To create a control unit responsible for this execution 
 cycle, we require a program counter and an instruction register. The program counter, also known as the instruction pointer, stores the 
 address of the instruction to be decoded in the current clock cycle, this instruction is read from memory and written to the instruction 
-register, to be decoded. This instruction defines the next step in the run on our state machine. Instructions available typically include
-arithmetic and logical operators (add, sub, mul, div, or, not, xor), memory read/writes (sw, lw, li, mv), conditional branching (beq, bne, 
-bgt, blt) and unconditional jumps (j, jr, jal). These instruction types can be extended to include computation on other data formats such as
-floating-point numbers and arithmetic. As an example, the RISC-V specification defines four data formats as follows:</p>
-<p><img src="/Assets/images/instruction_formats.png" width="100%" height="100%"></p>
+register, to be decoded. This instruction defines the next step in the run on our state machine. What instructions are typically available?
+Let us use the RV32I Base Integer Instruction Set as a simpler example that can be extended to further forms of computation, such as 
+atomic instructions, floating-point arithmetic, multiplication and division, etc. This RISC-V standard defines six instruction classes.</p>
+<p><img src="/Assets/images/RISC-V_formats.png" width="100%" height="100%"></p>
+<p>Source and destination registers are color-coded blue, immediate values green, control bits yellow and opcodes red. This color-coding 
+reveals that despite the complexity of the data formats, they each represent fundamental classes of operations. The R-type instruction 
+operates on two source registers and stores the result in a destination register, as does the I-type instruction, except with one register
+and one immediate value as the operands. The S-type instruction stores the results of computation in main memory and thus uses an immediate
+value in place of the destination register bitfield. The B-type instruction extends the S-type for branching, writing to the program counter
+instead of main memory. The U-type instruction loads an immediate value into the upper 20-bits of the destination register, and is extended
+to the J-type instruction with adds this value to the program counter and stores the result in the destination register.</p>
+<p>We then need to determine how to create datapaths between the control unit, the logic unit, the core registers and main memory, to 
+allow for the decoding of all instructions for all instruction types. We can then increase the efficiency of our processor with multi-cycle 
+and pipelined processor designs.</p>

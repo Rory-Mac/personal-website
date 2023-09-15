@@ -197,7 +197,7 @@ the SRAM. SRAM is RAM that despite being volatile does not need memory refresh t
 <p>The FPGA is comprised of a large set of Input-Output Blocks (IOBs) and Control Logic Blocks (CLBs). The CLBs are themselves comprised of flip-flops,
 multiplexors, demultiplexors, and Look-Up-Tables. The FPGA needs to be able to optimise any hardware description we throw at it. It does this
 by finding the minimum-cost expression from an expression in CNF form that describes the functionality of our hardware. This can be 
-manually performed through use of the combing and uniting properties of boolean algebra which are \(\;xy + x\bar{y} = 0\;\) and \(\;(x + y)(x + \bar{y}) = x\;\) respectively. 
+manually performed through use of the combing and uniting properties of boolean algebra which are \(\;xy + x\bar{y} = x\;\) and \(\;(x + y)(x + \bar{y}) = x\;\) respectively. 
 Let us consider these properties and the logical reduction they
 allow for with an example.
 \[
