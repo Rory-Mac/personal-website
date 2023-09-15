@@ -1,8 +1,8 @@
 ---
 layout: narrow
-title: Fundamentals of Networking
+title: Computer Networks
 ---
-<h4>Fundamentals of Networking</h4>
+<h4>Computer Networks</h4>
 <p>The internet is a network of networks through which bits are transmitted to and from connected devices. We humans cannot communicate in bits. This 
     is true both biologically and digitally, and so we apply a hierarchy of compressions and communication protocols in both cases. In terms of 
     biology, this looks something like sensory memory compressed into an audition-based declarative memory transmitted via an electrical and chemical layer 

@@ -12,6 +12,13 @@ title: Explore - RoryMac Blog
                 <p>Digital Logic</p>
             </div>
         </div></a>
+        <a class="no-underline" href="/Low-Level Programming/Automata Theory.html">
+        <div class="portal zoom small">
+                <div class="portal-image"><img src="/Assets/images/automata_portal.png"></div>
+            <div class="portal-title">
+                <p>Automata Theory</p>
+            </div>
+        </div></a>
         <a class="no-underline" href="/Low-Level Programming/Logic Gates.html">
         <div class="portal zoom small">
                 <div class="portal-image"><img src="/Assets/images/ttl_logic_portal_dark.png"></div>
@@ -31,13 +38,6 @@ title: Explore - RoryMac Blog
                 <div class="portal-image"><img src="/Assets/images/TBD.jpg"></div>
             <div class="portal-title">
                 <p>I/O</p>
-            </div>
-        </div></a>
-        <a class="no-underline" href="/Low-Level Programming/Automata Theory.html">
-        <div class="portal zoom small">
-                <div class="portal-image"><img src="/Assets/images/dfa_dark.png"></div>
-            <div class="portal-title">
-                <p>Automata Theory</p>
             </div>
         </div></a>
         <a class="no-underline" href="/Low-Level Programming/Operating%20Systems.html">
@@ -81,6 +81,15 @@ title: Explore - RoryMac Blog
                 <p>Object-Oriented</p>
             </div>
         </div></a>
+        <a class="no-underline" href="/High-Level Programming/Functional.html">
+        <div class="portal zoom small">
+                <div class="portal-image">
+                    <img style="background-color: black" src="/Assets/images/TBD.jpg">
+                </div>
+            <div class="portal-title">
+                <p>Functional</p>
+            </div>
+        </div></a>
         <a class="no-underline" href="/High-Level Programming/web development.html">           
         <div class="portal zoom small">
             <div class="portal-image">
@@ -90,13 +99,13 @@ title: Explore - RoryMac Blog
                 <p>Web Development</p>
             </div>
         </div></a>
-        <a class="no-underline" href="/High-Level Programming/Fundamentals of Networking.html">
+        <a class="no-underline" href="/High-Level Programming/Computer Networks.html">
         <div class="portal zoom small">
                 <div class="portal-image">
                     <img style="background-color: black" src="/Assets/images/basic_nets_portal.png">
                 </div>
             <div class="portal-title">
-                <p>Networking</p>
+                <p>Computer Networks</p>
             </div>
         </div></a>
         <a class="no-underline" href="/High-Level Programming/Fundamentals of Encryption.html">
@@ -106,15 +115,6 @@ title: Explore - RoryMac Blog
                 </div>
             <div class="portal-title">
                 <p>Encryption</p>
-            </div>
-        </div></a>
-        <a class="no-underline" href="/High-Level Programming/Distributed Systems.html">
-        <div class="portal zoom small">
-                <div class="portal-image">
-                    <img style="background-color: black" src="/Assets/images/TBD.jpg">
-                </div>
-            <div class="portal-title">
-                <p>Distributed Systems</p>
             </div>
         </div></a>
         <a class="no-underline" href="/High-Level Programming/Wireless Security.html">
