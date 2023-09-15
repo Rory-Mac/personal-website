@@ -37,7 +37,7 @@ title: Explore - RoryMac Blog
         <div class="portal zoom small">
                 <div class="portal-image"><img src="/Assets/images/TBD.jpg"></div>
             <div class="portal-title">
-                <p>I/O</p>
+                <p>Input/Output</p>
             </div>
         </div></a>
         <a class="no-underline" href="/Low-Level Programming/Operating%20Systems.html">
@@ -75,7 +75,7 @@ title: Explore - RoryMac Blog
         <a class="no-underline" href="/High-Level Programming/object-oriented programming.html">
         <div class="portal zoom small">
             <div class="portal-image">
-                <img style="background-color: black" src="/Assets/images/oop_portal.png">
+                <img style="background-color: black" src="/Assets/images/oop_portal2.png">
             </div>
             <div class="portal-title">
                 <p>Object-Oriented</p>
@@ -93,7 +93,7 @@ title: Explore - RoryMac Blog
         <a class="no-underline" href="/High-Level Programming/web development.html">           
         <div class="portal zoom small">
             <div class="portal-image">
-                <img style="background-color: black" src="/Assets/images/webdev_portal_dark.png">
+                <img style="background-color: black" src="/Assets/images/html_progression_4.png">
             </div>
             <div class="portal-title">
                 <p>Web Development</p>
@@ -102,16 +102,16 @@ title: Explore - RoryMac Blog
         <a class="no-underline" href="/High-Level Programming/Computer Networks.html">
         <div class="portal zoom small">
                 <div class="portal-image">
-                    <img style="background-color: black" src="/Assets/images/basic_nets_portal.png">
+                    <img style="background-color: black" src="/Assets/images/network_portal.png">
                 </div>
             <div class="portal-title">
                 <p>Computer Networks</p>
             </div>
         </div></a>
-        <a class="no-underline" href="/High-Level Programming/Fundamentals of Encryption.html">
+        <a class="no-underline" href="/High-Level Programming/Encryption.html">
         <div class="portal zoom small">
                 <div class="portal-image">
-                    <img style="background-color: black" src="/Assets/images/basic_encryption_portal.png">
+                    <img style="background-color: black" src="/Assets/images/encryption_portal.png">
                 </div>
             <div class="portal-title">
                 <p>Encryption</p>

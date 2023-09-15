@@ -1,8 +1,8 @@
 ---
 layout: narrow
-title: Fundamentals of Encryption
+title: Encryption
 ---
-<h4>Fundamentals of Encryption</h4>
+<h4>Encryption</h4>
 <p>Let us bring to mind two very famous individuals in computer science: Alice and Bob. Alice has a message (a payload). 
 She wants to send her message to Bob, however she wants only herself and Bob to be able to read the message, so she encrypts it: she modifies the 
 payload such that without knowing a certain secret, the data contained within the payload is gibberish.</p>
@@ -24,7 +24,7 @@ from 0 to n, verifying which a or b is used by Alice and Bob based on whether th
 values to guarantee success, and that there exists 10^80 atomis n the observable universe, which is substantially less than even 2^320.</p>
 <p>An interesting point to note is that it is important to ensure that g when raised by x and then operated on by modulo n, should output all values
 from 0 to n as x approaches infinity. Consider the case where we g equals 2. Suddenly, the output space is reduced logarithmically to powers of two only:
-2, 4, 8, etc. Prime numbers are useful as they tend to ensure that the output space is covers all output values from 0 to n. Note that Alice and Bob's shared secret is not the same as their secret key. The secret is run through a key derivation function to produce 
+2, 4, 8, etc. Prime numbers are useful as they tend to ensure that the output space covers all output values from 0 to n. Note that Alice and Bob's shared secret is not the same as their secret key. The secret is run through a key derivation function to produce 
 a set of symmetric keys that Alice and Bob can use to encrypt and decrypt messages to and from one another.</p>
 <p>Let us now look to asymmetric encryption: encryption where the key responsible for encryption is distinct from the key responsible for decryption.
 Public key cryptography involves asymmetric encryption. In public key cryptography, Alice and Bob each have a private-public key-pair. Data encrypted with
