@@ -33,6 +33,4 @@ levels (encoding logical high, logical low and other signal values), baud rate (
 to host machines that allows for hot-swapping (the host does not require reboot if a new USB-peripheral device is swapped for an old one)
 and plug-n-play (host can identify and interpret a new USB-peripheral device with appropriate device driver spontaneously). The Type-A USB,
 which consumers are likely most familiar with at present, has four pins, VCC, GND, D- and D+. VCC is the voltage of the power supply, GND
-is a return path for electric current to dissipate, and D- and D+ exist as a differential pair. Differential pairs are complementary electric
-signals, 
-</p>
+is a return path for electric current to dissipate, and D- and D+ exist as a differential pair.</p>
