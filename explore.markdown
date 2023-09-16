@@ -35,7 +35,7 @@ title: Explore - RoryMac Blog
         </div></a>
         <a class="no-underline" href="/Low-Level Programming/IO.html">
         <div class="portal zoom small">
-                <div class="portal-image"><img src="/Assets/images/TBD.jpg"></div>
+                <div class="portal-image"><img src="/Assets/images/IO_portal.png"></div>
             <div class="portal-title">
                 <p>Input/Output</p>
             </div>
