@@ -29,8 +29,10 @@ then re-initiates the idle state. Packet transmission over asynchronous channels
 interrupts from peripheral devices (keyboards, monitors, attached processing units, network interface cards, etc). When creating these data
 channels we have to consider factors of compatibility between the sending and receiving devices. This includes ensuring compatible voltage 
 levels (encoding logical high, logical low and other signal values), baud rate (bits per second), data formatting and packet formatting. </p>
-<p>Lets look to the USB (Universal Serial Bus) industry standard as our first example. It is a standard for connecting peripheral devices
-to host machines that allows for hot-swapping (the host does not require reboot if a new USB-peripheral device is swapped for an old one)
-and plug-n-play (host can identify and interpret a new USB-peripheral device with appropriate device driver spontaneously). The Type-A USB,
-which consumers are likely most familiar with at present, has four pins, VCC, GND, D- and D+. VCC is the voltage of the power supply, GND
-is a return path for electric current to dissipate, and D- and D+ exist as a differential pair.</p>
+<p>The Universal Serial Bus (USB) can act as a good first example. Just like our primitive asynchronous channel, data exchange across a 
+USB channel consists of sending packets asynchronously across a channel that is otherwise idle. There exist buffers on either side of
+the communication channel to allow for processing of numerous asynchronous signals. Taking the example of Type-A USB, the one consumers are
+most familiar with, all data exchange occurs across two of four pins: VCC, GND, and the differential signal pair D- and D+. Four packet
+formats are defined by the USB standard.</p>
+<p><img src="/Assets/images/USB_packet_formats.png" width="100%" height="100%"></p>
+<p>*Explanation of above.</p>
