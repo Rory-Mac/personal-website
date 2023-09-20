@@ -29,10 +29,19 @@ then re-initiates the idle state. Packet transmission over asynchronous channels
 interrupts from peripheral devices (keyboards, monitors, attached processing units, network interface cards, etc). When creating these data
 channels we have to consider factors of compatibility between the sending and receiving devices. This includes ensuring compatible voltage 
 levels (encoding logical high, logical low and other signal values), baud rate (bits per second), data formatting and packet formatting. </p>
-<p>The Universal Serial Bus (USB) can act as a good first example. Just like our primitive asynchronous channel, data exchange across a 
-USB channel consists of sending packets asynchronously across a channel that is otherwise idle. There exist buffers on either side of
-the communication channel to allow for processing of numerous asynchronous signals. Taking the example of Type-A USB, the one consumers are
-most familiar with, all data exchange occurs across two of four pins: VCC, GND, and the differential signal pair D- and D+. Four packet
-formats are defined by the USB standard.</p>
+<p>The Universal Serial Bus (USB) can act as a good first example. Like our primitive example, data exchange in the USB standard consists
+of the asynchronous transfer of packets across a channel that is otherwise idle. Buffers exist on either side of this channel to allow for
+the processing of asynchronous signals. In a type-A USB, data exchange occurs across two of four pins: VCC, GND, D- and D+, where D exists
+as a differntial pair. Four packet formats are defined by the USB standard.</p>
 <p><img src="/Assets/images/USB_packet_formats.png" width="100%" height="100%"></p>
-<p>*Explanation of above.</p>
+<p>A constant logical high signal interspaces the transmission of USB packets, and is interrupted by the first bit field of incoming 
+packets, the sync field. This bit field is composed of eight alternating ones and zeros to break the logical high. The next bit field is 
+the 8-bit packet identifier, which defines 14 packet types, four for each packet format. The identifier itself is only 4-bits which is then
+complemented with its negation for the purpose of error detection.</p>
+<p><img src="/Assets/images/USB_pids.png" width="100%" height="100%"></p>
+<p>For handshake packets, no further bit-fields are required except an EOP, which is comprised of a single-ended zero (where both signals
+in the differential pair are pulled to zero) for two-bits time followed by a J state (where both signals in the differential pair are
+pulled to high) for one-bits time, followed by the continuation of the idle state. The start of frame packet is a packet repeatedly sent by
+the host for each unit of a given time interval. It contains the added 11-bit frame number bit field, and a cyclic redundancy check.
+Token packets have an additional address and ENDP bit field. The address bit field specifies the address of the receiving device while the 
+endp bit field specifies an endpoint within said device.</p>
