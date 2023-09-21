@@ -3,8 +3,8 @@ layout: narrow
 title: Automata Theory
 ---
 <h4>Automata Theory</h4>
-<p>Any statement in propositional logic maps to a boolean function, and any boolean function can be expressed in conjunctive normal form 
-(CNF). Consider finding the CNF of a full adder:
+<p>Any statement in propositional logic maps to a boolean function that can be expressed in conjunctive normal form (CNF). 
+Consider the CNF of a full adder:
 \[
   \begin{array}{| c | c | c | c | c }
   c_{in} & p & q & s & c_{out} \\
@@ -27,24 +27,22 @@ title: Automata Theory
   \quad c_{out} \equiv (A \land B \land C ) \lor (A \land B \land \overline C) \lor (A \land \overline B \land C) \lor
   (\overline A \land B \land C) \quad \\
 \]
-We can use the laws of boolean algebra to simplify the complexity of the CNF expression, and thus the complexity of the circuit used to 
-implement the expression. The logic we have thus far explored is called combinational logic, as we are combining the bits of a boolean input
-through the set of logical connectives defined in propositional logic, to arrive at a boolean output. We can introduce the concept of memory,
-where boolean outputs can be stored and used as input at future timesteps, which introduces the concept of finite state machines, with 
-'state' representing memory and 'state-transitions' representing the computation that transforms memory from time step to time step. This
-means the input to a boolean function depends on a chain of input-output mappings computed at prior time steps. A propagation delay exists
-in the combinational logic components of our digitial computer, meaning they may temporarily be in flux before arriving at a stable output.
-The state machine must therefore be synchronised to a clock cycle, where one clock cycle exceeds the propagation delay of all combinational
-logic components. The finite state machine is a mathematical model of computation formally represented by the 5-tuple,
-        \[ M = \langle \Sigma, S, s_0, \delta, F \rangle \]
+The logical expression can be simplified with the laws of boolean algebra to find a more optimal expression, to then be implemented in 
+a digital circuit. This logic sits within the category of combinational logic: input bits are combined by a set of logical connectives to
+arrive at output bits. By adding memory, we introduce the concept of the finite state machine. State means memory, transformed by
+state-transitions from timestep to timestep as defined by some clock cycle. Combinational circuits have a propagation delay: a time
+taken for inputs to map to stable outputs in the digital circuit. The clock cycle needs to exceed the longest 
+propagation delay within the state machine for the state machine to be synchronised. We can express the state machine mathematically 
+using a 5-tuple.
+        \[ M = \langle \Sigma, S, S_0, \delta, F \rangle \]
 \( \quad \Sigma \) is a non-empty finite set of symbols belonging to an alphabet<br>
 \( \quad S\) is a non-empty finite set of states<br>
-\( \quad s_0\) is an initial state belonging to S<br>
+\( \quad S_0\) is an initial state belonging to S<br>
 \( \quad \delta\) is a state-transition function \(\delta : S \times \Sigma \rightarrow S\)<br>
 \( \quad F\) is a set of states considered final</p>
-<p>A run in the finite state machine is then defined by the ordered set \( q_0, q_1, \dots, q_n \) where \(q_i \in Q\) and \(q_i = \delta(q_{i-1}, a_i)\).
-Consider the following finite state machines as arbitrary examples, one defining the grammar for a binary alphabet that excludes all binary 
-words with an odd number of zeros, and the other defining an arbitrary grammar for a seven-character alphabet:
+<p>A 'run' in the finite state machine is defined as an ordered set \( q_0, q_1, \dots, q_n \) where \(q_i \in Q\) and \(q_i = \delta(q_{i-1}, a_i)\).
+Consider the following example state machines. The first defines the grammar of a binary alphabet that excludes all binary 
+words with an odd number of zeros. The second defines an arbitrary grammar for a seven-character alphabet.
 <img src="/Assets/images/dfa1.png" width="100%" height="100%">
 The finite state machine can be used to read and evaluate any regular language. If a run succesfully terminates for a given input in the 
 finite state machine evaluating the grammar of a given language, then that input is a grammatically correct expression in the given 

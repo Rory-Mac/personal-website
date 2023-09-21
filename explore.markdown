@@ -33,13 +33,6 @@ title: Explore - RoryMac Blog
                 <p>Computer Architecture</p>
             </div>
         </div></a>
-        <a class="no-underline" href="/Low-Level Programming/IO.html">
-        <div class="portal zoom small">
-                <div class="portal-image"><img src="/Assets/images/IO_portal.png"></div>
-            <div class="portal-title">
-                <p>Input/Output</p>
-            </div>
-        </div></a>
         <a class="no-underline" href="/Low-Level Programming/Operating%20Systems.html">
         <div class="portal zoom small">
                 <div class="portal-image"><img src="/Assets/images/TBD.jpg"></div>
@@ -54,6 +47,13 @@ title: Explore - RoryMac Blog
             </div>
             <div class="portal-title">
                 <p>Concurrency</p>
+            </div>
+        </div></a>
+        <a class="no-underline" href="/Low-Level Programming/IO.html">
+        <div class="portal zoom small">
+                <div class="portal-image"><img src="/Assets/images/IO_portal.png"></div>
+            <div class="portal-title">
+                <p>Input/Output</p>
             </div>
         </div></a>
     </div>
