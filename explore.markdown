@@ -84,7 +84,7 @@ title: Explore - RoryMac Blog
         <a class="no-underline" href="/High-Level Programming/Functional.html">
         <div class="portal zoom small">
                 <div class="portal-image">
-                    <img style="background-color: black" src="/Assets/images/TBD.jpg">
+                    <img style="background-color: black" src="/Assets/images/functional_portal.png">
                 </div>
             <div class="portal-title">
                 <p>Functional</p>
