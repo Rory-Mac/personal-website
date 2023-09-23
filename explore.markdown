@@ -154,7 +154,7 @@ title: Explore - RoryMac Blog
         <a class="no-underline" href="/AI&ML/Tensors.html">
         <div class="portal zoom small">
             <div class="portal-image">
-                    <img style="background-color: black" src="/Assets/images/TBD.jpg">
+                    <img style="background-color: black" src="/Assets/images/tensor_portal.png">
                 </div>
             <div class="portal-title">
                 <p>Tensors</p>
