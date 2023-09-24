@@ -66,4 +66,36 @@ that express the above regex primitives.</p>
 <p>We now know how to create a state machine to parse validate the grammar of expressions in a regular language. Evaluate of the 
 expressions themselves is also conceptualised by a state machine, where state represents memory, state-transitions represent instructions
 that manipulate state, and the 'run' on the state machine is defined by a sequence of valid instructions (a program).</p>
-
+<p>Pushdown automata extend state machines to formulate and evaluate context-free languages. The formal definition of a pushdown automata
+extends that of the finite state machine by that of a 7-tuple.
+\[ M = (Q, \Sigma, \Gamma, \delta, q_0, Z, F)\]
+\( \quad Q\) is the finite set of states <br>
+\( \quad \Sigma \) is the finite input alphabet <br>
+\( \quad \Gamma\) is the finite stack alphabet<br>
+\( \quad \delta\) is the transition relation<br>
+\( \quad q_0\) is the initial state<br>
+\( \quad Z \) is the initial stack symbol<br>
+\( \quad F\) is the set of final or accepting states<br>
+A state-transition in \(M\) is denoted \((p,a,A,q, \alpha) \in \delta\) meaning that for a state \(p \in Q\) with an input \(a \in \Sigma\)
+and a current topmost stack symbol \(A\), a transition will occur to state \(q\) that pops \(A\) from the stack and pushes \(\alpha\) to the 
+stack. The existence of the stack gives the pushdown automata a sort of primitive memory, where the next state-transition to occur can 
+depend on an input previously pushed to the stack. In the context of programming, the extension of state machines to pushdown automata
+allows the programmer to save state when context switching to and from function calls.</p>
+<p>Pushdown automata can be extended to linear-bounded automata which define context-sensitive languages. Linear-bounded automata
+access a memory tape of finite-length that can be moved leftwards or rightwards. Thus, previous inputs can be accessed without the use
+of stack operations. The movement of the memory tape is analogous to jump and branch instructions. Turing machines model 
+recursively-enumerable languages. A turing machine is a model of computation that consists of a memory tape divided into cells containing
+symbols from a finite alphabet, a head that can move across the memory tape and read from or write to its cells, a state register storing
+state, a table of instructions that given the current state and current tape symbol instructs the turing machine which symbol to write 
+to the current cell and how to next move the head. We can express this formally with a 7-tuple.
+\[ M = (Q, \Gamma, b, \Sigma, \delta, q_0, F)\]
+\( \quad Q\) is the finite set of states <br>
+\( \quad \Gamma \) is the finite tape alphabet symbols <br>
+\( \quad b \) is the blank alphabet symbol<br>
+\( \quad \Sigma \) is the set of input symbols that initialise the tape<br>
+\( \quad \delta \) is the transition function<br>
+\( \quad q_0 \) is the initial state<br>
+\( \quad F \) is the set of final or accepting states<br></p>
+<p>Turing Machines describe recursively-enumerable languages. These are languages for which the subset of grammatically valid expressions
+in the set of all expressions formed by the language's alphabet, can be enumerated with recursion. The language hierarchy thus far discussed
+can be further extended with Long-Short-Term-Memory neural networks and natural language processing.</p>
