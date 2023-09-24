@@ -42,15 +42,28 @@ using a 5-tuple.
 \( \quad F\) is a set of states considered final</p>
 <p>A 'run' in the finite state machine is defined as an ordered set \( q_0, q_1, \dots, q_n \) where \(q_i \in Q\) and \(q_i = \delta(q_{i-1}, a_i)\).
 Consider the following example state machines. The first defines the grammar of a binary alphabet that excludes all binary 
-words with an odd number of zeros. The second defines an arbitrary grammar for a seven-character alphabet.
-<img src="/Assets/images/dfa1.png" width="100%" height="100%">
-The finite state machine can be used to read and evaluate any regular language. If a run succesfully terminates for a given input in the 
-finite state machine evaluating the grammar of a given language, then that input is a grammatically correct expression in the given 
-language. To evaluate the input string, we can consider information states as memory and state-transitions as instructions, and the 'run'
-on the state machine as defined by the validated input, the program. This sequence of instructions also needs to be stored in memory, thus
-there exists data memory and instruction memory. The limitation of the DFA model of computation is that it can only read and evaluate 
-regular languages.</p>
-<p>A formal language is a language constructed from symbols belonging to an alphabet combined to form terms according to a set of defined
-rules. A regular language is a formal language defined by a regular expression. A regular expression is a sequence of characters defining 
-a subset of a set of possible sequences of characcters, which can be thought more intuitively as an expression that defines which 
-expressions are equivalent to itself, that is which expressions match.</p>
+words with an odd number of zeros. The second defines an arbitrary grammar for a seven-character alphabet.</p>
+<p><img src="/Assets/images/dfa1.png" width="100%" height="100%"></p>
+<p>Finite state machines read and evaluate regular languages. If a given input is fed to a state machine that terminates succesfully, then 
+that input is a grammatically valid expression in the regular language that state machine defines. A regular language is a language 
+defined by a regular expression. A regular expression is a sequence of characters that define which strings that can be made from a 
+character set 'match'. Regular expressions are typically constructed from the following:
+<ul>
+  <li>Boolean or: '|' for example "deer|dear" matches "deer" or "dear".</li>
+  <li>Grouping: '()' for example "a(b|c)d" matches "abd" or "acd".</li>
+  <li>Zero or one quantifier: '?' for example 'ab?' matches 'a' or "ab".</li>
+  <li>Zero or more quantifier: '*' for example 'ab*' matches 'a', "ab", "abb", "abbb", etc. but not "abc".</li>
+  <li>One or more quantifier: '+' for example 'ab+' matches "ab", "abb", "abbb", etc. but not 'a'.</li>
+  <li>N matches: '{n}' for example x{4} matches "xxxx".</li>
+  <li>N or more: '{min,}' for example x{2,} matches "xx", "xxx", "xxxx", etc.</li>
+  <li>N or less: '{,max}' for example x{,3} matches 'x', "xx", "xxx", but not "xxxx".</li>
+  <li>N or more and M or less: '{min,max}' so x{2,4} matches "xx" and "xxxx" but not 'x' and "xxxxx".</li>
+  <li>Wildcard: '.' for example 'a.' matches "aa", "ab", "ac", etc.</li>
+</ul>
+<p>Kleene's algorithm transforms any given nondeterministic finite automaton into a regular expression. Lets look at the state machines
+that express the above regex primitives.</p>
+<p><img src="/Assets/images/regex_state_machines.png" width="100%" height="100%"></p>
+<p>We now know how to create a state machine to parse validate the grammar of expressions in a regular language. Evaluate of the 
+expressions themselves is also conceptualised by a state machine, where state represents memory, state-transitions represent instructions
+that manipulate state, and the 'run' on the state machine is defined by a sequence of valid instructions (a program).</p>
+

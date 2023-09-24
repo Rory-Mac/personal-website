@@ -14,9 +14,3 @@ associative for any category so that
 \]
 Additionally there exists an identity morphism denoted \(id_n \in C(n,n)\) for any \(n \in C\).</p>
 <p><img src="/Assets/images/functional_intro.png" width="100%" height="100%"></p>
-<!--
-    https://www.youtube.com/watch?v=Gz8W1r90olc
-    https://www.math3ma.com/categories/category-theory
-	functional portal
-    functors, applicatives, monads
--->
