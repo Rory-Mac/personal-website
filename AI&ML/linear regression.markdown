@@ -12,7 +12,7 @@ In this equation \(i\) is the identifier of one of \(n\) output nodes denoted as
 a one-to-one pairing with the output. The difference between the actual output and target output is then squared to weight large differences more heavily
 than small differences. By thinking of \(E\) as a height, we essentially create a cost landscape over our output space, which is most easily visualised
 in two dimensions: 
-<img src="/Assets/images/hill_climbing_dark.png" width="50%" height="50%"></p>
+<img src="/Assets/images/hill_climbing.png" width="50%" height="50%"></p>
 <p>It seems necessary to undestand linear regression and the least-squares method before approaching the concept of gradient descent. In linear regression 
 we observe the relationship between a set of independent variables and a dependent variable and record our observations as a set of data points. We then 
 attempt to define an equation that best predicts the value of the dependent variable for a given value of the independent variable(s). In relation to neural
@@ -32,7 +32,7 @@ use having an equation that perfectly maps only one input to an observed output,
     \[S = \sum_{i=0}^{n} r_i^2 \]
 Squaring the residual means that large differences are weighted heavier than small differences. We can now visualise the linear regression like so:
 </p><p><a target="_blank" href="https://web.stanford.edu/class/stats202/notes/Linear-regression/Simple-linear-regression.html">
-<img src="/Assets/images/simple_regression_dark.png" width="100%" height="100%"></a></p>
+<img src="/Assets/images/simple_regression.png" width="100%" height="100%"></a></p>
 <p>Calculating the overall cost as the sum of the residuals squared gives us an expression of the cost function as follows:
     \[4\beta_1^2 + 30\beta_2^2 + 20\beta_1\beta_2 - 56\beta_1 - 154\beta_2 + 210\]
 To minimise S we set the partial derivatives to zero, and solve for \(\beta_1\) and \(\beta_2\). This give us the optimal solution to predicting the 

@@ -35,7 +35,7 @@ title: Explore - RoryMac Blog
         </div></a>
         <a class="no-underline" href="/Low-Level Programming/Operating%20Systems.html">
         <div class="portal zoom small">
-                <div class="portal-image"><img src="/Assets/images/TBD.jpg"></div>
+                <div class="portal-image"><img src="/Assets/images/OS_portal.png"></div>
             <div class="portal-title">
                 <p>Operating Systems</p>
             </div>
