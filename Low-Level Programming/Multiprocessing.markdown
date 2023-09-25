@@ -1,22 +1,21 @@
 ---
 layout: narrow
-title: Concurrency
+title: Multiprocessing
 ---
-<h3>Concurrency</h3>
-<p>Random Access Memory (RAM) exists a stack of registers (individual memory units) with read and write access. From an n-bit register we can read
-an n-bit value or write an n-bit value. Registers may contain raw data or an instruction. Instructions instruct a processor to read data from a set of registers, run a computation 
-on that data, and write that computed data to a register. A processor executes one instruction at a time, thus creating a thread of execution. Context 
-switching between different segments of memory can give the impression to a user of multiple threads of execution happening at once, this is called 
-concurrency. Alternatively, multiple processors can exist, with multiple corresponding threads of execution that don't just give the impression of 
-simultaneous execution, but actually execute simultaneously.</p>
+<h4>Multiprocessing</h4>
+<p>Multiprocessing is the simultaneous execution of tasks. Parallelism and concurrency are means of multiprocessing. Parallelism involves
+multiple processing cores processing tasks simultaneously, whilst concurrency involves processing cores context switching between multiple
+tasks at a fast enough rate to give the impression of simultaneous execution. Execution refers to a processors fetch-decode-execute cycle
+by which it processes instructions. The set of sequences of instructions processed by a concurrent processor are referred to as threads,
+threads of execution.</p>
 <p><img src="/Assets/images/thread_DFA.png" width="50%" height="50%"></p>
-<p>A process is an instance of a program running on computer hardware. A scheduler is special system software that 'schedules' processes, i.e it 
-manages threads of execution. Programs are loaded from non-volatile secondary memory into a 'ready queue' of processes in volatile memory. The scheduler is 
+<p>A scheduler is a type of system software that schedules the runtime of processes and manages threads of execution between them. Programs are loaded from
+non-volatile secondary memory into a 'ready queue' of processes in volatile memory. The scheduler is 
 responsible for the above transformations, and will dequeue the process into a running state, and enqueue the process into a blocked state if the process 
 is awaiting an I/O resource to become unblocked. When the I/O device responds, the process returns to the ready queue. A process may jump straight from 
-running to ready in the case the scheduler picks another process (a timeout), to ensure a desirable time allocation of hardware resources to processes.</p>
-<p>A dispatcher is special system software that manages the thread of execution within the process selected to enter runtime by the scheduler. 
-    This includes the handling of context switches.</p>
+running to ready in the case the scheduler picks another process (a timeout), to ensure a desirable time allocation of hardware resources to processes.
+A dispatcher is special system software that manages the thread of execution within the process selected to enter runtime by the scheduler. 
+This includes the handling of context switches.</p>
 <p>Threads have their own stack (local volatile memory space for storing data) and a shared stack (for global versus local variables). This can lead to 
     data races when multiple threads attempt to manipulate the same data registers concurrently.</p>
 <p><img src="/Assets/images/critical_section.png" width="50%" height="50%"></p>
@@ -32,8 +31,3 @@ state S and operations P and V. The state S represents the number of resources t
 decrements this value. If the resulting value is negative, the process invoking the wait operation 'sleeps' and is added to the semaphores 'waiting' or 
 'blocked' queue. Else, the process keeps running with access to the resource. A process 'releases' that resource upon completion by invoking the signal (V)
 operation which increments this value.</p>
-<p><img src="/Assets/images/deadlock1.png" width="90%" height="90%"></p>
-<p>Deadlocks occur when a process requires a resource assigned to another process that requires a resource assigned to that process, both are blocked, 
-awaiting each other's resources to be freed, in an infinite loop. This scales to any number of process-resource pairs that exist in such a cycle. When 
-we refer to resource, we are referring to a system resource. Examples include interrupt request lines, direct memory access channels, input output port 
-addresses, memory address ranges, etc.</p>

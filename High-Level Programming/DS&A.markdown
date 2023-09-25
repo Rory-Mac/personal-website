@@ -1,6 +1,6 @@
 ---
 layout: narrow
-title: Data Structures & Algorithms
+title: Data Structures and Algorithms
 ---
 <h3>Data Structures and Algorithms</h3>
 <h4>(Linked Lists)</h4>

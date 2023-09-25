@@ -40,13 +40,13 @@ title: Explore - RoryMac Blog
                 <p>Operating Systems</p>
             </div>
         </div></a>
-        <a class="no-underline" href="/Low-Level Programming/Concurrency.html">
+        <a class="no-underline" href="/Low-Level Programming/Multiprocessing.html">
         <div class="portal zoom small">
             <div class="portal-image">
-                <img src="/Assets/images/TBD.jpg">
+                <img src="/Assets/images/multiprocessing_portal.png">
             </div>
             <div class="portal-title">
-                <p>Concurrency</p>
+                <p>Multiprocessing</p>
             </div>
         </div></a>
         <a class="no-underline" href="/Low-Level Programming/IO.html">
@@ -63,10 +63,10 @@ title: Explore - RoryMac Blog
 <div class="topic">
     <div class="topic-title"><h4>High-Level Programming</h4></div>
     <div class="portal-container">
-        <a class="no-underline" href="/High-Level Programming/data structures and algorithms.html">
+        <a class="no-underline" href="/High-Level Programming/DS&A.html">
         <div class="portal zoom small">
             <div class="portal-image">
-                <img style="background-color: black" src="/Assets/images/TBD.jpg">
+                <img style="background-color: black" src="/Assets/images/DS&A_portal.png">
             </div>
             <div class="portal-title">
                 <p>Data Structures</p>
