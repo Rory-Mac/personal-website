@@ -33,6 +33,13 @@ title: Explore - RoryMac Blog
                 <p>Computer Architecture</p>
             </div>
         </div></a>
+        <a class="no-underline" href="/Low-Level Programming/IO.html">
+        <div class="portal zoom small">
+                <div class="portal-image"><img src="/Assets/images/IO_portal.png"></div>
+            <div class="portal-title">
+                <p>Input/Output</p>
+            </div>
+        </div></a>
         <a class="no-underline" href="/Low-Level Programming/Operating%20Systems.html">
         <div class="portal zoom small">
                 <div class="portal-image"><img src="/Assets/images/OS_portal.png"></div>
@@ -49,20 +56,20 @@ title: Explore - RoryMac Blog
                 <p>Multiprocessing</p>
             </div>
         </div></a>
-        <a class="no-underline" href="/Low-Level Programming/IO.html">
-        <div class="portal zoom small">
-                <div class="portal-image"><img src="/Assets/images/IO_portal.png"></div>
-            <div class="portal-title">
-                <p>Input/Output</p>
-            </div>
-        </div></a>
     </div>
 </div>
-
-
 <div class="topic">
     <div class="topic-title"><h4>High-Level Programming</h4></div>
     <div class="portal-container">
+        <a class="no-underline" href="/High-Level Programming/Compilation.html">
+        <div class="portal zoom small">
+                <div class="portal-image">
+                    <img style="background-color: black" src="/Assets/images/Compilation_portal.png">
+                </div>
+            <div class="portal-title">
+                <p>Compilation</p>
+            </div>
+        </div></a>
         <a class="no-underline" href="/High-Level Programming/DS&A.html">
         <div class="portal zoom small">
             <div class="portal-image">
@@ -115,15 +122,6 @@ title: Explore - RoryMac Blog
                 </div>
             <div class="portal-title">
                 <p>Encryption</p>
-            </div>
-        </div></a>
-        <a class="no-underline" href="/High-Level Programming/Wireless Security.html">
-        <div class="portal zoom small">
-                <div class="portal-image">
-                    <img style="background-color: black" src="/Assets/images/wireless_security_portal.png">
-                </div>
-            <div class="portal-title">
-                <p>Wireless Security</p>
             </div>
         </div></a>
     </div>

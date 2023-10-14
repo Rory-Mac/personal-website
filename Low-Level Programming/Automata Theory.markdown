@@ -97,5 +97,5 @@ to the current cell and how to next move the head. We can express this formally 
 \( \quad q_0 \) is the initial state<br>
 \( \quad F \) is the set of final or accepting states<br></p>
 <p>Turing Machines describe recursively-enumerable languages. These are languages for which the subset of grammatically valid expressions
-in the set of all expressions formed by the language's alphabet, can be enumerated with recursion. The language hierarchy thus far discussed
+in the set of all expressions formed by the language's alphabet can be enumerated with recursion. The language hierarchy thus far discussed
 can be further extended with Long-Short-Term-Memory neural networks and natural language processing.</p>
