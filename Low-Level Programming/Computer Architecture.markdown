@@ -24,20 +24,23 @@ same manner. A program counter stores the address to the next instruction to be 
 stores the instruction being currently processed (addressed by the program counter one clock cycle before). The action performed by these
 registers is referred to as the fetch execute cycle.</p>
 <p><img src="/Assets/images/evolved_architecture.png" width="100%" height="100%"></p>
-<p>The question then raised, is how does the fetch-execute cycle actually work? To create a control unit responsible for this execution 
-cycle, we require a program counter and an instruction register. The program counter, also known as the instruction pointer, stores the 
-address of the instruction to be decoded in the current clock cycle, this instruction is read from memory and written to the instruction 
-register, to be decoded. This instruction defines the next step in the run on our state machine. What instructions are typically available?
-Let us use the RV32I Base Integer Instruction Set as a simpler example that can be extended to further forms of computation, such as 
-atomic instructions, floating-point arithmetic, multiplication and division, etc. This RISC-V standard defines six instruction classes.</p>
+<p>The instruction being executed is composed of a sequence of bitfields. These bitfields are decoded and passed to the relevant components
+of the hardware for processing. Let's consider the RISC-V RV32I Base Integer Instruction Set as an example. Source and destination registers,
+immediate values, control bits, and opcodes are colored blue, green, yellow and red, respectively. Hundreds of instructions can be 
+expressed by a small number of instruction formats. The R-type (R for register) instruction format has three register bit fields addressing
+registers in core memory. The control bits tell the core logic unit which operator to apply to these operands before storage. Opcodes put
+instructions in categories and coordinate the action of hardware components. For example, the opcode for an R-type instruction that loads
+and stores values to and from core registers will not write-enable main memory, just as the S-formatted STORE instruction will store a value
+to main memory but not write-enable the core registers.</p>
 <p><img src="/Assets/images/RISC-V_formats.png" width="100%" height="100%"></p>
-<p>Source and destination registers are color-coded blue, immediate values green, control bits yellow and opcodes red. This color-coding 
-reveals that despite the complexity of the data formats, they each represent fundamental classes of operations. The R-type instruction 
-operates on two source registers and stores the result in a destination register, as does the I-type instruction, except with one register
-and one immediate value as the operands. The S-type instruction stores the results of computation in main memory and thus uses an immediate
-value in place of the destination register bitfield. The B-type instruction extends the S-type for branching, writing to the program counter
-instead of main memory. The U-type instruction loads an immediate value into the upper 20-bits of the destination register, and is extended
-to the J-type instruction with adds this value to the program counter and stores the result in the destination register.</p>
-<p>We then need to determine how to create datapaths between the control unit, the logic unit, the core registers and main memory, to 
-allow for the decoding of all instructions for all instruction types. We can then increase the efficiency of our processor with multi-cycle 
-and pipelined processor designs.</p>
+<p>The regular language implemented by the the computer maps to an assembly language. An assembly language is a language with
+near one-to-one correspondance between instructions and binary. For example, the assembly instruction ADD r1, r2, r3 can be directly 
+fetch-executed and maps to the bit fields \( 0000000 \; 00011 \; 00010 \; 000 \; 00001 \; 0110011\). Further abstractions allow us to move
+towards the validation and execution of recursively-enumerable languages. These are high-level programming languages far more expressive 
+than assembly.</p>
+<p>Further abstraction starts with the added meaning we imbue the core registers with.</p>
+<!-- 
+meaning of all core registers + diagram
+context-switching and the call stack
+multi-cycle, pipelined, branch prediction
+-->
