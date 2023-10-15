@@ -36,11 +36,28 @@ to main memory but not write-enable the core registers.</p>
 <p>The regular language implemented by the the computer maps to an assembly language. An assembly language is a language with
 near one-to-one correspondance between instructions and binary. For example, the assembly instruction ADD r1, r2, r3 can be directly 
 fetch-executed and maps to the bit fields \( 0000000 \; 00011 \; 00010 \; 000 \; 00001 \; 0110011\). Further abstractions allow us to move
-towards the validation and execution of recursively-enumerable languages. These are high-level programming languages far more expressive 
-than assembly.</p>
-<p>Further abstraction starts with the added meaning we imbue the core registers with.</p>
-<!-- 
-meaning of all core registers + diagram
-context-switching and the call stack
+towards the validation and execution of recursively-enumerable languages. These are high-level programming languages far more
+expressive than assembly. We can start by giving the core registers an additional meaning.</p>
+<p><img src="/Assets/images/register_abstraction.png" width="100%" height="100%"></p>
+<p>The above register mapping belongs to the RISC-V Instruction Set Architecture, not dissimilar from other ISA register mappings.
+ Register zero is denoted zero in assembly, and is hard-coded with zero bits. It can be used as a constant, and is useful
+in the creation of pseudo-instructions. For example, 'mv rs rd' could assemble into the equivalent instruction 'add rs rd zero'.
+The return address register stores the instruction following a function call, so we can return to our current context
+after a called subroutine has finished executing. Argument registers store arguments or pointers to arguments, which can be accessed by 
+the called function and overwritten with return values. The distinction between temporary and saved registers is that saved registers must
+be preserved across function calls. To do this, a called function pushes saved register values it wishes to use onto the stack, and then 
+pops them back upon finishing its execution. The stack is accessed by way of a stack pointer.</p>
+<p><img src="/Assets/images/call_stack.png" width="100%" height="100%"></p>
+<p>By introducing the frame pointer we introduce the concept of context-switching, that is, what context should be saved when switching
+from our current execution environment to a called function. As can be seen in the rightmost column of the RISC calling convention, the 
+caller saves any temporaries, function arguments and return values, before pushing a stack frame to the stack and jumping to the called
+context. The frame is a region on the stack that preserves important register values, including a frame pointer to the frame itself,
+the return address to jump back to once the function is complete,   
+</p>
+<!--
+The call stack diagram
+global pointer points to data, this includes initialised and uninitialised (bss). Uninitialised may contain garbage values or be zeroed.
+thread pointer and thread local storage
+heap, kernel, syscalls
 multi-cycle, pipelined, branch prediction
 -->
