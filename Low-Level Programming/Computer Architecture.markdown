@@ -46,18 +46,18 @@ The return address register stores the instruction following a function call, so
 after a called subroutine has finished executing. Argument registers store arguments or pointers to arguments, which can be accessed by 
 the called function and overwritten with return values. The distinction between temporary and saved registers is that saved registers must
 be preserved across function calls. To do this, a called function pushes saved register values it wishes to use onto the stack, and then 
-pops them back upon finishing its execution. The stack is accessed by way of a stack pointer.</p>
+pops them back upon finishing its execution. The stack is accessed by way of a stack pointer. The stack can be thought of as our current
+context, storing local variables. A function call causes a context-switch. The frame pointer is a pointer to a region of stack memory that
+preserves important values across function calls. This includes the return address and frame pointer of the caller's context, along with
+the function arguments it has provided. The caller will have pushed any other values it wishes to preserve, such as temporary register 
+values and function arguments, to its own stack before the context-switch. Saved registers are preserved across function calls. If the 
+callee wishes to use a saved register, it must push the value onto its stack, use the register, and then pop the original value back onto
+the stack upon completion of its use.</p>
 <p><img src="/Assets/images/call_stack.png" width="100%" height="100%"></p>
-<p>By introducing the frame pointer we introduce the concept of context-switching, that is, what context should be saved when switching
-from our current execution environment to a called function. As can be seen in the rightmost column of the RISC calling convention, the 
-caller saves any temporaries, function arguments and return values, before pushing a stack frame to the stack and jumping to the called
-context. The frame is a region on the stack that preserves important register values, including a frame pointer to the frame itself,
-the return address to jump back to once the function is complete,   
-</p>
-<!--
-The call stack diagram
-global pointer points to data, this includes initialised and uninitialised (bss). Uninitialised may contain garbage values or be zeroed.
-thread pointer and thread local storage
-heap, kernel, syscalls
-multi-cycle, pipelined, branch prediction
--->
+<p>The thread pointer points to thread-local-storage, a region of static data allocated to a thread of execution, and the global pointer
+points to the data segment itself, which is broken up into two categories, initialised and uninitialised. A hard-coded string literal to be
+printed to the screen is an example of data stored in the initialised data segment. A string taken from user-input at runtime (with some
+maximum expected length) is an example of data stored in the uninitialised data segment. Data objects with size determined at runtime
+are stored on the heap. The user-process loads function arguments and makes a system call to the operating system, which interfaces with 
+I/O devices directly, and manages memory. A successful memory allocation operation will return a pointer to the allocated heap memory. 
+The context that made the system call will store this pointer as a local variable on its stack.</p>
