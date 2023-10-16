@@ -61,3 +61,12 @@ maximum expected length) is an example of data stored in the uninitialised data 
 are stored on the heap. The user-process loads function arguments and makes a system call to the operating system, which interfaces with 
 I/O devices directly, and manages memory. A successful memory allocation operation will return a pointer to the allocated heap memory. 
 The context that made the system call will store this pointer as a local variable on its stack.</p>
+<p><img src="/Assets/images/process_burst.png" width="100%" height="100%"></p>
+<p>Processes follow this runtime pattern of executing a sequence of instructions, calling a system library, waiting for a response,
+and then resuming instruction execution. Calls to the system libraries always involve input/output, whether to the operating system
+directly, to other processes within the same device, or to processes running in external devices via I/O channels. Some processes 
+are CPU-burst heavy, neural network for instance, which occasionally read file training data but are mostly preoccupied with training.
+Some processes are IO-burst heavy, interactive text editors for instance, which constantly wait for user input. Other processes are idle
+heavy, automatic update software for instance, which wake after some time period has passed to call servers and check for updates before
+falling back asleep. Direct Memory Access (DMA) channels are a hardware resource that provide IO devices with direct write-access to main
+memory. This ensures that the CPU can function simultaneously with large IO data transfers.</p>

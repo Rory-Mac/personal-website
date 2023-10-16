@@ -3,11 +3,26 @@ layout: narrow
 title: Multiprocessing
 ---
 <h4>Multiprocessing</h4>
-<p>Multiprocessing is the simultaneous execution of tasks. Parallelism and concurrency are means of multiprocessing. Parallelism involves
-multiple processing cores processing tasks simultaneously, whilst concurrency involves processing cores context switching between multiple
-tasks at a fast enough rate to give the impression of simultaneous execution. Execution refers to a processors fetch-decode-execute cycle
-by which it processes instructions. The set of sequences of instructions processed by a concurrent processor are referred to as threads,
-threads of execution.</p>
+<p>Multiprocessing is the simultaneous execution of tasks, achieved through parallelism and concurrency. Parallelism describes multiple core processors processing
+tasks simultaneously. Concurrency describes core processors context-switching between multiple tasks at a fast enough rate to give the impression of simultaneous 
+execution. Each core processor can enact its own fetch-execute cycle, creating parallel threads of execution. There are typically many more tasks being run on 
+a computer then there are cores of execution. To give the impression of simultaneous execution of these tasks, operating systems will have task schedulers to
+manage the context-switching action of each of these parallel threads.</p>
+<p><img src="/Assets/images/scheduler.png" width="50%" height="50%"></p>
+<p>The scheduler manages a job queue, a ready queue and a device queue. These queues contain process control blocks (PCBs): data structures used by the operating system
+to describe processes. A process control block contains all relevant information describing a specific process. The above visualisation is an example taken from
+the linux kernel's 'O(1) Scheduler'. This has been replaced by the 'Completely Fair Scheduler' which removes the need for active and expired queues, and uses 
+red-black tress in place of doubly-linked-lists for PCB storage. PCBs have a quantum (a time slice) that upon expiration moves them to the expired queue. When the
+active queue is empty, the queues are swapped, to continue execution of each unfinished PCB. The PCBs have a priority and niceness value. The priority value ranges
+from -100 (most) to 39 (least) while the niceness value ranges from -20 (most) to 19 (least). The niceness value is for user rather than kernel applications and is 
+superimposed onto the priority value range from 0 to 39. 
+
+</p>
+<!--
+    finish diagram with article
+    add producer-consumer heuristic
+-->
+
 <p><img src="/Assets/images/thread_DFA.png" width="50%" height="50%"></p>
 <p>A scheduler is a type of system software that schedules the runtime of processes and manages threads of execution between them. Programs are loaded from
 non-volatile secondary memory into a 'ready queue' of processes in volatile memory. The scheduler is 
