@@ -8,41 +8,46 @@ tasks simultaneously. Concurrency describes core processors context-switching be
 execution. Each core processor can enact its own fetch-execute cycle, creating parallel threads of execution. There are typically many more tasks being run on 
 a computer then there are cores of execution. To give the impression of simultaneous execution of these tasks, operating systems will have task schedulers to
 manage the context-switching action of each of these parallel threads.</p>
-<p><img src="/Assets/images/scheduler.png" width="50%" height="50%"></p>
+<p><img src="/Assets/images/scheduler.png" width="100%" height="100%"></p>
 <p>The scheduler manages a job queue, a ready queue and a device queue. These queues contain process control blocks (PCBs): data structures used by the operating system
 to describe processes. A process control block contains all relevant information describing a specific process. The above visualisation is an example taken from
 the linux kernel's 'O(1) Scheduler'. This has been replaced by the 'Completely Fair Scheduler' which removes the need for active and expired queues, and uses 
 red-black tress in place of doubly-linked-lists for PCB storage. PCBs have a quantum (a time slice) that upon expiration moves them to the expired queue. When the
 active queue is empty, the queues are swapped, to continue execution of each unfinished PCB. The PCBs have a priority and niceness value. The priority value ranges
 from -100 (most) to 39 (least) while the niceness value ranges from -20 (most) to 19 (least). The niceness value is for user rather than kernel applications and is 
-superimposed onto the priority value range from 0 to 39. 
-
-</p>
-<!--
-    finish diagram with article
-    add producer-consumer heuristic
--->
-
-<p><img src="/Assets/images/thread_DFA.png" width="50%" height="50%"></p>
-<p>A scheduler is a type of system software that schedules the runtime of processes and manages threads of execution between them. Programs are loaded from
-non-volatile secondary memory into a 'ready queue' of processes in volatile memory. The scheduler is 
-responsible for the above transformations, and will dequeue the process into a running state, and enqueue the process into a blocked state if the process 
-is awaiting an I/O resource to become unblocked. When the I/O device responds, the process returns to the ready queue. A process may jump straight from 
-running to ready in the case the scheduler picks another process (a timeout), to ensure a desirable time allocation of hardware resources to processes.
-A dispatcher is special system software that manages the thread of execution within the process selected to enter runtime by the scheduler. 
-This includes the handling of context switches.</p>
-<p>Threads have their own stack (local volatile memory space for storing data) and a shared stack (for global versus local variables). This can lead to 
-    data races when multiple threads attempt to manipulate the same data registers concurrently.</p>
-<p><img src="/Assets/images/critical_section.png" width="50%" height="50%"></p>
-<p>A data race occurs when one thread accesses data that another thread is writing to. Thus the returned value of the data is a race between the two threads.
-A data race is a type of race condition: undesired code execution resulting from the improper sequencing of operations by concurrent threads.</p>
-<p>To avoid race conditions, high-level programming languages usually offer keywords that compile into synchronization primitives.
-Synchronization primitives are low-level abstract data types that manage the critical section: the section of code containing resources accessed and 
-modified by multiple threads. A lock is an example of a synchronization primitive, and enforces mutual exclusion of a variable or a segment of code, 
-meaning that only one thread may access that variable or code segment at any one time. A lock that enforces mutual exclusion may be referred to as a mutex.
-Locks may enforce conditional concurrency policies, where a condition has to be met for a thread to access/modify a protected variable or code segment.</p>
-<p>Technically, a lock is a binary counting semaphore. A counting semaphore is an abstract data type (and synchronization primitive), represented by the 
-state S and operations P and V. The state S represents the number of resources the semaphore manages that are currently available. The wait (P) operation 
-decrements this value. If the resulting value is negative, the process invoking the wait operation 'sleeps' and is added to the semaphores 'waiting' or 
-'blocked' queue. Else, the process keeps running with access to the resource. A process 'releases' that resource upon completion by invoking the signal (V)
-operation which increments this value.</p>
+superimposed onto the priority value range from 0 to 39.</p>
+<p> The bottom right DFA shows how a PCB moves between queues, from a ready state in 
+the job queue, to a running state, to a blocked state (i.e. pending IO response) or straight back to a ready state (quantum expiry)
+before re-entry into the running state until task completion. Additional terms are often used, namely the long-term scheduler, the
+medium-term scheduler, the short-term scheduler, and the dispatcher. The long-term scheduler is responsible for managing process flow 
+between the job queue and the run queue. The medium-term scheduler is responsible for managing process flow between the run queue and
+the blocked queue. The short-term scheduler is responsible for managing the execution of the most prioritised processes within the run
+queue. The dispatcher is additional kernel software that upon being signalled by the short-term scheduler that a PCB block requires 
+immediate execution, initialises the runtime of the process itself.</p>
+<p><img src="/Assets/images/threads.png" width="100%" height="100%"></p>
+<p>A thread of execution is a sequence of instructions being executed by a core processor. Parallel threads of execution can be
+achieved with multiple core processors, each processing the runtime of a distinct process. Concurrent threads of execution can be 
+achieved by the action of the scheduler, which can switch thread execution from process to process at a fast enough rate to give
+the impression of simultaneous execution. The scheduler can also manage intraprocess as well as interprocess concurrent threads.
+If a scheduler preempts a running process into a waiting state and waiting process into a running state, the thread of the previously
+running will save its current context to its stack, CPU registers included, to avoid data loss. Similarly, concurrent threads 
+executing within a singular process each have their own call stack, and perform the same state-save when preempted to become
+temporarily dormant. Thus, concurrent threads share all process resources (instruction memory, data memory, heap, file 
+descriptors, child processes, etc) except the call stack, of which they each have their own.</p>
+<p><img src="/Assets/images/concurrency.png" width="100%" height="100%"></p>
+<p>Whether a sequence of independent tasks is processed sequentially or concurrently it will have the same total execution time. 
+Concurrent threading does however assist with the responsiveness of applications. For example, making an edit request to a shared
+presentation on an online multithreaded workspace will ensure that the edit request is processed in the same batch as other user
+requests within a given time period, rather than as a queue. Concurrent threading can also ensure that IO-bound processes can
+advance the execution of a number of tasks while waiting for a response for a specific task. Note that an IO-bound process is 
+a process with IO-bursts substantially larger than CPU-bursts, meaning its performance is bounded by IO performance. CPU-bound
+processes can also benefit from multithreading, by allowing smaller tasks to run amidst much larger tasks. For instance a simple
+status signaller subtask that runs alongside a computationally expensive scientific simulation.</p>
+<p>Returning now to a previous point, each thread of execution within a process shares all resources save for the call stack, of 
+which each has its own. This fact creates the complication of criticial sections and race conditions. Criticial sections are 
+areas of memory that can be accessed by multiple threads of execution. Implementation details of the scheduler are left to the
+OS, thus the concurrent execution of threads is unpredictable from the process's point of view. Race conditions emerge from this
+unpredictability, from the fact that the stored values in a critical section may differ depending on whether thread A or thread B
+access it first. Thus, it is necessary for the process to be developed in such a way that critical sections are safe-guarded by 
+some sort of synchronization primitive. A synchronization primitive is an abstract data type (a set of primitive data structures
+wrapped in well-defined access methods) offered by the OS to perform exactly this.</p>
