@@ -13,6 +13,6 @@ given input \(n\) finds the \(n^{th}\) fibonacci number.</p>
 giving them additional meaning, such as the class of expression they belong to. The above visualisation acts as an example to show how
 a Backus-Naur form description of a high-level programming languages sorts its tokens in hierarchical fashion. Consider that just one
 symbol-expression pair such as<br>
-<b>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;functionDeclaration&gt; &nbsp; ::= &nbsp; &lt;type&gt; &lt;identifier&gt; '(' &lt;args&gt; ')' '{' &lt;statements&gt; '}'</b><br> 
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;functionDeclaration&gt; &nbsp; ::= &nbsp; &lt;type&gt; &lt;identifier&gt; '(' &lt;args&gt; ')' '{' &lt;statements&gt; '}'<br> 
 can describe the entire program, with additional symbol-expression pairs acting to increase the resolution from non-terminal to terminal symbols.
 Note that #include statements are left to the linker.</p>
