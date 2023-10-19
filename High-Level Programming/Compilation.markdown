@@ -16,3 +16,8 @@ symbol-expression pair such as<br>
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;functionDeclaration&gt; &nbsp; ::= &nbsp; &lt;type&gt; &lt;identifier&gt; '(' &lt;args&gt; ')' '{' &lt;statements&gt; '}'<br> 
 can describe the entire program, with additional symbol-expression pairs acting to increase the resolution from non-terminal to terminal symbols.
 Note that #include statements are left to the linker.</p>
+<!--
+syntax diagram
+parser and parse tree
+is C a context-free grammar
+-->
