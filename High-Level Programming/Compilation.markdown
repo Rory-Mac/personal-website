@@ -10,14 +10,15 @@ form '&lt;symbol&gt; ::= expression' used to formalise context-free grammars. Co
 given input \(n\) finds the \(n^{th}\) fibonacci number.</p>
 <p><img src="/Assets/images/compiler_input.png" width="100%" height="100%"></p>
 <p>Tokenizers/lexers perform the first step in compilation by determining the words of signficance belonging to an input program and 
-giving them additional meaning, such as the class of expression they belong to. The above visualisation acts as an example to show how
-a Backus-Naur form description of a high-level programming languages sorts its tokens in hierarchical fashion. Consider that just one
-symbol-expression pair such as<br>
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&lt;functionDeclaration&gt; &nbsp; ::= &nbsp; &lt;type&gt; &lt;identifier&gt; '(' &lt;args&gt; ')' '{' &lt;statements&gt; '}'<br> 
-can describe the entire program, with additional symbol-expression pairs acting to increase the resolution from non-terminal to terminal symbols.
-Note that #include statements are left to the linker.</p>
-<!--
-syntax diagram
-parser and parse tree
-is C a context-free grammar
--->
+giving them additional meaning, such as the class of expression they belong to. A parser then parses the tokenized input text into a 
+parse tree, as visualised above. Backus-Naur form formalises the hierarchical structure of a high-level programming language.
+Just one Backus-Naur symbol-expression pair
+"&lt;functionDeclaration&gt; &nbsp; ::= &nbsp; &lt;type&gt; &lt;identifier&gt; '(' &lt;args&gt; ')' '{' &lt;statements&gt; '}'"<br> 
+can describe the entire program. Additional symbol-expression pairs increase the resolution from non-terminal to terminal symbols
+in the parse tree. Note that #include statements are left to the linker. Syntax diagrams (also called railroad diagrams) can assist 
+in visualising rules of parsing. For a simple C-like language, the syntax diagram will look approximately as follows.</p>
+<p><img src="/Assets/images/syntax_diagram.png" width="100%" height="100%"></p>
+<p>This syntax diagram, although limited to a small feature set, shows how syntax diagrams are used for parsing context-free grammars.
+Context-free grammars are grammers in which the rules of production of expressions within that grammar can apply to any non-terminal 
+symbol regardless of context. Put simply, we can parse any non-terminal symbol by simply knowing the rule set, and not the symbols
+that preceded it.</p>
