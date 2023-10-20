@@ -64,7 +64,7 @@ title: Explore - RoryMac Blog
         <a class="no-underline" href="/High-Level Programming/Compilation.html">
         <div class="portal zoom small">
                 <div class="portal-image">
-                    <img style="background-color: black" src="/Assets/images/Compilation_portal.png">
+                    <img style="background-color: black" src="/Assets/images/compilation_portal.png">
                 </div>
             <div class="portal-title">
                 <p>Compilation</p>
