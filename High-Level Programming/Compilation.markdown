@@ -18,7 +18,6 @@ can describe the entire program. Additional symbol-expression pairs increase the
 in the parse tree. Note that #include statements are left to the linker. Syntax diagrams (also called railroad diagrams) can assist 
 in visualising rules of parsing. For a simple C-like language, the syntax diagram will look approximately as follows.</p>
 <p><img src="/Assets/images/syntax_diagram.png" width="100%" height="100%"></p>
-<p>This syntax diagram, although limited to a small feature set, shows how syntax diagrams are used for parsing context-free grammars.
-Context-free grammars are grammers in which the rules of production of expressions within that grammar can apply to any non-terminal 
-symbol regardless of context. Put simply, we can parse any non-terminal symbol by simply knowing the rule set, and not the symbols
-that preceded it.</p>
+<p>This syntax diagram, although limited to a small feature set, parses a context-free grammar. Context-free grammars are grammers 
+in which the rules of expression production can apply to any non-terminal symbol regardless of context. Put simply, we can parse
+any non-terminal symbol by simply knowing the rule set, and not the symbols that preceded it.</p>
