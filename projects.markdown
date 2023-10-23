@@ -11,7 +11,7 @@ title: Projects - RoryMac Blog
         <a href="/Projects/LiM-Virtual-Platform.html"><h4 class="project-tag">LiM-Virtual-Platform</h4></a>
         <p class="projects-page-text">A R64I-compliant hardware architecture I prototyped with VHDL, and synthesised to an Arty-A7 FPGA
         development board using the Vivado Design Suite. Includes python-implemented RISC-V assembler.</p>
-        <a class="project-tag" href="/Projects/FPGA-2-TCP.html">See More ></a>
+        <a class="project-tag" href="/Projects/Lim-Virtual-Platform.html">See More ></a>
     </div>
     <div class="portal-B">
         <a href="/Projects/Game-Playing Agents.html"><img src="/Assets/images/gpa_portal.png" width="100%" height="100%"></a>
