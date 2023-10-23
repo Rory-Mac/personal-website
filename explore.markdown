@@ -70,22 +70,22 @@ title: Explore - RoryMac Blog
                 <p>Compilation</p>
             </div>
         </div></a>
-        <a class="no-underline" href="/High-Level Programming/DS&A.html">
+        <a class="no-underline" href="/High-Level Programming/Imperative.html">
         <div class="portal zoom small">
             <div class="portal-image">
                 <img style="background-color: black" src="/Assets/images/DS&A_portal.png">
             </div>
             <div class="portal-title">
-                <p>Data Structures</p>
+                <p>Imperative</p>
             </div>
         </div></a>
-        <a class="no-underline" href="/High-Level Programming/object-oriented programming.html">
+        <a class="no-underline" href="/High-Level Programming/Declarative.html">
         <div class="portal zoom small">
             <div class="portal-image">
-                <img style="background-color: black" src="/Assets/images/oop_portal2.png">
+                <img style="background-color: black" src="/Assets/images/declarative_portal.png">
             </div>
             <div class="portal-title">
-                <p>Object-Oriented</p>
+                <p>Declarative</p>
             </div>
         </div></a>
         <a class="no-underline" href="/High-Level Programming/Functional.html">
@@ -97,6 +97,15 @@ title: Explore - RoryMac Blog
                 <p>Functional</p>
             </div>
         </div></a>
+        <a class="no-underline" href="/High-Level Programming/Object-Oriented.html">
+        <div class="portal zoom small">
+            <div class="portal-image">
+                <img style="background-color: black" src="/Assets/images/oop_portal2.png">
+            </div>
+            <div class="portal-title">
+                <p>Object-Oriented</p>
+            </div>
+        </div></a>
         <a class="no-underline" href="/High-Level Programming/web development.html">           
         <div class="portal zoom small">
             <div class="portal-image">
@@ -106,13 +115,13 @@ title: Explore - RoryMac Blog
                 <p>Web Development</p>
             </div>
         </div></a>
-        <a class="no-underline" href="/High-Level Programming/Computer Networks.html">
+        <a class="no-underline" href="/High-Level Programming/Distributed Systems.html">
         <div class="portal zoom small">
                 <div class="portal-image">
                     <img style="background-color: black" src="/Assets/images/network_portal.png">
                 </div>
             <div class="portal-title">
-                <p>Computer Networks</p>
+                <p>Distributed Systems</p>
             </div>
         </div></a>
         <a class="no-underline" href="/High-Level Programming/Encryption.html">
