@@ -11,12 +11,26 @@ learnt by a programmer, who upon becoming rehearsed in the features of a given i
 of abstract data types and definition of their interfaces. An abstract data type is constructed from a combination of primitive data 
 types and access functions. Primitive data types include integers, characters, booleans, and arrays. Abstract data types include linked
 lists, dictionaries, trees, stacks, heaps, queues, graphs, and so on.</p> 
-<h4>Arrays</h4>
+<h4>Array</h4>
 <p> An array is a primitive data type with a linear ordering (by index). Arrays can be uni-dimensional or multi-dimensional (see tensors
 document for more). Arrays can be of fixed or dynamic in size. It can be helpful to color-code subsets of an array, and visualise numerical
 values as heights in a histogram, for sorting.</p>
 <p><img src="/Assets/images/array1.png" width="100%" height="100%"></p>
-<h4>Linked Lists</h4>
+<h4>Stack</h4>
+<p>A stack is an abstract data type that wraps an array and forces last-in first-out data access. Elements can be pushed to the top of
+the stack, popped from the stack, or peeked from the top of the stack (without removal). The stack typically comes with a function to 
+check whether or not it is empty. A stack can be of a pre-determined fixed size, or can grow dynamically with the number of pushed elements.</p>
+<p><img src="/Assets/images/stack.png" width="100%" height="100%"></p>
+Examples of stack usage include memory storage for local procedures, the calls tack, backtracking for syntactic completion, depth-first 
+and breadth-first walks.
+<h4>Queue</h4>
+<p>A queue is an abstract data type that wraps an array and forces first-in first-out data access. Elements can be enqueued or 
+dequeued. Other methods that a queue implementation typically come with include checks for whether the queue is full or empty and a peek
+method to check the value of the element at the front of the queue without dequeuing.</p>
+<p><img src="/Assets/images/queue.png" width="100%" height="100%"></p>
+<p>Queues can be used as buffers. Examples include process wait and ready queues in OS schedulers, multithreaded application handling,
+signalling between asynchronous clock regions, user actions on distributed system apps, and undo functionality in text editors.</p>
+<h4>Linked List</h4>
 <p>A linked list is a data structure containing a linear set of data elements. Unlike an array, the ordering of elements in a linked
 list does not necessarily correspond to the ordering of elements in physical memory. Linked lists are composed of individual nodes which
 store relevant values, linked singly or doubly by pointers. The dynamic nature of linked lists can save on memory usage when compared to
@@ -28,7 +42,7 @@ Doubly-Linked Lists are easily reversed by simply swapping the head and tail poi
 as visualised to the right of the above diagram. The current node sets the current node pointer to the previous node (which is initially
 null), the previous node pointer then catches up to the current pointer, which catches up to the next pointer (which was set to the 
 next node at the very beginning of the pointer shuffle).
-<h4>Trees</h4>
+<h4>Tree</h4>
 <p>Trees are widely used abstract data types. Let's start with the binary search tree (BST), which has a maximum of two children
 per parent node, and maintains that all nodes in the left subtree of a node have values less than that node's value, and all nodes
 in the right subtree of a node have values greater than that node's value. The first operations to implement are node insertion and
