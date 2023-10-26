@@ -20,16 +20,18 @@ values as heights in a histogram, for sorting.</p>
 <p>A stack is an abstract data type that wraps an array and forces last-in first-out data access. Elements can be pushed to the top of
 the stack, popped from the stack, or peeked from the top of the stack (without removal). The stack typically comes with a function to 
 check whether or not it is empty. A stack can be of a pre-determined fixed size, or can grow dynamically with the number of pushed elements.</p>
-<p><img src="/Assets/images/stack.png" width="100%" height="100%"></p>
-Examples of stack usage include memory storage for local procedures, the calls tack, backtracking for syntactic completion, depth-first 
-and breadth-first walks.
+<p><img src="/Assets/images/stack_simple.png" width="100%" height="100%"></p>
+Stacks are used in memory storage for local procedures, backtracking for syntactic completion, non-recursive tree-traversal,
+depth-first and breadth-first walks, undo functionality in text editors, and of course, the call stack.
 <h4>Queue</h4>
 <p>A queue is an abstract data type that wraps an array and forces first-in first-out data access. Elements can be enqueued or 
 dequeued. Other methods that a queue implementation typically come with include checks for whether the queue is full or empty and a peek
 method to check the value of the element at the front of the queue without dequeuing.</p>
-<p><img src="/Assets/images/queue.png" width="100%" height="100%"></p>
-<p>Queues can be used as buffers. Examples include process wait and ready queues in OS schedulers, multithreaded application handling,
-signalling between asynchronous clock regions, user actions on distributed system apps, and undo functionality in text editors.</p>
+<p><img src="/Assets/images/queue_simple.png" width="100%" height="100%"></p>
+<p>A queue is typically implemented not with an array but with another abstract data type such as a linked list to
+avoid shuffling all internally stored values when enqueueing or dequeueing values. Queues can be used as buffers. For instance, process wait
+and ready queues in OS schedulers, multithreaded application handling, signalling between asynchronous clock regions, and user actions on
+distributed system apps.</p>
 <h4>Linked List</h4>
 <p>A linked list is a data structure containing a linear set of data elements. Unlike an array, the ordering of elements in a linked
 list does not necessarily correspond to the ordering of elements in physical memory. Linked lists are composed of individual nodes which
