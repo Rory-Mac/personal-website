@@ -11,11 +11,26 @@ learnt by a programmer, who upon becoming rehearsed in the features of a given i
 of abstract data types and definition of their interfaces. An abstract data type is constructed from a combination of primitive data 
 types and access functions. Primitive data types include integers, characters, booleans, and arrays. Abstract data types include linked
 lists, dictionaries, trees, stacks, heaps, queues, graphs, and so on.</p> 
+<p>Big O notation is a mathematical notation used to classify the efficiency of our algorithms. For an algorithm we have constructed
+we denote the number of computational steps involved in processing an input of size \(x\) as \(f(x)\) and denote a comparison function \(g(x)\).
+We then say that "\(f(x)\) is big O of \(g(x)\)" which can be expressed as 
+\(f(x) = O(g(x)) \; \) as \(\; x \to \infty \). Big O notation translates to \( |f(x)| \le M(g(x))\) for all \(x \ge x_0\).
+This means that for some positive constant multiple of \(g(x)\) for sufficiently large \(x\), our function \(f(x)\) is strictly less 
+than equal to g\((x)\). Setting our comparison function to generic relationships such as \(g(x) = x,\;\) \(g(x) = log_2(x),\;\) \(g(x) = x^k\),
+and proving that \(f(x) = O(g(x))\) is the equivalent of classing our algorithm as an algorithm that, for an input of size \(n\), runs in
+linear, logarithmic, or polynomial time. We can use this equivalent process to study memory usage, where \(f(n)\) represents not
+the computational steps involved but rather the amount of memory used in the computation. Certain inputs may be significantly more or less computationally
+expensive than others, and so in studying the efficiency of our algorithms, we typically refer to best-case, average-case and worst-case time and
+space complexities.</p>
 <h4>Array</h4>
-<p> An array is a primitive data type with a linear ordering (by index). Arrays can be uni-dimensional or multi-dimensional (see tensors
-document for more). Arrays can be of fixed or dynamic in size. It can be helpful to color-code subsets of an array, and visualise numerical
-values as heights in a histogram, for sorting.</p>
+<p> An array is a primitive data type with a linear ordering by index. It may be uni-dimensional or multi-dimensional, with either fixed
+or dynamic length. As a primitive data type, an array acts as a simple pointer to memory. Thus the memory address stored plus the
+value index multipled by the size of the value type stored by the array, will give the direct address of that item in memory. It can be 
+helpful to color-code subsets of an array, and visualise numerical values as heights in a histogram.</p>
 <p><img src="/Assets/images/array1.png" width="100%" height="100%"></p>
+There are plenty of sorting algorithms. 
+
+<!-- time complexities, merge sort, radix sort -->
 <h4>Stack</h4>
 <p>A stack is an abstract data type that wraps an array and forces last-in first-out data access. Elements can be pushed to the top of
 the stack, popped from the stack, or peeked from the top of the stack (without removal). The stack typically comes with a function to 
