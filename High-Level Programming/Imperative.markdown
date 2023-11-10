@@ -113,6 +113,7 @@ are discovered. We use a stack so that we are always searching for the neighbour
 back to previous nodes once such a path is exhausted. The result of the depth-first traversal is equivalent to the order of elements
 popped from the stack.</p>
 <h4>Hash Table</h4>
+<p><img src="/Assets/images/hash_table.png" width="100%" height="100%"></p>
 <p>
 
 </p>
