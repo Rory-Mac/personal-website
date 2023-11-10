@@ -96,9 +96,9 @@ self-balancing trees such as AVL and Red-Black trees can be implemented instead.
 <p>The graph data structure, comprised of a set of vertices and edges, is typically implemented with a two-dimensional boolean array
 (if space complexity is of minimal concern) or a set of adjacency lists (equivalent to linked lists but in the context of a graph ADT)
 stored within a dynamically allocated array. This array can be fixed if the number of vertices in the graph is pre-determined and 
-non-changing.
-
-There exist two fundamental methods of graph traversal, breadth-first and depth-first, which can be respectively implemented using a queue
+unchanging.</p>
+<p><img src="/Assets/images/graph_implementation.png" width="100%" height="100%"></p>
+<p>There exist two fundamental methods of graph traversal, breadth-first and depth-first, which can be respectively implemented using a queue
 or stack to recursively visit neighbours of neighbours of the initially selected node. These traversals create a spanning tree across the
 graph with root node equivalent to the initial node in the traversal. A spanning tree is a tree with vertex set equal to the vertex set in
 a given graph and whose edge set is a subset of the edge set of said graph.</p>
