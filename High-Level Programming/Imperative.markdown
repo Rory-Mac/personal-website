@@ -102,3 +102,4 @@ unchanging.</p>
 or stack to recursively visit neighbours of neighbours of the initially selected node. These traversals create a spanning tree across the
 graph with root node equivalent to the initial node in the traversal. A spanning tree is a tree with vertex set equal to the vertex set in
 a given graph and whose edge set is a subset of the edge set of said graph.</p>
+<p><img src="/Assets/images/graph_traversal.png" width="100%" height="100%"></p>
