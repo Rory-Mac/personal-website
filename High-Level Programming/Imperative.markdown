@@ -98,8 +98,16 @@ self-balancing trees such as AVL and Red-Black trees can be implemented instead.
 stored within a dynamically allocated array. This array can be fixed if the number of vertices in the graph is pre-determined and 
 unchanging.</p>
 <p><img src="/Assets/images/graph_implementation.png" width="100%" height="100%"></p>
-<p>There exist two fundamental methods of graph traversal, breadth-first and depth-first, which can be respectively implemented using a queue
-or stack to recursively visit neighbours of neighbours of the initially selected node. These traversals create a spanning tree across the
-graph with root node equivalent to the initial node in the traversal. A spanning tree is a tree with vertex set equal to the vertex set in
-a given graph and whose edge set is a subset of the edge set of said graph.</p>
+<p>Breadth-first and depth-first traversals are the fundamental graph traversal methods, and can be implemented with the help of a 
+queue and stack respectively. These traversals create a spanning tree across the graph with root node equivalent to the initial node
+in the traversal. The spanning tree of a graph is a tree that covers all vertices in a graph and whose edges exist as a subset of the
+graph's edges. Consider, in the below diagram, the sequence of visited nodes in a breadth-first traversal. The neighbours of the root node 
+0 are visited first (2 and 8). The neighbours of 2 and then 8 are discovered, and so on recursively until all nodes are discovered.
+Thus we simply use a queue, dequeuing a current node, and enqueueing all the current node's neighbours, recursively until all nodes are
+discovered. </p>
 <p><img src="/Assets/images/graph_traversal.png" width="100%" height="100%"></p>
+<p>Now consider, in the above diagram, the sequence of nodes in a depth-first traversal. The neighbours of the root node 0 are first discovered
+(2 and 8). Then the neighbours of the most recently discovered node (8) are discovered (1 and 6) and so on recursively until all nodes
+are discovered. We use a stack so that we are always searching for the neighbours of the most recently discovered node, and then jumping
+back to previous nodes once such a path is exhausted. The result of the depth-first traversal is equivalent to the order of elements
+popped from the stack.</p>
