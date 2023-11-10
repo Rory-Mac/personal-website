@@ -21,7 +21,7 @@ and proving that \(f(x) = O(g(x))\) is the equivalent of classing our algorithm 
 linear, logarithmic, or polynomial time. We can use this equivalent process to study memory usage, where \(f(n)\) represents not
 the computational steps involved but rather the amount of memory used in the computation. Certain inputs may be significantly more or less computationally
 expensive than others, and so in studying the efficiency of our algorithms, we typically refer to best-case, average-case and worst-case time and
-space complexities.</p><br>
+space complexities.</p>
 <h4>Array</h4>
 <p> An array is a primitive data type with a linear ordering by index. It may be uni-dimensional or multi-dimensional, with either fixed
 or dynamic length. As a primitive data type, an array acts as a simple pointer to memory. Thus the memory address stored plus the
@@ -36,15 +36,16 @@ ordered making for a worst-case time complexity of \(O(n^2)\).</p>
 <p>More efficient algorithms such as the merge sort algorithm can reduce this complexity to \(O(nlog(n))\). Merge sort is a divide and
 conquer algorithm in which the input array is recursively broken down into subarrays until each subarray has only one element, which are
 then recursively merged to produce a single sorted array. The merge process involves iterating across the two subarrays to be merged. We
-index both arrays, compare elements, increment the index of the lesser element and insert it into the result. 
-</p><br>
+index both arrays, compare elements, increment the index of the lesser element and insert it into the result.</p>
 <h4>Stack</h4>
 <p>A stack is an abstract data type that wraps an array and forces last-in first-out data access. Elements can be pushed to the top of
 the stack, popped from the stack, or peeked from the top of the stack (without removal). The stack typically comes with a function to 
 check whether or not it is empty. A stack can be of a pre-determined fixed size, or can grow dynamically with the number of pushed elements.</p>
 <p><img src="/Assets/images/stack_simple.png" width="100%" height="100%"></p>
 <p>Stacks are used in memory storage for local procedures, backtracking for syntactic completion, non-recursive tree-traversal,
-depth-first and breadth-first walks, undo functionality in text editors, and of course, the call stack.</p><br>
+depth-first and breadth-first walks, undo functionality in text editors, and of course, the call stack. Stacks can be implemented to 
+restrict stack usage to stack operators only, or can be flexibile in also allowing random access to the internal stack element array.
+</p>
 <h4>Queue</h4>
 <p>A queue is an abstract data type that wraps an array and forces first-in first-out data access. Elements can be enqueued or 
 dequeued. Other methods that a queue implementation typically come with include checks for whether the queue is full or empty and a peek
@@ -53,7 +54,7 @@ method to check the value of the element at the front of the queue without deque
 <p>A queue is typically implemented not with an array but with another abstract data type such as a linked list to
 avoid shuffling all internally stored values when enqueueing or dequeueing values. Queues can be used as buffers. For instance, process wait
 and ready queues in OS schedulers, multithreaded application handling, signalling between asynchronous clock regions, and user actions on
-distributed system apps.</p><br>
+distributed system apps.</p>
 <h4>Linked List</h4>
 <p>A linked list is a data structure containing a linear set of data elements. Unlike an array, the ordering of elements in a linked
 list does not necessarily correspond to the ordering of elements in physical memory. Linked lists are composed of individual nodes which
@@ -65,7 +66,7 @@ stored in memory for each stored element.</p>
 <p>Doubly-Linked Lists are easily reversed by simply swapping the head and tail pointers. Singly-Linked lists require a few additional steps
 as visualised to the right of the above diagram. The current node sets the current node pointer to the previous node (which is initially
 null), the previous node pointer then catches up to the current pointer, which catches up to the next pointer (which was set to the 
-next node at the very beginning of the pointer shuffle).</p><br>
+next node at the very beginning of the pointer shuffle).</p>
 <h4>Tree</h4>
 <p>Trees are widely used abstract data types. Let's start with the binary search tree (BST), which has a maximum of two children
 per parent node, and maintains that all nodes in the left subtree of a node have values less than that node's value, and all nodes
@@ -111,3 +112,7 @@ discovered. </p>
 are discovered. We use a stack so that we are always searching for the neighbours of the most recently discovered node, and then jumping
 back to previous nodes once such a path is exhausted. The result of the depth-first traversal is equivalent to the order of elements
 popped from the stack.</p>
+<h4>Hash Table</h4>
+<p>
+
+</p>
