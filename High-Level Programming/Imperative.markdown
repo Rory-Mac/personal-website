@@ -4,24 +4,39 @@ title: Imperative Programming
 ---
 <h4>Imperative Programming</h4>
 <p>Imperative programming is a programming paradigm in which the sequence of steps that require execution by the computer map to the 
-sequence of steps we are explicity writing in code. When writing in an imperative language, we are essentially constructing algorithms.
-An algorithm is a finite set of rigorous instructions that transforms a set of inputs into a set of outputs. We seek to design algorithms
-that implement our desired input-output pairings with minimum run-time cost and minimum memory usage. It is typically the first paradigm 
-learnt by a programmer, who upon becoming rehearsed in the features of a given imperative language, begins moving towards implementation 
-of abstract data types and definition of their interfaces. An abstract data type is constructed from a combination of primitive data 
-types and access functions. Primitive data types include integers, characters, booleans, and arrays. Abstract data types include linked
-lists, dictionaries, trees, stacks, heaps, queues, graphs, and so on.</p> 
-<p>Big O notation is a mathematical notation used to classify the efficiency of our algorithms. For an algorithm we have constructed
-we denote the number of computational steps involved in processing an input of size \(x\) as \(f(x)\) and denote a comparison function \(g(x)\).
-We then say that "\(f(x)\) is big O of \(g(x)\)" which can be expressed as 
-\(f(x) = O(g(x)) \; \) as \(\; x \to \infty \). Big O notation translates to \( |f(x)| \le M(g(x))\) for all \(x \ge x_0\).
-This means that for some positive constant multiple of \(g(x)\) for sufficiently large \(x\), our function \(f(x)\) is strictly less 
-than equal to g\((x)\). Setting our comparison function to generic relationships such as \(g(x) = x,\;\) \(g(x) = log_2(x),\;\) \(g(x) = x^k\),
-and proving that \(f(x) = O(g(x))\) is the equivalent of classing our algorithm as an algorithm that, for an input of size \(n\), runs in
-linear, logarithmic, or polynomial time. We can use this equivalent process to study memory usage, where \(f(n)\) represents not
-the computational steps involved but rather the amount of memory used in the computation. Certain inputs may be significantly more or less computationally
-expensive than others, and so in studying the efficiency of our algorithms, we typically refer to best-case, average-case and worst-case time and
-space complexities.</p>
+sequence of steps we are explicity writing in code. When writing in an imperative language, what we are writing is an algorithm: a
+sequence of rigorous instructions defining an input-output map. We seek to design algorithms that are feasible and scalable,
+feasible in the sense that the algorithm will run within a desired time-frame and use a desirable amount of memory (e.g. nanoseconds as 
+opposed to megayears and megabytes as opposed to petabytes), and scalable in the sense that time taken and memory used does not massively 
+increase as the input size increases. To analyse algorithmic efficiency we use the concept of space-time complexity, a quantitative value
+describing how an algorithm's efficiency and memory usage scales with its input size.</p>
+<p>Space-time complexity is denoted with big O notation, so that 
+    \[ f(x) = O(g(x)), \; x \to \infty \] reads as \(f(x)\) is big O of \(g(x)\). Here, \(x\) denotes the size of the input and \(f(x)\)
+denotes the number of computational steps involved in determining its corresponding output. The comparison function \(g(x)\) is constrained
+by the property \( |f(x)| \le M(g(x))\) for some positive constant multiple \(M\) for all \(x \ge x_0 \;\). Thus, if \(f(x)\) is big O of 
+\(g(x)\) then \(f(x)\) is strictly less than or equal to some positive constant multiple of \(g(x)\). We typically seek to prove that 
+an algorithm is big O of some generic comparison function,
+    \[g(x) = x\]
+    \[g(x) = log_2x\]
+    \[g(x) = x^2\]
+    \[g(x) = x^k\]
+This allows us to assert that the algorithm's runtime/memory-usage is linear, logarithmic, quadratic, polynomial, etc., with respect to the size of its input.
+Our analysis is complicated by the fact that some inputs may be more efficient to process than others despite their equal size.
+This may be due to a property of the input itself or of the algorithm's current state. For example, let's consider an array that stores elements from
+left to right and removes elements from right to left. The array is of fixed size. If we attempt to store more elements than the array can hold, the 
+array is reallocated, meaning all elements are moved to a new area in memory of twice the size. Our algorithm simply inserts an element
+into the array.</p>
+<p>The best-case time complexity of this algorithm is \(O(1)\) when reallocation does not occur. The worst-case time
+complexity is \(O(n)\) when reallocation requires moving \(n\) elements to the newly allocated memory segment. 
+The more informal, average-case time complexity is \(O(1)\) because most insertion operations do not call for reallocation. And finally, the amortized 
+time complexity is \(O(1)\) because the \(O(n)\) reallocation occurs once for every \(n\) insertion operations and is thus effectively
+distributed across \(n\) insertion operations making for an \(O(n/n) = O(1)\) time complexity. Amortized time complexity can be thought 
+of as a more formal means of expressing an algorithm's average time complexity.</p>
+<p>Imperative programming is typically the first paradigm learnt by a programmer, who upon becoming rehearsed in an imperative-style
+language can begin to practice implementing abstract data types and defining their user-interfaces keeping space-time complexity in mind.
+An abstract data type (ADT) wraps primitive data types in access functions, creating an abstract interface around its underlying primitive components.
+Examples of primitive data types include integers, characters, booleans, and arrays. Examples of ADTs include stacks, queues, linked lists,
+hash tables, graphs and trees.</p>
 <h4>Array</h4>
 <p> An array is a primitive data type with a linear ordering by index. It may be uni-dimensional or multi-dimensional, with either fixed
 or dynamic length. As a primitive data type, an array acts as a simple pointer to memory. Thus the memory address stored plus the
@@ -113,7 +128,17 @@ are discovered. We use a stack so that we are always searching for the neighbour
 back to previous nodes once such a path is exhausted. The result of the depth-first traversal is equivalent to the order of elements
 popped from the stack.</p>
 <h4>Hash Table</h4>
+<p>A Hash Table is a data structure that allows for the storage and retrieval of data items in constant rather than linear time. Consider
+that to retrieve an element from an array, if the index of said element is unknown, takes on average \(n\) operations for \(n\) elements in
+the array. A hash table uses a hash function to associate the index of the element with the element itself, so that if we know the element,
+we know the index and can retrieve said element in constant time. To do this, the hash function takes the binary equivalent of the element,
+hashes it (maps input item to output index via a bijective mathematical function where each input maps to a singular output and for enough
+inputs all outputs are covered), and then collapses the output index into a suitable index range. Hash functions are not perfect, and so
+collisions occur. Collisions are cases where the hash function hashes items with the same index. Thus, we implement the hash table as 
+a dynamically allocated array of linked lists to store collisions. An ideal hash function minimises collisions and disperses collisions 
+equally across the index range.</p>
 <p><img src="/Assets/images/hash_table.png" width="100%" height="100%"></p>
-<p>
-
-</p>
+<p>In a simple hash table, a hash item 8 is hashed and stored at a given index as is. Alternatively, the hashed value can be distinct 
+from the item stored, with the hashed value acting as a key and the hashed item acting as that key's key-value. Often, when storing 
+key-values in a hash table, we will simultaneously store keys, values and key-value pairs in three distinct hash tables, for quick 
+retrieval of the key or value set.</p>
