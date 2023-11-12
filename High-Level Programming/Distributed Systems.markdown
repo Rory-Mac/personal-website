@@ -11,5 +11,6 @@ procedure call (RPC) calls for a procedure to be run on a networked device. It i
 communication channel between the requesting device and the networked device for the RPC to be queried and answered. In the discussion of
 distributed systems, an RPC typically refers to the delegation of the computation of a local query to a networked device, though the query
 might instead be processed by another process on the same device.</p>
+<p><img src="/Assets/images/distributed_systems_overview.png" width="100%" height="100%"></p>
 
 
