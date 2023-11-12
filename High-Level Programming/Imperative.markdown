@@ -37,10 +37,10 @@ language can begin to practice implementing abstract data types and defining the
 An abstract data type (ADT) wraps primitive data types in access functions, creating an abstract interface around its underlying primitive components.
 Examples of primitive data types include integers, characters, booleans, and arrays. Examples of ADTs include stacks, queues, linked lists,
 hash tables, graphs and trees.</p>
-<h4>Array</h4>
-<p> An array is a primitive data type with a linear ordering by index. It may be uni-dimensional or multi-dimensional, with either fixed
-or dynamic length. As a primitive data type, an array acts as a simple pointer to memory. Thus the memory address stored plus the
-value index multipled by the size of the value type stored by the array, will give the direct address of that item in memory. It can be 
+<h4>Arrays</h4>
+<p> An array is a primitive data type with a linear ordering by index. It may be uni-dimensional or multi-dimensional, and either fixed
+or dynamic in size. As a primitive data type, an array acts as a simple pointer to memory. Thus the memory address stored plus the
+value index multipled by the size of the value type stored by the array, will give direct address to that item in memory. It can be 
 helpful to color-code subsets of an array, and visualise numerical values as heights in a histogram.</p>
 <p><img src="/Assets/images/array1.png" width="100%" height="100%"></p>
 <p>There are myriad approaches to sorting arrays. Perhaps the simplest and most intuitive is that of the bubble sort sorting algorithm, which
@@ -52,7 +52,17 @@ ordered making for a worst-case time complexity of \(O(n^2)\).</p>
 conquer algorithm in which the input array is recursively broken down into subarrays until each subarray has only one element, which are
 then recursively merged to produce a single sorted array. The merge process involves iterating across the two subarrays to be merged. We
 index both arrays, compare elements, increment the index of the lesser element and insert it into the result.</p>
-<h4>Stack</h4>
+<p>Merge sort is an example of comparative sorting in which sorting involves the direct comparison of elements. There also exist 
+non-comparative sorting methods such as radix sort which examine and compare parts of elements rather than the elements themselves.
+Radix sort sorts elements by comparing their least-significant digits, then second-least, then third-least, and so on for all digits
+in the element of maximum length. It uses counting sort to quickly sort values of the currently sorted for order of magnitude (0-9), by
+storing the count of each occurrence in an array, and finding the array's prefix sum.</p>
+<p><img src="/Assets/images/array_techniques.png" width="100%" height="100%"></p>
+<p>Prefix sum is one of a number of array manipulation techniques that prove useful in a wide array of problems. Also of great use is
+binary search, the two-pointer technique, and the sliding-window, illustrated above. Array manipulation is also present in more esoteric
+fields of algorithmic problems, including low-level bit manipulation based on boolean algebra (arrays as vectors of bits) and dynamic 
+programming (arrays as a means of storage for partial solutions).</p>
+<h4>Stacks</h4>
 <p>A stack is an abstract data type that wraps an array and forces last-in first-out data access. Elements can be pushed to the top of
 the stack, popped from the stack, or peeked from the top of the stack (without removal). The stack typically comes with a function to 
 check whether or not it is empty. A stack can be of a pre-determined fixed size, or can grow dynamically with the number of pushed elements.</p>
@@ -61,7 +71,7 @@ check whether or not it is empty. A stack can be of a pre-determined fixed size,
 depth-first and breadth-first walks, undo functionality in text editors, and of course, the call stack. Stacks can be implemented to 
 restrict stack usage to stack operators only, or can be flexibile in also allowing random access to the internal stack element array.
 </p>
-<h4>Queue</h4>
+<h4>Queues</h4>
 <p>A queue is an abstract data type that wraps an array and forces first-in first-out data access. Elements can be enqueued or 
 dequeued. Other methods that a queue implementation typically come with include checks for whether the queue is full or empty and a peek
 method to check the value of the element at the front of the queue without dequeuing.</p>
@@ -70,7 +80,7 @@ method to check the value of the element at the front of the queue without deque
 avoid shuffling all internally stored values when enqueueing or dequeueing values. Queues can be used as buffers. For instance, process wait
 and ready queues in OS schedulers, multithreaded application handling, signalling between asynchronous clock regions, and user actions on
 distributed system apps.</p>
-<h4>Linked List</h4>
+<h4>Linked Lists</h4>
 <p>A linked list is a data structure containing a linear set of data elements. Unlike an array, the ordering of elements in a linked
 list does not necessarily correspond to the ordering of elements in physical memory. Linked lists are composed of individual nodes which
 store relevant values, linked singly or doubly by pointers. The dynamic nature of linked lists can save on memory usage when compared to
@@ -82,7 +92,7 @@ stored in memory for each stored element.</p>
 as visualised to the right of the above diagram. The current node sets the current node pointer to the previous node (which is initially
 null), the previous node pointer then catches up to the current pointer, which catches up to the next pointer (which was set to the 
 next node at the very beginning of the pointer shuffle).</p>
-<h4>Tree</h4>
+<h4>Trees</h4>
 <p>Trees are widely used abstract data types. Let's start with the binary search tree (BST), which has a maximum of two children
 per parent node, and maintains that all nodes in the left subtree of a node have values less than that node's value, and all nodes
 in the right subtree of a node have values greater than that node's value. The first operations to implement are node insertion and
@@ -108,7 +118,7 @@ child node does not exceed one. In the above visualisation, node depth is marked
 To balance an unbalanced BST, we can map the values discovered through an inorder traversal to an array and reconstruct a new BST from 
 its sorted values through a binary search. This is an expensive operation however. If balance requests are expected to be frequent,
 self-balancing trees such as AVL and Red-Black trees can be implemented instead.</p>
-<h4>Graph</h4>
+<h4>Graphs</h4>
 <p>The graph data structure, comprised of a set of vertices and edges, is typically implemented with a two-dimensional boolean array
 (if space complexity is of minimal concern) or a set of adjacency lists (equivalent to linked lists but in the context of a graph ADT)
 stored within a dynamically allocated array. This array can be fixed if the number of vertices in the graph is pre-determined and 
@@ -127,7 +137,7 @@ discovered. </p>
 are discovered. We use a stack so that we are always searching for the neighbours of the most recently discovered node, and then jumping
 back to previous nodes once such a path is exhausted. The result of the depth-first traversal is equivalent to the order of elements
 popped from the stack.</p>
-<h4>Hash Table</h4>
+<h4>Hash Tables</h4>
 <p>A Hash Table is a data structure that allows for the storage and retrieval of data items in constant rather than linear time. Consider
 that to retrieve an element from an array, if the index of said element is unknown, takes on average \(n\) operations for \(n\) elements in
 the array. A hash table uses a hash function to associate the index of the element with the element itself, so that if we know the element,
