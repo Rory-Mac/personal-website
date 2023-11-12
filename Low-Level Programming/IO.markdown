@@ -86,7 +86,7 @@ used to identify a physical device on a local network. It is a fundamental compo
 overseen by the IETF and the IANA. Two IP address formats exist IPv4 (e.g. 192.168.0.1) and IPv6 (e.g. 2001:0db8:85a3:0000:0000:8a2e:0370:7334).
 IPv6 was developed to address the limitations of the IPv4 address space. IP addresses can be public (globally routable) or private (locally routable).
 Regional Internet Registries (RIRs) manage public address assignment whilst simple home or office routers assign private addresses. Private IP addresses 
-can be translated to public IP addresses via the Network Address Translation (NAT) protocol. Management of th NAT protocol is the responsibility of the 
+can be translated to public IP addresses via the Network Address Translation (NAT) protocol. Management of the NAT protocol is the responsibility of the 
 router and router firewall at the network edge.
 </p>
 <p>The infrastructure of the internet itself is complex. The largest networks are termed Network Service Providers (NSPs) connected to one another via 

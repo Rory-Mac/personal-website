@@ -20,6 +20,3 @@ connecting the local area networks to the distributed system with a complex hier
 look-up services that cumulatively act to connect end-users with a service of choice. Then we can imagine a million amoeba like device
 clusters offering unique services to end-users as well as one another. Thus, we can conceptualise the internet as a distributed system
 whose service offered is itself the connection of systems and users.</p>
-
-
-
