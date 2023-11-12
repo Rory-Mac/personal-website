@@ -12,5 +12,14 @@ communication channel between the requesting device and the networked device for
 distributed systems, an RPC typically refers to the delegation of the computation of a local query to a networked device, though the query
 might instead be processed by another process on the same device.</p>
 <p><img src="/Assets/images/distributed_systems_overview.png" width="100%" height="100%"></p>
+<p>Distributed systems use a client-server or peer-to-peer model, as illustrated above. Consider the leftmost heuristic, which employs the
+client-server model. The outermost networked devices are end-users, clustered within local area networks. The internal spheroid cluster
+acts as a distributed system, delegating and responding to remote procedure calls made both internally from other servers and externally
+from end users. This simplified heuristic can be extended to give a big picture view of the internet. Imagine we replace the edges 
+connecting the local area networks to the distributed system with a complex hierarchy of load balancers, routing devices and device 
+look-up services that cumulatively act to connect end-users with a service of choice. Then we can imagine a million amoeba like device
+clusters offering unique services to end-users as well as one another. Thus, we can conceptualise the internet as a distributed system
+whose service offered is itself the connection of systems and users.</p>
+
 
 
