@@ -57,11 +57,20 @@ non-comparative sorting methods such as radix sort which examine and compare par
 Radix sort sorts elements by comparing their least-significant digits, then second-least, then third-least, and so on for all digits
 in the element of maximum length. It uses counting sort to quickly sort values of the currently sorted for order of magnitude (0-9), by
 storing the count of each occurrence in an array, and finding the array's prefix sum.</p>
-<p><img src="/Assets/images/array_techniques.png" width="100%" height="100%"></p>
-<p>Prefix sum is one of a number of array manipulation techniques that prove useful in a wide array of problems. Also of great use is
-binary search, the two-pointer technique, and the sliding-window, illustrated above. Array manipulation is also present in more esoteric
-fields of algorithmic problems, including low-level bit manipulation based on boolean algebra (arrays as vectors of bits) and dynamic 
-programming (arrays as a means of storage for partial solutions).</p>
+<p><img src="/Assets/images/array_techniques_1.png" width="100%" height="100%"></p>
+<p>The least obvious step in our counting sort is the last one, in which we traverse backwards through the item array and find each 
+item's corresponding pre-fixed item count as the index for its insertion into the resulting sorted array, before decreasing this pre-fixed
+item count. This ensures that the order of items with the same value for the currently sorted for digit is preserved.
+Having sorted our array, we can use binary search to search for an element in \(O(log_2n)\) time rather than \(O(n)\) time through index
+manipulation of a hi, lo and mid value. This technique, amongst other array manipulation techniques, prove useful in a wide array of 
+algorithmic problems. Also of use is the two-pointer and the sliding-window techniques.</p>
+<p><img src="/Assets/images/array_techniques_2.png" width="100%" height="100%"></p>
+<p>The two pointer technique allows for faster comparison of items in a sorted array than a naive brute-force comparison of all item pairs,
+as does the sliding-window technique. The sliding window technique is used anytime we wish to analyse contiguous subarrays of size \(k\).
+We do this by operating on the first \(k\) elements and then continuously removing the first element from the window and adding the next 
+element to the window until the array size terminates. Array manipulation is also present in more esoteric fields of algorithmic problems, 
+including low-level bit manipulation based on boolean algebra (arrays as vectors of bits) and dynamic programming (arrays as a means of
+storage for partial solutions).</p>
 <h4>Stacks</h4>
 <p>A stack is an abstract data type that wraps an array and forces last-in first-out data access. Elements can be pushed to the top of
 the stack, popped from the stack, or peeked from the top of the stack (without removal). The stack typically comes with a function to 
@@ -69,8 +78,7 @@ check whether or not it is empty. A stack can be of a pre-determined fixed size,
 <p><img src="/Assets/images/stack_simple.png" width="100%" height="100%"></p>
 <p>Stacks are used in memory storage for local procedures, backtracking for syntactic completion, non-recursive tree-traversal,
 depth-first and breadth-first walks, undo functionality in text editors, and of course, the call stack. Stacks can be implemented to 
-restrict stack usage to stack operators only, or can be flexibile in also allowing random access to the internal stack element array.
-</p>
+restrict stack usage to stack operators only, or can be flexibile in also allowing random access to the internal stack element array.</p>
 <h4>Queues</h4>
 <p>A queue is an abstract data type that wraps an array and forces first-in first-out data access. Elements can be enqueued or 
 dequeued. Other methods that a queue implementation typically come with include checks for whether the queue is full or empty and a peek
