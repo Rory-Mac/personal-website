@@ -160,3 +160,21 @@ equally across the index range.</p>
 from the item stored, with the hashed value acting as a key and the hashed item acting as that key's key-value. Often, when storing 
 key-values in a hash table, we will simultaneously store keys, values and key-value pairs in three distinct hash tables, for quick 
 retrieval of the key or value set.</p>
+<h4>Heaps</h4>
+<p>The heap data structure is an interesting data structure that is conceptualised as a complete binary tree but implemented as a
+dynamically allocated array, avoiding the use of pointer chains. It is a binary tree in the sense that each parent has a maximum of
+two children and it is a complete tree in the sense that all depth levels from the root node are filled except possibly the last, which
+is filled left to right. Unlike a binary search tree, the heap has no sequential order, instead it has what is referred to as the
+'heap property', that the value stored by any parent node is greater than or equal to that of its children (in the case of a max heap)
+or less than or equal to that of its children (in the case of a min heap).</p>
+<p><img src="/Assets/images/heap_data_structure.png" width="100%" height="100%"></p>
+<p>In order to traverse a traditional binary tree we dereference parent/child node pointers, but since the heap is implemented as an
+array, we can instead use simple array indexing methods as in the above diagram. To insert an element, we simply append the element to
+the end of the array, and perform a bubble-up operation, swapping the inserted value with its parent value recursively until it exists in
+a place that satifies the min or max heap property. To remove an element from the heap, we replace the value of that element with the 
+value of the last array element, before soft-deleting the last array element. We then bubble-up or bubble-down the over-written node to
+satisfy the heap property.</p>
+<p><img src="/Assets/images/heap_operations.png" width="100%" height="100%"></p>
+<p>Like the binary search tree, the heap data structure has \(O(log_2n)\) insertion and removal in the average and worst case. The 
+heap also allows for removal of the maximum/minimum element in logarithmic rather than linear time, as is the case with arrays and 
+search trees. Thus, the heap is used when any time we wish to be able to access the maximum/minimum element efficiently.</p>
