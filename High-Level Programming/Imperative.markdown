@@ -161,7 +161,7 @@ from the item stored, with the hashed value acting as a key and the hashed item 
 key-values in a hash table, we will simultaneously store keys, values and key-value pairs in three distinct hash tables, for quick 
 retrieval of the key or value set.</p>
 <h4>Heaps</h4>
-<p>The heap data structure is an interesting data structure that is conceptualised as a complete binary tree but implemented as a
+<p>The heap is an interesting data structure that is conceptualised as a complete binary tree but implemented as a
 dynamically allocated array, avoiding the use of pointer chains. It is a binary tree in the sense that each parent has a maximum of
 two children and it is a complete tree in the sense that all depth levels from the root node are filled except possibly the last, which
 is filled left to right. Unlike a binary search tree, the heap has no sequential order, instead it has what is referred to as the
