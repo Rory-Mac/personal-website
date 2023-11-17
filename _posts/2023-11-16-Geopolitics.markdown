@@ -49,7 +49,26 @@ by economic and human forces. The next heuristic to explore is one that encompas
 within these individual nations. What enables collectives comprised of millions of people to form, despite individual familiarity with
 only a small cohort of social peers.</p>
 <h4>Organisational Structures</h4>
-<p></p>
+<p>An organisational structure is a structure defining how individuals operate within a collective. What specialised subcomponents (that is,
+subgroups of individuals working serving a unique function to the broader collection) are needed to ensure that the collective is 
+self-sustaining with a higher chance of survival against the many other collectives to exist? A labor force, agricultural, industrial 
+and technological, drives the progression of the technological sophistication of the state and creates the common goods needed to sustain 
+the people that belong to it. A cultural identity assist this work ethic, which is why wartime motivates the consolidation of core cultural
+beliefs. A governing component is also necessary to concretise the laws by which the state is governed, setup in hierarchical fashion to 
+regulate aspects of industry at all levels. Of course, law is meeaningless without enforcement, and so an internal policing force and 
+external military is used to enforce such. There may be levels of cohesion between the citizens a military protects and the military iteslf,
+subdivided into the official national armed forces, private military contractors and militia.</p>
+<p>The agency problem arises when low cohesion between a subcomponent and the collective or subcomponents within the collective threatens
+the growth and stability of that collective. In less abstract terms, such may look like widespread protests, autocracy or a military coup.
+Another blight on the collective is stagnation and the effect of bureaucracy, where the passing of legislature is upheld by state officials
+as opposed to elected representatives, leading to a pernicious drift between the interests of state and individual. The ensuing 
+administerial incompetence can be quite absurd, as was the case of a seal with headphones.</p>
+<p>Additionally, there will exist some apparatus for the dissemination of information, which in the modern world consists of news broadcast,
+social media and the internet. It is in this subset of the collective that the struggle for hearts and minds occurs, with competing 
+narratives vying to instill a given perception of the world in its receivers. This may be artificial in the form of advertisement and 
+propaganda, or natural in the form of competing viewpoints on current issues.</p>
+<p>The next step is to analyse the structure of the narratives themselves as the propagate through and across united collectives. This 
+is explored in a separate blog post on narrative maps.</p>
 <h4>References</h4>
 <p><ol>
 <li><a href="https://en.wikipedia.org/wiki/List_of_wars_by_death_toll">War-related deaths across history</a></li>
@@ -58,15 +77,5 @@ only a small cohort of social peers.</p>
 <li><a href="https://www.runningreality.org/">Interactive historical maps</a></li>
 <li><a href="http://globe.cid.harvard.edu/">Global Trade</a></li>
 <li><a href="https://en.wikipedia.org/wiki/List_of_largest_empires">Scope and scale of Historical Empires</a></li>
+<li><a href="https://www.youtube.com/watch?v=JN3KPFbWCy8">Scope and scale of Historical Empires</a></li>
 </ol></p>
-
-<!--
-        organisational structures and subcomponents
-        what maintains and breaks cohesion (4-star of hatred)
-        new incentives, economic, military, diplomatic, the agency problem
-        struggle for hearts and minds, hypocrisy, peloponnesian war, state over individual, individual over state
-        new heuristic: narrative forces and perspectives of the world
-        incorporate narrative structure document
-        what is driving the narrative forces between individuals
-        how does it cascade up to the global and down to the individual?
--->

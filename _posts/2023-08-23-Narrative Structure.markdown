@@ -19,11 +19,3 @@ narrative medium.<img src="/Assets/images/narrative_network_throughput.png" widt
 structure beneath human narrative and experience would exist as the abstract memory structure derived from the set of all individual memory structures. These individual
 memory structures form from internal narratives derived from the agent's perception of its environment. Similarly, we can imagine a collective memory structure that forms
 from the perception of the set of all narratives being transmitted within the collective.</p>
-
-<!--
-universal experiences map to universal narratives
-thus we can approximate the root of this structure, representing collective experience beforing it branches into the obscurity of individual experience
-finite state diagram
-predictabilitiy, unpredictability, transitions between the two
-predictabilitiy, unpredictability, pleasure, pain, transitions between the two
--->
