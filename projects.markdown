@@ -9,7 +9,7 @@ title: Projects - RoryMac Blog
     </div>
     <div class="description-A">
         <a href="/Projects/LiM-Virtual-Platform.html"><h4 class="project-tag">LiM-Virtual-Platform</h4></a>
-        <p class="projects-page-text">A R64I-compliant hardware architecture I prototyped with VHDL, and synthesised to an Arty-A7 FPGA
+        <p class="projects-page-text">An R64I-compliant hardware architecture prototyped with VHDL and synthesised to an Arty-A7 FPGA
         development board using the Vivado Design Suite. Includes python-implemented RISC-V assembler.</p>
         <a class="project-tag" href="/Projects/Lim-Virtual-Platform.html">See More ></a>
     </div>

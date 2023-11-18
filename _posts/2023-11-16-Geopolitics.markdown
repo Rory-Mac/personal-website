@@ -3,8 +3,8 @@ layout: narrow
 title: Geopolitics
 ---
 <h4>Geopolitics</h4>
-<p>Geopolitics is the study of the effect of Earth's geography (land, culture, and resources) over international relations (the interactions
-between nations and their people). This blog post will attempt to compile some heuristics that can be used to view the world through a
+<p>Geopolitics is the study of the effect Earth's geography (land, culture, and resources) has over international relations (interactions
+between nations and their people). This post will attempt to compile a set of heuristics that can be used to view the world through a
 geopolitical lens.</p>
 <h4>The drawing and redrawing of historical lines</h4>
 <p>Imagine a map of the world today. The most objective aspects of this map, prior to the drawing of any geographical lines, 
@@ -48,26 +48,41 @@ fragmenting and conjoing with our nations to form empires.</p>
 by economic and human forces. The next heuristic to explore is one that encompasses the driving forces of allowing for social cohesion
 within these individual nations. What enables collectives comprised of millions of people to form, despite individual familiarity with
 only a small cohort of social peers.</p>
-<h4>Organisational Structures</h4>
-<p>An organisational structure is a structure defining how individuals operate within a collective. What specialised subcomponents (that is,
-subgroups of individuals working serving a unique function to the broader collection) are needed to ensure that the collective is 
-self-sustaining with a higher chance of survival against the many other collectives to exist? A labor force, agricultural, industrial 
-and technological, drives the progression of the technological sophistication of the state and creates the common goods needed to sustain 
-the people that belong to it. A cultural identity assist this work ethic, which is why wartime motivates the consolidation of core cultural
-beliefs. A governing component is also necessary to concretise the laws by which the state is governed, setup in hierarchical fashion to 
-regulate aspects of industry at all levels. Of course, law is meeaningless without enforcement, and so an internal policing force and 
-external military is used to enforce such. There may be levels of cohesion between the citizens a military protects and the military iteslf,
-subdivided into the official national armed forces, private military contractors and militia.</p>
-<p>The agency problem arises when low cohesion between a subcomponent and the collective or subcomponents within the collective threatens
-the growth and stability of that collective. In less abstract terms, such may look like widespread protests, autocracy or a military coup.
-Another blight on the collective is stagnation and the effect of bureaucracy, where the passing of legislature is upheld by state officials
+<h4>Structures of Governance</h4>
+<p>A structure of governance, not unlike an organisational structure, is a structure that underlies a collective group of individuals,
+defining how responsibilities are delegated to subgroups within that collective, and how information flows therein. Selective pressures
+apply to these collectives, which disintegrate if not specialised for stability and expansion. We as humans are primed to want for social
+cohesion, for the strength of relationships between ourselves and our community and between members within our community, for the purpose
+of survival. The emergence of communal organisms stems from this fact. Individuals act and at times sacrifice for the benefit of the 
+collective, and in turn they receive the wealth of collective cultural knowledge and reaps the safety benefits of a cohese collective.
+National, ethnic and cultural identities may comprise groups in the order of millions if not billions. How can this be if humans are limited 
+to interaction with a closer community not in excess of 150 individuals? Group identities stack in hierarchical fashion from the local to
+the global. Individuals exist within family units, friend groups, with colleagues, with hobbyist circles, etc. These social pockets stack 
+to form the global environment, lowering the resolution of group dynamics to that of race, ethnicity, nationality, and religion.</p>
+<p>We can refer to a group of individuals under a singular system of governance as a state, subdivided into the components necessary for
+survival and expansion, just as organisms engage in symbiotic relationships for the purpose of survival and proliferation. At all levels,
+there is a process by which entities with selectively advantageous traits are promoted. Social norms promote at all levels the authority of
+individuals who have skills and charactersitics perceived to be of value. Groups, businesses, organisations, movemements, etc. behave the
+same way, with increased trade and monetary flow to entities that are needed and are of value. This discussion is painting an idealic
+picture of the nature of symbiotic relationships between group entities. Parasitism and conflict also exist as additional internal pressures
+to a state apparatus. Examples include looting and rioting, militiary coups, autocracy and widespread protest. Bureaucracy is another 
+blight that lead to the internal decay of a state entity, where the passing of legislature is upheld by state officials
 as opposed to elected representatives, leading to a pernicious drift between the interests of state and individual. The ensuing 
-administerial incompetence can be quite absurd, as was the case of a seal with headphones.</p>
-<p>Additionally, there will exist some apparatus for the dissemination of information, which in the modern world consists of news broadcast,
-social media and the internet. It is in this subset of the collective that the struggle for hearts and minds occurs, with competing 
-narratives vying to instill a given perception of the world in its receivers. This may be artificial in the form of advertisement and 
-propaganda, or natural in the form of competing viewpoints on current issues.</p>
-<p>The next step is to analyse the structure of the narratives themselves as the propagate through and across united collectives. This 
+administerial incompetence can be quite absurd, as in the case of a seal with headphones.</p>
+<p>Necessary aspects of a sufficiently large collective bound by a cultural identity include a labor force, a system of governance, a
+military and internal policing force. The labor force progresses the technological sophistication of the state and manufacture the goods
+needed to sustain the people that belong to it. A system of governance constructs law, regulates industry and creates policy to concretize 
+the broader mission statement of the state (economic strategy, budgeting, foreign policy, etc). Military, combined with intelligence
+agencies, spy networks etc, as well as diplomatic envoys and ambassadors, deal with foreign interests both conducive and non-conducive to 
+the interests of the state. An internal policing force enforces law, which is of course meaningless if not enforced. These aspects of the 
+state might be central to the state itself, or more symbiotic ane external in nature. For instance a country's military may consist of an 
+official national defense as well as private military contractors and civilian militia. Industry is similarly tightly bound to foreign 
+economies, with the balance between net importation and exportation acting as an economic profile to show dependencies between states.</p>
+<p>Additionally, there will inevitably exist some apparatus for the dissemination of information within a state, which in the modern world
+consists of news broadcast, social media and the internet. It is in this subset of the collective that the struggle for hearts and minds 
+occurs, where competing narratives vie to instill a suitable perception of the world in its receivers. This may be natural if in the form
+of competition between differing viewpoints on current issues, or artificial if in the form of advertisement and propaganda.</p>
+<p>We can go on to analyse the structure of the narratives themselves as they propagate through and across united collectives. This 
 is explored in a separate blog post on narrative maps.</p>
 <h4>References</h4>
 <p><ol>
