@@ -20,3 +20,14 @@ connecting the local area networks to the distributed system with a complex hier
 look-up services that cumulatively act to connect end-users with a service of choice. Then we can imagine a million amoeba like device
 clusters offering unique services to end-users as well as one another. Thus, we can conceptualise the internet as a distributed system
 whose service offered is itself the connection of systems and users.</p>
+<h4>Load Balancing</h4>
+<p><img src="/Assets/images/load_balancing.png" width="100%" height="100%"></p>
+<p></p>
+<!--
+articulate diagram
+what is a forward proxy, with examples
+what is a reverse proxy, with examples
+what is load balancing
+how does load balancing allow for fault tolerance and graceful degradation
+vertical scaling vs horizontal scaling (more computer per node, versus mmore nodes)
+-->

@@ -106,15 +106,6 @@ title: Explore - RoryMac Blog
                 <p>Object-Oriented</p>
             </div>
         </div></a>
-        <a class="no-underline" href="/High-Level Programming/web development.html">           
-        <div class="portal zoom small">
-            <div class="portal-image">
-                <img style="background-color: black" src="/Assets/images/html_progression_4.png">
-            </div>
-            <div class="portal-title">
-                <p>Web Development</p>
-            </div>
-        </div></a>
         <a class="no-underline" href="/High-Level Programming/Distributed Systems.html">
         <div class="portal zoom small">
                 <div class="portal-image">
@@ -122,6 +113,15 @@ title: Explore - RoryMac Blog
                 </div>
             <div class="portal-title">
                 <p>Distributed Systems</p>
+            </div>
+        </div></a>
+        <a class="no-underline" href="/High-Level Programming/web development.html">           
+        <div class="portal zoom small">
+            <div class="portal-image">
+                <img style="background-color: black" src="/Assets/images/html_progression_4.png">
+            </div>
+            <div class="portal-title">
+                <p>Web Development</p>
             </div>
         </div></a>
         <a class="no-underline" href="/High-Level Programming/Encryption.html">
