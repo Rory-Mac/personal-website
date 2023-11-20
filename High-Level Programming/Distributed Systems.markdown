@@ -33,4 +33,19 @@ reroute client requests elsewhere. In the ideal case, the functionality of a ser
 servers. This is referred to as graceful degradation. If the compute of the server cluster does not meet the processing requirements of 
 the average number of client requests, we can scale the cluster vertically (more compute per server) or horizontally (more servers).</p>
 <p><img src="/Assets/images/static_load_balancing_methods.png" width="100%" height="100%"></p>
+<p>Load balancing methods can be static (computed without regard for server state) or dynamic (computed with regard for server state).
+Static methods include round-robin, weighted round-robin and IP-hash. In the round-robin method, the load balancer routes client-requests
+to servers by looping through available servers in sequence. Weight round-robin attributes servers with a weight to indicate how many 
+client-requests they should be allocated before moving to the next server in sequence. Weighted round-robin allows for the allocation 
+of client-requests to servers in proportion to their pre-determined processing capabilities. IP-hash uses hashing to route all 
+client-requests from a particular client to a given server, to allow for the establishment of a client-server session.</p>
 <p><img src="/Assets/images/dynamic_load_balancing_methods.png" width="100%" height="100%"></p>
+<p> Static load-balancing methods have less overhead than their dynamic counterparts, but are likely to be less computationally efficient
+by not taking the state of each server into account. Dynamic load balancing methods instead query servers to retrieve aspects of their 
+current state, such as resource usage, current connections, or a running average of response times to recent queries. This allows for 
+the load balance to balance dynamically with information not known prior to deployment of the system. Real-world load balancers will use
+combination of the above algorithms, tailored to the features and requirements of the specific application served by the server cluster.</p>
+<p>As an example, consider an ecommerce platform with a product directory, a shopping cart and a checkout function. A load balancer may 
+redirect product queries to a server cluster serving product media (text descriptions, product images, pdf product manuals, etc) using 
+a weighted round-robin method, while redirecting cart and checkout queries to an independent server cluster using a combination of the IP
+hash and least-connection load-balancing methods.</p>
