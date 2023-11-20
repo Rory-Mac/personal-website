@@ -30,11 +30,7 @@ across application servers to ensure an evenly distributed workload.</p>
 <p>Load balancing has additional benefits beyond even work distribution. Load balancers can help ensure that the provision of a software
 service by a server cluster is fault-tolerant, so that if any one server fails, the load balancer can detect the network failure and 
 reroute client requests elsewhere. In the ideal case, the functionality of a server cluster is proportional to the number of working
-servers. This is referred to as graceful degradation.</p>
-<!--
-what is a forward proxy, with examples
-what is a reverse proxy, with examples
-what is load balancing
-how does load balancing allow for fault tolerance and graceful degradation
-vertical scaling vs horizontal scaling (more computer per node, versus mmore nodes)
--->
+servers. This is referred to as graceful degradation. If the compute of the server cluster does not meet the processing requirements of 
+the average number of client requests, we can scale the cluster vertically (more compute per server) or horizontally (more servers).</p>
+<p><img src="/Assets/images/static_load_balancing_methods.png" width="100%" height="100%"></p>
+<p><img src="/Assets/images/dynamic_load_balancing_methods.png" width="100%" height="100%"></p>
