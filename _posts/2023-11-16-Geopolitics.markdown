@@ -3,27 +3,27 @@ layout: narrow
 title: Geopolitics
 ---
 <h4>Geopolitics</h4>
-<p>Geopolitics is the study of the effect Earth's geography (land, culture, and resources) has over international relations (interactions
-between nations and their people). This post will attempt to compile a set of heuristics that can be used to view the world through a
-geopolitical lens.</p>
+<p>Geopolitics is the study of the effect Earth's geography has over international relations, and how land, resources and human behaviour
+effect the establishment of and interaction between nations and their people. This post will attempt to compile a set of heuristics used 
+to view the world through a geopolitical lens.</p>
 <h4>The drawing and redrawing of historical lines</h4>
-<p>Imagine a map of the world today. The most objective aspects of this map, prior to the drawing of any geographical lines, 
-are the features of the Earth itself, the continents, oceans, biomes, mountains and river systems. Of course, we as humans tend to cluster
-around and seek influence over regions of abundance. Civilisations to emerge without the instigation of pre-existing civilisations, but
-instead through a gradual process of cultural transition, are referred to as cradles of civilisation. Characteristic of cradles of
-civilisation, as distinct from nomadic hunter-gatherer tribes, include the written word, agricultural practice, urban-dwelling spaces
-and monuments.</p>
-<p>The catalyst for the advent of such a civilisation, at the very least, is a land abundant enough to allow for such.
-There are six cradles of civilisation each of which are paired with a unique and abundant land, Mesopotamia (the fertile crescent),
-Ancient Egypt (the Nile), Ancient India (the Indus and the Ghaggar-Hakra), Ancient China (the Yellow River), the Caral-Supe of now 
-modern Peru (the Fortaleza, the Pativilca, and the Supe), and the Olmec (tropical lowlands beside the gulf of mexico). Bountiful river
-systems offered these ancient civilisations a source of food, land for agriculture, and a means of transport for both
-people and material goods, enabling for the expansion of and simultaneous trade between peoples of the region.</p>
-<p>But why in these six cradles of civilisation and not elsewhere? Civilisations may not have been able to spontaneously arise despite
-a being mostly suitable due to a number of small but signficant preventative factors, such as a harsh ecology dissuading the advent 
-of (initially) labor intensive farming, low population density preventing the urbanisation of people, and geographic isolation meaning
-suitable sites just hadn't been explored. By the time these sites were explored, settlers came with their pre-existing culture and
-agricultural practices, having stemmed through some number of civilisation steps and branches, from one of the six cradles of civilisation.</p>
+<p>Imagine a map of the world today. The most objective components of this map, prior to the drawing of any geographical lines, 
+are the features of the Earth itself, the continents, oceans, biomes, mountains and river systems. We as humans seek regions of 
+abundance. Abundance gives us satiation in the short-term, through the availability of needed resources, and growth in the long-term,
+by allowing energy to be expended on the discovery and development of new cultural and technological practices. The Cradles of Civilisation
+are the civilisations that emerged naturally from the developing practices of nomadic hunter-gatherer tribes, of which there are six. All
+Cradles of Civilisation emerged in regions of abundance, and were characterised by agriculture, urban-dwellings, monument erection and use
+of the written word. This includes Ancient Mesopotamia and the fertile crescent, Ancient Egypt and the Nile, Ancient India, the
+Indus and the Ghaggar-Hakra, Ancient China and the Yellow River, the Caral-Supe, the Fortaleza, the Pativilica and the Supe, and finally,
+the Olmecs and the tropical lowlands beside the gulf of Mexico.</p>
+<p>These river systems and coastal regions gave humans a reliable source of aquatic food, wildlife, and alluvial soil for agriculture. 
+They also provided a means of transport, allowing humans to expand across a coast or river bank while maintaining a communal identity 
+through frequent trade and travel. Other candidates for early civilisation may never have been realised due to a number of preventative
+factors which include geographic isolation, harsh ecologies and temperamental climates (discouraging labor-intensive agricultural practice),
+mountainous topographies (causing low population density and discouraging urbanisation), and the frequency of natural disaster.</p>
+<!--
+How did the cradles of civilisation rise and fall?
+-->
 <p>Developing language and technology and culture in these cradles of civilisation allowed for expansion without fragmentation, through
 trade, exploration, and of course, conflict. Settlements promote trade, promotes exploration for goods to trade, promotes settlements in
 new areas forging new cultural and ethnic identities, promotes more trade, as well as conflict. For conflict to arise, there has to be an
