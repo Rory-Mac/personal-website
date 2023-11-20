@@ -21,10 +21,17 @@ look-up services that cumulatively act to connect end-users with a service of ch
 clusters offering unique services to end-users as well as one another. Thus, we can conceptualise the internet as a distributed system
 whose service offered is itself the connection of systems and users.</p>
 <h4>Load Balancing</h4>
+<p>Consider that internet traffic routes asynchronously from a client cluster to a server cluster, through a hierarchy of routers maintained
+by a hierarchy of internet service providers. At the network edge, client-internet or server-internet, there may exist proxies. Proxies
+are servers that manipulate rather than process requests. Forward proxies manipulate requests on the client-side, reverse proxies manipulate
+requests on the server-side. The most prominent example of a reverse proxy is that of the load balancer, which reroutes client requests
+across application servers to ensure an evenly distributed workload.</p>
 <p><img src="/Assets/images/load_balancing.png" width="100%" height="100%"></p>
-<p></p>
+<p>Load balancing has additional benefits beyond even work distribution. Load balancers can help ensure that the provision of a software
+service by a server cluster is fault-tolerant, so that if any one server fails, the load balancer can detect the network failure and 
+reroute client requests elsewhere. In the ideal case, the functionality of a server cluster is proportional to the number of working
+servers. This is referred to as graceful degradation.</p>
 <!--
-articulate diagram
 what is a forward proxy, with examples
 what is a reverse proxy, with examples
 what is load balancing
