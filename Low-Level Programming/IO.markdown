@@ -29,6 +29,10 @@ then re-initiates the idle state. Packet transmission over asynchronous channels
 interrupts from peripheral devices (keyboards, monitors, attached processing units, network interface cards, etc). When creating these data
 channels we have to consider factors of compatibility between the sending and receiving devices. This includes ensuring compatible voltage 
 levels (encoding logical high, logical low and other signal values), baud rate (bits per second), data formatting and packet formatting.</p>
+<p><img src="/Assets/images/asynchronous_heuristic.png" width="100%" height="100%"></p>
+<p>We can think of asynchronous transmission in a more abstract sense, as two cores of computation producing and consuming packet data
+over an asynchronous channel. The system is overwhelmed if the rate at which packets are produced exceeds the rate at which they are
+transferred or consumed. Packets can be queued to an extent, and then dropped, if bottle-necked at the sending or receiving edge.</p>
 <h4>Universal Serial Bus (USB)</h4>
 <p>Like our more primitive sender/receiver, data exchange in the USB standard consists of the asynchronous transfer of packets across an
 otherwise idle channel. Buffers exist on either side of this channel to allow for the processing of asynchronous signals. In type-A USB,
