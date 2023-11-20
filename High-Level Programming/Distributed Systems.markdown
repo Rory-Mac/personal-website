@@ -49,3 +49,6 @@ combination of the above algorithms, tailored to the features and requirements o
 redirect product queries to a server cluster serving product media (text descriptions, product images, pdf product manuals, etc) using 
 a weighted round-robin method, while redirecting cart and checkout queries to an independent server cluster using a combination of the IP
 hash and least-connection load-balancing methods.</p>
+<p>Load-balancing does not just occur on the client-server network edge. For example, network load-balancers are used by internet service
+provides to optimally route larger amounts of network traffic across the internet. Global server load balancers may be used to route
+application-specific traffic across a distributed system that spans multiple local networks.</p>
