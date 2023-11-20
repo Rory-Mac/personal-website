@@ -106,10 +106,19 @@ title: Explore - RoryMac Blog
                 <p>Object-Oriented</p>
             </div>
         </div></a>
-        <a class="no-underline" href="/High-Level Programming/Distributed Systems.html">
+        <a class="no-underline" href="/High-Level Programming/Computer Networks.html">
         <div class="portal zoom small">
                 <div class="portal-image">
-                    <img style="background-color: black" src="/Assets/images/network_portal.png">
+                    <img style="background-color: black" src="/Assets/images/computer_networks_portal.png">
+                </div>
+            <div class="portal-title">
+                <p>Computer Networks</p>
+            </div>
+        </div></a>
+        <a class="no-underline" href="/High-Level Programming/Distributed Systems.html">   
+        <div class="portal zoom small">
+                <div class="portal-image">
+                    <img style="background-color: black" src="/Assets/images/distributed_systems_portal.png">
                 </div>
             <div class="portal-title">
                 <p>Distributed Systems</p>
