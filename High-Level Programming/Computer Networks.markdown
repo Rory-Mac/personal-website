@@ -3,6 +3,13 @@ layout: narrow
 title: Computer Networks
 ---
 <h4>Computer Networks</h4>
+<!--
+(Physical/Data-Link/Network-Access Layer): ethernet, wi-fi, etc
+explain how OSI and TCP/IP model is hierarchy of software abstractions atop physical/data-link layer, explain packet encapsulation
+(Network/Internet Layer): ARP, IP, ICMP
+(Transport Layer): TCP, UDP
+(Application Layer): DNS, SMTP, FTP, Telnet, SMTP, HTTP
+-->
 <p>The internet is a network of networks through which bits are transmitted to and from connected devices. We humans cannot communicate in bits. This 
     is true both biologically and digitally, and so we apply a hierarchy of compressions and communication protocols in both cases. In terms of 
     biology, this looks something like sensory memory compressed into an audition-based declarative memory transmitted via an electrical and chemical layer 

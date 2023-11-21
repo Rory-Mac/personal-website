@@ -4,50 +4,38 @@ title: Geopolitics
 ---
 <h4>Geopolitics</h4>
 <p>Geopolitics is the study of the effect Earth's geography has over international relations, and how land, resources and human behaviour
-effect the establishment of and interaction between nations and their people. This post will attempt to compile a set of heuristics used 
-to view the world through a geopolitical lens.</p>
+effect the establishment of and interaction between nations and their people. This post will attempt to compile heuristics that help us 
+see the world through a geopolitical lens.</p>
 <h4>The drawing and redrawing of historical lines</h4>
 <p>Imagine a map of the world today. The most objective components of this map, prior to the drawing of any geographical lines, 
 are the features of the Earth itself, the continents, oceans, biomes, mountains and river systems. We as humans seek regions of 
 abundance. Abundance gives us satiation in the short-term, through the availability of needed resources, and growth in the long-term,
-by allowing energy to be expended on the discovery and development of new cultural and technological practices. The Cradles of Civilisation
-are the civilisations that emerged naturally from the developing practices of nomadic hunter-gatherer tribes, of which there are six. All
-Cradles of Civilisation emerged in regions of abundance, and were characterised by agriculture, urban-dwellings, monument erection and use
+by allowing energy to be expended on the discovery and development of new cultural and technological practices. The cradles of civilisation,
+of which there are six, are the civilisations that emerged naturally from the developing practices of nomadic hunter-gatherer tribes. All
+cradles of civilisation emerged in regions of abundance, and were characterised by agriculture, urban-dwellings, monument erection and use
 of the written word. This includes Ancient Mesopotamia and the fertile crescent, Ancient Egypt and the Nile, Ancient India, the
-Indus and the Ghaggar-Hakra, Ancient China and the Yellow River, the Caral-Supe, the Fortaleza, the Pativilica and the Supe, and finally,
-the Olmecs and the tropical lowlands beside the gulf of Mexico.</p>
+Indus and the Ghaggar-Hakra, Ancient China and the Yellow River, the Caral-Supe and the Fortaleza, the Pativilica and the Supe, and finally,
+the Olmecs and the tropical lowlands of the gulf of Mexico.</p>
 <p>These river systems and coastal regions gave humans a reliable source of aquatic food, wildlife, and alluvial soil for agriculture. 
-They also provided a means of transport, allowing humans to expand across a coast or river bank while maintaining a communal identity 
+They also provided a means of transport, allowing humans to expand across a coast or river bank whilst maintaining a communal identity 
 through frequent trade and travel. Other candidates for early civilisation may never have been realised due to a number of preventative
-factors which include geographic isolation, harsh ecologies and temperamental climates (discouraging labor-intensive agricultural practice),
-mountainous topographies (causing low population density and discouraging urbanisation), and the frequency of natural disaster.</p>
-<!--
-How did the cradles of civilisation rise and fall?
--->
-<p>Developing language and technology and culture in these cradles of civilisation allowed for expansion without fragmentation, through
-trade, exploration, and of course, conflict. Settlements promote trade, promotes exploration for goods to trade, promotes settlements in
-new areas forging new cultural and ethnic identities, promotes more trade, as well as conflict. For conflict to arise, there has to be an
-interest in conflict, whether it be economic in the acquisition of resources, or in the perceived threat of other nations and peoples 
-against one's own. The cohesion needed to derive large collectives from individual communal entities is based in some sort of identity,
-whether it be national, ethnic or religious. These perceptions of social cohesion can create evolving cultures that last thousands of years,
-despite the turmoil of natural disaster and conflict.</p>
-<p>In any case, we can imagine that the advent of civilisation occurred in mutiple pockets of abundance around the 
-world, leading to technological development, incentivising broader trade and culture and exploration, leading to the establishment of 
-nations across the world in fierce competition with one another, drawing and redrawing historical lines of influence through agreement
-or force. As technology advances, the resources we compete for evolve in their sophistication, but the competition itself, as well as 
-the conflict it begets, remains the same, whether it be wood, food, olive oil, gold, iron, steel, and slaves, in the ancient world, or 
-crude oil fields and mineral reserves for silicon chip fabrication in the modern world. The foundation for war is economics. If a nation
-has the reserves, the manufacturing capacity, the industrial output, the will of its people and the opportunity for gain through military
-action, in all likelihood, it will seek to provoke war.</p>
-<p>Historical lines are shaped both by conflict and natural disaster. The three kingdoms war saw 70% of ancient China decimated, World War
-II saw some 70 million people killed, through combat, famine, and disease, the prospect of nuclear war threatens global deaths summing to
-a 63% reduction in global population. Ancient floods reshaped entire regions, the plague of Justinian resulting in a population reduction
-of 50%, as did the bubonic plague. Across history nations are rising and falling, expanding,
-fragmenting and conjoing with our nations to form empires.</p>
-<p>Thus we can conceptualise a geopolitical overlay onto the world map as a set of amoeboid like nation-states, with movements motivated
-by economic and human forces. The next heuristic to explore is one that encompasses the driving forces of allowing for social cohesion
-within these individual nations. What enables collectives comprised of millions of people to form, despite individual familiarity with
-only a small cohort of social peers.</p>
+factors, including geographic isolation, harsh ecologies and temperamental climates (discouraging labor-intensive agricultural practice),
+mountainous topographies (causing low population density that discourages urbanisation), and regions of frequent natural disaster.
+Cultural knowledge has a compounding effect, growing exponentially with respect to the number of generations passed for which this 
+knowledge has been preserved, inherited and extended upon.</p>
+<p><img src="/Assets/images/compounding_culture.png" width="100%" height="100%"></p>
+<p>The Sumerians of Ancient Mesopotamia developed the wheel, the sail, irrigation techniques, cuneiform literature, ziggurat temples, social
+stratification (upper, middle, lower and enslaved). The Ancient Egyptians, used pulleys, ramps and levers, developed papyrus paper, pottery
+and rope truasses, and constructed the Sphinx and the great pyramids. We have looked at the factors contributing to the rise of these great
+civilisations, but not factors contributing to their fall.</p>
+<p>The greatest historical threats to a civilisation appear to be conflict, famine, plague and natural disaster. The three kingdoms war
+and consequent mass famine and infectious disease, saw some 36,000,000 to 40,000,000 million people killed, approximately 20% of the 
+global population. The black death was estimated to have caused 75,000,000 to 200,000,000 fatalaties, and the plague of Justinian wiped
+out 25%-60% of European inhabitants. The Yellow River flood killed an estimated 2,000,000 people and the Bhola Cycle of East Pakistan/West
+India an estimated 500,000 people. The civilisations we have looked at form and remain bound by national, ethnic and religious identities.
+Thus we can conceptualise the world map as having a geopolitical overlay comprised of amoeboid like nation-states, which rise and fall,
+spread and recede, fragment and combine, continuously drawing and redrawing historical lines in accordance with the military, industrial
+and political strength of nations across history.</p>
 <h4>Structures of Governance</h4>
 <p>A structure of governance, not unlike an organisational structure, is a structure that underlies a collective group of individuals,
 defining how responsibilities are delegated to subgroups within that collective, and how information flows therein. Selective pressures
@@ -91,6 +79,9 @@ is explored in a separate blog post on narrative maps.</p>
 <li><a href="https://www.worldhistorymaps.info/">Changing nature of historical maps</a></li>
 <li><a href="https://www.runningreality.org/">Interactive historical maps</a></li>
 <li><a href="http://globe.cid.harvard.edu/">Global Trade</a></li>
-<li><a href="https://en.wikipedia.org/wiki/List_of_largest_empires">Scope and scale of Historical Empires</a></li>
-<li><a href="https://www.youtube.com/watch?v=JN3KPFbWCy8">Scope and scale of Historical Empires</a></li>
+<li><a href="https://www.youtube.com/watch?v=JN3KPFbWCy8">Seal with headphones</a></li>
+<li><a href="https://www.reddit.com/media?url=https%3A%2F%2Fi.redd.it%2Foszhrcuah4h91.png">Signficance of Chinese Civil Wars</a></li>
+<li><a href="https://en.wikipedia.org/wiki/List_of_largest_empires">Scope and scale of Historical Empires</a></li><li>
+<a href="https://en.wikipedia.org/wiki/List_of_wars_by_death_toll">Scope and scale of Historical Wars</a></li>
+<li><a href="https://en.wikipedia.org/wiki/List_of_natural_disasters_by_death_toll">Scope and scale of Historical Natural Disasters</a></li>
 </ol></p>
