@@ -29,14 +29,14 @@ Egyptians, used pulleys, ramps and levers, developed papyrus paper, pottery
 and rope trusses, and erected Abu Simbel, the Sphinx and the Great Pyramids. Despite the grandeur of these past cradles of civilisations, they, like all
 others across human history, were subject to atrophy and strain in the form of war, plague, famine, and natural disaster.</p>
 <p>The Three Kingdoms War of early China saw some 36 to 40 million people killed from conflict, famine and disease, approximately 20% of
-the global population at the time. The black death was estimated to have caused 75 to 200 million fatalaties, and the plague of Justinian wiped
-out 25%-60% of European inhabitants. The Yellow River flood killed an estimated 2,000,000 people and the Bhola Cycle of East Pakistan/West
-India an estimated 500,000 people.</p>
+the global population at the time<sup>[1][2][3]</sup>. The black death was estimated to have caused 75 to 200 million fatalities, and the plague of Justinian wiped
+out 25%-60% of European inhabitants<sup>[4]</sup>. The Yellow River flood killed an estimated 2,000,000 people and the Bhola Cycle of East Pakistan/West
+India an estimated 500,000 people<sup>[5]</sup></p>
 <p>It is clear that human history has been shaped and punctuated by mass death and suffering across
 nations and empires that form and stay bound through national, ethnic and religious identity. The fierceness of their competititon derives
 from their military, industrial and political strength, making for a continual power struggle by which geographic lines are drawn and 
 redrawn across history. With this, we arrive at our first heuristic: the natural world's geopolitical overlay, comprised of amoeboid like
-nation-states that rise and fall, spread and recede, fragment and combine.</p>
+nation-states<sup>[6][7]</sup> that rise and fall, spread and recede, fragment and combine.</p>
 <h4>Structures of Governance</h4>
 <p>A structure of governance, not unlike an organisational structure, is a structure that defines the way in which work and decision-making
 is delegated to subcomponents of a collective group of individuals. These human collectives can be
@@ -56,7 +56,7 @@ opportunities, safe-guarded by military might. The degree of coupling between a 
 if too weak or too strong, devolving into tyranny, bureaucracy, military coups, widespread protest, etc. 
 State military may exist as a combination of national forces, civilian militia and private contractors. 
 Industry may be predominantly onshore or offshore, with the balance of net importation and exportation providing 
-an economic profile of dependencies between states. There will also exist some apparatus for the dissemination of information where the struggle for hearts and minds takes place. In the modern world, this occurs over news broadcast, social media, and the
+an economic profile of dependencies between states<sup>[8]</sup>. There will also exist some apparatus for the dissemination of information where the struggle for hearts and minds takes place. In the modern world, this occurs over news broadcast, social media, and the
 internet. This information may be natural in the form of competing perspectives on current issues, or artificial in the form of
 advertisement and propaganda.
 </p>
@@ -64,14 +64,12 @@ advertisement and propaganda.
 on narrative maps.</p>
 <h4>References</h4>
 <p><ol>
-<li><a href="https://en.wikipedia.org/wiki/List_of_wars_by_death_toll">War-related deaths across history</a></li>
-<li><a href="https://en.wikipedia.org/wiki/World_War_II_casualties">WWII Casualties</a></li>
-<li><a href="https://www.worldhistorymaps.info/">Changing nature of historical maps</a></li>
-<li><a href="https://www.runningreality.org/">Interactive historical maps</a></li>
-<li><a href="http://globe.cid.harvard.edu/">Global Trade</a></li>
-<li><a href="https://www.youtube.com/watch?v=JN3KPFbWCy8">Seal with headphones</a></li>
-<li><a href="https://www.reddit.com/media?url=https%3A%2F%2Fi.redd.it%2Foszhrcuah4h91.png">Signficance of Chinese Civil Wars</a></li>
-<li><a href="https://en.wikipedia.org/wiki/List_of_largest_empires">Scope and scale of Historical Empires</a></li><li>
-<a href="https://en.wikipedia.org/wiki/List_of_wars_by_death_toll">Scope and scale of Historical Wars</a></li>
-<li><a href="https://en.wikipedia.org/wiki/List_of_natural_disasters_by_death_toll">Scope and scale of Historical Natural Disasters</a></li>
+<li><a target="_blank" href="https://www.reddit.com/media?url=https%3A%2F%2Fi.redd.it%2Foszhrcuah4h91.png">Signficance of Chinese Civil Wars</a></li>
+<li><a target="_blank" href="https://en.wikipedia.org/wiki/List_of_largest_empires">Scope and scale of Historical Empires</a></li>
+<li><a target="_blank" href="https://en.wikipedia.org/wiki/List_of_wars_by_death_toll">Scope and scale of Historical Wars</a></li>
+<li><a target="_blank" href="https://en.wikipedia.org/wiki/List_of_epidemics_and_pandemics">Scope and scale of Historical Plagues</a></li>
+<li><a target="_blank" href="https://en.wikipedia.org/wiki/List_of_natural_disasters_by_death_toll">Scope and scale of Historical Natural Disasters</a></li>
+<li><a target="_blank" href="https://www.worldhistorymaps.info/">Changing nature of historical maps</a></li>
+<li><a target="_blank" href="https://www.runningreality.org/">Interactive historical maps</a></li>
+<li><a target="_blank" href="http://globe.cid.harvard.edu/">Global Trade</a></li>
 </ol></p>
