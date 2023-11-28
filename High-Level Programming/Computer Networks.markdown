@@ -3,12 +3,20 @@ layout: narrow
 title: Computer Networks
 ---
 <h4>Computer Networks</h4>
+<p>The lowest level of abstraction in computer networking is the physical layer, that is, the physical medium by which bits of data are transferred. Ethernet, Wi-Fi,
+USB, Bluetooth and Fiber Optics, are all examples of physical layer standards. Network protocols exist as abstractions atop this physical layer, defining how raw data is 
+formatted and sequenced into network packets before transmission. Transmission and reception of network packets is referred to as packet switching, and allows computers
+on a computer network to maintain multiple simultaneous connections with one another. Network packets consist of a header, describing the data to be transferred, and a
+payload, storing the data itself.</p>
+<p><img src="/Assets/images/OSI_TCP_IP.png" width="100%" height="100%"></p>
+<p>The OSI model and TCP/IP model are models used to categorise network protocols seated atop the physical layer. Each level of network abstraction
+corresponds to an instance of encapsulation, whereby the packets of the less abstract network protocol become the payload of the more abstract network protocol, through
+combination with an additional header. Data from a higher level of abstraction may be fragmented into numerous networks packets on the below network layer.</p>
+<p>
+
+</p>
 <!--
-(Physical/Data-Link/Network-Access Layer): ethernet, wi-fi, etc
-explain how OSI and TCP/IP model is hierarchy of software abstractions atop physical/data-link layer, explain packet encapsulation
-(Network/Internet Layer): ARP, IP, ICMP
-(Transport Layer): TCP, UDP
-(Application Layer): DNS, SMTP, FTP, Telnet, SMTP, HTTP
+MAC, IP, TCP/UDP, DNS, HTTP, Custom Protocols
 -->
 <p>The internet is a network of networks through which bits are transmitted to and from connected devices. We humans cannot communicate in bits. This 
     is true both biologically and digitally, and so we apply a hierarchy of compressions and communication protocols in both cases. In terms of 
