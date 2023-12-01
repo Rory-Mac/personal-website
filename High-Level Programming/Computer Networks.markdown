@@ -9,39 +9,26 @@ formatted and sequenced into network packets before transmission. Transmission a
 on a computer network to maintain multiple simultaneous connections with one another. Network packets consist of a header, describing the data to be transferred, and a
 payload, storing the data itself.</p>
 <p><img src="/Assets/images/OSI_TCP_IP.png" width="100%" height="100%"></p>
-<p>The OSI model and TCP/IP model are models used to categorise network protocols seated atop the physical layer. Each level of network abstraction
-corresponds to an instance of encapsulation, whereby the packets of the less abstract network protocol become the payload of the more abstract network protocol, through
-combination with an additional header. Data from a higher level of abstraction may be fragmented into numerous networks packets on the below network layer.</p>
-<p>
-
-</p>
+<p>The OSI model and TCP/IP model are models used to categorise network protocols seated atop the physical layer. Each layer
+corresponds to an instance of encapsulation, whereby the packets of the more abstract network protocol when combined with an additional header become the payload of the
+less abstract network protocol. Packets may fragment into numerous network packets at less abstract network layers. Physical frames, such as an ethernet frame, format
+packet data to enable transmission over a specific physical medium, such as ethernet. The payload of such a physical frame will be a frame belonging to a protocol
+that deals with transmission control, error management, and interoperability between protocols. This is defined in the OSI stack by the MAC and Logic-Link sublayers of
+the Data-Link layer.</p>
 <p><img src="/Assets/images/MAC_frame_bitfields.png" width="100%" height="100%"></p>
-<p></p>
+<p>MAC (Medium Access Control), is a data-link protocol managing the exchange of data through a physical medium between nodes in a computer network. This is not to be
+confused with MAC addresses, also known as physical or hardware addresses, which are unique identifiers stored in the firmware or read-only memory of a network interface
+controller belonging to a host device. The payload of a MAC frame is the packet of a more abstract network protocol. Local network routers maintain a forwarding table
+used to map MAC addresses to authenticated socket connections. This gives an efficient means of routing network traffic within local networks. To efficiently route 
+packet data between networks, IP (Internet Protocol) addressing is introduced as an abstract layer atop the data-link/network-interface layers.</p>
+<p>IP addressing is a hierarchical form of addressing, mapping to a hierarchy of global routing networks called autonomous systems.</p>
+
 <!--
-What is a MAC frame? What is it encapsulated within? What types of MAC frames are there?
-Insert Diagram
-What is its payload? (ARP requests, IP packets)
-Does it have vulnerabilities (spoofing, etc)
-IP protocol
-TCP/UDP 
-DNS and HTTP, Custom Protocols
+IP addressing and global routing
+TCP handshake
+DNS and HTTP
 -->
-<p>Lets consider the example of MAC addresses. MAC addresses (also known as hardware addresses or physical addresses) are 12-char (48-bit) hexadecimal tags 
-used to identify a physical device on a local network. It is a fundamental component of many data-link protocols including ethernet, bluetooth and wi-fi 
-(all part of the IEEE 802 family of protocol standards) and is typically hard-coded onto the Network Interface Card of a computer via a ROM or EEPROM chip.
-</p>
-<p>Lets now consider the example of IP addresses. IP addresses are numerical addresses for internet-connected devices basedon the IP protocol, as 
-overseen by the IETF and the IANA. Two IP address formats exist IPv4 (e.g. 192.168.0.1) and IPv6 (e.g. 2001:0db8:85a3:0000:0000:8a2e:0370:7334).
-IPv6 was developed to address the limitations of the IPv4 address space. IP addresses can be public (globally routable) or private (locally routable).
-Regional Internet Registries (RIRs) manage public address assignment whilst simple home or office routers assign private addresses. Private IP addresses 
-can be translated to public IP addresses via the Network Address Translation (NAT) protocol. Management of the NAT protocol is the responsibility of the 
-router and router firewall at the network edge.
-</p>
-<p>The infrastructure of the internet itself is complex. The largest networks are termed Network Service Providers (NSPs) connected to one another via 
-    Internet Exchange Points (IX). They are also connected and provide networking services to regional and local Internet Service Providers (ISPs). 
-    No matter how large the network, the network needs to offer connectivity and routing services. Thus we can visualise the hierarchy of internet 
-    service providers approximately as follows:
-    <img src="/Assets/images/ISP_NSP_1.png" width="100%" height="100%"></p>
+
 <p>Before looking further into application-layer protocols, it is important to understand the TCP/IP protocol and the client-server model. The 
 client-server model makes up a significant portion of internet traffic, that is simply, client devices requesting resources from server devices. There 
 does not necessarily exist a distinction between a client and server device, any device may run a client or server program designed to send or retrieve 
