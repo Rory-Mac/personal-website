@@ -22,13 +22,11 @@ controller belonging to a host device. The payload of a MAC frame is the packet 
 used to map MAC addresses to authenticated socket connections. This gives an efficient means of routing network traffic within local networks. To efficiently route 
 packet data between networks, IP (Internet Protocol) addressing is introduced as an abstract layer atop the data-link/network-interface layers.</p>
 <p>IP addressing is a hierarchical form of addressing, mapping to a hierarchy of global routing networks called autonomous systems.</p>
-
 <!--
 IP addressing and global routing
 TCP handshake
 DNS and HTTP
 -->
-
 <p>Before looking further into application-layer protocols, it is important to understand the TCP/IP protocol and the client-server model. The 
 client-server model makes up a significant portion of internet traffic, that is simply, client devices requesting resources from server devices. There 
 does not necessarily exist a distinction between a client and server device, any device may run a client or server program designed to send or retrieve 

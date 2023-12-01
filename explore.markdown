@@ -149,24 +149,6 @@ title: Explore - RoryMac Blog
 <div class="topic">
     <div class="topic-title"><h4>Artificial Intelligence & Machine Learning</h4></div>
     <div class="portal-container">
-        <a class="no-underline" href="/AI&ML/Linear Algebra.html">
-        <div class="portal zoom small">
-                <div class="portal-image">
-                    <img style="background-color: black" src="/Assets/images/linear_algebra_portal.png">
-                </div>
-            <div class="portal-title">
-                <p>Linear Algebra</p>
-            </div>
-        </div></a>
-        <a class="no-underline" href="/AI&ML/Calculus.html">
-        <div class="portal zoom small">
-            <div class="portal-image">
-                    <img style="background-color: black" src="/Assets/images/multivar_calc_portal.png">
-                </div>
-            <div class="portal-title">
-                <p>Calculus</p>
-            </div>
-        </div></a>
         <a class="no-underline" href="/AI&ML/Tensors.html">
         <div class="portal zoom small">
             <div class="portal-image">
