@@ -15,15 +15,17 @@ combination with an additional header. Data from a higher level of abstraction m
 <p>
 
 </p>
+<p><img src="/Assets/images/MAC_frame_bitfields.png" width="100%" height="100%"></p>
+<p></p>
 <!--
-MAC, IP, TCP/UDP, DNS, HTTP, Custom Protocols
+What is a MAC frame? What is it encapsulated within? What types of MAC frames are there?
+Insert Diagram
+What is its payload? (ARP requests, IP packets)
+Does it have vulnerabilities (spoofing, etc)
+IP protocol
+TCP/UDP 
+DNS and HTTP, Custom Protocols
 -->
-<p>The internet is a network of networks through which bits are transmitted to and from connected devices. We humans cannot communicate in bits. This 
-    is true both biologically and digitally, and so we apply a hierarchy of compressions and communication protocols in both cases. In terms of 
-    biology, this looks something like sensory memory compressed into an audition-based declarative memory transmitted via an electrical and chemical layer 
-    over the physical layer of vocal chords through an atmospheric medium. Digitally speaking, it is a hierarchy of protocols agreed upon by international
-    agencies and subscribed to by software companies and hardware manufacturers, summarised through heuristics such as the OSI model or TCP/IP protocol stack.   
-</p>
 <p>Lets consider the example of MAC addresses. MAC addresses (also known as hardware addresses or physical addresses) are 12-char (48-bit) hexadecimal tags 
 used to identify a physical device on a local network. It is a fundamental component of many data-link protocols including ethernet, bluetooth and wi-fi 
 (all part of the IEEE 802 family of protocol standards) and is typically hard-coded onto the Network Interface Card of a computer via a ROM or EEPROM chip.
