@@ -21,11 +21,22 @@ confused with MAC addresses, also known as physical or hardware addresses, which
 controller belonging to a host device. The payload of a MAC frame is the packet of a more abstract network protocol. Local network routers maintain a forwarding table
 used to map MAC addresses to authenticated socket connections. This gives an efficient means of routing network traffic within local networks. To efficiently route 
 packet data between networks, IP (Internet Protocol) addressing is introduced as an abstract layer atop the data-link/network-interface layers.</p>
-<p>IP addressing is a hierarchical form of addressing, mapping to a hierarchy of global routing networks called autonomous systems.</p>
+<p>IP addresses are hierarchical in nature, 32-bits are subdivided into four octets in IPv4 (e.g. 192.168.0.1) and 128-bits are subdivided into eight 16-bit groupings
+in IPv6 (e.g. 2001:0DB8:AC10:FE01:0000:0000:1a2f:1a2b). Network addresses can be subnetted to create subnetworks. For instance subnetting the network address
+192.168.100.10 with the subnet mask 255.255.255.0 creates a subnetwork for which 255 devices can be connected. Local area networks are assigned private addresses,
+which can not be assigned to public-facing devices. Within a private network, these addresses are mapped at the router edge to a public-facing IP address to allow for
+communication between local network devices and publicly routable devices. Protocols such as the Network Address Translation protocol store port and address connections
+in memory to map inbound traffic directed to the router back to the private address of the local device.</p>
+<p><img src="/Assets/images/IP_packet_bitfields.png" width="100%" height="100%"></p>
+<p>Just as physical and data-link layer switches maintain forwarding tables, internet routers maintain routing tables that map IP addresses to socket connections 
+with neighbouring devices. Thus, inbound traffic can be directed based on IP address network prefixes. For instance the network address 192.9.200.15 directed to
+the network address 192.9.202.10, may contain a routing table that maps 192.9.201.0 to an active connection that exists as a default route. In another case, where no
+default route is known, the network address 192.9.0.0 may route to 192.9.201.0 and then 192.9.200.15 as such a network hop moves down the internet backbone towards
+the target device.</p>
+<p><img src="/Assets/images/internet_overview.png" width="100%" height="100%"></p>
 <!--
-IP addressing and global routing
-TCP handshake
-DNS and HTTP
+Diagram of the internet, BGP, OSPF
+TCP handshake, DNS and HTTP
 -->
 <p>Before looking further into application-layer protocols, it is important to understand the TCP/IP protocol and the client-server model. The 
 client-server model makes up a significant portion of internet traffic, that is simply, client devices requesting resources from server devices. There 
