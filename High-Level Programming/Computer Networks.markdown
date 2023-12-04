@@ -34,9 +34,22 @@ the network address 192.9.202.10, may contain a routing table that maps 192.9.20
 default route is known, the network address 192.9.0.0 may route to 192.9.201.0 and then 192.9.200.15 as such a network hop moves down the internet backbone towards
 the target device.</p>
 <p><img src="/Assets/images/internet_overview.png" width="100%" height="100%"></p>
+<p>The structure of the internet can be viewed as a hierarchical network of networks. In an idealised form, we could image the internet as a 256-ary tree of depth 4
+for each octet in IPv4 or depth 8 for each hexadecimal group in IPv6. The internet was not instantiated in this manner however, with the maximum number of networks
+connecting the maximum number of devices. Instead, internet service providers will request allocation and registration of IP address blocks from internet registries.
+These ISPs may be commercial, subnetting their available networks downsstream to a large number of consumer devices, or organisational, subnetting their available 
+networks into various internal departments and subsidiaries. These ISPs will have various local routing policies, transit connections to IXPs, peerings with other
+ISPs, etc. Each such network with its own policy set is referred to as an autonomous system (AS), interacting with other autonomous systems via the Application-layer
+Border-Gateway Protocol (BGP).</p>
+<p>With the physical/data-link layer and the internet/network layer accounted for, we have a protocol stack that enables host-to-host communication both within and
+between local area networks. The subsequent layer, labelled the transport layer in both the OSI and TCP/IP model, enables the establishment of network sessions 
+between host devices through a network exchange called a handshake.</p>
+
 <!--
-Diagram of the internet, BGP, OSPF
-TCP handshake, DNS and HTTP
+TCP/UDP
+    packets
+    handshake
+DNS and HTTP
 -->
 <p>Before looking further into application-layer protocols, it is important to understand the TCP/IP protocol and the client-server model. The 
 client-server model makes up a significant portion of internet traffic, that is simply, client devices requesting resources from server devices. There 
