@@ -43,36 +43,17 @@ ISPs, etc. Each such network with its own policy set is referred to as an autono
 Border-Gateway Protocol (BGP).</p>
 <p>With the physical/data-link layer and the internet/network layer accounted for, we have a protocol stack that enables host-to-host communication both within and
 between local area networks. The subsequent layer, labelled the transport layer in both the OSI and TCP/IP model, enables the establishment of network sessions 
-between host devices through a network exchange called a handshake.</p>
+between host devices through a network exchange called a handshake. The best-known and most-used transport protocols are the Transmission Control Protocol (TCP) and
+the User Datagram Protocol (UDP).</p>
+<p><img src="/Assets/images/TCP_UDP_packet_fields.png" width="100%" height="100%"></p>
+<p>
 
+</p>
 <!--
-TCP/UDP
-    packets
-    handshake
-DNS and HTTP
+    what is a port, how are connections formed over ports, how are port connections forwarded through NAT
+    TCP hanshake
+What are Application-Layer protocols (DNS, HTTP, SMTP, FTP, SSH
 -->
-<p>Before looking further into application-layer protocols, it is important to understand the TCP/IP protocol and the client-server model. The 
-client-server model makes up a significant portion of internet traffic, that is simply, client devices requesting resources from server devices. There 
-does not necessarily exist a distinction between a client and server device, any device may run a client or server program designed to send or retrieve 
-data resources over a computer network based on a given protocol. A server could be as simple as a home Desktop port-forwarding a web application through 
-the home router, or as complex as a large server farm. Transmission Control Protocol (TCP) Handshakes instantiate the client-server model. Any 
-communication protocol exists within a stack of communication protocols, unless the communication protocol itself is the base physical layer. Data frames
-from more abstract protocol layers are encapsulated by less abstract protocol layers. Communication of data over an abstract protocol layer requires 
-encapsulation of that data by all other underlying protocols. Consider the following:
-<img src="/Assets/images/encapsulation.png" width="100%" height="100%"></p>  
-<p>Lets now look to DNS. DNS (Domain Name System) is a fundamental component of the internet that is responsible for the translation of human-readable 
-domain names (www.example.com) to corresponding IP addresses. ICANN plays a key role in the coordination and oversight of global DNS, including 
-the delegation of such maintenance to individual domain registrars and TLD authorities. Here is an overview of DNS resolution:
-<ol>
-    <li>A DNS resolution request is made: A web browser or web application makes a request to a DNS resolver to resolve a given domain name. The DNS 
-        resolver acts as a cache so that frequently requested domain names are quickly resolved. It is typically a part of
-        the ISP network. 
-    </li>
-    <li>The DNS resolution request flows through a hierarchy of DNS servers (root-level DNS servers, top-level-domain servers, authoritative DNS servers,
-    etc.)</li>
-    <li>An authoritative DNS server is queried if the result has not already been cached in a DNS resolver and the result is sent back to the DNS client
-    (managed by the web browser or network application).</li>
-    <li>A TCP handshake is initiated and if successful, application-layer data is exchanged.</li>
-</ol></p>
-<p>The TCP handshake itself is relatively simple. Having been completed, a client and server can begin exchanging data with principles of reliable data
-transfer (RDT) in mind: <img src="/Assets/images/TCP_Handshake.png" width="100%" height="100%"></p>
+<p>
+</p>
+<p><img src="/Assets/images/TCP_Handshake.png" width="100%" height="100%"></p>
