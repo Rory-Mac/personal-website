@@ -46,14 +46,13 @@ between local area networks. The subsequent layer, labelled the transport layer 
 between host devices through a network exchange called a handshake. The best-known and most-used transport protocols are the Transmission Control Protocol (TCP) and
 the User Datagram Protocol (UDP).</p>
 <p><img src="/Assets/images/TCP_UDP_packet_fields.png" width="100%" height="100%"></p>
-<p>
-
-</p>
-<!--
-    what is a port, how are connections formed over ports, how are port connections forwarded through NAT
-    TCP hanshake
-What are Application-Layer protocols (DNS, HTTP, SMTP, FTP, SSH
--->
-<p>
-</p>
+<p>The transport layer introduces the concept of network ports for data exchange. A network port is a software construct managed by the operating system, with a value
+between 0 and 65535, mapped to a host application in runtime that will handle all inbound network traffic directed at that port. This allows a host device to run
+multiple applications over distinct ports to handle multiple network connections, despite a shared physical transmission medium. UDP is a light-weight transport 
+protocol, adding only a source and destination port, segment length and check sum value to the data to be transmitted. It is thus used in time-sensitive situations
+where error checking is unnecessary, such as video-streaming and DNS lookups.</p>
 <p><img src="/Assets/images/TCP_Handshake.png" width="100%" height="100%"></p>
+<p>TCP handshake</p>
+<p>Application-Layer protocols sit at the highest level of abstraction in the network protocol stack, specifying data exchange between client and server programs in
+runtime on host devices. Examples include DNS for domain-name resolution, SMTP for mail transfer, FTP for file transfer, SSH for remote shell access, and HTTPS for
+secure data exchange over web documents.</p>
