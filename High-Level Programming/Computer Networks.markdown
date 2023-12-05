@@ -50,9 +50,13 @@ the User Datagram Protocol (UDP).</p>
 between 0 and 65535, mapped to a host application in runtime that will handle all inbound network traffic directed at that port. This allows a host device to run
 multiple applications over distinct ports to handle multiple network connections, despite a shared physical transmission medium. UDP is a light-weight transport 
 protocol, adding only a source and destination port, segment length and check sum value to the data to be transmitted. It is thus used in time-sensitive situations
-where error checking is unnecessary, such as video-streaming and DNS lookups.</p>
+where error checking is unnecessary, such as video-streaming and DNS lookups. UDP is a form of connectionless communication whilst TCP is a form of connection-oriented
+communication. This is because TCP introduces the concept of a TCP handshake, establishing session between hosts.</p>
 <p><img src="/Assets/images/TCP_Handshake.png" width="100%" height="100%"></p>
-<p>TCP handshake</p>
+<p>The TCP handshake exists as a SYN + SYN/ACK + ACK exchange used to establish an initial sequence number that tracks data bytes transferred. The established connection
+can be terminated through a FIN + ACK/FIN + ACK exchange initiated by either host. To increase efficiency of data transfer, TCP packets can be sent prior to acknowledgement
+of the packets that preceded them. This creates out of order transmission errors that can be dealt by using the receiver's acknowledgment number as a count of data bytes
+received thus far.</p>
 <p>Application-Layer protocols sit at the highest level of abstraction in the network protocol stack, specifying data exchange between client and server programs in
-runtime on host devices. Examples include DNS for domain-name resolution, SMTP for mail transfer, FTP for file transfer, SSH for remote shell access, and HTTPS for
-secure data exchange over web documents.</p>
+runtime on host devices. Examples include DNS for domain-name resolution, SMTP for mail transfer, FTP for file transfer, SSH for remote shell access, HTTP for web page
+loading and browsing, and TLS for secure data exchange.</p>
