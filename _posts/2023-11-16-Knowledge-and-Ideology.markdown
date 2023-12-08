@@ -3,20 +3,45 @@ layout: narrow
 title: Knowledge and Ideology
 ---
 <h4>Knowledge and Ideology</h4>
-<p>Knowledge is a hard thing to define. A pragmatic approach is to understand knowledge as perceived networks of causation, 
-and verify this understanding through application to machine learning. We can start with markov decision processes, a concept
-concerning agents that perceive external environments in sequence and take formulaic actions to perceive a sequence that maximises a pre-determined
-reward function. We can then say that causation networks are built atop this, either unconsciously through nerual processing, or consciously
-by way of the scientific method. The below diagram shows the idea of how causal diagrams might be formed from the perceptual experience of
-a markov agent.</p>
+<p>In a biological sense, knowledge exists as perceptual information stored in memory, structured as a network formed through
+causal and associative relation. Knowledge of the concept of banana is linked by association to knowledge of the concept of yellow.
+Knowledge of the concept of wind is linked by causation to knowledge of the concept of the tingling of skin. A more pragmatic
+approach to the nature of knowledge is to form a set of assumptions regarding the nature of knowledge and then verify 
+these assumptions in their application to machine learning. One such set of assumptions may be that knowledge exists as the perceptual
+information stored by an agent that perceives an external environment and makes decisions in accordance with a policy designed to maximise
+a given reward function. This gives rise to the notion of a Markov Agent who exists within a Markov Decision Process. Causal and 
+associative networks may be overlayed onto the knowledge base of such an agent.</p>
 <p><img src="/Assets/images/causal_diagrams.png" width="100%" height="100%"></p>
-<p>The causal networks resulting from such a rule set and some perceptual experience may have a high or low degree of correlation versus
-causation. Causal networks established via the exploration of formal logic will likely have a high degree of causation, whilst those 
-established via the exploration of geopolitics will likely have a high degree of correlation. We could think of this as a ratio between
-memory used for the storage of perceptual experience and memory used for the storage of rules of inference. Another way to think about this
-is that the discussion of formal logic requires a small formal alphabet, whilst the discussion of geopolitics requires the complexity of
-natural language, to describe both the historical evidence in making a claim, and justification for why such evidence relates to the claim.</p>
-<p><img src="/Assets/images/qualitative_quantitative_inquiry.png" width="100%" height="100%"></p>
+<p>Within an agent's knowledge base, or a subset of an agent's knowledge base, the ratio of associative to causal relations varies. An
+individual's exploration of propositional logic will likely give rise to a predominantly causal structure, whilst exploration of
+international relations will likely give rise to a predominantly associative structure. Propositional Logic requires memorisation of a
+small finitie alphabet of logic symbols, combined to form additional expressions through rules of inference. International relations
+instead require memorisation a large amount of historical context and case study to form a working hypothesis.</p>
+<p><img src="/Assets/images/research_methods.png" width="100%" height="100%"></p>
+<p>Inquiring into the nature of knowledge is a tricky thing, as any inquiry made belongs to the subject of study itself. 
+
+
+
+as study into the nature of knowledge is 
+
+inquiry made, any discovery found, any inference made, belongs to
+the nature of knowledge and is thus the subject of study. study is the subject of study.
+
+</p>
+<p>When dealing with epistemology, that is the inquiry into the nature of knowledge, is a tricky thing,
+
+
+</p>
+
+
+<!--
+Is very tricky because it needs to contain itself
+How does this view of knowledge contain itself
+How could it be broken
+read chapters (Middle East, Japan/Korea, Arctic)
+proof-read
+-->
+
 <p>More abstract heuristics of quantitiatve and qualitiative investigation seem to fall back on these simpler models of perception and 
 causation mapping. In the case of the scientific method, of quantitative inquiry, a phenomenon is observed, a hypothesis as to the cause of
 the phenomenon is made, the phenomenon is recreated via an experimental test but in the absence of factors outside the hypothesis, the 
@@ -103,8 +128,6 @@ Industry may be predominantly onshore or offshore, with the balance of net impor
 an economic profile of dependencies between states<sup>[9]</sup>. There will also exist some apparatus for the dissemination of information where the struggle for hearts and minds takes place. In the modern world, this occurs over news broadcast, social media, and the
 internet. This information may be natural in the form of competing perspectives on current issues, or artificial in the form of
 advertisement and propaganda.</p>
-<h4>Geographical Influence</h4>
-<p></p>
 <h4>References</h4>
 <p><ol>
 <li><a target="_blank" href="https://en.wikipedia.org/wiki/Inglehart%E2%80%93Welzel_cultural_map_of_the_world">Mapping cultural values</a></li>
