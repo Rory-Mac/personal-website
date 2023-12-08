@@ -3,36 +3,26 @@ layout: narrow
 title: Knowledge and Ideology
 ---
 <h4>Knowledge and Ideology</h4>
-<p>In a biological sense, knowledge exists as perceptual information stored in memory, structured as a network formed through
-causal and associative relation. Knowledge of the concept of banana is linked by association to knowledge of the concept of yellow.
-Knowledge of the concept of wind is linked by causation to knowledge of the concept of the tingling of skin. A more pragmatic
-approach to the nature of knowledge is to form a set of assumptions regarding the nature of knowledge and then verify 
-these assumptions in their application to machine learning. One such set of assumptions may be that knowledge exists as the perceptual
-information stored by an agent that perceives an external environment and makes decisions in accordance with a policy designed to maximise
-a given reward function. This gives rise to the notion of a Markov Agent who exists within a Markov Decision Process. Causal and 
-associative networks may be overlayed onto the knowledge base of such an agent.</p>
-<p><img src="/Assets/images/causal_diagrams.png" width="100%" height="100%"></p>
+<p>Inquiring into the nature of knowledge is a tricky thing. Inquiry itself is founded upon knowledge, which as the subject of the inquiry,
+is yet to be known. Knowledge must therefore initially be assumed, and from this assumption all else follows. The initial assumption can
+be that "existence is perceived" or that "existence exists and is perceived". If existence doesn't exist or isn't perceived, everything that
+exists does not exist, so nothing exists, and nothing else follows. If existence exists, all that exists exists, and all else follows. If
+existence is perceived, all that is perceived exists, and all else follows. These two initial assumptions are ontological in that they
+relate to the nature of being, but distinct in that only one affirms the existence of a reality external to the observer. This distinction
+is between objectivism and subjectivism, the former asserting that reality exists external to the observer, subjectivism asserting that it
+does not. Ontology inquires into the nature of being. Epistemology inquires into the nature of knowledge.
+
+
+</p>
+<p><img src="/Assets/images/research_methods.png" width="100%" height="100%"></p>
+
+
+
 <p>Within an agent's knowledge base, or a subset of an agent's knowledge base, the ratio of associative to causal relations varies. An
 individual's exploration of propositional logic will likely give rise to a predominantly causal structure, whilst exploration of
 international relations will likely give rise to a predominantly associative structure. Propositional Logic requires memorisation of a
 small finitie alphabet of logic symbols, combined to form additional expressions through rules of inference. International relations
 instead require memorisation a large amount of historical context and case study to form a working hypothesis.</p>
-<p><img src="/Assets/images/research_methods.png" width="100%" height="100%"></p>
-<p>Inquiring into the nature of knowledge is a tricky thing, as any inquiry made belongs to the subject of study itself. 
-
-
-
-as study into the nature of knowledge is 
-
-inquiry made, any discovery found, any inference made, belongs to
-the nature of knowledge and is thus the subject of study. study is the subject of study.
-
-</p>
-<p>When dealing with epistemology, that is the inquiry into the nature of knowledge, is a tricky thing,
-
-
-</p>
-
 
 <!--
 Is very tricky because it needs to contain itself
