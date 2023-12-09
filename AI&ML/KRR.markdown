@@ -1,7 +1,8 @@
 ---
 layout: narrow
-title: Knowledge and Ideology
+title: Knowledge Representation & Reasoning
 ---
+<h4>Knowledge Representation & Reasoning</h4>
 <p>In a biological sense, knowledge exists as perceptual information stored in memory, structured as a network formed through
 causal and associative relation. Knowledge of the concept of banana is linked by association to knowledge of the concept of yellow.
 Knowledge of the concept of wind is linked by causation to knowledge of the concept of the tingling of skin. A more pragmatic

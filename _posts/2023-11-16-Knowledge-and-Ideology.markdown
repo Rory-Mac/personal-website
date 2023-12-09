@@ -54,14 +54,18 @@ If we move the lens of the observer to one of pure interpretivism, then the enti
 made of the observer. Other ideologies are more compatible with the perspectives taken so far.</p>
 <h3>Realism</h3>
 <p>The rest of this document will explore a subset of ideologies of personal interest, looking to the assumptions they make and the 
-heuristics they use. Let us start with Realism, a school of thought in international relations analysing the nature of governance at the
+heuristics they use. Let us start with Realism, a school of thought in international relations that analyses the nature of governance at the
 international level. Realism generally hold the following four principles as true:
 <ul>State-centrism: international relations exists as the product of the interaction between states, defined as human collectives
 under singular systems of governance.</ul>
 <ul>Anarchy: no supranational authority exists, thus the system of state relations is anarchic in nature.</ul>
 <ul>Rationality: states are rational actors, acting in accordance with a self-interest for survival and growth.</ul>
 <ul>Power: the primary desire of a state is power for the purpose of self-preservation</ul>
-<h4>The drawing and redrawing of historical lines</h4>
+Realist thought is cloesly tied to geopolitics, that is the analysis of the effect the Earth's geography has on international relations. 
+To understand the realist view of the international order as state-centric and anarchic, it helps to first understand the role geography
+plays in the establishment and development of civilisation. To then understand the realist view of states as rational power-seeking entities,
+we could look more closely at the organisational structures that underly their governance.</p>
+<h4>Geographical influence on the beginnings of civilisation</h4>
 <p>Imagine a map of the world today. The most objective components of this map, prior to the drawing of any geographical lines, 
 are the features of the Earth itself, the continents, oceans, biomes, mountains and river systems. We as humans seek regions of 
 abundance. Abundance gives us satiation in the short-term, through the availability of needed resources, and growth in the long-term,
@@ -92,6 +96,26 @@ nations and empires that form and stay bound through national, ethnic and religi
 from their military, industrial and political strength, making for a continual power struggle by which geographic lines are drawn and 
 redrawn across history. With this, we arrive at our first heuristic: the natural world's geopolitical overlay, comprised of amoeboid like
 nation-states<sup>[6][7]</sup> that rise and fall, spread and recede, fragment and combine.</p>
+<h4>Geographical influence on modern civilisation</h4>
+<p>Despite the sophistication of today's technology, the geographical features underlying the territory of a state plays a signficant role
+in the strategic mindset of that state. Let's go through a set of examples in the modern world, starting with Russia.</p>
+<p>Russia is the largest country in the world, spanning eleven time zones from Western Europe to Northern Asia. Siberia, the largest region
+of Russia, encompasses most of Northern Asia and comprises approximately three quarters of Russian territory but only one quarter of its
+population. The Ural Mountains separate Siberia from the rest of Russia, which is instead seated atop the Great European Plain, a biome 
+that makes Russia geographically vulnerable to ground invasion by neighbouring states. Moscow, the Russian capital, is at times referred
+to as the port of the five seas, seeing as the Moscow Canal connects the Moskva and the Volga river systems with maritime routes to the
+White Sea, Baltic Sea, Caspian Sea, Sea of Azov, and the Black Sea. Returning to consideration against a ground invasion, it is in the 
+best interests of Moscow to control the leg of the Great European Plain east of the Carpathian Mountains, and the wedge formed by such
+a plain, as it did through the Warsaw Pact at the time of the Soviet Union.</p>
+<p>Let us now look to the arctic, a region whoses geographical signficance will only increase as net global temperatures do, and whose
+control will be vied for by neighbouring states in the coming decades. As net temperatures increase, previously undiscovered or 
+inaccessible resources will reveal themselves for greater periods of the year as will the number of international maritime trade routes
+that wind through this region. These routes include the Northwest passage that lines North America, the Northern Sea Route that lines 
+Northern Russia, and the Transpolar Sea Route that routes from the atlantic to the pacific ocean. Cargo ships coming from the Red Sea 
+directed towards the Panama Canal can be redirected through these tranpolar routes, saving weeks in transit time. The states encircling
+the arctic region, namely Canada, the United States, Iceland, Russia, Norway, and Denmark (via Greenland), do not have obvious claims
+to arctic territory. This is furthered by the fact that the continental shelves of the continents to which these states belong, drop off
+before touching any such territory.</p>
 <h4>Structures of Governance</h4>
 <p>A structure of governance, not unlike an organisational structure, is a structure that defines the way in which work and decision-making
 is delegated to subcomponents of a collective group of individuals. These human collectives can be
@@ -125,3 +149,9 @@ advertisement and propaganda.</p>
 <li><a target="_blank" href="https://www.runningreality.org/">Interactive historical maps</a></li>
 <li><a target="_blank" href="http://globe.cid.harvard.edu/">Global Trade</a></li>
 </ol></p>
+
+<!--
+    influence of geography on the beginnings of civilisation
+    influence of geography on modern civilisations
+    structures of governance
+-->

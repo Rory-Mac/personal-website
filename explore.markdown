@@ -203,5 +203,14 @@ title: Explore - RoryMac Blog
                 <p>Markov Decision Process</p>
             </div>
         </div></a>
+        <a class="no-underline" href="/AI&ML/KRR.html">
+        <div class="portal zoom small">
+            <div class="portal-image">
+                    <img style="background-color: black" src="/Assets/images/KRR_portal.png">
+                </div>
+            <div class="portal-title">
+                <p>KR<sup>2</sup></p>
+            </div>
+        </div></a>
     </div>
 </div>
