@@ -2,7 +2,7 @@
 layout: narrow
 title: Knowledge and Ideology
 ---
-<h4>Knowledge and Ideology</h4>
+<h3>Knowledge and Ideology</h3>
 <p>Inquiring into the nature of knowledge is a tricky thing. Inquiry itself is founded upon knowledge, which as the subject of the inquiry,
 is yet to be known. Knowledge must therefore initially be assumed, and from this assumption all else follows. The initial assumption can
 be that "existence is perceived" or that "existence exists and is perceived". If existence doesn't exist or isn't perceived, everything that
@@ -10,61 +10,57 @@ exists does not exist, so nothing exists, and nothing else follows. If existence
 existence is perceived, all that is perceived exists, and all else follows. These two initial assumptions are ontological in that they
 relate to the nature of being, but distinct in that only one affirms the existence of a reality external to the observer. This distinction
 is between objectivism and subjectivism, the former asserting that reality exists external to the observer, subjectivism asserting that it
-does not. Ontology inquires into the nature of being. Epistemology inquires into the nature of knowledge.
-
-
-</p>
+does not. Ontology inquires into the nature of being. Epistemology inquires into the nature of knowledge.</p>
 <p><img src="/Assets/images/research_methods.png" width="100%" height="100%"></p>
-
-
-
-<p>Within an agent's knowledge base, or a subset of an agent's knowledge base, the ratio of associative to causal relations varies. An
-individual's exploration of propositional logic will likely give rise to a predominantly causal structure, whilst exploration of
-international relations will likely give rise to a predominantly associative structure. Propositional Logic requires memorisation of a
-small finitie alphabet of logic symbols, combined to form additional expressions through rules of inference. International relations
-instead require memorisation a large amount of historical context and case study to form a working hypothesis.</p>
-
-<!--
-Is very tricky because it needs to contain itself
-How does this view of knowledge contain itself
-How could it be broken
-read chapters (Middle East, Japan/Korea, Arctic)
-proof-read
--->
-
-<p>More abstract heuristics of quantitiatve and qualitiative investigation seem to fall back on these simpler models of perception and 
-causation mapping. In the case of the scientific method, of quantitative inquiry, a phenomenon is observed, a hypothesis as to the cause of
-the phenomenon is made, the phenomenon is recreated via an experimental test but in the absence of factors outside the hypothesis, the 
-result is interpreted, a conclusion is made, affirming or denying the hypothesis, and integrating the hypothesis into the knowledge base
-composed of the findings of previous scientific inquiries. This seems equivalent to our early exploration of causal 
-diagrams. We can reframe the scientific method as observation of a state-transition, hypothesis of a cause-effect relation, recreation of
-hypothesised cause in absence of external factors, observation or non-observation of effect, incorporation into inference tree constructred
-from previous observations and rules of inference. Similarly, for qualitative investigation, knowledge seems akin to a memory structure 
-storing experiences perceived and assumptions held to be true, epistemology seems akin to correlative associations made within the memory
-structure, methodology seems akin to an inference ruleset and method the application of the ruleset in a particular context, whilst data
-analysis, like before, is integration of the findings bakc into the memory structure.</p> 
-<p>As humans in the real world, the reward functions motivating our actions are numerous, diluting the amount of energy we can spend on 
-developing any one causal network. Consider that a part of our neural circuitry is motivated to find cause-effect relations in words 
-spoken and positive social signalling received, especially if we are close to an individual who we need to appease for our own security.
-Another part of our neural circuitry finds causal relations between desires others possess and actions they take, for the purpose of 
-prediction and imitation, especially in early development. Every individual has a unique causal network by which they interpret their 
-world, drawn from personal experience, which we can refer to as personal ideology, which exists as a combination of collective ideologies,
-that is aspects of systems of ideas people have through which they view the world. There exists politicial ideology concerning governance
-of a state, philosophical ideology concerning the nature of perceptual experience, economic ideology concerning the generation and 
-distribution of wealth within a state, social ideology concerning the nature of relations between individuals within the state, etc. Some
-ideologies align themself with one such category (capitalism and communism are economic in nature) whilst others align 
-themselves with many (liberalism and conservatism are political, economic and social in nature). Heuristics exist that map out relations
-between cultures and ideologies with admirable precision<sup>[1]</sup>.</p>
-<p>Of all the ideologies through which we could begin an analysis of the world at large, lets start with Realism. Realism is a school of
-thought in international relations that holds the following assumptions as generally true:
-<ul>State-centrism: international relations exists primarily as the result of the interaction between states, rather than the interaction
-between leaders, institutions, or peoples.</ul>
-<ul>Anarchy: thus the international political system is anarchic as no authority sits above all states and enforces rules.</ul>
-<ul>Rationality: states are rational actors with self-interest.</ul>
-<ul>Power: states desire states desire power to ensure self-preservation.</ul>
-Realist thought is greatly influenced by geopolitical analysis, that is the study of the effect geography has over international relations,
-how land and resources effect the establishment of and interaction between nations and their people. The rest of this post
-will attempt to compile heuristics that help us see the world through a realist lens.</p>
+<p>Empiricism, rationalism, and pragmatism are examples of epistemology, asserting that all that can be known is derived from the senses,
+from reason, and from practical application of reason, respectively. We could class these epistemologies as belonging to a broader realist
+epistemology, categorised by the belief that knowledge of an external reality can be obtained. Thus, a realist epistemology, rests on an 
+objectivist ontology. This sits in contrast to an interpretivist epistemology, resting on a subjectivist ontology, which instead asserts
+that knowledge can be known only in relation to the experience of the observer, not solely in the observation itself. From the notion of
+epistemology, we can migrate to the notion of methods. If epistemology asserts the nature of what can be known, methods
+assert how we can come to know it. Examples include deductive inference, inductive inference, experimental test, and case study.</p>
+<p>Methods belong to a methodology, quantitative if it deals with numeric data, and qualitative otherwise. Although both methodologies deal
+will the acquisition and integration of knowledge, the structure of the resulting knowledge base is likely to differ based on the methodology.
+Let us conceptualise knowledge as a network of causal and correlative relations. The knowledge structure that emerges from inquiry into
+the nature of propositional logic involves a finite and relatively small alphabet of logic symbols, a set of rules of inference, a set of
+initial expressions, and a set of expressions discovered thorugh application of the rule set to the initial expressions. In the limit, this
+knowledge structure has more depth than breadth. We can contrast this with the knowledge structure that emerges from inquiry into the 
+nature of international relations, composed of a large base of historical case study and shallower but broader-reaching correlative patterns
+identified across said knowledge base. In the limit of this case, there is more breadth than depth.</p>
+<p>Perhaps the best known method of inquiry, the scientific method, can be applied to both quantitative and qualitative investigation. It is
+empirical in nature, involving direct observation of a phenomenon, hypothesis as to the cause of the phenomenon, recreation of the
+phenomenon in the sole presence of factors hypothesised to be causal or correlative (experimental test), analysis of the confirmed/refuted
+hypothesis, and finally, drawing conclusions from the inquiry. This is an approach grounded in a realist epistemology and an objectivist 
+ontology, as it assumes the existence of an external world that we can obtain knowledge about through the sense. The same method can be
+appropriated for subjectivist ontologoies and non-realist epistemologies that believe knowledge to be obtained through analysis of
+observation in the context of the observer. In such a case, the knowledge base derived from previous observation is not thought of as 
+the accumulation of discovered objective knowledge, but as the knowledge base emergent of the set of inquiries made by researcher's 
+operating with given methods and methodologies, within more abstract philosophical frameworks.</p>
+<p>If we assume the existence of multiple observers, or assume the perception of the existence of multiple observers, and assume that
+these multiple observers may make distinct observations, and inquire into some observations and not others, then we can begin to approach
+the concept of ideology. The selective process can be thought of as an ideal, the observer possesses an ideal, motivating inquiry into
+a subset of observations. If we are assuming that multiple observers exist, producing knowledge within their own ontological and 
+epistemological viewpoints, then we can assume the establishment of disparate knowledge structures, and refer to their groupings as
+ideologies. Ideologies may pertain to politics and the nature of governance, economics and the nature of wealth, philosophy and the nature
+of nature, society and the nature of human behaviour, etc, or some hybridisation of the above.</p>
+<p>We might then ask how the content of this specific document, in its inquiry into the nature of knowledge and ideology, sits within 
+the nature of knowledge and ideology. Based on our assumptions and inferences thus far, it seems that this document is ontologically 
+objectivist, epistemologically realist, and more rationalist than empiric or pragmatic. The document does not possess an ideology beyond
+this, as we have not observed the observer writing the document, and have thus not placed the observer within an ideological category of
+observation. The document's inquiry into the nature of knowledge seems to succesfully integrate knowledge of the nature of knowledge with
+knowledge of the nature of inquiry. That being said, it seems that the obtained knowledge in such a rationalist endeavour decomposes
+if the observer's perspective moves from the path we have just discussed (objectivism, realism, rationalism, etc) to a specific ideology.
+If we move the lens of the observer to one of pure interpretivism, then the entire document decomposes into noise, as no analysis has been
+made of the observer. Other ideologies are more compatible with the perspectives taken so far.</p>
+<h3>Realism</h3>
+<p>The rest of this document will explore a subset of ideologies of personal interest, looking to the assumptions they make and the 
+heuristics they use. Let us start with Realism, a school of thought in international relations analysing the nature of governance at the
+international level. Realism generally hold the following four principles as true:
+<ul>State-centrism: international relations exists as the product of the interaction between states, defined as human collectives
+under singular systems of governance.</ul>
+<ul>Anarchy: no supranational authority exists, thus the system of state relations is anarchic in nature.</ul>
+<ul>Rationality: states are rational actors, acting in accordance with a self-interest for survival and growth.</ul>
+<ul>Power: the primary desire of a state is power for the purpose of self-preservation</ul>
 <h4>The drawing and redrawing of historical lines</h4>
 <p>Imagine a map of the world today. The most objective components of this map, prior to the drawing of any geographical lines, 
 are the features of the Earth itself, the continents, oceans, biomes, mountains and river systems. We as humans seek regions of 
@@ -88,14 +84,14 @@ Egyptians, used pulleys, ramps and levers, developed papyrus paper, pottery
 and rope trusses, and erected Abu Simbel, the Sphinx and the Great Pyramids. Despite the grandeur of these past cradles of civilisations, they, like all
 others across human history, were subject to atrophy and strain in the form of war, plague, famine, and natural disaster.</p>
 <p>The Three Kingdoms War of early China saw some 36 to 40 million people killed from conflict, famine and disease, approximately 20% of
-the global population at the time<sup>[2][3][4]</sup>. The black death was estimated to have caused 75 to 200 million fatalities, and the plague of Justinian wiped
-out 25%-60% of European inhabitants<sup>[5]</sup>. The Yellow River flood killed an estimated 2,000,000 people and the Bhola Cycle of East Pakistan/West
-India an estimated 500,000 people<sup>[6]</sup></p>
+the global population at the time<sup>[1][2][3]</sup>. The black death was estimated to have caused 75 to 200 million fatalities, and the plague of Justinian wiped
+out 25%-60% of European inhabitants<sup>[4]</sup>. The Yellow River flood killed an estimated 2,000,000 people and the Bhola Cycle of East Pakistan/West
+India an estimated 500,000 people<sup>[5]</sup></p>
 <p>It is clear that human history has been shaped and punctuated by mass death and suffering across
 nations and empires that form and stay bound through national, ethnic and religious identity. The fierceness of their competititon derives
 from their military, industrial and political strength, making for a continual power struggle by which geographic lines are drawn and 
 redrawn across history. With this, we arrive at our first heuristic: the natural world's geopolitical overlay, comprised of amoeboid like
-nation-states<sup>[7][8]</sup> that rise and fall, spread and recede, fragment and combine.</p>
+nation-states<sup>[6][7]</sup> that rise and fall, spread and recede, fragment and combine.</p>
 <h4>Structures of Governance</h4>
 <p>A structure of governance, not unlike an organisational structure, is a structure that defines the way in which work and decision-making
 is delegated to subcomponents of a collective group of individuals. These human collectives can be
@@ -115,12 +111,11 @@ opportunities, safe-guarded by military might. The degree of coupling between a 
 if too weak or too strong, devolving into tyranny, bureaucracy, military coups, widespread protest, etc. 
 State military may exist as a combination of national forces, civilian militia and private contractors. 
 Industry may be predominantly onshore or offshore, with the balance of net importation and exportation providing 
-an economic profile of dependencies between states<sup>[9]</sup>. There will also exist some apparatus for the dissemination of information where the struggle for hearts and minds takes place. In the modern world, this occurs over news broadcast, social media, and the
+an economic profile of dependencies between states<sup>[8]</sup>. There will also exist some apparatus for the dissemination of information where the struggle for hearts and minds takes place. In the modern world, this occurs over news broadcast, social media, and the
 internet. This information may be natural in the form of competing perspectives on current issues, or artificial in the form of
 advertisement and propaganda.</p>
 <h4>References</h4>
 <p><ol>
-<li><a target="_blank" href="https://en.wikipedia.org/wiki/Inglehart%E2%80%93Welzel_cultural_map_of_the_world">Mapping cultural values</a></li>
 <li><a target="_blank" href="https://www.reddit.com/media?url=https%3A%2F%2Fi.redd.it%2Foszhrcuah4h91.png">Signficance of Chinese Civil Wars</a></li>
 <li><a target="_blank" href="https://en.wikipedia.org/wiki/List_of_largest_empires">Scope and scale of Historical Empires</a></li>
 <li><a target="_blank" href="https://en.wikipedia.org/wiki/List_of_wars_by_death_toll">Scope and scale of Historical Wars</a></li>
