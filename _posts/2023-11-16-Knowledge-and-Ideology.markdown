@@ -4,67 +4,65 @@ title: Knowledge and Ideology
 ---
 <h3>Knowledge and Ideology</h3>
 <p>Inquiring into the nature of knowledge is a tricky thing. Inquiry itself is founded upon knowledge, which as the subject of the inquiry,
-is yet to be known. Knowledge must therefore initially be assumed, and from this assumption all else follows. The initial assumption can
-be that "existence is perceived" or that "existence exists and is perceived". If existence doesn't exist or isn't perceived, everything that
-exists does not exist, so nothing exists, and nothing else follows. If existence exists, all that exists exists, and all else follows. If
-existence is perceived, all that is perceived exists, and all else follows. These two initial assumptions are ontological in that they
-relate to the nature of being, but distinct in that only one affirms the existence of a reality external to the observer. This distinction
-is between objectivism and subjectivism, the former asserting that reality exists external to the observer, subjectivism asserting that it
-does not. Ontology inquires into the nature of being. Epistemology inquires into the nature of knowledge.</p>
+cannot be established. Knowledge must therefore initially be assumed, and from this assumption all else will follow. The assumption that
+"existence is perceived" or that "existence exists and is perceived" can be made. If instead existence does not exist or existence is not
+perceived, then everything that exists does not exist, everything that is perceived does not exist, nothing exists, and nothing else follows.
+If existence does exist, then all that exists exists, and all else follows. If existence is perceived, then all that is perceived exists,
+and all else follows. These initial assumptions are ontological in their relation to the nature of being, but distinct in their 
+assertion that existence exists, dividing ontology into objectivism and subjectivism. The former asserts that reality exists external to
+the observer, the latter asserts that it does not. Ontology inquires into the nature of what exists. Epistemology inquires into the nature 
+of what can be known to exist.</p>
 <p><img src="/Assets/images/research_methods.png" width="100%" height="100%"></p>
-<p>Empiricism, rationalism, and pragmatism are examples of epistemology, asserting that all that can be known is derived from the senses,
-from reason, and from practical application of reason, respectively. We could class these epistemologies as belonging to a broader realist
-epistemology, categorised by the belief that knowledge of an external reality can be obtained. Thus, a realist epistemology, rests on an 
-objectivist ontology. This sits in contrast to an interpretivist epistemology, resting on a subjectivist ontology, which instead asserts
-that knowledge can be known only in relation to the experience of the observer, not solely in the observation itself. From the notion of
-epistemology, we can migrate to the notion of methods. If epistemology asserts the nature of what can be known, methods
-assert how we can come to know it. Examples include deductive inference, inductive inference, experimental test, and case study.</p>
-<p>Methods belong to a methodology, quantitative if it deals with numeric data, and qualitative otherwise. Although both methodologies deal
-will the acquisition and integration of knowledge, the structure of the resulting knowledge base is likely to differ based on the methodology.
-Let us conceptualise knowledge as a network of causal and correlative relations. The knowledge structure that emerges from inquiry into
-the nature of propositional logic involves a finite and relatively small alphabet of logic symbols, a set of rules of inference, a set of
-initial expressions, and a set of expressions discovered thorugh application of the rule set to the initial expressions. In the limit, this
-knowledge structure has more depth than breadth. We can contrast this with the knowledge structure that emerges from inquiry into the 
-nature of international relations, composed of a large base of historical case study and shallower but broader-reaching correlative patterns
-identified across said knowledge base. In the limit of this case, there is more breadth than depth.</p>
-<p>Perhaps the best known method of inquiry, the scientific method, can be applied to both quantitative and qualitative investigation. It is
-empirical in nature, involving direct observation of a phenomenon, hypothesis as to the cause of the phenomenon, recreation of the
-phenomenon in the sole presence of factors hypothesised to be causal or correlative (experimental test), analysis of the confirmed/refuted
-hypothesis, and finally, drawing conclusions from the inquiry. This is an approach grounded in a realist epistemology and an objectivist 
-ontology, as it assumes the existence of an external world that we can obtain knowledge about through the sense. The same method can be
-appropriated for subjectivist ontologoies and non-realist epistemologies that believe knowledge to be obtained through analysis of
-observation in the context of the observer. In such a case, the knowledge base derived from previous observation is not thought of as 
-the accumulation of discovered objective knowledge, but as the knowledge base emergent of the set of inquiries made by researcher's 
-operating with given methods and methodologies, within more abstract philosophical frameworks.</p>
+<p>Empiricism, rationalism, and pragmatism are examples of realist epistemology, believing that all that can be known is derived from the
+senses, from reason, and from practical application of reason, respectively. A realist epistemology is an epistemology believing that 
+knowledge of an external reality that exists can be obtained. Thus, a realist epistemology rests on an objectivist ontology. In contrast,
+an interpretivist epistemology believes that knowledge can be obtained only through observation of the observer, not in observation itself.
+It could rest on either an objectivist or subjectivist ontology. From migrate from epistemology to methods. If epistemology inquires into
+the nature of what can be known to exist, methods inquire into the nature of how we can come to know it. Deductive inference, inductive 
+inference, experimental test, and case study, are all methods.</p>
+<p>Methods belong to a methodology that is quantitative if dealing with numeric data or qualitative otherwise. Knowledge obtained through
+these methodologies is likely to contain structural differences depending on the methodology selected. The knowledge is structural in the
+sense that it exists as a network of causal and correlative relation. If we hold this true, then we can compare the structure of 
+knowledge produced by different inquires by comapring the complexixty of the language used to describe them. Take inquiry into 
+propositional logic as an example, which involves a finite and relatively small alphabet of logical symbols, a grammar, a rule set, and 
+a set of discovered expressions. In the limit, the ratio of depth to breadth is great. Take inquiry into international relations, which 
+involves complex historical case study from which broader claims are made, all in natural language. In the limit of this case, the ratio
+od breadth to depth is great.</p>
+<p>Like other methods, the scientific method can apply a quantitative methodology, a qualititative methodology, or some hybridisation of 
+the two. In it susual empirical form, this method involves observation of a phenomenon, hypothesis as to the cause of the phenomenon,
+recreation of the phenomenon in the sole presence of factors hypothesised to be causal or correlative, confirmation or refutation of the
+hypothesis, and the drawing of inferences from the confirmed or refuted hypothesis. In its empirical form, by assuming an external 
+world exists from which we can obtain knowledge through the senses, the scientific method grounds itself in a realist epistemology and an
+objectivist ontology. The same method can be appropriated for subjectivist ontologoies and non-realist epistemologies. To do so,
+the base of knowledge that motivates the inquiry is evaluated in relation to the observer, by identifying the framework the observer
+operates within (the ontology, epistemology, methodology, method, ideology, etc) and the effect it has over the observer's observation.</p>
 <p>If we assume the existence of multiple observers, or assume the perception of the existence of multiple observers, and assume that
-these multiple observers may make distinct observations, and inquire into some observations and not others, then we can begin to approach
-the concept of ideology. The selective process can be thought of as an ideal, the observer possesses an ideal, motivating inquiry into
-a subset of observations. If we are assuming that multiple observers exist, producing knowledge within their own ontological and 
-epistemological viewpoints, then we can assume the establishment of disparate knowledge structures, and refer to their groupings as
-ideologies. Ideologies may pertain to politics and the nature of governance, economics and the nature of wealth, philosophy and the nature
-of nature, society and the nature of human behaviour, etc, or some hybridisation of the above.</p>
-<p>We might then ask how the content of this specific document, in its inquiry into the nature of knowledge and ideology, sits within 
-the nature of knowledge and ideology. Based on our assumptions and inferences thus far, it seems that this document is ontologically 
-objectivist, epistemologically realist, and more rationalist than empiric or pragmatic. The document does not possess an ideology beyond
-this, as we have not observed the observer writing the document, and have thus not placed the observer within an ideological category of
-observation. The document's inquiry into the nature of knowledge seems to succesfully integrate knowledge of the nature of knowledge with
-knowledge of the nature of inquiry. That being said, it seems that the obtained knowledge in such a rationalist endeavour decomposes
-if the observer's perspective moves from the path we have just discussed (objectivism, realism, rationalism, etc) to a specific ideology.
-If we move the lens of the observer to one of pure interpretivism, then the entire document decomposes into noise, as no analysis has been
-made of the observer. Other ideologies are more compatible with the perspectives taken so far.</p>
+these multiple observers make distinct observations and inquire into some observations and not others, then by doing so we approach the
+concept of ideology. The observer can be thought to possess an ideal that motivates this selectiveness. Thus each observer produces 
+distinct knowledge structures based on the ideals they possess. Ideologies exists as group knowledge structures produced by multiple 
+observers sharing the same ideals. Ideals may be classed together, producing ideologies that are classed together, such as political 
+ideologies pertaining to the nature of governance, economic ideologies pertaining to the nature of wealth, philosophical ideologies 
+pertaining to the nature of nature, social ideologies pertaining to the nature of human interaction, or some hybridisation of the above.</p>
+<p>We might then ask where this document in its inquiry into the nature of knowledge sits within the nature of knowledge. Based on our
+discussion thus far, it seems this document is objectivist, realist and rationalist seeing as it assumes the existence of an external world
+that knowledge of can be obtained through reasoning on an a priori assumption that existence exists and is perceived. The document is 
+not interpretivist or ideological, as knowledge is not obtained through reference to or analysis of the observer writing the document. 
+Although the document seems to succesfully integrate what initially seems contradictory, that knowledge requires inquiry and that
+inquiry requires knowledge, it still belongs to a specific ideological path within itself. Taking an interpretivist rather than a realist
+ideological path within the structure the document describes itself as belonging to, dissolves the document into noise.</p>
 <h3>Realism</h3>
 <p>The rest of this document will explore a subset of ideologies of personal interest, looking to the assumptions they make and the 
-heuristics they use. Let us start with Realism, a school of thought in international relations that analyses the nature of governance at the
-international level. Realism generally hold the following four principles as true:
-<ul>State-centrism: international relations exists as the product of the interaction between states, defined as human collectives
+heuristics they use, starting with Realism. Realism is a school of thought in international relations that inquires into the nature of
+governance at the international level. Realism can be characterised by the following principles:
+<ul>State-centrism: international relations exist as the product of the interaction between states, defined as human collectives
 under singular systems of governance.</ul>
 <ul>Anarchy: no supranational authority exists, thus the system of state relations is anarchic in nature.</ul>
-<ul>Rationality: states are rational actors, acting in accordance with a self-interest for survival and growth.</ul>
-<ul>Power: the primary desire of a state is power for the purpose of self-preservation</ul>
-Realist thought is cloesly tied to geopolitics, that is the analysis of the effect the Earth's geography has on international relations. 
+<ul>Rationality: states are rational actors, acting in accordance with a self-interest.</ul>
+<ul>Power: of primary self-interest to a state is power for the purpose of self-preservation</ul>
+Realist thought is closely tied to geopolitics: the analysis of the effect of Earth's geography on international relations. 
 To understand the realist view of the international order as state-centric and anarchic, it helps to first understand the role geography
-plays in the establishment and development of civilisation. To then understand the realist view of states as rational power-seeking entities,
-we could look more closely at the organisational structures that underly their governance.</p>
+plays in the establishment and development of civilisation. To understand the realist view of states as rational power-driven actors,
+it helps to look more closely at the organisational structures underlying their governance.</p>
 <h4>Geographical influence on the beginnings of civilisation</h4>
 <p>Imagine a map of the world today. The most objective components of this map, prior to the drawing of any geographical lines, 
 are the features of the Earth itself, the continents, oceans, biomes, mountains and river systems. We as humans seek regions of 
@@ -97,8 +95,10 @@ from their military, industrial and political strength, making for a continual p
 redrawn across history. With this, we arrive at our first heuristic: the natural world's geopolitical overlay, comprised of amoeboid like
 nation-states<sup>[6][7]</sup> that rise and fall, spread and recede, fragment and combine.</p>
 <h4>Geographical influence on modern civilisation</h4>
-<p>Despite the sophistication of today's technology, the geographical features underlying the territory of a state plays a signficant role
-in the strategic mindset of that state. Let's go through a set of examples in the modern world, starting with Russia.</p>
+<p>Despite the sophistication of modern technology, the geographical features of a state still contribute greatly to its strategic mindset
+and it operational capabilities. Consider that natural events such as sandstorms and heavy rain can render constellations of surveillance
+satellites of the world's greatest powers as useless. Let us look to a number of examples of the influence geography holds over modern
+states, starting with Russia.</p>
 <p>Russia is the largest country in the world, spanning eleven time zones from Western Europe to Northern Asia. Siberia, the largest region
 of Russia, encompasses most of Northern Asia and comprises approximately three quarters of Russian territory but only one quarter of its
 population. The Ural Mountains separate Siberia from the rest of Russia, which is instead seated atop the Great European Plain, a biome 
