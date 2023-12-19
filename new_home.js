@@ -11,9 +11,9 @@ function OnMouseDown(event){
 	document.onmousemove = OnMouseMove;
     _startX = event.clientX;
 	_startY = event.clientY;
-	_offsetX = document.getElementById('alt_div').offsetLeft;
-	_offsetY = document.getElementById('alt_div').offsetTop;
-	_dragElement = document.getElementById('alt_div');
+	_offsetX = document.getElementById('portal_frame').offsetLeft;
+	_offsetY = document.getElementById('portal_frame').offsetTop;
+	_dragElement = document.getElementById('portal_frame');
 }
 
 function OnMouseMove(event){
