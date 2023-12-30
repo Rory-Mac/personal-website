@@ -7,7 +7,7 @@ function LoadInitialElements() {
 		["Human-Computer", [0,167]], ["Computer-Networks", [116,175]], ["Operating-Systems", [190,160]], ["Input-Output", [116,265]],
 		["Imperative", [259,16]], ["Declarative", [319,16]], ["Functional", [379,16]], ["Object-Oriented", [439,16]],
 		["Compilation", [356,142]], ["Markov-Process", [418,244]], ["Linear-Regression", [338,368]], ["Computer-Architecture", [148,360]],
-		["Automata-Theory", [239,376]], ["Logic-Gates", [239,460]], ["Digital-Logic", [239,537]], ["Narrative-Structure", [300,536]],
+		["Automata-Theory", [239,376]], ["Logic-Gates", [239,460]], ["Digital-Logic", [239,537]], ["Narratives", [300,536]],
 		["Ontology", [178,659]], ["Memory", [405,659]], ["Existential-Risk", [38,524]], ["Limbic-Resonance", [98,455]],
 		["Backpropagation", [437,368]], ["Tensors", [502,368]], ["Neat-Algorithm", [567,368]], 
 		["Perceptrons", [518,481]], ["KR2", [369,510]], ["Project-Evolution", [429,510]]
@@ -20,7 +20,7 @@ function LoadInitialElements() {
 		["Compilation", ["Computer-Architecture", "Automata-Theory"]], ["Input-Output", ["Computer-Architecture"]], 
 		["Markov-Process", ["Automata-Theory"]], ["Automata-Theory", ["Logic-Gates"]], ["Logic-Gates", ["Digital-Logic"]],
 		["Digital-Logic", ["Ontology"]], ["Limbic-Resonance", ["Ontology"]], ["Existential-Risk", ["Ontology"]],
-		["Narrative-Structure", ["Ontology", "Memory"]], ["Linear-Regression", ["KR2"]], ["Backpropagation", ["Perceptrons"]],
+		["Narratives", ["Memory"]], ["Linear-Regression", ["KR2"]], ["Backpropagation", ["Perceptrons"]],
 		["Tensors", ["Perceptrons"]], ["Neat-Algorithm", ["Perceptrons"]], ["KR2", ["Memory"]], ["Project-Evolution", ["Memory"]],
 		["Perceptrons", ["Memory"]]
 	]

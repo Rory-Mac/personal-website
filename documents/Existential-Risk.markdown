@@ -38,47 +38,47 @@ any one individual. Let us look to nuclear close-calls across history, where coo
         <li><b>5 November 1956</b>&nbsp;During the Suez Crisis, NORAD misinterpreted collated reports of soviet activity as signalling an offensive towards NATO-allied
             France and the United Kingdom, warranting the consideration of a nuclear first-strike against the Soviet Union. These collated reports were found to be a
             coincidental combination of events, which included a wedge of swans over Turkey being misidentified as fighter jets, a fighter escort for the Syrian President 
-            returning from Moscow, scheduled soviet exercises, and a British bomber that had been downed due to mechanical failure<sup>[14]</sup>. NATO enforces a principle
+            returning from Moscow, scheduled soviet exercises, and a British bomber that had been downed due to mechanical failure<sup>[13]</sup>. NATO enforces a principle
             of collective defense under article five of its founding treaty. Despite this fact, it seems the prospects of a nuclear exchange would give pause to any leader,
-            as was the case with the 2022 missile explosion in Poland[15][16].
+            as was the case with the 2022 missile explosion in Poland<sup>[14][15]</sup>.
         </li><br>
         <li><b> March 11, 1958</b>&nbsp;A member of crew mistakenly pulled the emergency release pin on a nuclear-armed U.S Air Force B-47, dropping the nuclear warhead
         into suburban South Carolina. A playhouse in the woods was destroyed from the conventional explosives, injuring two young sisters. Fortunately, the fissile core
-        was stored elsewhere in the bomber<sup>[17]</sup>. Although this particular event does not itself pose an existential risk, it is a good example of the devastating
+        was stored elsewhere in the bomber<sup>[16]</sup>. Although this particular event does not itself pose an existential risk, it is a good example of the devastating
         consequences of faulty technology and human error with respect to nuclear warfare. 
         </li><br>
         <li><b>5 October 1960</b>&nbsp;Radar equipment in Greenland used as an early detection system for NORAD misinterprets moonrise over Norway as a Soviet first-strike.
-            The presence of Khrushchev in New York City as part of a UN delegation raises doubt as to the accuracy of the radar's readings<sup>[18]</sup>. In these 
+            The presence of Khrushchev in New York City as part of a UN delegation raises doubt as to the accuracy of the radar's readings<sup>[17]</sup>. In these 
             scenarios of false positives we would hope that confidence in second-strike capabilities would allow rational leaders time enough to resolve these 
             misunderstandings.   
         </li><br>
         <li><b>25 October 1962</b>&nbsp;A bear climbing the security fence of Duluth Sector Direction Center was misinterpreted as military sabotage from a foreign agent.
         A fleet of nuclear-armed F-106A interceptors were dispatched, with pilots (who were told no practice drills would take place) believed that nuclear war had 
-        started<sup>[19]</sup>. It took driving a truck into the take-off path of the departing jets to halt such an irrevocable escalation. Again, we were 
+        started<sup>[18]</sup>. It took driving a truck into the take-off path of the departing jets to halt such an irrevocable escalation. Again, we were 
         drawn close to the brink of nuclear armageddon due to faulty technology and human error.
         </li><br>
         <li><b>27 October 1962</b>&nbsp;The all too infamous soviet-patrol submarine B-59 mistook practice depth-charges from the US navy as a real attack, two of three 
         commanders ordered the use of a nuclear torpedo against the US Navy, though the order had to be unanimous. It was during this crisis that the families of 
-        militiary and political elite were surreptitiously notified that the time to evacuate in fear of the possibility of nuclear war was now<sup>[20]</sup>. It can be
+        militiary and political elite were surreptitiously notified that the time to evacuate in fear of the possibility of nuclear war was now<sup>[19]</sup>. It can be
         said diplomatic relations between John F. Kennedy and Nikita Khrushchev, as well as the rationality of one Vasili Arkhipov, were deciding factors in the prevention
         of the escalation of such a crisis into all-out war.  
         </li><br>
         <li><b>9 November 1965</b>&nbsp;Nuclear Bomb detectors used to distinguish the cause of power outages between mechanical failure and nuclear detonation, failed,
-        giving the impression of a nuclear first-strike<sup>[21]</sup>.
+        giving the impression of a nuclear first-strike<sup>[20]</sup>.
         </li><br>
         <li><b>23 May 1967</b>&nbsp;A solar flare misinterpreted by early detection systems as an imminent strike caused the US military to come close to ordering 
-        a nuclear-bomber counter-strike against the Soviet Union<sup>[22]</sup>.
+        a nuclear-bomber counter-strike against the Soviet Union<sup>[21]</sup>.
         </li><br>
         <li><b>9 November 1979</b>&nbsp;Malfunctioning computer systems in NORAD headquaters across the United States caused alarm and full preparation against a 
         non-existent Soviet attack. NORAD briefed the national security advisor who briefed the president who was given three to seven minutes to make a decision.
-        At the six to seven minute mark, satellite and radar systems confirmed the falsity of the reports<sup>[23]</sup>.
+        At the six to seven minute mark, satellite and radar systems confirmed the falsity of the reports<sup>[22]</sup>.
         </li><br>
         <li><b>7 to 11 November 1983</b>&nbsp;Able Archer, a NATO militiary operation used to simulate a joint response to the escalation of a conventional war into a 
         nuclear war, was misinterpreted by Soviet officials as a ruse disguising an imminent first-strike. Soviet ICBMS and nuclear-armed aircraft were brought to 
-        the ready<sup>[24]</sup>.
+        the ready<sup>[23]</sup>.
         </li><br>
         <li><b>25 January 1995</b>&nbsp;A norwegian scientific research rocket was misinterpreted by russian radar systems as the launch of an ICBM directed at the russian 
-        state. The russian nuclear briefcase was activated and nuclear submarines were put at the ready for a retaliatory strike<sup>[25]</sup>.
+        state. The russian nuclear briefcase was activated and nuclear submarines were put at the ready for a retaliatory strike<sup>[24]</sup>.
         </li>
     </ul>
 </p>
@@ -90,7 +90,7 @@ systems to decrease the likelihood of false readings. The development of the Was
 National Nuclear Risk Reduction Center, also align with these principles and are of mutual benefit to all parties involved. On the diplomatic front, recognition and 
 reinforcement of the phrase coined by Reagan and Gorbachev, that a "nuclear war cannot be won and must never be fought" is of great importance. This sentiment has been 
 affirmed by a joint statement made by The People’s Republic of China, the French Republic, the Russian Federation, the United Kingdom of Great Britain and Northern Ireland, 
-and the United States of America, as recent as January 2022<sup>[27]</sup>. The importance of such a diplomatic stance cannot be stressed enough, with studies estimating
+and the United States of America, as recent as January 2022<sup>[25]</sup>. The importance of such a diplomatic stance cannot be stressed enough, with studies estimating
 that a nuclear war may not only end civilisation, but with it the lives of five billion people<sup>[26]</sup>.</p>
 <p>Despite these efforts however, nuclear war is still an existential risk, meaning that no matter how small the chance of its occurrence, the cumulative chance of its 
 occurrence becomes an inevitability given a long enough time horizon. Informally this is referred to as Murphy's Law, that "anything that can happen, will happen". Given
@@ -125,7 +125,7 @@ year time horizon.
   </tr>
 </table></p>
 <p>It seems that to abolish rather than simply delay the existential risk associated with nuclear weapons, stockpiles would need to drop below the quantity required
-to trigger the civilization-ending phenomenon of nuclear winter<sup>28</sup>. They could remain non-zero to enforce the principle of Mutually Assured Destruction, whilst
+to trigger the civilization-ending phenomenon of nuclear winter<sup>[27]</sup>. They could remain non-zero to enforce the principle of Mutually Assured Destruction, whilst
 still abolishing the existential risk they pose.
 Of course in the duration of this blog post I have focused solely on nuclear existential risk, and completely ignored prospects of artificial intelligence, climate
 change, and biological warfare, based on morbid curiosity alone. Something else I failed to address is the fact it doesn't seem to be of any importance for a civilian to
@@ -141,7 +141,7 @@ to speak, to listen, to comprehend, and to predict the actions of others in thei
 multi-faceted. Social interaction can exist as an umbrella term for the desire for warmth and intimacy, for courting and reproduction, for esteem and social approval, etc.
 A point we have not considered is that even if our hypothetical individual were given an endless supply of sustenance, security and social interaction, they would still
 want for some degree of novelty. Thus, it seems that exploration for exploration's sake motivates the behaviour of individuals, provided that the aforementioned desires
-have been satiated. Abraham Maslow had these exact contemplations in his formulation of Maslow's Hiearchy<sup>29</sup>. In it he believed that self-actualisation existed
+have been satiated. Abraham Maslow had these exact contemplations in his formulation of Maslow's Hiearchy<sup>[28]</sup>. In it he believed that self-actualisation existed
 as yet another reward function, which came to the forefront if an only if all other needs had been met. Self-actualisation describes the desire to be as much as one can
 be, to explore as much as one can explore, to master one's craft, to overcome adversity no human has overcome, etc. I like to use an alternative visualisation to
 contemplate these reward functions.</p>
@@ -149,7 +149,7 @@ contemplate these reward functions.</p>
 <p>It is by no means an exact heuristic, but it seems helpful nonetheless. Take the set of nodes or a subset of the set of nodes and identify a path in the graph
 that connects them all with minimal edges above or below the line. This arch diagram is equivalent to a flattened out complete graph, so essentially we are saying 
 pick an \(n\)-gon in the graph that connects \(n\) nodes. We can think of one such \(n\)-gon as a narrative, that is a perceived environment the individual is acting
-towards (reward, above the line) or away from (punishment, below the line). Prospect theory<sup>30</sup> seems relevant here, suggesting that humans are loss-averse
+towards (reward, above the line) or away from (punishment, below the line). Prospect theory<sup>[29]</sup> seems relevant here, suggesting that humans are loss-averse
 creatures who perceive loss and gain as being relative to a learnt baseline susceptible to change, rather than an absolute value derived from past experience. Thus, the
 we can imagine that the individual perceives many narratives simultaneously, motivating its movement away from punishment and towards reward in order to maximise a
 cumulative reward function across time. We can visualise multiple narratives motivated by the same base desires as a tunnel, with depth corresponding to distance in time.</p>
@@ -162,8 +162,8 @@ through the peer-to-peer network that is the human collective, assuming the majo
 sense of despair watching these broadcasts propagate, simmer and die. It is necessary for the individual to act as an existence proof, to not only broadcast (which is 
 also of benefit) but to take the set of actions that minimise the threat they perceive, in any small way they can. If we conclude that rationality and diplomacy are key
 measures against nuclear existential risk, then we can strive to be diplomatic and rational in our own worlds and in our own relationships, to influence the social 
-fabric in small, imperceptible ways that will propagate slowly but surely through from the local environment of approximately 150 individuals<sup>31</sup> to the global
-environment of approximately eight billion individuals. Diplomacy and rationality are assisted by the heuristic of Graham's Hierarchy<sup>32</sup>. Graham's
+fabric in small, imperceptible ways that will propagate slowly but surely through from the local environment of approximately 150 individuals<sup>[30]</sup> to the global
+environment of approximately eight billion individuals. Diplomacy and rationality are assisted by the heuristic of Graham's Hierarchy<sup>[31]</sup>. Graham's
 Hierarchy is a relatively straightforward hierarchical classification of arguments. The better the form of argument the higher its elevation in the heuristic.</p>
 <p><img src="/Assets/images/Graham&apos;s_Hierarchy.png" height="100%" width="100%"></p>
 <p>For any individual wanting for a more predictable and productive world, this seems a good principle to practice, a good standard to hold oneself to, and a good example

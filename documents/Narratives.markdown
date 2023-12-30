@@ -1,8 +1,8 @@
 ---
 layout: narrow
-title: Narrative Structure
+title: Narratives
 ---
-<h4>Narrative Structure</h4>
+<h4>Narratives</h4>
 <p>This post documents my attempt to identify patterns in human narrative. Narratives are powerful in their ability to shape our perception of the world around us
 and the actions we choose to take thereafter. Narratives are compressions of human experience. Thus, patterns in narrative reflect patterns in experience. Perhaps
 the set of patterns that exist in human narrative form a structure, which maps to human experience. Such a structure would be a map of human narrative and experience.
