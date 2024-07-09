@@ -5,7 +5,7 @@ function LoadInitialElements() {
 	const portals = [
 		["Web-Development", [116,0]], ["Encryption", [42,65]], ["Distributed-Systems", [116,84]], ["Multi-Processing", [190,66]],
 		["Human-Computer", [0,167]], ["Computer-Networks", [116,175]], ["Operating-Systems", [190,160]], ["Input-Output", [116,265]],
-		["Imperative", [259,16]], ["Declarative", [319,16]], ["Functional", [379,16]], ["Object-Oriented", [439,16]],
+		["Imperative", [289,36]], ["Declarative", [356,36]], ["Functional", [356,-40]], ["Object-Oriented", [289,-40]],
 		["Compilation", [356,142]], ["Markov-Process", [418,244]], ["Linear-Regression", [338,368]], ["Computer-Architecture", [148,360]],
 		["Automata-Theory", [239,376]], ["Logic-Gates", [239,460]], ["Digital-Logic", [239,537]],
 		["Memory", [399,659]], ["Limbic-Resonance", [98,537]],
@@ -16,7 +16,7 @@ function LoadInitialElements() {
 		["Encryption", ["Computer-Networks"]], ["Computer-Networks", ["Input-Output"]], ["Multi-Processing", ["Operating-Systems"]],
 		["Operating-Systems", ["Input-Output", "Computer-Architecture"]], ["Human-Computer", ["Input-Output", "Limbic-Resonance"]], 
 		["Computer-Architecture", ["Logic-Gates"]], ["Imperative", ["Compilation"]], ["Declarative", ["Compilation"]],
-		["Functional", ["Compilation"]], ["Object-Oriented", ["Compilation"]], ["Imperative", ["Compilation"]],
+		["Functional", ["Declarative"]], ["Object-Oriented", ["Imperative"]], ["Imperative", ["Compilation"]],
 		["Compilation", ["Computer-Architecture", "Automata-Theory"]], ["Input-Output", ["Computer-Architecture"]], 
 		["Markov-Process", ["Automata-Theory"]], ["Automata-Theory", ["Logic-Gates"]], ["Logic-Gates", ["Digital-Logic"]],
 		["Limbic-Resonance", ["Memory"]], 
