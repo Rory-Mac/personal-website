@@ -1,8 +1,8 @@
 ---
 layout: narrow
-title: Gradient Descent & Backpropagation
+title: Backpropagation
 ---
-<h4>Gradient Descent & Backpropagation</h4>
+<h4>Backpropagation</h4>
 <p>Backpropagation is a means of finding the gradient vector of a cost function to express the degree to which small changes in each network parameter
 affect the cost associated with a batch of training data. We use the gradient vector to modify our parameter set in the direction of least cost. Let us 
 start off with the following set of relevant equations:
