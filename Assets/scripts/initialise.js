@@ -8,9 +8,8 @@ function LoadInitialElements() {
 		["Imperative", [289,36]], ["Declarative", [356,36]], ["Functional", [356,-40]], ["Object-Oriented", [289,-40]],
 		["Compilation", [356,142]], ["Markov-Process", [418,244]], ["Game-Theory", [502,244]], ["Linear-Regression", [338,368]], 
 		["Computer-Architecture", [148,360]], ["Automata-Theory", [239,376]], ["Logic-Gates", [239,460]], ["Digital-Logic", [239,537]],
-		["Memory", [399,659]], ["Limbic-Resonance", [98,537]],
-		["Backpropagation", [437,368]], ["Tensors", [502,368]], ["Neat-Algorithm", [567,368]], 
-		["Perceptrons", [518,481]], ["KR2", [369,510]], ["Project-Evolution", [429,510]]
+		["Limbic-Resonance", [98,537]], ["Backpropagation", [437,368]], ["Tensors", [502,368]], ["Neat-Algorithm", [567,368]], 
+		["Perceptrons", [518,481]], ["KR2", [369,510]], ["Project-Evolution", [429,510]], ["Memory", [399,659]], ["Ontology", [354,787]]
 	];
 	const portal_edges = [["Web-Development", ["Distributed-Systems"]], ["Distributed-Systems", ["Computer-Networks"]],
 		["Encryption", ["Computer-Networks"]], ["Computer-Networks", ["Input-Output"]], ["Multi-Processing", ["Operating-Systems"]],
@@ -21,7 +20,7 @@ function LoadInitialElements() {
 		["Game-Theory", ["Backpropagation"]], ["Markov-Process", ["Automata-Theory"]], ["Automata-Theory", ["Logic-Gates"]], 
 		["Logic-Gates", ["Digital-Logic"]], ["Limbic-Resonance", ["Memory"]], ["Linear-Regression", ["KR2"]], 
 		["Backpropagation", ["Perceptrons"]], ["Tensors", ["Perceptrons"]], ["Neat-Algorithm", ["Perceptrons"]], ["KR2", ["Memory"]], 
-		["Project-Evolution", ["Memory"]], ["Perceptrons", ["Memory"]]
+		["Project-Evolution", ["Memory"]], ["Perceptrons", ["Memory"]], ["Digital-Logic", ["Ontology"]], ["Memory", ["Ontology"]]
 	]
 	LoadPortals(portals, scale_factor)
 	LoadPortalEdges(portal_edges, scale_factor)
@@ -68,7 +67,7 @@ function LoadPortalEdges(portal_edges, scale_factor) {
 		}			
 	});
 	// draw root of tree
-	let root_coord = [scale_factor*354, scale_factor*787]
+	let root_coord = [(scale_factor*354)+68, scale_factor*887]
 	let root = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
 	root.setAttribute("stroke", "#FFFFFF");
 	root.setAttribute("fill", "none");
@@ -78,9 +77,8 @@ function LoadPortalEdges(portal_edges, scale_factor) {
 	root.setAttribute("r", "7");
 	svg.append(root);
 	let root_rect = root.getBoundingClientRect();
-	let root_child1 = document.getElementById("Digital-Logic").getBoundingClientRect();
-	let root_child2 = document.getElementById("Memory").getBoundingClientRect();
-	for (let root_child of [root_child1, root_child2]) {
+	let root_child1 = document.getElementById("Ontology").getBoundingClientRect();
+	for (let root_child of [root_child1]) {
 		AddPath(svg, root_child.x + Math.floor(root_child.width / 2), root_child.y + root_child.height,
 		root_coord[0], root_coord[1] - root_rect.width);
 	}
