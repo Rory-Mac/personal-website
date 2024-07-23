@@ -3,51 +3,52 @@ layout: narrow
 title: Ontology
 ---
 <h3>Ontology</h3>
-<p>Inquiring into the nature of knowledge is a tricky thing. Inquiry itself is founded upon knowledge, which as the subject of the inquiry,
-cannot be established. Knowledge must therefore initially be assumed, and from this assumption all else will follow. The assumption that
-"existence is perceived" or that "existence exists and is perceived" can be made. If instead existence does not exist or existence is not
-perceived, then everything that exists does not exist, everything that is perceived does not exist, nothing exists, and nothing else follows.
-If existence does exist, then all that exists exists, and all else follows. If existence is perceived, then all that is perceived exists,
-and all else follows. These initial assumptions are ontological in their relation to the nature of being, but distinct in their 
-assertion that existence exists, dividing ontology into objectivism and subjectivism. The former asserts that reality exists external to
-the observer, the latter asserts that it does not. Ontology inquires into the nature of what exists. Epistemology inquires into the nature 
-of what can be known to exist.</p>
+<p>Knowledge follows from other knowledge and can be doubted. What is known to exist can be doubted to be what is known to not exist. What 
+is known to not exist can be doubted to be what is known to exist.</p>
+<p><img src="/Assets/images/doubt.png" width="100%" height="100%"></p>
+<p>To doubt some knowledge is to doubt all knowledge that follows. To doubt some knowledge from which all knowledge follows is to doubt all
+knowledge. All knowledge can be doubted, and thus, all knowledge that follows from any knowledge can be doubted.</p>
+<p><img src="/Assets/images/demon.png" width="100%" height="100%"></p>
+<p>Existence as it is perceived can be known or doubted. To doubt one's perception of existence is to separate existence as it is to
+existence as it is perceived. This creates an endless recursion of perceiving one's perception of existence. It may be the case that not 
+only does existence exist external to perception, but that such an existence acts to make existence as it is perceived distinct from itself,
+so that the perceiver never perceives existence as it actually is. This is Descarte's demon. Even in the presence of such a demon, it can be
+known that a perceived existence is perceived to exist. Of course this notion itself is a perceived existence that can be doubted, but 
+the perception itself cannot, which itself is a perceived existence that can be doubted, and so on ad nauseum. Thus, we can perceive an
+endless recursion between existence as it is perceived and existence as it actually is.</p>
+<p><img src="/Assets/images/corner_dot.png" width="100%" height="100%"></p>
+<p>Thus, any and all knowledge follows from the knowledge that knowledge is perceived and predicated on such perception. We can perceive 
+the presence or absence of Descarte's demon, the presence or absence of an existence distinct from perceived existence, but we cannot
+not perceive. And if we perceive perception itself we cannot not perceive these strange endless recursions between existence as it is 
+perceived and as it is.</p>
+<p>Ontological and Epistemological assumptions can be made to move towards unique and distinct domains of knowledge. Ontology is knowledge
+of what exists. Epistemology is knowledge of what can be known to exist. Ontology can be objectivist in the assertion that that which
+exists exists external to its perception, or subjectivist in the assertion that such does not. Epistemology can be realist in the assertion
+that knowledge of an external existence can be obtained through observation, or interpretivist in the assertion that such knowledge can
+only be obtained through study of both observation and observer. Assuming the nature of the world and how we can come to know of it,
+we devise a set of methods for doing so. Methodologies categorise methods as being quantitiative if involving numeric data or qualitative.</p>
+<p><img src="/Assets/images/methods_of_reasoning.png" width="100%" height="100%"></p>
+<p>Methods include deductive reasoning, inductive reasoning, abductive reasoning, the empirical method and philosophical razors. 
+Deductive reasoning is reasoning that involves the application of well-defined rules to well-defined input to get a corresponding output. 
+For instance, the rule may be that 'a ∈ A & A ⊆ B ⇒ a ∈ B', the input a, and the deductive inference that 'a ∈ B'. This is in contrast to 
+inductive reasoning where the inference is probabilistic with respect to a perceived pattern. For instance in a 4x4 grid of shapes, if every
+row thus far visited has one of each of a set of four distinct shapes, but one element of a then encountered row is hidden, the inductive 
+inference would be that this element is the shape missing from the set. It may be revealed that this is not the case, but the inductive
+inference can be asserted correct with respect to the pattern identified. Deductive reasoning infers a consequence from a rule and an input;
+abductive reasoning infers a likely input from a rule and a consequence. For instance, from the strike of a cue ball on a pool
+table one could deduce the scattering of the others. In contrast, from the scattering of the other pool balls, one could 
+abduce the striking of the cue ball.</p>
+<p>The empirical method can be used to identify the causal elements at play in more complex systems.
+In this method, a set of elements hypothesised to be related are isolated, and then combined in a way that will confirm or
+refute the hypothesised causal and correlative links. This method is philosophically objectivist and realist, but can be adapted to a
+subjectivist and interpretivist framework by treating the observer as a relevant element within the studied system. Other methods for 
+the acquisition of knowledge include philosophical razors: principles for the selection of certain explanations over others with regards
+to the behaviour of a system. Examples include Occam's razor, Alder's razor, and Popper's falsifiability. Occam's razor
+proposes that if two hypotheses exist, make the same prediction, and have equal explanatory power, the one with less elements should 
+be selected for and studied further. Alder's razor proposes that a proposition is not worthy of study unless shown through the terms
+of a formal language that such will have observable consequence. Popper's falsifiability criterion proposes that a proposition is not 
+worthy of study unless it can be logically contradicted by an empirical test.</p>
 <p><img src="/Assets/images/research_methods.png" width="100%" height="100%"></p>
-<p>Empiricism, rationalism, and pragmatism are examples of realist epistemology, believing that all that can be known is derived from the
-senses, from reason, and from practical application of reason, respectively. A realist epistemology is an epistemology believing that 
-knowledge of an external reality that exists can be obtained. Thus, a realist epistemology rests on an objectivist ontology. In contrast,
-an interpretivist epistemology believes that knowledge can be obtained only through observation of the observer, not in observation itself.
-It could rest on either an objectivist or subjectivist ontology. From epistemology we can migrate to methods. If epistemology inquires into
-the nature of what can be known to exist, methods inquire into the nature of how we can come to know it. Deductive inference, inductive 
-inference, experimental test, and case study, are all methods.</p>
-<p>Methods belong to a methodology that is quantitative if dealing with numeric data and qualitative otherwise. Knowledge obtained through
-these methodologies is likely to contain structural differences depending on the methodology selected. The knowledge is structural in the
-sense that it exists as a network of causal and correlative relation. If we hold this as being true, then we can compare the structure of 
-knowledge produced by different inquiries by comapring the complexixty of the language used to describe them. Take inquiry into 
-propositional logic as an example, which involves a finite and relatively small alphabet of logical symbols, a grammar, a rule set, and 
-a set of discovered expressions. In the limit, the ratio of depth to breadth is great. Take inquiry into international relations, which 
-involves complex historical case study from which broader claims are made, all in natural language. In the limit of this case, the ratio
-of breadth to depth is great.</p>
-<p>Like other methods, the scientific method can apply a quantitative methodology, a qualititative methodology, or some hybridisation of 
-the two. In its usual empirical form, the method involves observation of a phenomenon, hypothesis as to the cause of the phenomenon,
-recreation of the phenomenon in the sole presence of factors hypothesised to be causal or correlative, confirmation or refutation of the
-hypothesis, and the drawing of inferences from the confirmed or refuted hypothesis. In its empirical form, by assuming an external 
-world exists from which we can obtain knowledge through the senses, the scientific method grounds itself in a realist epistemology and an
-objectivist ontology. The same method can be appropriated for subjectivist ontologoies and non-realist epistemologies. To do so,
-the base of knowledge that motivates the inquiry is evaluated in relation to the observer, by identifying the framework the observer
-operates within (the ontology, epistemology, methodology, method, ideology, etc) and the effect it has over the observer's observation and
-the knowledge obtained through observation.</p>
-<p>If we assume the existence of multiple observers, or assume the perception of the existence of multiple observers, and assume that
-these multiple observers make distinct observations and inquire into some observations and not others, then we approach the
-concept of ideology. The observer can be thought to possess an ideal motivating this selectiveness. Thus, each observer possesses 
-a distinct knowledge structures based upon their ideals. Ideologies exist as group knowledge structures produced by multiple 
-observers sharing the same ideals. Ideals may be classed together, producing ideologies that are classed together, such as political 
-ideologies pertaining to the nature of governance, economic ideologies pertaining to the nature of wealth, philosophical ideologies 
-pertaining to the nature of nature, social ideologies pertaining to the nature of human interaction, or some hybridisation of the above.</p>
-<p>We might then ask how this document fits within the knowledge structure it produces from its inquiry. Based on our
-discussion thus far, it seems this document is objectivist, realist and rationalist, seeing as it assumes the existence of an external world
-whose knowledge can be obtained through reason, specifically from the a priori assumptions that existence exists and is perceived. The
-document is clearly not interpretivist or ideological, as knowledge is not obtained through reference to or analysis of the observer writing 
-the document. Although the document succesfully integrates what initially seems contradictory, that knowledge requires inquiry and that
-inquiry requires knowledge, it still belongs to a specific ideological path within itself. Taking an interpretivist rather than a realist
-ideological path within the structure the document describes itself as belonging to, dissolves the document into noise.</p>
+<p>One more consequence of ontology and epistemology worthy of discussion is that of ideology. If we assume the existence of multiple 
+observers each possessing knowledge structures as generated through their respective methods of inquiry, we approach the concept of 
+ideology. We can think of ideology as group knowledge structures generated across observers through their shared methods of inquiry.</p>
