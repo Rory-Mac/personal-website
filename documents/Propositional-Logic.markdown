@@ -1,8 +1,8 @@
 ---
 layout: narrow
-title: Digital Logic
+title: Propositional Logic
 ---
-<h4>Digital Logic</h4>
+<h4>Propositional Logic</h4>
 <p>Digital computation imitates biological computation. Computation is perception of the world, description of the perception, and evaluation of the description.
 Let's attempt to perform the simplest computation by perceiving the simplest world. In this simplest world we perceive either something or nothing,
 i.e. \(\exists x(x=x)\) or \(\nexists x(x=x)\). We describe our perception with a proposition, and denote this proposition \(P\), either

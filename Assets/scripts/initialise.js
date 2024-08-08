@@ -3,24 +3,27 @@ document.addEventListener('DOMContentLoaded', LoadInitialElements())
 function LoadInitialElements() {
 	let scale_factor = 2.5;
 	const portals = [
-		["Web-Development", [116,0]], ["Encryption", [42,65]], ["Distributed-Systems", [116,84]], ["Multi-Processing", [190,66]],
-		["Human-Computer", [0,167]], ["Computer-Networks", [116,175]], ["Operating-Systems", [190,160]], ["Input-Output", [116,265]],
-		["Imperative", [289,36]], ["Declarative", [356,36]], ["Functional", [356,-40]], ["Object-Oriented", [289,-40]],
-		["Compilation", [356,142]], ["Markov-Process", [418,244]], ["Game-Theory", [502,244]], ["Linear-Regression", [338,368]], 
-		["Computer-Architecture", [148,360]], ["Automata-Theory", [239,376]], ["Logic-Gates", [239,460]], ["Digital-Logic", [239,537]],
-		["Limbic-Resonance", [98,537]], ["Backpropagation", [437,368]], ["Tensors", [502,368]], ["Neat-Algorithm", [567,368]], 
-		["Perceptrons", [518,481]], ["KR2", [369,510]], ["Project-Evolution", [429,510]], ["Memory", [399,659]], ["Ontology", [354,787]]
+		["Web-Development", [82,0]], ["Object-Oriented", [252,0]], ["Functional", [326,0]], ["Encryption", [0,86]], 
+		["Distributed-Systems", [82,86]], ["Multi-Processing", [170,86]], ["Imperative", [252,86]], ["Declarative", [326, 86]], 
+		["Economics", [450, 86]], ["Human-Computer", [0,200]], ["Computer-Networks", [82,200]], ["Operating-Systems", [170,200]],
+		["Compilation", [252,200]], ["Markov-Process", [376,200]], ["Game-Theory", [450,200]], ["Neat-Algorithm", [524,200]], 
+		["Input-Output", [82,306]], ["Computer-Architecture", [170,428]], ["Automata-Theory", [252,428]], ["Perceptrons", [524,428]],
+		["Limbic-Resonance", [0,534]], ["Project-Evolution", [82,534]], ["Logic-Gates", [252,534]], ["Linear-Regression", [376,534]],
+		["Tensors", [450,534]], ["Propositional-Logic", [376,672]], ["Linear-Algebra", [450,672]], ["Calculus", [524,672]], 
+		["Causality", [598,672]], ["Physical-Science", [252,792]], ["Memory", [340, 792]], ["Ontology", [294,930]]
 	];
-	const portal_edges = [["Web-Development", ["Distributed-Systems"]], ["Distributed-Systems", ["Computer-Networks"]],
-		["Encryption", ["Computer-Networks"]], ["Computer-Networks", ["Input-Output"]], ["Multi-Processing", ["Operating-Systems"]],
-		["Operating-Systems", ["Input-Output", "Computer-Architecture"]], ["Human-Computer", ["Input-Output", "Limbic-Resonance"]], 
-		["Computer-Architecture", ["Logic-Gates"]], ["Imperative", ["Compilation"]], ["Declarative", ["Compilation"]],
-		["Functional", ["Declarative"]], ["Object-Oriented", ["Imperative"]], ["Imperative", ["Compilation"]],
-		["Compilation", ["Computer-Architecture", "Automata-Theory"]], ["Input-Output", ["Computer-Architecture"]],
-		["Game-Theory", ["Backpropagation"]], ["Markov-Process", ["Automata-Theory"]], ["Automata-Theory", ["Logic-Gates"]], 
-		["Logic-Gates", ["Digital-Logic"]], ["Limbic-Resonance", ["Memory"]], ["Linear-Regression", ["KR2"]], 
-		["Backpropagation", ["Perceptrons"]], ["Tensors", ["Perceptrons"]], ["Neat-Algorithm", ["Perceptrons"]], ["KR2", ["Memory"]], 
-		["Project-Evolution", ["Memory"]], ["Perceptrons", ["Memory"]], ["Digital-Logic", ["Ontology"]], ["Memory", ["Ontology"]]
+	const portal_edges = [
+		["Web-Development", ["Distributed-Systems"]], ["Object-Oriented", ["Imperative"]], ["Functional", ["Declarative"]],
+		["Encryption", ["Computer-Networks"]], ["Distributed-Systems", ["Computer-Networks"]], ["Multi-Processing", ["Operating-Systems"]],
+		["Imperative", ["Compilation"]], ["Declarative", ["Compilation"]], ["Economics", ["Game-Theory"]], 
+		["Human-Computer", ["Limbic-Resonance", "Input-Output"]], ["Computer-Networks", ["Input-Output"]], 
+		["Operating-Systems", ["Input-Output", "Computer-Architecture"]], ["Compilation", ["Computer-Architecture", "Automata-Theory"]],
+		["Markov-Process", ["Automata-Theory"]], ["Game-Theory", ["Automata-Theory", "Perceptrons"]], ["Neat-Algorithm", ["Perceptrons"]],
+		["Computer-Architecture", ["Logic-Gates"]], ["Automata-Theory", ["Logic-Gates"]], ["Perceptrons", ["Calculus"]],
+		["Limbic-Resonance", ["Memory"]], ["Project-Evolution", ["Memory"]], ["Logic-Gates", ["Physical-Science", "Propositional-Logic"]],
+		["Linear-Regression", ["Linear-Algebra"]], ["Tensors", ["Linear-Algebra"]], ["Propositional-Logic", ["Memory"]],
+		["Linear-Algebra", ["Memory"]], ["Calculus", ["Memory"]], ["Causality", ["Memory"]], ["Physical-Science", ["Ontology"]],
+		["Memory", ["Ontology"]]
 	]
 	LoadPortals(portals, scale_factor)
 	LoadPortalEdges(portal_edges, scale_factor)
@@ -67,7 +70,7 @@ function LoadPortalEdges(portal_edges, scale_factor) {
 		}			
 	});
 	// draw root of tree
-	let root_coord = [(scale_factor*354)+68, scale_factor*887]
+	let root_coord = [(scale_factor*294)+68, scale_factor*1000]
 	let root = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
 	root.setAttribute("stroke", "#FFFFFF");
 	root.setAttribute("fill", "none");
