@@ -77,7 +77,7 @@ reservoir at the point of contact. It can be thought of as the tendency for ener
 accurate view of entropy starts with the notion of multiplicity. We imagine N equally probable micro-states over which q units of energy
 can be distributed. Multiplicity is given as the following combination, which can be visualised as every way N - 1 boundaries dividing q
 elements can be manipulated.
-\[ \Omega (N, q) = left( \begin{array}{c} q + N - 1 \\ q \end{array} \right) = \frac{q+N-1!}{q!(N-1)} \]
+\[ \Omega (N, q) = \left( \begin{array}{c} q + N - 1 \\ q \end{array} \right) = \frac{q+N-1!}{q!(N-1)} \]
 The macro-state is characterized by a set of macroscopic properties. The macro-state exists as the set of micro-states that could produce 
 these macroscopic properties. The following are the Boltzmann and Gibbs definitions of entropy respectively.
 \[ S = k_{B} ​\ln Ω \]

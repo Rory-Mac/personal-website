@@ -3,27 +3,27 @@ document.addEventListener('DOMContentLoaded', LoadInitialElements())
 function LoadInitialElements() {
 	let scale_factor = 2.5;
 	const portals = [
-		["Web-Development", [82,0]], ["Object-Oriented", [252,0]], ["Functional", [326,0]], ["Encryption", [0,86]], 
-		["Distributed-Systems", [82,86]], ["Multi-Processing", [252,200]], ["Imperative", [252,86]], ["Declarative", [326, 86]], 
+		["Web-Development", [82,0]], ["Object-Oriented", [252,0]], ["Functional", [326,0]], ["Encryption", [0,86]], ["Distributed-Systems", [82,86]],
+		["Multi-Processing", [252,200]], ["Imperative", [252,86]], ["Declarative", [326, 86]], ["Project-Evolution", [450,86]],
 		["Economics", [524, 86]], ["Human-Computer", [0,200]], ["Computer-Networks", [82,200]], ["Operating-Systems", [170,200]],
 		["Compilation", [326,200]], ["Markov-Process", [450,200]], ["Game-Theory", [524,200]], ["Neat-Algorithm", [598,200]], 
-		["Computer-Architecture", [170,428]], ["Automata-Theory", [252,428]], ["Perceptrons", [524,428]],
-		["Limbic-Resonance", [0,534]], ["Project-Evolution", [450,86]], ["Logic-Gates", [170,534]], ["Linear-Regression", [376,534]],
-		["Tensors", [450,534]], ["Propositional-Logic", [376,672]], ["Linear-Algebra", [450,672]], ["Calculus", [524,672]], 
-		["Causality", [598,672]], ["Physical-Science", [252,792]], ["Memory", [340, 792]], ["Ontology", [294,930]]
+		["Computer-Architecture", [170,359]], ["Automata-Theory", [252,359]], ["Perceptrons", [524,359]], ["Information-Theory", [82,465]],
+		["Limbic-Resonance", [0,465]], ["Logic-Gates", [170,465]], ["Linear-Regression", [376,465]], ["Tensors", [450,465]], 
+		["Propositional-Logic", [376,603]], ["Linear-Algebra", [450,603]], ["Calculus", [524,603]], ["Causality", [598,603]],
+		["Physical-Science", [252,723]], ["Memory", [340, 723]], ["Ontology", [294,861]]
 	];
 	const portal_edges = [
 		["Web-Development", ["Distributed-Systems"]], ["Object-Oriented", ["Imperative"]], ["Functional", ["Declarative"]],
 		["Encryption", ["Computer-Networks"]], ["Distributed-Systems", ["Computer-Networks"]], ["Multi-Processing", ["Computer-Architecture"]],
 		["Imperative", ["Compilation"]], ["Declarative", ["Compilation"]], ["Economics", ["Game-Theory"]], 
-		["Human-Computer", ["Limbic-Resonance", "Computer-Architecture"]], ["Computer-Networks", ["Computer-Architecture"]], 
+		["Human-Computer", ["Limbic-Resonance", "Computer-Architecture"]], ["Computer-Networks", ["Computer-Architecture", "Information-Theory"]], 
 		["Operating-Systems", ["Computer-Architecture"]], ["Compilation", ["Computer-Architecture", "Automata-Theory"]],
 		["Markov-Process", ["Automata-Theory"]], ["Game-Theory", ["Automata-Theory", "Perceptrons"]], ["Neat-Algorithm", ["Perceptrons"]],
 		["Computer-Architecture", ["Logic-Gates"]], ["Automata-Theory", ["Propositional-Logic"]], ["Perceptrons", ["Calculus"]],
 		["Limbic-Resonance", ["Memory"]], ["Project-Evolution", ["Game-Theory"]], ["Logic-Gates", ["Physical-Science", "Propositional-Logic"]],
 		["Linear-Regression", ["Linear-Algebra"]], ["Tensors", ["Linear-Algebra"]], ["Propositional-Logic", ["Memory"]],
 		["Linear-Algebra", ["Memory"]], ["Calculus", ["Memory"]], ["Causality", ["Memory"]], ["Physical-Science", ["Ontology"]],
-		["Memory", ["Ontology"]]
+		["Memory", ["Ontology"]], ["Information-Theory", ["Physical-Science"]],
 	]
 	LoadPortals(portals, scale_factor)
 	LoadPortalEdges(portal_edges, scale_factor)
@@ -70,7 +70,7 @@ function LoadPortalEdges(portal_edges, scale_factor) {
 		}			
 	});
 	// draw root of tree
-	let root_coord = [(scale_factor*294)+68, scale_factor*1000]
+	let root_coord = [(scale_factor*294)+68, scale_factor*950]
 	let root = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
 	root.setAttribute("stroke", "#FFFFFF");
 	root.setAttribute("fill", "none");
