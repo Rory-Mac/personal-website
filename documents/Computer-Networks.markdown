@@ -3,60 +3,163 @@ layout: narrow
 title: Computer Networks
 ---
 <h4>Computer Networks</h4>
-<p>The lowest level of abstraction in computer networking is the physical layer, that is, the physical medium by which bits of data are transferred. Ethernet, Wi-Fi,
-USB, Bluetooth and Fiber Optics, are all examples of physical layer standards. Network protocols exist as abstractions atop this physical layer, defining how raw data is 
-formatted and sequenced into network packets before transmission. Transmission and reception of network packets is referred to as packet switching, and allows computers
-on a computer network to maintain multiple simultaneous connections with one another. Network packets consist of a header, describing the data to be transferred, and a
-payload, storing the data itself.</p>
-<p><img src="/Assets/images/OSI_TCP_IP.png" width="100%" height="100%"></p>
-<p>The OSI model and TCP/IP model are models used to categorise network protocols seated atop the physical layer. Each layer
-corresponds to an instance of encapsulation, whereby the packets of the more abstract network protocol when combined with an additional header become the payload of the
-less abstract network protocol. Packets may fragment into numerous network packets at less abstract network layers. Physical frames, such as an ethernet frame, format
-packet data to enable transmission over a specific physical medium, such as ethernet. The payload of such a physical frame will be a frame belonging to a protocol
-that deals with transmission control, error management, and interoperability between protocols. This is defined in the OSI stack by the MAC and Logic-Link sublayers of
-the Data-Link layer.</p>
-<p><img src="/Assets/images/MAC_frame_bitfields.png" width="100%" height="100%"></p>
-<p>MAC (Medium Access Control), is a data-link protocol managing the exchange of data through a physical medium between nodes in a computer network. This is not to be
-confused with MAC addresses, also known as physical or hardware addresses, which are unique identifiers stored in the firmware or read-only memory of a network interface
-controller belonging to a host device. The payload of a MAC frame is the packet of a more abstract network protocol. Local network routers maintain a forwarding table
-used to map MAC addresses to authenticated socket connections. This gives an efficient means of routing network traffic within local networks. To efficiently route 
-packet data between networks, IP (Internet Protocol) addressing is introduced as an abstract layer atop the data-link/network-interface layers.</p>
-<p>IP addresses are hierarchical in nature, 32-bits are subdivided into four octets in IPv4 (e.g. 192.168.0.1) and 128-bits are subdivided into eight 16-bit groupings
-in IPv6 (e.g. 2001:0DB8:AC10:FE01:0000:0000:1a2f:1a2b). Network addresses can be subnetted to create subnetworks. For instance subnetting the network address
-192.168.100.10 with the subnet mask 255.255.255.0 creates a subnetwork for which 255 devices can be connected. Local area networks are assigned private addresses,
-which can not be assigned to public-facing devices. Within a private network, these addresses are mapped at the router edge to a public-facing IP address to allow for
-communication between local network devices and publicly routable devices. Protocols such as the Network Address Translation protocol store port and address connections
-in memory to map inbound traffic directed to the router back to the private address of the local device.</p>
-<p><img src="/Assets/images/IP_packet_bitfields.png" width="100%" height="100%"></p>
-<p>Just as physical and data-link layer switches maintain forwarding tables, internet routers maintain routing tables that map IP addresses to socket connections 
-with neighbouring devices. Thus, inbound traffic can be directed based on IP address network prefixes. For instance the network address 192.9.200.15 directed to
-the network address 192.9.202.10, may contain a routing table that maps 192.9.201.0 to an active connection that exists as a default route. In another case, where no
-default route is known, the network address 192.9.0.0 may route to 192.9.201.0 and then 192.9.200.15 as such a network hop moves down the internet backbone towards
-the target device.</p>
-<p><img src="/Assets/images/internet_overview.png" width="100%" height="100%"></p>
-<p>The structure of the internet can be viewed as a hierarchical network of networks. In an idealised form, we could image the internet as a 256-ary tree of depth 4
-for each octet in IPv4 or depth 8 for each hexadecimal group in IPv6. The internet was not instantiated in this manner however, with the maximum number of networks
-connecting the maximum number of devices. Instead, internet service providers will request allocation and registration of IP address blocks from internet registries.
-These ISPs may be commercial, subnetting their available networks downsstream to a large number of consumer devices, or organisational, subnetting their available 
-networks into various internal departments and subsidiaries. These ISPs will have various local routing policies, transit connections to IXPs, peerings with other
-ISPs, etc. Each such network with its own policy set is referred to as an autonomous system (AS), interacting with other autonomous systems via the Application-layer
-Border-Gateway Protocol (BGP).</p>
-<p>With the physical/data-link layer and the internet/network layer accounted for, we have a protocol stack that enables host-to-host communication both within and
-between local area networks. The subsequent layer, labelled the transport layer in both the OSI and TCP/IP model, enables the establishment of network sessions 
-between host devices through a network exchange called a handshake. The best-known and most-used transport protocols are the Transmission Control Protocol (TCP) and
-the User Datagram Protocol (UDP).</p>
-<p><img src="/Assets/images/TCP_UDP_packet_fields.png" width="100%" height="100%"></p>
-<p>The transport layer introduces the concept of network ports for data exchange. A network port is a software construct managed by the operating system, with a value
-between 0 and 65535, mapped to a host application in runtime that will handle all inbound network traffic directed at that port. This allows a host device to run
-multiple applications over distinct ports to handle multiple network connections, despite a shared physical transmission medium. UDP is a light-weight transport 
-protocol, adding only a source and destination port, segment length and check sum value to the data to be transmitted. It is thus used in time-sensitive situations
-where error checking is unnecessary, such as video-streaming and DNS lookups. UDP is a form of connectionless communication whilst TCP is a form of connection-oriented
-communication. This is because TCP introduces the concept of a TCP handshake, establishing session between hosts.</p>
-<p><img src="/Assets/images/TCP_Handshake.png" width="100%" height="100%"></p>
-<p>The TCP handshake exists as a SYN + SYN/ACK + ACK exchange used to establish an initial sequence number that tracks data bytes transferred. The established connection
-can be terminated through a FIN + ACK/FIN + ACK exchange initiated by either host. To increase efficiency of data transfer, TCP packets can be sent prior to acknowledgement
-of the packets that preceded them. This creates out of order transmission errors that can be dealt by using the receiver's acknowledgment number as a count of data bytes
-received thus far.</p>
-<p>Application-Layer protocols sit at the highest level of abstraction in the network protocol stack, specifying data exchange between client and server programs in
-runtime on host devices. Examples include DNS for domain-name resolution, SMTP for mail transfer, FTP for file transfer, SSH for remote shell access, HTTP for web page
-loading and browsing, and TLS for secure data exchange.</p>
+<p>Information Theory sets the groundwork for computer networking, defining the limits of data transmission and reception over noisy and
+noiseless channels. Bits of information encoding data are concatenated with bits of information encoding properties of data
+and its transmission. This forms a payload-header pair. Payloads are encapsulated by headers, headers are decapsulated to reveal payloads.
+Network protocols outline a means of formatting outgoing data and interpreting incoming data, and are agreed upon by network devices to 
+allow for communication between them. Encapsulation is recursive and thus network payloads are stacked: the header of a less abstract
+network protocol encapsulates the header-payload pair of a more abstract network protocol. The physical layer is the most abstract layer, 
+seated beneath all network layers. It refers to the physical medium by which bits of information are transmitted and received. The physical 
+medium is wired or wireless, shared or exclusive. If the communication channel is shared between network devices, consideration has to be
+given to managing collisions (interference caused when network devices transmit data simultaneously).</p>
+<p><img src="/Assets/images/physical_layer.png" width="100%" height="100%"></p>
+<p>There are three main categories of collision managagement: channel-partitioning, collision
+detection and avoidance, and turn-taking. In the case of channel-partitioning, the channel is partitioned temporally in the case of wired
+TDMA, or across frequency bands in the case of wireless FDMA. Channel-partitioning has the downside of limiting bandwidth per network device
+seeing as idle partitions go unused. Alternatively, network devices can follow a collision detection and avoidance strategy by only
+transmitting data if the network is idle and aborting transmissions if a collision is detected. The network device attempts retransmission
+after a time that exponentially increases per sequential collision detected. In wireless networks, the hidden terminal problem observes
+that two sending wireless device's transmission signals may interfer before reaching a receiving device, even though they are not in range
+of one another, preventing collision detection. Thus wireless network devices will implement collision detection for small request-to-send 
+packets. In the case of non-collision wireless access points will broadcast clear-to-send packets to all network devices in range. Data
+exchange and acknowledgement occurs between the cleared device and the access point, of which all devices are aware. Finally, in a taking
+turns strategy, collision is avoided entirely. A controller device invites nodes to transmit in turn, or a controller token is
+passed sequentially across devices carrying transmitted data. This approach has significant latency cost however.</p>
+<p><img src="/Assets/images/nodal_delay.png" width="100%" height="100%"></p>
+<p>With regards to the physical medium, the main consideration is bandwidth, latency and throughput. Bandwidth is the capacity of the
+physical link, how many bits per second can be transferred, throughput the amount of bits per second actually being transferred, and
+latency the delay in milliseconds between the instruction to transmit data and the transmission of data itself. Packet delay is expressed
+as the sum of delays encountered in data transmission.
+\[ d_{nodal} = d_{proc} + d_{queue} + d_{trans} + d_{prop} \]
+\[ \binom{n}{k} p^k (1-p)^{n-k} \> > \frac{c}{b} \]
+Bernoulli trials can express the occurrence of network overload by considering the bandwidth of a physical link \(c\), total users \(n\),
+active users \(k\), per-user bandwidth \(b\), and probability of active use \(p\).</p>
+<p><img src="/Assets/images/data_link_frames.png" width="100%" height="100%"></p>
+<p>The data-link layer follows from the physical layer, describing the packaging of data prior to transit across the physical medium.
+Ethernet and 802.11 frames (packaged data at the physical and data-link layer) are de facto standards for wired and wireless data-link 
+communication. Perhaps of most significance is the frame's Medium-Access-Control (MAC) address and the frame check sequence (FCS). MAC
+addresses are flat 12-digit hexadecimal strings hard-coded by the manufacturer into the network interface card of a network device. They
+are taken from an available block of MAC addresses allocated to the manufacturer by an international registering authority. Data-link
+frame's have source and destination MAC fields to identify where transmitted data is going to and being sent from.</p>
+<!-- Error Checking -->
+<p>The FCS is the field used by data-link frame's for error-checking. As a simple example, we can take an ethernet frame, header and payload
+included, and FCS set to 0, as a binary matrix. An additional row and column is used to identify the parity of each corresponding row and 
+column in transmitted data. Parity errors are then likely detected by the receiving device in the case of transmission interference. Cyclic
+Redundancy checking can be used instead, trading space complexity for computational complexity. In this case, the sender and receiver agree
+upon a generator polynomial \(G\) of \(n\) bits. The sender computes the remainder from binary division of \(G\) against \(D\), where \(D\)
+is the original payload concatenated with \(n\) zeros. The sender sends \(D\) plus the computed remainder. The receiver performs the same
+division, and knows that a transmission error occurred if the computed remainder is non-zero.</p>
+<p><img src="/Assets/images/switch_forwarding.png" width="100%" height="100%"></p>
+<p>Switches can be used in place of bus topologies to allow multiple transmissions to occur simultaneously without collision. A switch 
+has a set of physical interfaces that can connect to network devices. A pair of sender-switch and switch-receiver links can be transmitted
+over if idle. Collision detection is still employed to detect and resolve transmission attempts across non-idle links. Switches store 
+forwarding tables in memory. Each table entry exists as MAC address to physical interface mapping with a TTL. If the destination address of
+a received frame exists in the forwarding table, it is forwarded over the corresponding interface. If not, the frame is broadcast to all
+neighbours. If the source address of a received frame does not exist in the forwarding table, it is mapped to the physical interface it
+was received over, and added to the forwarding table. Thus, any time device \(A\) contacts device \(B\) where \(B\) is a device that has
+not been contacted before, all forwarding tables will be populated with \(A\). When \(B\) replies to \(A\) all forwarding tables on a path
+between \(A\) and \(B\) will be populated with \(B\). A device \(C\) when contacting \(A\) will simply populated another forwarding table
+chain with \(C\), or if contacting \(B\) will populate a tree of forwarding tables with \(C\) until the broadcast meets with the path to
+\(B\) at which point a forwarding table chain will be populated with \(C\). Network exchange can occur between all network devices on a
+multi-switch network using forwarding tables alone. However, this assumes a hierarchical design. If we introduce loops to the network 
+topology, broadcast storms result from recurrent transmission of broadcast frames over a network loop.</p>
+<p><img src="/Assets/images/spanning_tree_protocol.png" width="100%" height="100%"></p>
+<p>Spanning Tree Protocol is a data-link protocol that makes loop multi-switch networks behave like hierarchical multi-switch networks.
+Switches mutually converge towards a spanning tree network topology by making some loop links redundant. If the topology changes, STP can
+derive a new spanning tree with new redundant and non-redundant links. Thus, STP acts as a means of loop-avoidance and fault-tolerance.
+Every switch has a bridge ID (the concatenation of a bridge priority number and its MAC address) and initially assumes itself to be the 
+root bridge. Bridge Protocol Data Units (BPDUs) are transmitted periodically. They contain a switch's min cost path to the root bridge 
+(initially 0) and the root bridge ID. A switch will identify another switch as root if its bridge ID is lower than that of its own. A 
+switch will update the root path cost field in the BPDU to include the link cost of the physical link over which the BPDU was received. 
+Connected devices determine their link cost by a process of autonegotiation, finding the maximal transmission rate both can support.</p>
+<p><img src="/Assets/images/BPDU.png" width="100%" height="100%"></p>
+<p>BPDUs have additional timers to assist with convergence. The 'hello time' field identifies the rate at which the root bridge broadcasts
+BPDUs. The 'max age' field identifies the time a switch will retain information transmitted from a root bridge before assuming an invalid
+link. The 'forward delay' field identifies the time a switch spends in the learning state after exiting the blocking state and before entering
+the forwarding state. In the blocking state a switch only interacts with BPDUs. In the learning state, a switch populates its forwarding
+table but does not forward frames. In the forwarding state, the switch forwards received frames. Finally, STP attributes links as 
+'root', 'designated' or 'blocking'. All interfaces over which BPDUS are received are blocked to avoid loops except the path of minimum cost
+(the switch's root port). Other ports are designated ports. Traffic flows upstream to the root bridge via root ports, and downstream to
+network switches via designated ports. More advanced protocols that extend STP include RSTP, to reduce converge time, MSTP, to integrate
+with VLANs, or SPB, to consolidate these advantages.</p>
+<p><img src="/Assets/images/network_layer.png" width="100%" height="100%"></p>
+<p>The network layer follows from the data-link layer and defines data transmission across networks. The internet protocol is the global
+standard network layer protocol and uses IPv4 or IPv6 addresses (four octets, eight four-digit hexadecimal strings) to uniquely identify
+network devices. IP addresses are public, globally routable, and assigned by international registering authorities, save for a few private
+address ranges reserved for use over local area networks. Internet routers use routing algorithms to derive optimal network paths between
+source and destination, and populate their forwarding tables accordingly. This computation can be outsourced to remote controllers that 
+install forwarding tables remotely, in the case of software-defined networking. ICMP is an additional network-layer protocol used for 
+network diagnosis. Internet routers transmit ICMP packets back to source in the case of packet drop, TTL expiry or error-detection.
+NAT is used in edge routers to map private addresses to an address that is globally routable, via translation tables consisting of 
+source and mapped port/address two-tuples. IP packets are fragmented if they exceed the maximum transmission unit (MTU) of the data-link
+layer, and are defragmented by the destination device. Minimum MTU along a network path is discovered by sending an initially large IP
+packet with the DF bit set, and then IP packets equal in size to the MTU of the output link to drop the previous packet as indicated by 
+the ICMP error response.</p>
+<!-- Autonomous Systems, Link State, Distance Vector, OSPF, BGP, Diagram -->
+<p>An autonomous system is a region of the internet operating under a single administrative entity. The role of these entities is to employ
+intra-domain and inter-domain routing protocols to minimise average path cost for network traffic in transit both within and between 
+autonomous systems. Routing protocols can be classed as link-state or distance-vector. In a link-state protocol, routers make recursive 
+link-state broadcasts to all peers when the cost of an outgoing link changes. Broadcasts follow a depth-first search traveral across the
+network, with each node updating an internal representation of the global network topology for each received broadcast. Dijkstra's shortest
+path algorithm is applied to this internal topology to derive optimal src-dest paths for routing. These algorithms are quadratic in time
+complexity, and forwarding table construction is linear.</p>
+<!-- Link-state and distance vector diagram -->
+<p> Distance-vector protocols are based upon the Bellman-Ford dynamic programming algorithm. If the costs from a vertex \(x\) to its
+neighbors \(v\) are known, as is the minimum cost from each vertex \(v\) to a vertex \(y\), then the minimum cost path from \(x\) to \(y\)
+is the minimum of those paired sums. 
+\[ D_x(y) = min_v ( c_{x,v} + D_v(y) ) \]
+In the equivalent routing protocol, when a router observes a change in the cost of an outgoing link, it will update its distance vector 
+(a table with estimates of distance between itself and its nearest neighbors) and notify its peers. These peers will update their own
+distance vectors with the new information and subsequently notify their own peers. State diffusion occurs from a node across the network 
+topology from time step to time step, until eventually state changes permeate the entire network topology and all distance vectors converge 
+towards their own minimum cost forwarding tables. The poisoned reverse rule states that if a node \(A\) determines its neighbor \(B\) to be
+the next hop in the minimum cost path to \(C\), it will signal to \(B\) that its path to \(C\) is infinite. This is to ensure the avoidance
+of infinite loops.</p>
+<!-- TCP and UDP header fields -->
+<p>With the data-link and network layers accounted for, we progress our protocol stack by introducing the transport layer, which allows
+for process-to-process communication to be established between host devices within and between networks. TCP and UDP are the most ubiquitous
+transport layer protocols used. The transport layer introduces source port and destination port as additional header fields. The port 
+number is a 16-bit identifier used by the operating system to map packets to processes that are running on the host device. A socket is
+a software structure written to handle network traffic. Sockets can be created and bound to port numbers such that all packets received at
+the network interface card with the same port number as the destination field are handled by the socket bound to that port number. TCP is
+connection-oriented in that a welcoming socket is used to establish additional TCP sockets in the receiver to maintain communication with
+the requesting sender. UDP is connectionless in that a receiver-side socket running on a given port responds to all inbound traffic 
+directed at that port. TCP uses additional fields to achieve reliability of process-to-process communication between host devices, 
+including flags (SYN/FIN/ACK) to identify the type of message, sequence (SEQ) numbers to track bytes sent, and acknowledgement (ACK) numbers
+to track bytes received. TCP connections are established through SYN/SYN-ACK/ACK handshakes with empty payloads. This is known as the
+three-way handshake.</p>
+<!-- RDT, GBN and SR -->
+<p>Reliable Data Transfer (RDT) protocols exist in a continuum from minimal to maximal measures taken to ensure reliability
+over unreliable channels. In the simplest case, RDT 1.0, the channel itself is reliable, and no additional measures are taken. In RDT 2.0,
+we imagine an unreliable channel in which transmitted data may be corrupted. In this case, the checksum field and ACK flag are used by the
+receiver to notify the sender if the transmitted data was succesfully transmitted without error. If the response itself is corrupted, the
+sender retransmits the data, and the receiver discards duplicate error-free packets. In RDT 3.0, we imagine an unreliable channel in which
+transmitted data may be corrupted or lost entirely. This reflects network-layer conditions seeing as IP operates on a best-effort model
+with no guarantee that sent packets will arrive at their intended destination. To ensure reliability under these conditions, the sender
+uses a timeout and retransmits an unacknowledged packet upon its expiry, or after a three ACK repeat of the previous packet is encountered  
+(the fast retransmit optimisation). This timeout is an exponentially weighted moving average derived dynamically from network conditions.
+    \[ Timeout = EstimatedRTT + 4 \times DevRTT \]
+    \[ EstimatedRTT = (1 - \alpha) \times EstimatedRTT + \alpha \times sampleRTT \]
+    \[ DevRTT = (1 - \beta) \times DevRTT + \beta \times (SampleRTT - EstimatedRTT) \]
+Additionally, data transfer is pipelined to make better use of available bandwidth. 
+\[ U_{sender} = \frac{L/R}{RTT + L/R} \]
+<!-- TCP-tahoe, TCP-Reno -->
+TCP connections maintain a CWND (congestion window) value representing the number of packets that can be sent in a burst before awaiting 
+receiver acknowledgment. Either we increment this window, packet by packet, and retransmit all packets in the window that succeed a lost
+packet, or we keep track of each packet individually and only retransmit the lost packets themselves at the cost of additional 
+computational overhead. These two strategies are referred to as 'go back N' and 'selective repeat', respectively. The CWND value will
+also be dynamically limited by the RWND (receiving window) value advertised by the receiver, essentially notifying the sender of available
+buffer space for received packets. This is TCP's means of congestion control, ensuring that senders limit throughput to the receiver 
+handling capabilities. This avoids congestion collapse, the case where overwhelmed internet routers drop packets, causing senders to
+retransmit packets, causing more internet routers in a network path to be overwhelmed and drop packets, causing throughput to approach
+zero and delays to approach infinity. Additionally, CWND values are typically initialised through exponential slow-start phases that
+then switch to AIMD congestion-avoidance when encountering timeouts, fast retransmits and other network events.</p>
+<!--
+    ARP, DHCP, DNS, Search
+    Client-Server, P2P formula,
+        Client-to-Server (HTTP, SMTP, FTP, SSH, TLS)
+        P2P (bit-torrent)
+    Day in the life of web request
+    SMS, first request spoofing
+    Content-Delivery-Networks
+-->

@@ -3,75 +3,34 @@ layout: narrow
 title: Economics
 ---
 <h3>Economics</h3>
-<p>Goods are material things we attribute value. Services are non-material things we attribute value.
-When goods and services are exchanged, value is exchanged, and value as the medium of the exchange of goods and services is embodied as currency.
-Income is currency received, expense is currency given, asset is stored income, liability is stored expense. This can be visualised with the analogy of a reservoir:
-</p><p><img src="../Assets/images/reservoir1.png" width="70%" height="70%"></p>
-<p>Properties of the model:
-    <ul>
-        <li>red and blue liquid annihilate with one another at will (just as sold assets can pay off liabilities).</li>
-        <li>liquid evaporates and precipitates to yield larger downstream flow (just as liabilities can produce expenses and assets can produce income).</li>
-        <li>inflow of income exceeding inflow of expense yields larger asset to liability ratio (positive change in equity position).</li>
-        <li>inflow of expense exceeding inflow of income yields larger liability to asset ratio (negative change in equity position).</li>
-    </ul></p>
-<p>Shortcomings of the model:
-    <ul>
-        <li>does not model liability as the product of the one-time inflow of both income and expense.</li>
-        <li>does not model how liability is paid off with income generated from sold assets.</li>
-        <li>evaporation/precipitation analogy tedious.</li>
-        <li>does not scale into a working model of an economy and fails to model more complex financial topics.</li>
-    </ul>
-</p>
-<p>We can think of an economy as a set of agents (individuals and organisations) exchanging goods and services via the medium of currency.
-Nodes represent agents, edges represent pathways of exchange (exchange of currency, goods and services) in a complete graph. Any two nodes
-within this graph is visualised with the following heuristic.</p>
-<p><img src="../Assets/images/binary_tank_original.png" width="100%" height="100%"></p>
-<p>Properties of the model:
-    <ul>
-        <li>represents an agent's physical  environment as a tesselated circle and its financial environment as the cylindrical tank that tesselation projects to.</li>
-        <li>each tesselated tile represents a subset of an agent's environment and are color-coded such that environments that are shared by agents have the same color.</li>  
-        <li>each tesselated tile sits above a set of white and black orbs representing assets and liabilities respectively.</li>
-        <li>change in the spherical volume of an asset or liability is proportional to change in the magnitude of its value. Thus, any subset of an agent's environment is the product of a set of assets and liabilities.</li>
-        <li>all assets and liabilities that constitute an agent's environment project to unit values (1 and -1 respectively) as stored in the cylindrical tank above.</li>
-        <li>the depth of a unit value in the cylindrical tank is inverse to its liquidity.</li>
-        <li>value held in uppermost part of cylinder projects from highly liquid assets: material currency, digital account balance, etc.</li>
-        <li>value held in mid-level parts of cylinder project from mildly liquid assets: inventory, accounts receivable, shares, bonds, debenture, etc.</li>
-        <li>low-level stacks in cylinder are highliy illiquid: property, motor vehicles, equipment, etc.</li>
-        <li>net income/expense is equivalent to the net inflow/outflow of positive value to/from the uppermost part of the cylinder.</li>
-        <li>an income statement is documentation of the inflow and outflow of positive value across a given time period.</li>
-        <li>a cash flow statement is documentation of the inflow and outflow of positive value pertaining to highly liquid assets across a given time period.</li>
-        <li>A balance sheet is documentation of the ratio of assets to liabilities at a given point in time and is the product of the income statement across time.</li> 
-        <li>the flow of currency corresponds to the exchange of assets and liabilities.</li>
-    </ul></p>
-<p>Imagine an economy where agents exchange assets and liabilities with no objective function. In this economy, agents inhabit environments at random, producing assets
-and liabilities at random, and exchanging assets and liabilities at random. It is very low likelihood that a random assortment of assets in an environment enables that 
-environment to produce value in excess of the value of its constituent parts. As such, the existence of these environments diminishes, and the economy decays towards
-oblivion.</p>
-<p>Instead we imagine an economy where agents have the objective function of maximising the value of the environment they inhabit. 
-Thus, agents exchange assets and liabilities such that their equity position (assets/liabilities) following an exchange is greater than or equal to their equity 
-position prior to that exchange. This gives us the following set of possible transactions between two agents:
-<img src="../Assets/images/agent_exchange.png" width="50%" height="50%">
-(Scenario one) Agent A exchanges a liability valued at $-1 for a liability valued at $-1 with agent B.<br><br>
-(Scenario two) Agent B lends an asset valued at $1 to agent A and is owed $1, agent A has an asset valued at $1 and owes $-1.<br><br>
-(Scenario three) Agent A lends an asset valued at $1 to agent B and is owed $1, agent B has an asset valued at $1 and owes $-1.<br><br>
-(Scenario four) Agent A exchanges an asset valued at $1 for an asset valued at $1 with agent B.</p>
-<p>Because the above exchanges can be expressed by a number system (binary) they scale to the exchange of assets and liabilities for all values. These exchanges are based
-on perceived values, with the value of an asset in the economy being computed as the average of the purchasing price of that asset by agents in the economy across time.
-This produces a standard moving average graph. A market is a subset of an economy, that is the set of all exchanges of a given asset in the economy across time. 
-We modify our visualisation as follows:
-<img src="../Assets/images/agent_exchange2.png" width="50%" height="50%">
-(Scenario one)<br>
-Agent A exchanges liability a for liability b, and perceives liability a as being equal to or exceeding liability b in negative value.<br>
-Agent B exchanges liability b for liability a, and perceives liability b as being equal to or exceeding liability a in negative value.<br><br>
-(Scenario two)<br>
-Agent A borrows an asset from agent B, and perceives the value of the asset borrowed as being equal to or in excess of the liability of the money owed.<br>
-Agent B lends an asset to agent A, and perceives the value of the money owed as being equal to or in excess of the value of the asset.<br><br>
-(Scenario three)<br>
-*The inversion of scenario two.<br><br>
-(Scenario four)<br>
-Agent A exchanges asset a for asset b, and perceives asset b as being equal to or exceeding asset a in positive value.<br>  
-Agent B exchanges asset b for asset a, and perceives asset a as being equal to or exceeding asset b in positive value.<br><br>
-<img src="../Assets/images/expenses_vs_income.png" width="50%" height="50%"></p>
+<p>Goods are value-attributed physical entities. Services are value-attributed non-physical entities. The exchange of goods and services
+maps to the exchange of value, where currency exists as the medium of exchange. Income is the inflow of currency. Expense is the outflow 
+of currency. Asset is the non-outflow of currency. Liability is the non-outflow of expense. Thus, asset-expense and income-liability 
+relations are zero-sum in nature, and asset-income and expense-liability relations are non-zero-sum in nature. Let us denote a zero-sum
+relation \(≁\) and a non-zero-sum relation \(\sim\).</p>
+<p><img src="../Assets/images/income_expense.png" width="70%" height="70%"></p>
+<p>A market describes the totality of exchange of a particular good or service between market participants (individuals, organisations,
+governments, etc.). A generalisation of any market participant's financial position is illustrated above. Currencies circulate within 
+the markets belonging to an economy and can be exchanged for other currencies. The exchange rate representes the relative purchasing power
+between currencies. Too much of a currency in circulation, and the expense incurred from handling the currency exceeds the
+value it provides. Too little of a currency in circulation, and the opportunity cost of awaiting its availability exceeds the cost incurred
+from its non-use. When circulation of currency sits at an ideal point between these bounds, inflation and deflation still occurs due
+to the fluctuation of net value of goods and services produced and exchanged within an economy.</p>
+<p>So far we have discussed the mapping that exists between the flow of currency and the exchange of goods and services within economies.
+Additional factors cause additional fluctuations to the value of goods and services even when purchasing power is perfectly stable. We can
+think of the intrinsic value of a good or service as the net time-adjusted positive emotion it would produce averaged across 
+market participants operating optimally in accordance with a joint value-maximisation policy. This is of course, unrealistic. In reality,
+the value of a good or service exists as a moving average of its perceived value by market participants. Goods and services that are 
+overvalued or undervalued tend to collapse towards their intrinsic value, given enough time, simply due to the insight that time offers
+market participants. Market bubbles prove not to be fruitful and the usefulness of previously ignored assets becomes apparent. Pricing
+models can thus prove useful even if they are not reflected by the market for long periods of time.</p>
+<p>Let us consider some of these pricing models.</p>
+<!--
+    Time-value of money
+    PV/FV or perpetuity/annuity 
+-->
+
+<p><img src="../Assets/images/expenses_vs_income.png" width="50%" height="50%"></p>
 <p>Profit = Income - Expenses<br>Equity = Total Assets - Total Liabilities<br>ΔEquity = Profit</p>
 <p>Profit can be visualised as the difference in the uppermost black line and the blue line, representing income and total expenses respectively.
 It can also be visualised as the difference in the net inflow and outflow of positive value to the most liquid portion of our abstract tank.
