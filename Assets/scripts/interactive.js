@@ -2,6 +2,7 @@ var _startX = 0;
 var _startY = 0;
 var _isDragging = false;
 var _dragThreshold = 5;
+let scaleFactor = 1;
 
 document.onmousedown = OnMouseDown;
 document.onmouseup = OnMouseUp;
@@ -26,16 +27,21 @@ function OnMouseDown(event) {
 function OnMouseMove(event) {
     var moveX = event.clientX - _startX;
     var moveY = event.clientY - _startY;
+    var scale = (100 / parseFloat(_dragElement.style.zoom))
     if (Math.abs(moveX) > _dragThreshold || Math.abs(moveY) > _dragThreshold) {
         _isDragging = true;
-        _dragElement.style.left = (_offsetX + moveX) + 'px';
-        _dragElement.style.top = (_offsetY + moveY) + 'px';
+        _dragElement.style.left = (_offsetX + scale * moveX) + 'px';
+        _dragElement.style.top = (_offsetY + scale * moveY) + 'px';
     }
 }
 
 function OnMouseUp() {
     document.onmousemove = null;
 }
+
+document.addEventListener('contextmenu', function(event) {
+    event.preventDefault();
+}, false);
 
 document.addEventListener('click', function(event) {
     if (_isDragging) {
@@ -45,15 +51,14 @@ document.addEventListener('click', function(event) {
 }, {passive: false});
 
 document.addEventListener('wheel', function(event) {
-    event.preventDefault();
-    // indicates pinch/zoom motion
+    event.preventDefault();    
+    // handle touchpad versus scroll wheel pinch/zoom
+    let scale;
     if (event.ctrlKey) {
-        scale = 1 - (event.deltaY / 100);
-        _dragElement.style.zoom = (parseFloat(_dragElement.style.zoom) * scale) + '%';
-        _dragElement.style.left = (parseFloat(_dragElement.style.left) - (scale * event.clientX - event.clientX)) + 'px';
-        _dragElement.style.top = (parseFloat(_dragElement.style.top) - (scale * event.clientY - event.clientY)) + 'px';
+        scale = 1 - event.deltaY / 100;
+    } else {
+        scale = 1 - event.deltaY / 1000;
     }
-    // else indicates scrolling motion
-    _dragElement.style.left = (parseFloat(_dragElement.style.left) - event.deltaX) + 'px';
-    _dragElement.style.top = (parseFloat(_dragElement.style.top) - event.deltaY) + 'px';
+    _dragElement.style.zoom = (parseFloat(_dragElement.style.zoom) * scale) + '%';
+
 }, {passive: false});

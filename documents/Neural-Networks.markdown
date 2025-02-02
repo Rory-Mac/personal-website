@@ -3,12 +3,13 @@ layout: narrow
 title: Neural-Networks
 ---
 <h4>Neural Networks</h4>
-<p>Perceptrons are digital analogs to biological neurons in nervous systems. Perceptrons are layered, just as neurons are, to create artificial neural networks.
-<img src="/Assets/images/nn_introduction.png" width="100%" height="100%">
-Each input activation is scaled by a corresponding weight, summed with a bias, and then scaled by an activation function. We express the output
-activation of a single perceptron as follows,
+<p>Perceptrons exist as the digital analog to biological neurons in the human nervous system. Perceptrons are layered to create
+artificial neural networks (ANNs).</p>
+<p><img src="/Assets/images/nn_introduction.png" width="100%" height="100%"></p>
+<p>Functionally, a perceptron consists of the summation of weighted inputs with a bias, mapped to an output via an activation function.
+This can be expressed as follows.
     \[ σ\left(\left(\sum_{i=1}^n a_iw_i\right) + b \right) \]
-We can extend this equation to compute the output activation of a single layer of perceptrons,
+We can extend this equation to compute the output activation of a layer of perceptrons.
     \[
     σ\left(
     \begin{bmatrix} w_{0,0} & w_{1,0} & \dots & w_{n,0} \\ w_{0,1} & w_{1,1} & \dots & w_{n,1} \\ 
@@ -16,34 +17,29 @@ We can extend this equation to compute the output activation of a single layer o
     \begin{bmatrix} a_0 \\ a_1 \\ \vdots \\ a_n \end{bmatrix} +  
     \begin{bmatrix} b_0 \\ b_1 \\ \vdots \\ b_n \end{bmatrix}
     \right)
-    \]</p>
-<p>The activation functions used in artificial neural networks vary greatly. Some of the most commonly used activation functions include the
-step activation function, the sigmoid activation function, the tanh activation function, and the ReLU activation function,
+    \]
+Let us consider a select few activation functions, of which many exist.
 \[ Step(x) = \begin{cases} 
       0 & x\leq 0 \\
       1 & x \gt 0 \\ 
     \end{cases} \qquad
     σ(x) = \frac{1}{1+e^{-x}} \qquad
     Tanh(x) = \frac{e^z-e^{-z}}{e^z+e^{-z}} \qquad
-    ReLU(x) = max(0, x) \]</p>
-<p>Now that we know what a perceptron is, we want to determine what a perceptron can compute. We quickly realise that perceptrons can be 
-used to compute the most fundamental boolean functions, OR, AND, and NOT. Any boolean function can be expressed as a combination of these
-primitive functions via conjunctive normal form. Thus, in theory, enough perceptrons in a neural network implementing these said functions
-could achieve the same functionality as any modern digital circuit.
-<img src="/Assets/images/digital_logic_nns.png" width="100%" height="100%">
-Of course the perceptron scales and maps real inputs to outputs directly. Its formula hints at the sort of computation we expect it
-to be capable of performing beyond simple binary functions,
+    ReLU(x) = max(0, x) \]
+The primitives of propositional logic can be mapped to unique weight-sets of simple ANNs. Thus, in theory, ANNs can implement the
+functionality of any modern digital circuit.</p>
+<p><img src="/Assets/images/ann_logic.png" width="100%" height="100%"></p>
+<p>The perceptron can map real input to output directly, however. Its formula hints at the sort of computation we expect it
+to be capable of performing beyond simple binary logic.
     \[ z = \sigma(\; w_1x_1 + w_2x_2 + \ldots + w_nx_n + w_0 \;) \]
-We can imagine the set of \(n\) activations as an \(n\)-dimensional input space, and the set of weights as defining an \((n-1)\)-dimensional
-hyperplane that divides said input space in two. Thus, the perceptron can act as a binary classifier for any linearly separable dataset.
-Let's visualise this in one-dimension:
-<img src="/Assets/images/perceiving_one_feature.png" width="100%" height="100%">
-Our initial parameters transform the input activation space in some way. The weight scales the input space, which we can perceive as 
+The parameter set for a perceptron with \(n\) input activations defines an \((n-1)\)-dimensional hyperplane that separates the 
+\(n\)-dimensional activation space. Thus, a single perceptron can act as a binary classifier for any linearly separable dataset.
+Let us first visualise this in one-dimension.</p>
+<p><img src="/Assets/images/perceiving_one_feature.png" width="100%" height="100%"></p>
+<p>Our initial parameters transform the input activation space in some way. The weight scales the input space, which we can perceive as 
 movement towards or from the number line, whilst the bias shifts the input space in the positive or negative direction. By using the 
-binary step function, the input space is classified, visualised above as assigning each input activation a color classification. This 
-concept extends to higher dimensions so that the parameter set for a perceptron with \(n\) input activations defines an \((n-1)\)-dimensional
-hyperplane that separates the \(n\)-dimensional activation space. Thus, a single perceptron can act as a binary classifier for any linearly
-separable dataset. The perceptron adjusts its parameter set to determine the optimal classification via the perceptron learning algorithm
+binary step function, the input space is classified, visualised above as assigning each input activation a color classification. The
+perceptron adjusts its parameter set to determine the optimal classification via the perceptron learning algorithm
 with pseudo-code as follows:</p>
 <p><code>
 &emsp;for each training case (input activation, correct classification):<br>
@@ -86,7 +82,8 @@ backpropagating the error associated with an output activation back to the set o
 found (through backpropagation) the cost partial with respect to an activation, but since we have defined error as the cost partial with respect to the weighted
 sum, we use the Hadamard product '\(\odot\)' with \(\sigma^{\prime}(z^L)\) (the partial of \(a\) with respect to \(z\)), thus establishing the error of layer 
 \(L\) from the error of layer \(L+1\).</p>
-<p>
-<img src="/Assets/images/backprop_summary_pt1_light.png" width="100%" height="100%">
-<img src="/Assets/images/backprop_summary_pt2_light.png" width="100%" height="100%">
-</p>
+<p><img src="/Assets/images/backprop_summary_pt1_light.png" width="100%" height="100%"></p>
+<p><img src="/Assets/images/backprop_summary_pt2_light.png" width="100%" height="100%"></p>
+<p>We can now assemble primitive agents that possess simple knowledge structures derived from simulated worlds. Movement towards complexity
+within the simulation is akin to movement towards the reality from which the principles of the simulation were created.</p>
+<p><img src="/Assets/images/primitive_agent.png" width="100%" height="100%"></p>

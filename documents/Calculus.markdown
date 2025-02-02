@@ -3,28 +3,27 @@ layout: narrow
 title: Calculus
 ---
 <h4>Calculus</h4>
-<p>Calculus begins with the Riemann sum, an approximation of an integral by a finite sum. Take any region of a polynomial \( f(x) \) and
-partition it into a finite sequence of rectangles of width \( dx \) and area \(dA\). Alignment of these rectangles can follow a left, right,
-upper, or lower approximation; they are most easily visualised, though other shapes can be used to the same effect. In
-any case, as \(dx \rightarrow 0 \) the sum of the areas of these partitions approximates \( f(x) \).
-\[ \frac{dA}{dx} \approx f(x), \>\> dx \longrightarrow 0 \]</p>
-<p><img src="/Assets/images/Riemann_sum.png" width="100%" height="100%"></p>
-<p>In this same limit, \( df(x) \) approximates a function giving the instantaneous rate of change of \(f(x)\) for a
-given value \(x\). We can call this function the derivative of \(f(x)\) and \(f(x)\) the integral of this derivative function.
-\[\frac{df(x)}{dx} = \frac{f(x + dx) - f(x)}{dx} \approx f'(x), \>\> dx \longrightarrow 0 \]
-If the derivative expresses the rate of change of the integral, 
-and the integral the sum of all instaneous rates of change, then the integral expresses the area under the curve of the derivative.
-This intuitive relationship can be formalised by the following expression (the fundamental theorem of calculus). 
-\[ \int_{a}^{b} f'(t)\,dt = f(b) - f(a) \]</p>
-<p>The following expression is the power rule and has a geometric analog (scaled from two to \(n\) dimensions).
-\[ \frac{d(x^n)}{dx} = nx^{n-1} \]</p>
-<p><img src="/Assets/images/geometric_power_rule.png" width="100%" height="100%"></p>
-<p>We can think of incrementing our exponent from \(n\) to \(n+1\), as a nudge of length \(dx\) in a new dimension. For inputs of the form 
-\(x^n\) we can re-express our theorem of calculus like so,
-\[ \frac{x^n + a_1x^{n-1}dx + a_2x^{n-2}dx^2 + \dots + a_ndx^n - x^n}{dx}, \>\> x \longrightarrow 0 \]
-for some coefficients \(a_1 \dots a_n \). We can think of our binomial expansion like branches in a tree, paths of multiplication.
-\[ (x+y)^n = \sum_{k=0}^{n} {n \choose k} x^{n-k} y^k \]</p>
-<p><img src="/Assets/images/binomial_theorem.png" width="100%" height="100%"></p>
-<p>There exist a set of paths with one movement in the \(x\) direction, a set of paths with 2 movements in the \(x\) direction, etc. The cardinality 
-of these sets equates from \(n..1\). All such sets are discounted by the limit except the set of paths denoted \(a_1x^{n-1}dx\). 
-which gives us our power rule \(nx^{n-1}\).</p>
+<p>Calculus is the mathematical study of continuous change. We start by formalising the notion of continuity of a real-valued function. A
+function \(f : \mathbb{R} \rightarrow \mathbb{R}\) is said to be continuous if for every point \(p\) in the domain of \(f\) there exists
+a limit \(L\) as \(x\) approaches \(p\).
+\[ \lim_{x \to p} f(x) = L \]
+A limit exists for an input \(p\) if the following holds for \(\epsilon, \delta \in \mathbb{R}\).
+\[ (\forall \epsilon > 0)(\exists \delta > 0)(\forall x \in \mathbb{R})(0 < |x - p| < \delta \implies |f(x) - L| < \epsilon) \]
+Intuitively we can imagine that if for any codomain centred at \(L\) there exists a domain centred at \(p\) such that all points within
+the domain exist within the codomain as well, then \(L\) is the limit as \(x \rightarrow p\).</p>
+<p>The Riemann sum can be used to formulate the foundations of calculus. For a tagged partition over the interval \([a, b]\), that is a 
+partition \(a = x_1 < x_2 < \ldots < x_n = b\) with tags \(t_0, t_1, \ldots, t_n\) where \(t_i \in [x_i, x_{i+1}]\) the Riemann sum is as
+follows.
+\[\sum_{i=0}^{n-1}f(t_i)(x_{i+1} - x_i)\]
+The Riemann integral is not unlike our formalisation of continuity. Take \(T\) as the set of all tagged partitions over the interval we 
+are integrating.  
+\[ (\forall \epsilon > 0)(\exists \delta > 0)(\> \forall \> ((x_0, x_1, \ldots x_n), (t_0, t_1, \ldots t_n)) \in T) \]
+\[ 0 < \left( \sum_{i=0}^{n-1}f(t_i)(x_{i+1} - x_i \right) < \delta \implies \left| \left(\sum_{i=0}^{n-1}f(t_i)(x_{i+1} - x_i)\right) - s \right| < \epsilon) \]
+Now we can state the fundamental theorems of calculus. If \(f\) is real-valued, continuous and defined over \([a,b]\) we define \(F\)
+for all \(x\) in \([a,b]\) and say that \(F\) is differentiable on \((a,b)\).   
+\[F(x) = \int_{a}^{x}f(t)dt \implies F'(x) = f(x)\]
+Additionally, if \(f\) is Riemann integrable on \([a,b]\) the following holds.
+\[\int_{a}^{b}f(x)dx = F(B) - F(A)\] 
+The derivative can also be defined like so. 
+\[ f'(x) = \lim_{dx \to 0}\frac{f(x + dx) - f(x)}{dx} \]
+With these theorems we can generate foundational rules of integration and differentiation.</p>

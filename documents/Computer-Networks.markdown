@@ -41,7 +41,6 @@ communication. Perhaps of most significance is the frame's Medium-Access-Control
 addresses are flat 12-digit hexadecimal strings hard-coded by the manufacturer into the network interface card of a network device. They
 are taken from an available block of MAC addresses allocated to the manufacturer by an international registering authority. Data-link
 frame's have source and destination MAC fields to identify where transmitted data is going to and being sent from.</p>
-<!-- Error Checking -->
 <p>The FCS is the field used by data-link frame's for error-checking. As a simple example, we can take an ethernet frame, header and payload
 included, and FCS set to 0, as a binary matrix. An additional row and column is used to identify the parity of each corresponding row and 
 column in transmitted data. Parity errors are then likely detected by the receiving device in the case of transmission interference. Cyclic
@@ -95,40 +94,39 @@ source and mapped port/address two-tuples. IP packets are fragmented if they exc
 layer, and are defragmented by the destination device. Minimum MTU along a network path is discovered by sending an initially large IP
 packet with the DF bit set, and then IP packets equal in size to the MTU of the output link to drop the previous packet as indicated by 
 the ICMP error response.</p>
-<!-- Autonomous Systems, Link State, Distance Vector, OSPF, BGP, Diagram -->
+<p><img src="/Assets/images/link_state_routing.png" width="100%" height="100%"></p>
 <p>An autonomous system is a region of the internet operating under a single administrative entity. The role of these entities is to employ
 intra-domain and inter-domain routing protocols to minimise average path cost for network traffic in transit both within and between 
 autonomous systems. Routing protocols can be classed as link-state or distance-vector. In a link-state protocol, routers make recursive 
-link-state broadcasts to all peers when the cost of an outgoing link changes. Broadcasts follow a depth-first search traveral across the
-network, with each node updating an internal representation of the global network topology for each received broadcast. Dijkstra's shortest
-path algorithm is applied to this internal topology to derive optimal src-dest paths for routing. These algorithms are quadratic in time
-complexity, and forwarding table construction is linear.</p>
-<!-- Link-state and distance vector diagram -->
+link-state broadcasts to all peers when the cost of an outgoing link changes. Routers only broadcast link-state updates with sequence number 
+higher than the highest thus far received, to avoid duplicate broadcasts, and use a TTL initially set to the longest path route, to 
+ensure that all routers are notified of the link-state change. Broadcasts follow a depth-first search traveral across the network, with each
+node updating an internal representation of the global network topology for each received broadcast. Dijkstra's shortest path algorithm is
+then applied to this internal topology by each router to derive optimal src-dest paths for routing. These algorithms are quadratic in time
+complexity. Forwarding table construction is linear.</p>
+<p><img src="/Assets/images/distance_vector_routing.png" width="100%" height="100%"></p>
 <p> Distance-vector protocols are based upon the Bellman-Ford dynamic programming algorithm. If the costs from a vertex \(x\) to its
 neighbors \(v\) are known, as is the minimum cost from each vertex \(v\) to a vertex \(y\), then the minimum cost path from \(x\) to \(y\)
 is the minimum of those paired sums. 
 \[ D_x(y) = min_v ( c_{x,v} + D_v(y) ) \]
-In the equivalent routing protocol, when a router observes a change in the cost of an outgoing link, it will update its distance vector 
-(a table with estimates of distance between itself and its nearest neighbors) and notify its peers. These peers will update their own
-distance vectors with the new information and subsequently notify their own peers. State diffusion occurs from a node across the network 
-topology from time step to time step, until eventually state changes permeate the entire network topology and all distance vectors converge 
-towards their own minimum cost forwarding tables. The poisoned reverse rule states that if a node \(A\) determines its neighbor \(B\) to be
-the next hop in the minimum cost path to \(C\), it will signal to \(B\) that its path to \(C\) is infinite. This is to ensure the avoidance
-of infinite loops.</p>
-<!-- TCP and UDP header fields -->
-<p>With the data-link and network layers accounted for, we progress our protocol stack by introducing the transport layer, which allows
-for process-to-process communication to be established between host devices within and between networks. TCP and UDP are the most ubiquitous
-transport layer protocols used. The transport layer introduces source port and destination port as additional header fields. The port 
-number is a 16-bit identifier used by the operating system to map packets to processes that are running on the host device. A socket is
-a software structure written to handle network traffic. Sockets can be created and bound to port numbers such that all packets received at
-the network interface card with the same port number as the destination field are handled by the socket bound to that port number. TCP is
-connection-oriented in that a welcoming socket is used to establish additional TCP sockets in the receiver to maintain communication with
-the requesting sender. UDP is connectionless in that a receiver-side socket running on a given port responds to all inbound traffic 
-directed at that port. TCP uses additional fields to achieve reliability of process-to-process communication between host devices, 
-including flags (SYN/FIN/ACK) to identify the type of message, sequence (SEQ) numbers to track bytes sent, and acknowledgement (ACK) numbers
-to track bytes received. TCP connections are established through SYN/SYN-ACK/ACK handshakes with empty payloads. This is known as the
-three-way handshake.</p>
-<!-- RDT, GBN and SR -->
+A router broadcasts its distance vector to all peers when a change in link cost is observed. The distance vector is a table consisting 
+of estimated path cost to all network routers alongside the neighboring routers from which those paths initiate. If a router's distance 
+vector is updated in response to this broadcast, it will broadcast its own updated distance vector. Thus, broadcasting occurs recursively
+until all distance vectors converge at compatible minimum cost forwarding tables. To ensure the avoidance of infinite loops, we introduce
+the poisoned reverse rule. This states that if a node \(A\) determines its neighbor \(B\) to be the next hop in the minimum cost path to
+\(C\), it will signal to \(B\) that its path to \(C\) is infinite.</p>
+<p><img src="/Assets/images/TCP_UDP_packet_fields.png" width="100%" height="100%"></p>
+<p>Next we introduce the transport layer, allowing for process-to-process communication between host devices. 
+The transport layer introduces the source and destination port header fields. The port number is a 16-bit identifier used by 
+the operating system to map packets to processes that are running on the host device. A socket is a software structure written to handle 
+network traffic. Sockets can be created and bound to port numbers such that all packets received at the network interface card with the
+same port number as the destination field are handled by the socket bound to that port number. TCP and UDP are the most ubiquitous protocols
+used at the transport layer. UDP is a connectionless protocol: a receiver-side socket responds to all inbound traffic directed at its bound port.
+TCP is a connection-oriented protocol: a welcoming socket creates additional TCP sockets to handle communication with the requesting sender.
+TCP uses additional fields to achieve reliability of process-to-process communication between host devices, including flags (SYN/FIN/ACK) to
+identify the type of message, sequence (SEQ) numbers to track bytes sent, and acknowledgement (ACK) numbers to track bytes received. TCP
+connections are established through SYN/SYN-ACK/ACK handshakes with empty payloads. This is known as the three-way handshake.</p>
+<p><img src="/Assets/images/network_exchange.png" width="100%" height="100%"></p>
 <p>Reliable Data Transfer (RDT) protocols exist in a continuum from minimal to maximal measures taken to ensure reliability
 over unreliable channels. In the simplest case, RDT 1.0, the channel itself is reliable, and no additional measures are taken. In RDT 2.0,
 we imagine an unreliable channel in which transmitted data may be corrupted. In this case, the checksum field and ACK flag are used by the
@@ -136,15 +134,16 @@ receiver to notify the sender if the transmitted data was succesfully transmitte
 sender retransmits the data, and the receiver discards duplicate error-free packets. In RDT 3.0, we imagine an unreliable channel in which
 transmitted data may be corrupted or lost entirely. This reflects network-layer conditions seeing as IP operates on a best-effort model
 with no guarantee that sent packets will arrive at their intended destination. To ensure reliability under these conditions, the sender
-uses a timeout and retransmits an unacknowledged packet upon its expiry, or after a three ACK repeat of the previous packet is encountered  
+uses a timeout and retransmits an unacknowledged packet upon its expiry, or after a three ACKs of the previous packet are encountered  
 (the fast retransmit optimisation). This timeout is an exponentially weighted moving average derived dynamically from network conditions.
+Additionally, data transfer is pipelined to make better use of available bandwidth. 
     \[ Timeout = EstimatedRTT + 4 \times DevRTT \]
     \[ EstimatedRTT = (1 - \alpha) \times EstimatedRTT + \alpha \times sampleRTT \]
     \[ DevRTT = (1 - \beta) \times DevRTT + \beta \times (SampleRTT - EstimatedRTT) \]
-Additionally, data transfer is pipelined to make better use of available bandwidth. 
-\[ U_{sender} = \frac{L/R}{RTT + L/R} \]
-<!-- TCP-tahoe, TCP-Reno -->
-TCP connections maintain a CWND (congestion window) value representing the number of packets that can be sent in a burst before awaiting 
+    \[ U_{sender} = \frac{L/R}{RTT + L/R} \]
+</p>
+<p><img src="/Assets/images/tcp_tahoe_reno.png" width="100%" height="100%"></p>
+<p>TCP connections maintain a CWND (congestion window) value representing the number of packets that can be sent in a burst before awaiting 
 receiver acknowledgment. Either we increment this window, packet by packet, and retransmit all packets in the window that succeed a lost
 packet, or we keep track of each packet individually and only retransmit the lost packets themselves at the cost of additional 
 computational overhead. These two strategies are referred to as 'go back N' and 'selective repeat', respectively. The CWND value will
@@ -154,12 +153,6 @@ handling capabilities. This avoids congestion collapse, the case where overwhelm
 retransmit packets, causing more internet routers in a network path to be overwhelmed and drop packets, causing throughput to approach
 zero and delays to approach infinity. Additionally, CWND values are typically initialised through exponential slow-start phases that
 then switch to AIMD congestion-avoidance when encountering timeouts, fast retransmits and other network events.</p>
-<!--
-    ARP, DHCP, DNS, Search
-    Client-Server, P2P formula,
-        Client-to-Server (HTTP, SMTP, FTP, SSH, TLS)
-        P2P (bit-torrent)
-    Day in the life of web request
-    SMS, first request spoofing
-    Content-Delivery-Networks
--->
+<p>Finally, we arrive at the application layer. The application layer can be subdivided into applications that enhance the functionality
+of the aforementioned network layers, and applications that exist to service the host device itself. Examples of the former include
+ARP, DHCP, DNS, and TLS. Examples of the latter include HTTP, SMTP, FTP and SSH.</p>
