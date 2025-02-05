@@ -37,12 +37,12 @@ transitivity, left-uniqueness, right-uniqueness, left-totality, right-totality, 
 \[ (\exists x \> | \> xRy) \> \forall \> y \in Y \]
 \[ (x \neq y \rightarrow xRy \vee yRx) \> \forall \> x, y \in X \]
 \[ (xRy \vee yRx) \> \forall \> x, y \in X \]
-<p>The properties of these relations can also be observed in their bipartite graphical encodings. Dotted lines represent implied 
+<p>The properties of these relations are observed in their bipartite graphical encodings. Dotted lines represent implied 
 non-existence.</p>
 <p><img src="/Assets/images/relation_properties.png" width="100%" height="100%"></p>
 <p>Unique combinations of these properties provide types of relations that can be classified.</p>
-<p><img src="/Assets/images/relation_types.png" width="40%" height="40%"></p>
-<p>Relations are defined in set-theoretic terms over sets. Relations are themselves set and can thus be defined over other relations.
+<p><img src="/Assets/images/relation_types.png" width="100%" height="100%"></p>
+<p>Relations are defined in set-theoretic terms over sets. Relations are sets themselves and can thus relate to other relations.
 \[ R \cup S = \{ (x, y) \>|\> xRy \vee xSy \} \] 
 \[ R \cap S = \{ (x, y) \>|\> xRy \wedge xSy \} \] 
 \[ \overline R = \{ (x, y) \>|\> x, y \in X \wedge x \not Ry\} \]

@@ -2,6 +2,7 @@
 layout: narrow
 title: Category-Theory
 ---
+<h4>Category Theory</h4>
 <p>Category theory explores categorical relationships between objects, where objects are defined by their relations to other objects.
 Category theory begins with the notion of objects, morphisms, categories, functors, monoids and monads. We denote objects and morphisms
 \( \> ob(C), \> hom(C) \> \) and a morphism between objects \(a,b\) as \(\> f : a \mapsto b\). 
