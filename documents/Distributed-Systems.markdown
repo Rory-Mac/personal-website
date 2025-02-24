@@ -3,16 +3,21 @@ layout: narrow
 title: Distributed Systems
 ---
 <h4>Distributed Systems</h4>
-<p>In the context of software, we think of a system as the infrastructure enabling the provision of software services to requesting 
-devices. This requires computation. In the case of a non-distributed system, the computation is performed by a singular process running 
-locally on the end user's host device. In the case of a distributed system, the computation is performed by multiple processes across
-multiple devices via remote procedure calls. Unlike a function call, which calls for a procedure to be run on the host device, a remote
-procedure call (RPC) calls for a procedure to be run on a networked device. It is the responsibility of the operating system to establish the
-communication channel between the requesting device and the networked device for the RPC to be queried and answered. In the discussion of
-distributed systems, an RPC typically refers to the delegation of the computation of a local query to a networked device, though the query
-might instead be processed by another process on the same device.</p>
+<p>An understanding of distributed systems follows from a general understanding of the landscape of technology used to engineer software.
+Distributed computation follows from the extension of the monolithic architectural pattern to non-monolithic architectural patterns in system 
+design. By system we mean the infrastructure that enables the provision of software services to requesting devices. By monolithic we mean
+the absence of distributed computation, i.e. the computation required for each server to serve requesting devices occurs locally, e.g. http
+request and response, routing logic, database access, etc. By non-monolothic we mean the presence of distributed computation, i.e. the
+computation required for some servers to serve requesting devices occurs remotely or across servers, e.g. load-balanced http servers,
+content-delivery networks, distributed databases, etc.</p>
+<p><img src="/Assets/images/seng_overview.png" width="100%" height="100%"></p>
+<p>Remote computation is invoked via remote procedure calls (RPCs). Unlike a function call, which calls for a procedure to be run on the
+host device, an RPC calls for a procedure to be run on a networked device. It is the responsibility of the operating 
+system to establish the communication channel between the requesting device and the networked device for the RPC to be queried and answered.
+In the discussion of distributed systems, an RPC typically refers to the delegation of the computation of a local query to a networked 
+device, though the query might instead be processed by another process on the same device.</p>
 <p><img src="/Assets/images/distributed_systems_overview.png" width="100%" height="100%"></p>
-<p>Distributed systems use a client-server or peer-to-peer model, as illustrated above. Consider the leftmost heuristic, which employs the
+<p>Distributed systems sit atop client-to-server and peer-to-peer models, as illustrated above. Consider the leftmost heuristic, which employs the
 client-server model. The outermost networked devices are end-users, clustered within local area networks. The internal spheroid cluster
 acts as a distributed system, delegating and responding to remote procedure calls made both internally from other servers and externally
 from end users. This simplified heuristic can be extended to give a big picture view of the internet. Imagine we replace the edges 

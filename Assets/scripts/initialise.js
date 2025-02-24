@@ -3,9 +3,9 @@ document.addEventListener('DOMContentLoaded', LoadInitialElements())
 function LoadInitialElements() {
 	const portal_grid = [
 		[[0,0,0,0,0,0,0,1,0], ["Org-Structs"]],
-		[[0,0,0,1,0,0,2,3,4], ["Data-Structures", "Economics", "Neural-Networks", "Project-Evolution"]],
-		[[1,2,3,0,4,0,5,0,6], ["Web-Development", "Distributed-Systems", "Object-Oriented", "Computational-Complexity", "Probability-Theory", "Game-Theory"]],
-		[[1,2,3,4,5,6,7,8,0], ["Multi-Processing", "Operating-Systems", "Computer-Networks", "Compilation", "Calculus", "Geometry", "Topology", "Linear-Algebra"]],
+		[[1,2,3,4,0,0,5,6,7], ["Web-Development", "Distributed-Systems", "Object-Oriented", "Data-Structures", "Economics", "Neural-Networks", "Project-Evolution"]],
+		[[0,1,0,0,2,0,3,0,4], ["Computer-Networks", "Computational-Complexity", "Probability-Theory", "Game-Theory"]],
+		[[0,1,2,3,4,5,6,7,0], ["Operating-Systems", "Multi-Processing", "Compilation", "Calculus", "Geometry", "Topology", "Linear-Algebra"]],
 		[[0,0,0,1,2,3,0,0,0], ["Computer-Architecture", "Graph-Theory", "Abstract-Algebra"]], 
 		[[0,0,0,1,2,3,0,0,0], ["Digital-Circuits", "Set-Theory", "Category-Theory"]],  
 		[[0,0,0,1,2,3,0,0,0], ["Electrostatics", "Formal-Logic", "Formal-Language", ]],
@@ -18,7 +18,7 @@ function LoadInitialElements() {
 		["Org-Structs", "Project-Evolution"], ["Org-Structs", "Economics"],
 		["Data-Structures", "Compilation"], ["Data-Structures", "Computational-Complexity"], ["Neural-Networks", "Linear-Algebra"], ["Neural-Networks", "Game-Theory"], ["Economics", "Probability-Theory"], ["Economics", "Game-Theory"], ["Project-Evolution", "Game-Theory"],
 		["Web-Development", "Computer-Networks"], ["Distributed-Systems", "Computer-Networks"], ["Object-Oriented", "Compilation"], ["Computational-Complexity", "Calculus"], ["Probability-Theory", "Calculus"], ["Game-Theory", "Linear-Algebra"], 
-		["Multi-Processing", "Computer-Architecture"], ["Operating-Systems", "Computer-Architecture"], ["Computer-Networks", "Computer-Architecture"], ["Compilation", "Computer-Architecture"], 
+		["Multi-Processing", "Computer-Architecture"], ["Operating-Systems", "Computer-Architecture"], ["Computer-Networks", "Operating-Systems"], ["Computer-Networks", "Multi-Processing"], ["Compilation", "Computer-Architecture"], 
 		["Calculus", "Abstract-Algebra"], ["Linear-Algebra", "Abstract-Algebra"], ["Geometry", "Abstract-Algebra"], ["Topology", "Abstract-Algebra"], 
 		["Computer-Architecture", "Digital-Circuits"], ["Graph-Theory", "Set-Theory"], ["Graph-Theory", "Category-Theory"], ["Abstract-Algebra", "Category-Theory"], ["Abstract-Algebra", "Set-Theory"], 
 		["Digital-Circuits", "Electrostatics"], ["Digital-Circuits", "Formal-Logic"], ["Set-Theory", "Formal-Logic"], ["Category-Theory", "Formal-Logic"], ["Category-Theory", "Formal-Language"], 
