@@ -3,8 +3,17 @@ layout: narrow
 title: Game Theory
 ---
 <h4>Game Theory</h4>
-<p>Game theory is the mathematical modelling of the strategic interaction that occurs between decision-making agents when they co-exist
-within environments. Let us start with the normal-form of a game, existing as the tuple \( (N, (A_i)_{i \in N}, (u_i)_{i \in N} ).\> \)
+<p>Game Theory studies the nature of interaction between reward-seeking agents. We start with a complex model that describes this 
+interaction informally, and then build towards this model through formal game-theoretic means. In this complex model, we describe
+reward-seeking agents as nodes, we describe the spatial configuration of these nodes as the product of attractive and repulsive force
+between each node pair, and we describe attractive and repulsive force as equivalent to the frequency of cooperative and non-cooperative
+actions taken between the agents the node pair encodes.</p>
+<p><img src="/Assets/images/game_theory_overview.png" width="100%" height="100%"></p>
+<p>Agents perceive the actions, strategies, outcomes, and payoffs they believe agents (themselves included) can take, as well as the
+actions, strategies, outcomes and payoffs they believe other agents believe are present. The agents also perceive a correspondence 
+between agents they interact with at present with agents interacted with in past, and perceive other agents as perceiving their own such
+correspondence.</p>
+<p>We introduce the normal-form game to begin formalising this abstract model. The normal-form game exists as the tuple \( (N, (A_i)_{i \in N}, (u_i)_{i \in N} ).\> \)
 In this formalisation of a game we denote the number of players, the actions available to each player, the action profiles between player 
 actions, the action profiles of all players excluding one, and the outcomes that map to a given set of action profiles, as follows.   
 \[ N=\{1,\>\ldots\>,n\} \]
